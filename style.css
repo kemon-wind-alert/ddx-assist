@@ -65,6 +65,15 @@ main { padding: 8px 12px 16px; max-width: 760px; margin: 0 auto; }
 .chips button.on small { color: var(--accent-ink); opacity: .85; }
 .chips button:disabled { opacity: .4; }
 
+.agebox { display: flex; align-items: center; gap: 10px; flex: 1; }
+#age {
+  font: inherit; font-size: 18px; width: 80px; min-height: 38px; padding: 4px 10px; text-align: center;
+  border-radius: 19px; border: 1px solid var(--line); background: var(--bg); color: var(--text);
+}
+#age:focus { outline: 2px solid var(--accent); outline-offset: 0; }
+#ageband { font-size: 13px; color: var(--muted); }
+.tag.age { background: var(--accent); color: var(--accent-ink); }
+
 #results { margin-top: 12px; }
 .hint { color: var(--muted); text-align: center; }
 h2 { font-size: 14px; margin: 14px 0 6px; color: var(--muted); }

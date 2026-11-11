@@ -22,11 +22,9 @@
   <section class="inputs">
     <div class="row">
       <div class="label">年齢</div>
-      <div class="chips" data-key="age">
-        <button data-v="child">小児<small>〜14</small></button>
-        <button data-v="young">若年<small>15〜39</small></button>
-        <button data-v="middle">中年<small>40〜64</small></button>
-        <button data-v="elderly">高齢<small>65〜</small></button>
+      <div class="agebox">
+        <input id="age" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="3" placeholder="歳" autocomplete="off" aria-label="年齢">
+        <span id="ageband"></span>
       </div>
     </div>
     <div class="row">
@@ -63,7 +61,7 @@
 </main>
 
 <footer>
-  <p>★は文献に基づく相対頻度（根拠は各疾患をタップ）。★未確認＝文献で裏付けられていない。青の「自分★」は自分の臨床感覚（文献ではない）。入力内容は保存・送信されません。最終判断は診察に基づいて行うこと。</p>
+  <p>★は文献に基づく相対頻度で、年齢は〜14／15〜39／40〜64／65〜の年齢帯で引く（根拠は各疾患をタップ）。「好発年齢」の目印も文献に基づく。好発年齢から明らかに外れる疾患は隠す（見逃し厳禁は隠さない）。★未確認＝文献で裏付けられていない。青の「自分★」は自分の臨床感覚（文献ではない）。入力内容は保存・送信されません。最終判断は診察に基づいて行うこと。</p>
   <p id="ver"></p>
 </footer>
 

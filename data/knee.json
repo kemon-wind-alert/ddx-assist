@@ -4,528 +4,1710 @@
   "updated": "2026-11-11",
   "star_scale": "★＝その年齢帯で膝の症状（外傷疾患は膝外傷）で受診した患者のうち、その疾患が占める割合の目安。★5: 30%以上／★4: 15〜29%／★3: 5〜14%／★2: 1〜4.9%／★1: 1%未満（まれだが鑑別に入る）。受診者中の割合が直接ない場合は、人口あたり発生率を同年齢の膝症状受診率（オランダ一般診療: 小児・若年4〜24歳で10.6〜17.4/1000人年［van Leeuwen 2022がSchellevis 2003を引用］、成人で21〜35/1000人年［Evers 2023］）で割って換算した。紹介外来・スポーツ外来など母集団が偏ったデータも含むため粗い目安であり、施設（一般整形外来）での実数とはずれうる。null＝鑑別には挙がるが頻度を裏付ける文献を確認できなかった（★未確認）。0＝その年齢帯ではまず考えない（非表示）。",
   "subregions": [
-    {"id": "anterior", "name": "前面（膝蓋骨・膝蓋腱まわり）"},
-    {"id": "medial", "name": "内側"},
-    {"id": "lateral", "name": "外側"},
-    {"id": "posterior", "name": "後面（膝窩）"},
-    {"id": "diffuse", "name": "全体・はっきりしない"}
+    {
+      "id": "anterior",
+      "name": "前面（膝蓋骨・膝蓋腱まわり）"
+    },
+    {
+      "id": "medial",
+      "name": "内側"
+    },
+    {
+      "id": "lateral",
+      "name": "外側"
+    },
+    {
+      "id": "posterior",
+      "name": "後面（膝窩）"
+    },
+    {
+      "id": "diffuse",
+      "name": "全体・はっきりしない"
+    }
   ],
   "findings": [
-    {"id": "night_pain", "label": "夜間痛・安静時痛"},
-    {"id": "fever", "label": "発熱"},
-    {"id": "effusion", "label": "腫脹・関節液貯留"},
-    {"id": "redness_heat", "label": "発赤・熱感"},
-    {"id": "locking", "label": "ロッキング・引っかかり"},
-    {"id": "giving_way", "label": "膝くずれ・不安定感"},
-    {"id": "pop", "label": "受傷時のポップ音"},
-    {"id": "sports", "label": "スポーツ・使いすぎ"},
-    {"id": "start_pain", "label": "動き始めの痛み"},
-    {"id": "multi_joint", "label": "他の関節も痛い・朝のこわばり"},
-    {"id": "cannot_bear", "label": "荷重できない・SLR不能"},
-    {"id": "calf_swelling", "label": "ふくらはぎの腫れ・圧痛"},
-    {"id": "limp_child", "label": "（小児）跛行・股関節の動きが悪い"}
+    {
+      "id": "night_pain",
+      "label": "夜間痛・安静時痛"
+    },
+    {
+      "id": "fever",
+      "label": "発熱"
+    },
+    {
+      "id": "effusion",
+      "label": "腫脹・関節液貯留"
+    },
+    {
+      "id": "redness_heat",
+      "label": "発赤・熱感"
+    },
+    {
+      "id": "locking",
+      "label": "ロッキング・引っかかり"
+    },
+    {
+      "id": "giving_way",
+      "label": "膝くずれ・不安定感"
+    },
+    {
+      "id": "pop",
+      "label": "受傷時のポップ音"
+    },
+    {
+      "id": "sports",
+      "label": "スポーツ・使いすぎ"
+    },
+    {
+      "id": "start_pain",
+      "label": "動き始めの痛み"
+    },
+    {
+      "id": "multi_joint",
+      "label": "他の関節も痛い・朝のこわばり"
+    },
+    {
+      "id": "cannot_bear",
+      "label": "荷重できない・SLR不能"
+    },
+    {
+      "id": "calf_swelling",
+      "label": "ふくらはぎの腫れ・圧痛"
+    },
+    {
+      "id": "limp_child",
+      "label": "（小児）跛行・股関節の動きが悪い"
+    }
   ],
   "diseases": [
     {
       "id": "oa",
       "name": "変形性膝関節症",
       "red_flag": false,
-      "subregions": ["medial", "anterior", "diffuse"],
+      "subregions": [
+        "medial",
+        "anterior",
+        "diffuse"
+      ],
       "trauma": "no",
       "sex_note": "女性に多い。ROAD研究（60歳以上）でX線上のOA（KL≥2）は男性47.0%、女性70.2%（約1.5倍）",
-      "stars_by_age": {"child": 0, "young": null, "middle": 5, "elderly": 5},
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 5,
+        "elderly": 5
+      },
       "star_basis": "Evers 2023（45歳以上の非外傷性膝痛で整形外来に紹介された292例）で整形外科診断に占めるOAは45〜64歳で94/169（約56%）、65歳以上で135/160（約84%）→いずれも★5。紹介例のため外傷例を含む全受診者では割合は下がる。15〜39歳は年齢別データなし。",
-      "findings_support": ["start_pain", "effusion"],
-      "findings_against": ["fever", "redness_heat"],
+      "findings_support": [
+        "start_pain",
+        "effusion"
+      ],
+      "findings_against": [
+        "fever",
+        "redness_heat"
+      ],
       "key_points": "内側関節裂隙の圧痛、伸展制限、内反変形。急な悪化や夜間痛が強い場合はSONK・偽痛風・感染を考える。",
-      "tests": ["膝X線 立位正面（必要に応じRosenberg view）・側面・膝蓋骨軸位", "関節液があれば穿刺（性状・結晶）"],
+      "tests": [
+        "膝X線 立位正面（必要に応じRosenberg view）・側面・膝蓋骨軸位",
+        "関節液があれば穿刺（性状・結晶）"
+      ],
       "sources": [
-        {"title": "Evers BJ, et al. Diagnosing knee osteoarthritis in patients, differences between general practitioners and orthopedic surgeons: a retrospective cohort study. BMC Prim Care. 2023;24:155", "url": "https://pubmed.ncbi.nlm.nih.gov/37528362/"},
-        {"title": "Muraki S, et al. Prevalence of radiographic knee osteoarthritis and its association with knee pain in the elderly of Japanese population-based cohorts: the ROAD study. Osteoarthritis Cartilage. 2009", "url": "https://pubmed.ncbi.nlm.nih.gov/19410032/"}
-      ]
+        {
+          "title": "Evers BJ, et al. Diagnosing knee osteoarthritis in patients, differences between general practitioners and orthopedic surgeons: a retrospective cohort study. BMC Prim Care. 2023;24:155",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37528362/"
+        },
+        {
+          "title": "Muraki S, et al. Prevalence of radiographic knee osteoarthritis and its association with knee pain in the elderly of Japanese population-based cohorts: the ROAD study. Osteoarthritis Cartilage. 2009",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19410032/"
+        }
+      ],
+      "age": {
+        "typical": [
+          60,
+          120
+        ],
+        "outside": null,
+        "basis": "ROAD研究（日本の地域住民1,690人、KL分類によるX線膝OA）で有病率は≤39歳2.2%、40代10.7%、50代28.2%、60代50.8%、70代69.0%、80歳以上80.5%と年齢とともに上昇し、60歳以上で過半数となる。50代からも稀ではない。",
+        "sources": [
+          {
+            "title": "Yoshimura N, Muraki S, Oka H, et al. Association of knee osteoarthritis with the accumulation of metabolic risk factors such as overweight, hypertension, dyslipidemia, and impaired glucose tolerance in Japanese men and women: the ROAD study. J Rheumatol, 2011;38(5):921-930",
+            "url": "https://www.jrheum.org/content/38/5/921"
+          }
+        ]
+      }
     },
     {
       "id": "meniscus_degenerative",
       "name": "半月板損傷（変性断裂）",
       "red_flag": false,
-      "subregions": ["medial", "posterior"],
+      "subregions": [
+        "medial",
+        "posterior"
+      ],
       "trauma": "any",
       "sex_note": "",
-      "stars_by_age": {"child": 0, "young": null, "middle": 4, "elderly": 3},
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 4,
+        "elderly": 3
+      },
       "star_basis": "Evers 2023（45歳以上の非外傷性膝痛の紹介例）で半月板損傷の診断は45〜64歳で38/169（約22%）→★4、65歳以上で9/160（約6%）→★3。高齢になるほどOAに置き換わる。",
-      "findings_support": ["locking", "effusion"],
-      "findings_against": ["fever", "multi_joint"],
+      "findings_support": [
+        "locking",
+        "effusion"
+      ],
+      "findings_against": [
+        "fever",
+        "multi_joint"
+      ],
       "key_points": "軽微なひねりやしゃがみ込みで発症。関節裂隙圧痛・McMurray。OA合併が多く、症状がOA由来か半月板由来かの見極めが要点。",
-      "tests": ["膝X線 立位正面・側面（OAの程度確認）", "MRI（ロッキングや保存療法抵抗時）"],
+      "tests": [
+        "膝X線 立位正面・側面（OAの程度確認）",
+        "MRI（ロッキングや保存療法抵抗時）"
+      ],
       "sources": [
-        {"title": "Evers BJ, et al. BMC Prim Care. 2023;24:155", "url": "https://pubmed.ncbi.nlm.nih.gov/37528362/"}
-      ]
+        {
+          "title": "Evers BJ, et al. BMC Prim Care. 2023;24:155",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37528362/"
+        }
+      ],
+      "age": {
+        "typical": [
+          50,
+          120
+        ],
+        "outside": null,
+        "basis": "Framingham一般住民（50〜90歳、991人）のMRIで半月板断裂の有病率は50〜59歳女性19%から70〜90歳男性56%へ年齢とともに上昇し、大半が変性断裂だった。50歳未満は対象外のため下限は研究デザインに依存する。無症候例も多い。",
+        "sources": [
+          {
+            "title": "Englund M, Guermazi A, Gale D, et al. Incidental meniscal findings on knee MRI in middle-aged and elderly persons. N Engl J Med, 2008",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/18784100/"
+          }
+        ]
+      }
     },
     {
       "id": "meniscus_traumatic",
       "name": "半月板損傷（外傷性）",
       "red_flag": false,
-      "subregions": ["medial", "lateral", "posterior"],
+      "subregions": [
+        "medial",
+        "lateral",
+        "posterior"
+      ],
       "trauma": "yes",
       "sex_note": "",
-      "stars_by_age": {"child": null, "young": 4, "middle": null, "elderly": null},
+      "stars_by_age": {
+        "child": null,
+        "young": 4,
+        "middle": null,
+        "elderly": null
+      },
       "star_basis": "van Oudenaarde 2017（オランダ一般診療、18〜45歳の膝外傷174例のMRI）で外傷性半月板断裂15%→★4。スポーツ外来の膝外傷でも内側半月板損傷10.8%（Majewski 2006）。",
-      "findings_support": ["locking", "effusion", "sports", "pop"],
-      "findings_against": ["fever"],
+      "findings_support": [
+        "locking",
+        "effusion",
+        "sports",
+        "pop"
+      ],
+      "findings_against": [
+        "fever"
+      ],
       "key_points": "ひねり受傷、遅発性の腫脹、関節裂隙圧痛。ACL損傷合併を必ず確認。小児では円板状半月（外側）も念頭に。",
-      "tests": ["膝X線 正面・側面・膝蓋骨軸位（骨折除外）", "MRI"],
+      "tests": [
+        "膝X線 正面・側面・膝蓋骨軸位（骨折除外）",
+        "MRI"
+      ],
       "sources": [
-        {"title": "van Oudenaarde K, et al. Post-traumatic knee MRI findings and associations with patient, trauma, and clinical characteristics: a subgroup analysis in primary care in the Netherlands. Br J Gen Pract. 2017;67:e851-e858", "url": "https://pubmed.ncbi.nlm.nih.gov/29158244/"},
-        {"title": "Majewski M, Habelt S, Steinbrück K. Epidemiology of athletic knee injuries: A 10-year study. Knee. 2006;13:184-188", "url": "https://pubmed.ncbi.nlm.nih.gov/16603363/"}
-      ]
+        {
+          "title": "van Oudenaarde K, et al. Post-traumatic knee MRI findings and associations with patient, trauma, and clinical characteristics: a subgroup analysis in primary care in the Netherlands. Br J Gen Pract. 2017;67:e851-e858",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29158244/"
+        },
+        {
+          "title": "Majewski M, Habelt S, Steinbrück K. Epidemiology of athletic knee injuries: A 10-year study. Knee. 2006;13:184-188",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16603363/"
+        }
+      ],
+      "age": {
+        "typical": [
+          20,
+          49
+        ],
+        "outside": null,
+        "basis": "コペンハーゲンの手術例1,215例（1982-84）で発生率は20〜40歳代（3rd-5th decade）が最高、男性は20〜30歳代、女性は20歳代にピーク。男性77%・女性64%で外傷契機あり。手術例ベースで外傷性/変性を完全には分けていない点に注意（10代スポーツ外傷も臨床上は多い）。",
+        "sources": [
+          {
+            "title": "Hede A, et al. Epidemiology of meniscal lesions in the knee: 1,215 open operations in Copenhagen 1982-84. Acta Orthop Scand, 1990",
+            "url": "https://actaorthop.org/actao/article/view/22430"
+          }
+        ]
+      }
     },
     {
       "id": "acl",
       "name": "前十字靱帯（ACL）損傷",
       "red_flag": false,
-      "subregions": ["diffuse", "lateral", "posterior"],
+      "subregions": [
+        "diffuse",
+        "lateral",
+        "posterior"
+      ],
       "trauma": "yes",
       "sex_note": "",
-      "stars_by_age": {"child": null, "young": 4, "middle": null, "elderly": null},
+      "stars_by_age": {
+        "child": null,
+        "young": 4,
+        "middle": null,
+        "elderly": null
+      },
       "star_basis": "van Oudenaarde 2017（18〜45歳の膝外傷174例のMRI）でACL断裂22%→★4。スポーツ外来の膝外傷でもACL損傷が最多の20.3%（Majewski 2006、患者の中心は20〜29歳）。",
-      "findings_support": ["pop", "effusion", "giving_way", "sports"],
-      "findings_against": ["fever", "multi_joint"],
+      "findings_support": [
+        "pop",
+        "effusion",
+        "giving_way",
+        "sports"
+      ],
+      "findings_against": [
+        "fever",
+        "multi_joint"
+      ],
       "key_points": "非接触の切り返し・着地で受傷、ポップ音と急速な関節血症。Lachman（急性期で最も有用）、前方引き出し、pivot shift。",
-      "tests": ["膝X線 正面・側面（Segond骨折・顆間隆起骨折の確認）", "関節血症があれば穿刺（脂肪滴の有無）", "MRI"],
+      "tests": [
+        "膝X線 正面・側面（Segond骨折・顆間隆起骨折の確認）",
+        "関節血症があれば穿刺（脂肪滴の有無）",
+        "MRI"
+      ],
       "sources": [
-        {"title": "van Oudenaarde K, et al. Br J Gen Pract. 2017;67:e851-e858", "url": "https://pubmed.ncbi.nlm.nih.gov/29158244/"},
-        {"title": "Majewski M, Habelt S, Steinbrück K. Knee. 2006;13:184-188", "url": "https://pubmed.ncbi.nlm.nih.gov/16603363/"}
-      ]
+        {
+          "title": "van Oudenaarde K, et al. Br J Gen Pract. 2017;67:e851-e858",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29158244/"
+        },
+        {
+          "title": "Majewski M, Habelt S, Steinbrück K. Knee. 2006;13:184-188",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16603363/"
+        }
+      ],
+      "age": {
+        "typical": [
+          14,
+          25
+        ],
+        "outside": null,
+        "basis": "米国Olmsted Countyの人口ベース研究（1990-2010年、単独ACL損傷1,841例）で発生率のピークは女性14-18歳（227.6/10万人年）、男性19-25歳（241.0/10万人年）。同地域の別コホート（2001-2010年、914例）の平均年齢は29.4±11.7歳で、20代後半〜40代も少なくない。",
+        "sources": [
+          {
+            "title": "Sanders TL, Maradit Kremers H, Bryan AJ, et al. Incidence of Anterior Cruciate Ligament Tears and Reconstruction: A 21-Year Population-Based Study. Am J Sports Med, 2016",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26920430/"
+          },
+          {
+            "title": "Sanders TL, et al. Incidence of second anterior cruciate ligament tears and identification of associated risk factors from 2001 to 2010 using a geographic database. Orthop J Sports Med, 2017",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28840155/"
+          }
+        ]
+      }
     },
     {
       "id": "mcl",
       "name": "内側側副靱帯（MCL）損傷",
       "red_flag": false,
-      "subregions": ["medial"],
+      "subregions": [
+        "medial"
+      ],
       "trauma": "yes",
       "sex_note": "",
-      "stars_by_age": {"child": null, "young": 4, "middle": 4, "elderly": null},
+      "stars_by_age": {
+        "child": null,
+        "young": 4,
+        "middle": 4,
+        "elderly": null
+      },
       "star_basis": "Kastelein 2008（オランダ一般診療の成人膝外傷134例のMRI）でMCL損傷35/134（約26%）→★4。対象は成人の膝外傷受診者で、年齢帯ごとの内訳は確認できていないため若年・中年に同じ★を付けた。",
-      "findings_support": ["sports"],
-      "findings_against": ["fever", "locking"],
+      "findings_support": [
+        "sports"
+      ],
+      "findings_against": [
+        "fever",
+        "locking"
+      ],
       "key_points": "外反強制で受傷。MCL走行上の圧痛、30度屈曲位での外反ストレス痛・不安定性。伸展位でも不安定ならACL等の合併を疑う。",
-      "tests": ["膝X線 正面・側面（裂離骨折の確認）", "エコー（MCLの腫大・断裂）", "MRI（合併損傷が疑われるとき）"],
+      "tests": [
+        "膝X線 正面・側面（裂離骨折の確認）",
+        "エコー（MCLの腫大・断裂）",
+        "MRI（合併損傷が疑われるとき）"
+      ],
       "sources": [
-        {"title": "Kastelein M, et al. Assessing medial collateral ligament knee lesions in general practice. Am J Med. 2008", "url": "https://pubmed.ncbi.nlm.nih.gov/18954845/"}
-      ]
+        {
+          "title": "Kastelein M, et al. Assessing medial collateral ligament knee lesions in general practice. Am J Med. 2008",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18954845/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "MCL損傷に限った一般人口の年齢別発生率は文献で確認できず。参考として、スポーツ膝外傷全体では受傷時20〜29歳が43.1%（Majewski 2006、MCLは膝外傷の7.9%）、MCL損傷の発生率は陸軍士官学校の若年アスリート（89%男性、コンタクトスポーツ）で報告されている（Roach 2014）が、いずれも母集団が若年スポーツ選手に偏っている。",
+        "sources": [
+          {
+            "title": "Majewski M, Susanne H, Klaus S. Epidemiology of athletic knee injuries: A 10-year study. Knee, 2006",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16603363/"
+          },
+          {
+            "title": "Roach CJ, Haley CA, Cameron KL, et al. The epidemiology of medial collateral ligament sprains in young athletes. Am J Sports Med, 2014",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24603529/"
+          }
+        ]
+      }
     },
     {
       "id": "lcl_plc",
       "name": "外側側副靱帯（LCL）・後外側支持機構（PLC）損傷",
       "red_flag": false,
-      "subregions": ["lateral", "posterior"],
+      "subregions": [
+        "lateral",
+        "posterior"
+      ],
       "trauma": "yes",
       "sex_note": "",
-      "stars_by_age": {"child": null, "young": null, "middle": null, "elderly": null},
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
       "star_basis": "受診者中の割合を示す文献を確認できなかった。",
-      "findings_support": ["giving_way", "sports"],
-      "findings_against": ["fever"],
+      "findings_support": [
+        "giving_way",
+        "sports"
+      ],
+      "findings_against": [
+        "fever"
+      ],
       "key_points": "内反・過伸展で受傷。単独損傷は少なく、ACL/PCL合併の見逃しが問題。腓骨神経麻痺（下垂足）の有無を確認。dial test。",
-      "tests": ["膝X線 正面・側面（腓骨頭裂離＝arcuate signの確認）", "MRI", "腓骨神経の感覚・運動の評価"],
-      "sources": []
+      "tests": [
+        "膝X線 正面・側面（腓骨頭裂離＝arcuate signの確認）",
+        "MRI",
+        "腓骨神経の感覚・運動の評価"
+      ],
+      "sources": [],
+      "age": {
+        "typical": [
+          20,
+          45
+        ],
+        "outside": null,
+        "basis": "MRIで確認した単独PLC損傷23例で平均32.0±8.1歳（16〜57歳）、91%男性。複数の手術症例集積でも平均約32歳・男性80〜90%。大規模疫学ではなく症例集積に基づく。",
+        "sources": [
+          {
+            "title": "Costa JPGF, et al. Patient demographic and magnetic resonance imaging evaluation of isolated posterolateral corner knee injuries. Ann Joint, 2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10929308"
+          }
+        ]
+      }
     },
     {
       "id": "pcl",
       "name": "後十字靱帯（PCL）損傷",
       "red_flag": false,
-      "subregions": ["posterior", "diffuse"],
+      "subregions": [
+        "posterior",
+        "diffuse"
+      ],
       "trauma": "yes",
       "sex_note": "",
-      "stars_by_age": {"child": null, "young": null, "middle": null, "elderly": null},
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
       "star_basis": "受診者中の割合を示す文献を確認できなかった。",
-      "findings_support": ["sports"],
-      "findings_against": ["fever"],
+      "findings_support": [
+        "sports"
+      ],
+      "findings_against": [
+        "fever"
+      ],
       "key_points": "ダッシュボード損傷・膝前面からの打撲。後方落ち込み（sagging）、後方引き出し。症状が軽く見逃されやすい。",
-      "tests": ["膝X線 正面・側面（PCL付着部裂離骨折の確認）", "MRI"],
-      "sources": []
+      "tests": [
+        "膝X線 正面・側面（PCL付着部裂離骨折の確認）",
+        "MRI"
+      ],
+      "sources": [],
+      "age": {
+        "typical": [
+          18,
+          40
+        ],
+        "outside": null,
+        "basis": "PCL不全494例の受傷時平均年齢27.5±9.9歳（原因は交通事故約45%・スポーツ約40%）。スカンジナビアの登録研究（PCL再建1,287例）では平均32.7歳（範囲8-67歳）。単独PCL完全断裂の年間発生率は1.8/10万人と稀。",
+        "sources": [
+          {
+            "title": "Schulz MS, Russe K, Weiler A, Eichhorn HJ, Strobel MJ. Epidemiology of posterior cruciate ligament injuries. Arch Orthop Trauma Surg, 2003;123(4):186-191",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/12734718/"
+          },
+          {
+            "title": "Owesen C, Sandven-Thrane S, Lind M, et al. Epidemiology of surgically treated posterior cruciate ligament injuries in Scandinavia. Knee Surg Sports Traumatol Arthrosc, 2017;25(8):2384-2391",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26387121/"
+          },
+          {
+            "title": "Sanders TL, Pareek A, Barrett IJ, et al. Incidence and long-term follow-up of isolated posterior cruciate ligament tears. Knee Surg Sports Traumatol Arthrosc, 2017;25:3017-3023",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26922055/"
+          }
+        ]
+      }
     },
     {
       "id": "patellar_dislocation",
       "name": "膝蓋骨脱臼・亜脱臼",
       "red_flag": false,
-      "subregions": ["anterior", "medial"],
+      "subregions": [
+        "anterior",
+        "medial"
+      ],
       "trauma": "yes",
       "sex_note": "",
-      "stars_by_age": {"child": 2, "young": null, "middle": null, "elderly": 0},
+      "stars_by_age": {
+        "child": 2,
+        "young": null,
+        "middle": null,
+        "elderly": 0
+      },
       "star_basis": "Michaleff 2017（英国一般診療、3〜19歳の膝の受診550件）で「膝蓋骨反復性脱臼」のコードが3.5%→★2（年齢範囲が3〜19歳のため小児帯に当てはめた）。",
-      "findings_support": ["giving_way", "effusion", "sports"],
-      "findings_against": ["fever", "multi_joint"],
+      "findings_support": [
+        "giving_way",
+        "effusion",
+        "sports"
+      ],
+      "findings_against": [
+        "fever",
+        "multi_joint"
+      ],
       "key_points": "ひねりで膝蓋骨が外れ自然整復されることが多く、本人は「膝が外れた」と訴える。内側膝蓋支帯〜MPFL付着部の圧痛、apprehension test。骨軟骨骨折の合併に注意。",
-      "tests": ["膝X線 正面・側面・膝蓋骨軸位（骨軟骨骨片の確認）", "関節血症があれば穿刺（脂肪滴）", "MRI（骨軟骨損傷・MPFL）"],
+      "tests": [
+        "膝X線 正面・側面・膝蓋骨軸位（骨軟骨骨片の確認）",
+        "関節血症があれば穿刺（脂肪滴）",
+        "MRI（骨軟骨損傷・MPFL）"
+      ],
       "sources": [
-        {"title": "Michaleff ZA, et al. Consultation patterns of children and adolescents with knee pain in UK general practice: analysis of medical records. BMC Musculoskelet Disord. 2017;18:239", "url": "https://pubmed.ncbi.nlm.nih.gov/28576118/"}
-      ]
+        {
+          "title": "Michaleff ZA, et al. Consultation patterns of children and adolescents with knee pain in UK general practice: analysis of medical records. BMC Musculoskelet Disord. 2017;18:239",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28576118/"
+        }
+      ],
+      "age": {
+        "typical": [
+          10,
+          17
+        ],
+        "outside": null,
+        "basis": "初回膝蓋骨脱臼の前向きコホート189人で、リスクが最も高いのは10〜17歳の女性だった（Fithian 2004）。同研究では脱臼の既往がある患者のほうが年齢が高く、成人例もあるため除外範囲は設けない。",
+        "sources": [
+          {
+            "title": "Fithian DC, Paxton EW, Stone ML, et al. Epidemiology and natural history of acute patellar dislocation. Am J Sports Med, 2004",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15262631/"
+          }
+        ]
+      }
     },
     {
       "id": "pfps",
       "name": "膝蓋大腿関節痛（PFPS）",
       "red_flag": false,
-      "subregions": ["anterior"],
+      "subregions": [
+        "anterior"
+      ],
       "trauma": "no",
       "sex_note": "女性に多い（オランダ一般診療7〜24歳で女性4.6・男性2.3/1000人年、約2倍）",
-      "stars_by_age": {"child": 4, "young": 4, "middle": null, "elderly": 0},
+      "stars_by_age": {
+        "child": 4,
+        "young": 4,
+        "middle": null,
+        "elderly": 0
+      },
       "star_basis": "van Leeuwen 2023でPFPの発生率は7〜24歳で3.4/1000人年（ピーク13歳、診断時年齢中央値15歳）。同年代の膝症状受診率10.6〜17.4/1000人年で割ると約20〜32%→★4（小児・若年に共通。25〜39歳のデータはない）。",
-      "findings_support": ["sports", "start_pain"],
-      "findings_against": ["effusion", "locking", "fever", "pop"],
+      "findings_support": [
+        "sports",
+        "start_pain"
+      ],
+      "findings_against": [
+        "effusion",
+        "locking",
+        "fever",
+        "pop"
+      ],
       "key_points": "階段・しゃがみ込み・長時間座位後の膝蓋骨周囲痛。関節液貯留やロッキングは乏しい。除外診断であり、小児では股関節疾患の関連痛を必ず除外。",
-      "tests": ["膝X線 正面・側面・膝蓋骨軸位（多くは正常）", "小児・跛行ありなら股関節X線 正面・ラウエンシュタイン"],
+      "tests": [
+        "膝X線 正面・側面・膝蓋骨軸位（多くは正常）",
+        "小児・跛行ありなら股関節X線 正面・ラウエンシュタイン"
+      ],
       "sources": [
-        {"title": "van Leeuwen GJ, et al. Patellofemoral pain in general practice: the incidence and management. Fam Pract. 2023;40:589-595", "url": "https://pubmed.ncbi.nlm.nih.gov/37669000/"},
-        {"title": "van Leeuwen GJ, et al. Incidence and management of Osgood-Schlatter disease in general practice: retrospective cohort study. Br J Gen Pract. 2022;72:e301-e306（膝症状の受診率の引用元）", "url": "https://pubmed.ncbi.nlm.nih.gov/34990396/"}
-      ]
+        {
+          "title": "van Leeuwen GJ, et al. Patellofemoral pain in general practice: the incidence and management. Fam Pract. 2023;40:589-595",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37669000/"
+        },
+        {
+          "title": "van Leeuwen GJ, et al. Incidence and management of Osgood-Schlatter disease in general practice: retrospective cohort study. Br J Gen Pract. 2022;72:e301-e306（膝症状の受診率の引用元）",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34990396/"
+        }
+      ],
+      "age": {
+        "typical": [
+          12,
+          40
+        ],
+        "outside": null,
+        "basis": "系統的レビュー（23研究）で年間有病率は一般人口22.7%、思春期28.9%と思春期で高く、研究対象も思春期・新兵・ランナーなど若年が中心。一方、米国の診断コードデータ（約219万人）では50〜59歳が最多で、中年以降にも少なくない。好発年齢帯は文献間で一致せず確信度は低め。",
+        "sources": [
+          {
+            "title": "Smith BE, et al. Incidence and prevalence of patellofemoral pain: a systematic review and meta-analysis. PLoS One, 2018",
+            "url": "https://doi.org/10.1371/journal.pone.0190892"
+          },
+          {
+            "title": "Glaviano NR, et al. Demographic and epidemiological trends in patellofemoral pain. Int J Sports Phys Ther, 2015",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4458915"
+          }
+        ]
+      }
     },
     {
       "id": "patellar_tendinopathy",
       "name": "膝蓋腱炎（ジャンパー膝）",
       "red_flag": false,
-      "subregions": ["anterior"],
+      "subregions": [
+        "anterior"
+      ],
       "trauma": "no",
       "sex_note": "",
-      "stars_by_age": {"child": null, "young": null, "middle": null, "elderly": 0},
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": 0
+      },
       "star_basis": "受診者中の割合を示す文献を確認できなかった。",
-      "findings_support": ["sports"],
-      "findings_against": ["effusion", "fever", "locking"],
+      "findings_support": [
+        "sports"
+      ],
+      "findings_against": [
+        "effusion",
+        "fever",
+        "locking"
+      ],
       "key_points": "ジャンプ競技。膝蓋骨下極の膝蓋腱付着部に限局する圧痛、負荷で増悪。成長期で脛骨粗面ならOsgood、下極の骨化異常ならSLJ。",
-      "tests": ["膝X線 側面（下極の骨化・裂離の除外）", "エコー（腱の肥厚・低エコー・血流）"],
-      "sources": []
+      "tests": [
+        "膝X線 側面（下極の骨化・裂離の除外）",
+        "エコー（腱の肥厚・低エコー・血流）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": [
+          15,
+          35
+        ],
+        "outside": null,
+        "basis": "跳躍系スポーツ選手の疾患。メタ解析で有病率は一般人口0.1%に対しアスリート18.3%、アスリートでは18歳未満10.1%・18歳以上21.3%。非エリート選手891人の横断研究では有症者はより若年。年齢帯を直接示した疫学データは乏しく、範囲は対象集団（10代後半〜30代のアスリート）からの推定を含む。成長期前半はOsgood病・Sinding-Larsen-Johansson病との鑑別を要する。",
+        "sources": [
+          {
+            "title": "Nutarelli S, Mondini Trissino da Lodi C, Cook JL, Deabate L, Filardo G. Epidemiology of Patellar Tendinopathy in Athletes and the General Population: A Systematic Review and Meta-analysis. Orthop J Sports Med, 2023;11(6):23259671231173659",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37347023/"
+          },
+          {
+            "title": "Zwerver J, Bredeweg SW, van den Akker-Scheek I. Prevalence of Jumper's Knee Among Nonelite Athletes From Different Sports: A Cross-Sectional Survey. Am J Sports Med, 2011;39(9):1984-1988",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21737835/"
+          }
+        ]
+      }
     },
     {
       "id": "osgood",
       "name": "Osgood-Schlatter病",
       "red_flag": false,
-      "subregions": ["anterior"],
+      "subregions": [
+        "anterior"
+      ],
       "trauma": "no",
       "sex_note": "男子に多い（8〜18歳で男子4.9・女子2.7/1000人年、約1.8倍。ピーク男子12歳・女子11歳）",
-      "stars_by_age": {"child": 4, "young": null, "middle": 0, "elderly": 0},
+      "stars_by_age": {
+        "child": 4,
+        "young": null,
+        "middle": 0,
+        "elderly": 0
+      },
       "star_basis": "van Leeuwen 2022でOSDの発生率は8〜18歳で3.8/1000人年。同年代の膝症状受診率10.6〜17.4/1000人年で割ると約22〜36%→★4。15〜18歳も対象に含まれるが年齢帯別の割合は出せないため若年はnull。",
-      "findings_support": ["sports"],
-      "findings_against": ["effusion", "fever", "night_pain", "locking"],
+      "findings_support": [
+        "sports"
+      ],
+      "findings_against": [
+        "effusion",
+        "fever",
+        "night_pain",
+        "locking"
+      ],
       "key_points": "脛骨粗面の圧痛・膨隆。両側性も多い。夜間痛や安静時痛が強ければ腫瘍・感染を除外。",
-      "tests": ["膝X線 側面（脛骨粗面の分節化・遊離骨片）", "エコー（脛骨粗面の軟骨・膝蓋腱付着部）"],
+      "tests": [
+        "膝X線 側面（脛骨粗面の分節化・遊離骨片）",
+        "エコー（脛骨粗面の軟骨・膝蓋腱付着部）"
+      ],
       "sources": [
-        {"title": "van Leeuwen GJ, et al. Incidence and management of Osgood-Schlatter disease in general practice: retrospective cohort study. Br J Gen Pract. 2022;72:e301-e306", "url": "https://pubmed.ncbi.nlm.nih.gov/34990396/"}
-      ]
+        {
+          "title": "van Leeuwen GJ, et al. Incidence and management of Osgood-Schlatter disease in general practice: retrospective cohort study. Br J Gen Pract. 2022;72:e301-e306",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34990396/"
+        }
+      ],
+      "age": {
+        "typical": [
+          8,
+          15
+        ],
+        "outside": [
+          7,
+          20
+        ],
+        "basis": "好発年齢は男子12〜15歳、女子8〜12歳。発症時の平均年齢は男子が女子より有意に高い（Hanada 2012）。脛骨粗面の骨端（アポフィーゼ）が成熟する成長期の障害なので、新規発症は成長期以外では事実上考えにくい。ただし成人の遺残小骨障害（unresolved OSD）は別に考える。（※隠す年齢範囲は文献の数値ではなく、成長期の疾患であることからの保守的な目安）",
+        "sources": [
+          {
+            "title": "Hanada M, Koyama H, Takahashi M, Matsuyama Y. Relationship between the clinical findings and radiographic severity in Osgood-Schlatter disease. Open Access J Sports Med, 2012",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24198582/"
+          }
+        ]
+      }
     },
     {
       "id": "slj",
       "name": "Sinding-Larsen-Johansson病",
       "red_flag": false,
-      "subregions": ["anterior"],
+      "subregions": [
+        "anterior"
+      ],
       "trauma": "no",
       "sex_note": "",
-      "stars_by_age": {"child": null, "young": null, "middle": 0, "elderly": 0},
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": 0,
+        "elderly": 0
+      },
       "star_basis": "受診者中の割合を示す文献を確認できなかった。",
-      "findings_support": ["sports"],
-      "findings_against": ["effusion", "fever"],
+      "findings_support": [
+        "sports"
+      ],
+      "findings_against": [
+        "effusion",
+        "fever"
+      ],
       "key_points": "10〜14歳前後。膝蓋骨下極の圧痛。Osgood（脛骨粗面）との違いは圧痛の高さ。膝蓋骨下極の裂離骨折（sleeve fracture）と区別。",
-      "tests": ["膝X線 側面（下極の不整な骨化）", "エコー"],
-      "sources": []
+      "tests": [
+        "膝X線 側面（下極の不整な骨化）",
+        "エコー"
+      ],
+      "sources": [],
+      "age": {
+        "typical": [
+          9,
+          17
+        ],
+        "outside": null,
+        "basis": "スコーピングレビューで主に活動的な9〜17歳の思春期に発生、収載症例の平均12歳。骨格未成熟期の骨端症だが、成人除外を明示した文献は確認できなかったためoutsideはnull。根拠は主に症例報告。",
+        "sources": [
+          {
+            "title": "Wilczyński B, et al. Sinding-Larsen-Johansson disease. Clinical features, imaging findings, conservative treatments and research perspectives: a scoping review. PeerJ, 2024",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/39346060/"
+          }
+        ]
+      }
     },
     {
       "id": "itbs",
       "name": "腸脛靱帯炎（ランナー膝）",
       "red_flag": false,
-      "subregions": ["lateral"],
+      "subregions": [
+        "lateral"
+      ],
       "trauma": "no",
       "sex_note": "",
-      "stars_by_age": {"child": null, "young": null, "middle": null, "elderly": null},
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
       "star_basis": "受診者中の割合を示す文献を確認できなかった。",
-      "findings_support": ["sports"],
-      "findings_against": ["effusion", "locking", "fever"],
+      "findings_support": [
+        "sports"
+      ],
+      "findings_against": [
+        "effusion",
+        "locking",
+        "fever"
+      ],
       "key_points": "ランニング・自転車。大腿骨外側上顆の圧痛、Grasping test・Noble test陽性。関節裂隙の圧痛なら外側半月板を考える。",
-      "tests": ["基本は身体所見で診断", "膝X線 正面・側面（他疾患除外）", "エコー・MRI（難治例）"],
-      "sources": []
+      "tests": [
+        "基本は身体所見で診断",
+        "膝X線 正面・側面（他疾患除外）",
+        "エコー・MRI（難治例）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "文献で好発年齢帯を確認できず。ランナーでの発生率は5-14%（系統的レビュー、対象は18歳以上の成人ランナー）。ランニング障害2,002例の症例対照研究では男性で34歳未満がITBSの危険因子とされたが、年齢分布そのものは確認できなかった。",
+        "sources": [
+          {
+            "title": "van der Worp MP, van der Horst N, de Wijer A, Backx FJ, Nijhuis-van der Sanden MW. Iliotibial band syndrome in runners: a systematic review. Sports Med, 2012;42(11):969-992",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22994651/"
+          },
+          {
+            "title": "Taunton JE, Ryan MB, Clement DB, et al. A retrospective case-control analysis of 2002 running injuries. Br J Sports Med, 2002;36(2):95-101",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/11916889/"
+          }
+        ]
+      }
     },
     {
       "id": "pes_anserine",
       "name": "鵞足炎（鵞足滑液包炎）",
       "red_flag": false,
-      "subregions": ["medial"],
+      "subregions": [
+        "medial"
+      ],
       "trauma": "no",
       "sex_note": "",
-      "stars_by_age": {"child": 0, "young": null, "middle": null, "elderly": null},
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
       "star_basis": "受診者中の割合を示す文献を確認できなかった。",
-      "findings_support": ["sports", "start_pain"],
-      "findings_against": ["fever", "locking"],
+      "findings_support": [
+        "sports",
+        "start_pain"
+      ],
+      "findings_against": [
+        "fever",
+        "locking"
+      ],
       "key_points": "関節裂隙より2〜3横指遠位の脛骨内側の圧痛。OAとの合併が多い。関節裂隙の圧痛との位置の違いで内側半月板・OAと区別。",
-      "tests": ["膝X線 立位正面・側面（OA評価）", "エコー（滑液包の腫大）"],
-      "sources": []
+      "tests": [
+        "膝X線 立位正面・側面（OA評価）",
+        "エコー（滑液包の腫大）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": [
+          50,
+          120
+        ],
+        "outside": null,
+        "basis": "症候性の膝OA患者85人（平均58.9±9.0歳、女性74人）を超音波で調べると、鵞足滑液包炎は約20%にみられ、女性・高齢者に多かった（Uysal 2015）。OA患者を対象とした研究のため選択バイアスがあり、ランナーなど若年例の年齢分布は確認できていない。",
+        "sources": [
+          {
+            "title": "Uysal F, Akbal A, Gökmen F, et al. Prevalence of pes anserine bursitis in symptomatic osteoarthritis patients: an ultrasonographic prospective study. Clin Rheumatol, 2015",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24797774/"
+          }
+        ]
+      }
     },
     {
       "id": "prepatellar_bursitis",
       "name": "膝蓋前滑液包炎",
       "red_flag": false,
-      "subregions": ["anterior"],
+      "subregions": [
+        "anterior"
+      ],
       "trauma": "any",
       "sex_note": "",
-      "stars_by_age": {"child": null, "young": null, "middle": null, "elderly": null},
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
       "star_basis": "受診者中の割合を示す文献を確認できなかった。",
-      "findings_support": ["redness_heat"],
-      "findings_against": ["locking", "giving_way"],
+      "findings_support": [
+        "redness_heat"
+      ],
+      "findings_against": [
+        "locking",
+        "giving_way"
+      ],
       "key_points": "膝立ち作業。膝蓋骨前面の波動性腫脹で、関節内の液貯留（膝蓋跳動）はない。発赤・熱感・発熱があれば化膿性滑液包炎として穿刺。",
-      "tests": ["エコー（滑液包の液貯留、関節内液との区別）", "感染が疑われれば穿刺（グラム染色・培養・細胞数）"],
-      "sources": []
+      "tests": [
+        "エコー（滑液包の液貯留、関節内液との区別）",
+        "感染が疑われれば穿刺（グラム染色・培養・細胞数）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": [
+          40,
+          60
+        ],
+        "outside": null,
+        "basis": "膝蓋前・肘頭滑液包炎の文献レビュー（66文献）で年間発生率は少なくとも10/10万、主に40〜60歳の男性（80%）。化膿性は小児で起こりやすいとの記載もあり、年齢での除外はしない。",
+        "sources": [
+          {
+            "title": "Baumbach SF, et al. Prepatellar and olecranon bursitis: literature review and development of a treatment algorithm. Arch Orthop Trauma Surg, 2014",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24305696/"
+          }
+        ]
+      }
     },
     {
       "id": "baker_cyst",
       "name": "Baker嚢腫（膝窩嚢腫）",
       "red_flag": false,
-      "subregions": ["posterior"],
+      "subregions": [
+        "posterior"
+      ],
       "trauma": "no",
       "sex_note": "",
-      "stars_by_age": {"child": null, "young": null, "middle": null, "elderly": null},
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
       "star_basis": "受診者中の割合を示す文献を確認できなかった。",
-      "findings_support": ["effusion"],
-      "findings_against": ["fever"],
+      "findings_support": [
+        "effusion"
+      ],
+      "findings_against": [
+        "fever"
+      ],
       "key_points": "成人ではOA・半月板損傷など関節内病変に続発。破裂するとふくらはぎの腫脹・痛みでDVTと紛らわしいため、下腿腫脹時はDVTを先に除外。",
-      "tests": ["エコー（嚢腫の確認、破裂の有無）", "下腿腫脹があれば下肢静脈エコー・Dダイマー", "膝X線 立位正面・側面（原因の関節内病変）"],
-      "sources": []
+      "tests": [
+        "エコー（嚢腫の確認、破裂の有無）",
+        "下腿腫脹があれば下肢静脈エコー・Dダイマー",
+        "膝X線 立位正面・側面（原因の関節内病変）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": [
+          [
+            35,
+            70
+          ],
+          [
+            4,
+            7
+          ]
+        ],
+        "outside": null,
+        "basis": "二峰性: 4-7歳と35-70歳に発生のピーク（レビュー抄録）。成人例は半月板損傷・OA・関節リウマチ等の関節内病変に続発することが多く、小児例は関節と交通しない一次性が多い。主ピークとして成人帯を採用。",
+        "sources": [
+          {
+            "title": "Handy JR. Popliteal cysts in adults: a review. Semin Arthritis Rheum, 2001;31(2):108-118",
+            "url": "https://doi.org/10.1053/sarh.2001.27659"
+          },
+          {
+            "title": "Fritschy D, Fasel J, Imbert JC, et al. The popliteal cyst. Knee Surg Sports Traumatol Arthrosc, 2006;14(7):623-628",
+            "url": "https://doi.org/10.1007/s00167-005-0028-z"
+          }
+        ]
+      }
     },
     {
       "id": "ocd",
       "name": "離断性骨軟骨炎（OCD）",
       "red_flag": false,
-      "subregions": ["diffuse", "medial"],
+      "subregions": [
+        "diffuse",
+        "medial"
+      ],
       "trauma": "no",
       "sex_note": "男子に多い（2〜19歳の膝OCDで男15.4・女3.3/10万人、約3.8倍）",
-      "stars_by_age": {"child": 1, "young": 1, "middle": null, "elderly": 0},
+      "stars_by_age": {
+        "child": 1,
+        "young": 1,
+        "middle": null,
+        "elderly": 0
+      },
       "star_basis": "Kessler 2014で膝OCDは2〜19歳で9.5/10万人（12〜19歳11.2）。膝症状受診率10.6〜17.4/1000人年で割ると約0.5〜1%→★1。成人の膝OCDは1.21/10万人年（Weiss 2018）で同様に1%未満→若年★1。",
-      "findings_support": ["sports", "locking", "effusion"],
-      "findings_against": ["fever", "multi_joint"],
+      "findings_support": [
+        "sports",
+        "locking",
+        "effusion"
+      ],
+      "findings_against": [
+        "fever",
+        "multi_joint"
+      ],
       "key_points": "成長期スポーツ選手の漠然とした膝痛。大腿骨内側顆外側部（顆間窩寄り）が好発。遊離体になるとロッキング。",
-      "tests": ["膝X線 正面・側面・顆間窩撮影（トンネル撮影）", "MRI（病変の安定性評価）"],
+      "tests": [
+        "膝X線 正面・側面・顆間窩撮影（トンネル撮影）",
+        "MRI（病変の安定性評価）"
+      ],
       "sources": [
-        {"title": "Kessler JI, et al. The demographics and epidemiology of osteochondritis dissecans of the knee in children and adolescents. Am J Sports Med. 2014", "url": "https://pubmed.ncbi.nlm.nih.gov/24272456/"},
-        {"title": "Weiss JM, et al. Incidence of Osteochondritis Dissecans in Adults. Am J Sports Med. 2018", "url": "https://pubmed.ncbi.nlm.nih.gov/29613834/"}
-      ]
+        {
+          "title": "Kessler JI, et al. The demographics and epidemiology of osteochondritis dissecans of the knee in children and adolescents. Am J Sports Med. 2014",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24272456/"
+        },
+        {
+          "title": "Weiss JM, et al. Incidence of Osteochondritis Dissecans in Adults. Am J Sports Med. 2018",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29613834/"
+        }
+      ],
+      "age": {
+        "typical": [
+          12,
+          19
+        ],
+        "outside": null,
+        "basis": "人口ベースの研究（2〜19歳）で、膝OCDの発生率は12〜19歳11.2/10万で、6〜11歳6.8/10万の3.3倍。男子は女子の約4倍で、2〜5歳の発症はなかった（Kessler 2014）。成人OCDの報告もあるため除外範囲は設けない（Weiss 2018）。",
+        "sources": [
+          {
+            "title": "Kessler JI, Nikizad H, Shea KG, et al. The demographics and epidemiology of osteochondritis dissecans of the knee in children and adolescents. Am J Sports Med, 2014",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24272456/"
+          },
+          {
+            "title": "Weiss JM, Shea KG, Jacobs JC Jr, et al. Incidence of osteochondritis dissecans in adults. Am J Sports Med, 2018",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/29613834/"
+          }
+        ]
+      }
     },
     {
       "id": "sonk",
       "name": "大腿骨内顆骨壊死（SONK／軟骨下脆弱性骨折 SIFK）",
       "red_flag": false,
-      "subregions": ["medial"],
+      "subregions": [
+        "medial"
+      ],
       "trauma": "no",
       "sex_note": "",
-      "stars_by_age": {"child": 0, "young": 0, "middle": null, "elderly": null},
+      "stars_by_age": {
+        "child": 0,
+        "young": 0,
+        "middle": null,
+        "elderly": null
+      },
       "star_basis": "受診者中の割合を示す文献を確認できなかった。",
-      "findings_support": ["night_pain", "effusion"],
-      "findings_against": ["fever", "multi_joint"],
+      "findings_support": [
+        "night_pain",
+        "effusion"
+      ],
+      "findings_against": [
+        "fever",
+        "multi_joint"
+      ],
       "key_points": "中高年女性に誘因なく急に起こる強い内側痛、夜間痛。初期X線は正常なことが多い。変性半月板断裂（特に内側半月板後根断裂）との関連。",
-      "tests": ["膝X線 立位正面・側面（初期は正常、進行で内顆の扁平化・透亮像）", "MRI（軟骨下の骨髄浮腫・低信号線）"],
-      "sources": []
+      "tests": [
+        "膝X線 立位正面・側面（初期は正常、進行で内顆の扁平化・透亮像）",
+        "MRI（軟骨下の骨髄浮腫・低信号線）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": [
+          60,
+          120
+        ],
+        "outside": null,
+        "basis": "レビューで60歳以上に最も多く、女性に多い。発生率は50歳超で3.4%、65歳超で9.4%と報告されている。",
+        "sources": [
+          {
+            "title": "Karim AR, Cherian JJ, Jauregui JJ, Pierce T, Mont MA. Osteonecrosis of the knee: review. Ann Transl Med, 2015",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4293480"
+          }
+        ]
+      }
     },
     {
       "id": "cppd",
       "name": "偽痛風（CPPD結晶沈着症）",
       "red_flag": false,
-      "subregions": ["diffuse"],
+      "subregions": [
+        "diffuse"
+      ],
       "trauma": "no",
       "sex_note": "",
-      "stars_by_age": {"child": 0, "young": 0, "middle": null, "elderly": null},
+      "stars_by_age": {
+        "child": 0,
+        "young": 0,
+        "middle": null,
+        "elderly": null
+      },
       "star_basis": "受診者中の割合を示す文献を確認できなかった。",
-      "findings_support": ["effusion", "redness_heat", "fever", "night_pain"],
-      "findings_against": ["pop", "sports"],
+      "findings_support": [
+        "effusion",
+        "redness_heat",
+        "fever",
+        "night_pain"
+      ],
+      "findings_against": [
+        "pop",
+        "sports"
+      ],
       "key_points": "高齢者の急性単関節炎で膝が最多部位の一つ。発熱・CRP高値で化膿性関節炎と区別がつかないため、結晶を確認しても培養は必ず提出（併存あり）。",
-      "tests": ["関節穿刺（細胞数・分画、偏光顕微鏡で結晶、グラム染色・培養）", "膝X線 正面・側面（半月板の石灰化）", "血液検査 CBC・CRP"],
-      "sources": []
+      "tests": [
+        "関節穿刺（細胞数・分画、偏光顕微鏡で結晶、グラム染色・培養）",
+        "膝X線 正面・側面（半月板の石灰化）",
+        "血液検査 CBC・CRP"
+      ],
+      "sources": [],
+      "age": {
+        "typical": [
+          60,
+          120
+        ],
+        "outside": null,
+        "basis": "英国地域住民1,727人（平均63.7歳）の膝X線で軟骨石灰化の粗有病率7.0%、年齢と強く関連し性差なし。CPPDは高齢と関連し60歳未満では稀（Rosenthal 2021）。60歳未満の発症では家族性や代謝性疾患（副甲状腺機能亢進症・ヘモクロマトーシス・低Mg血症等）を考える。",
+        "sources": [
+          {
+            "title": "Neame RL, Carr AJ, Muir K, Doherty M. UK community prevalence of knee chondrocalcinosis: evidence that correlation with osteoarthritis is through a shared association with osteophyte. Ann Rheum Dis, 2003;62(6):513-518",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/12759286/"
+          },
+          {
+            "title": "Rosenthal AK, Ryan LM. Calcium Pyrophosphate Deposition Disease. N Engl J Med, 2016;374:2575-2584",
+            "url": "https://doi.org/10.1056/NEJMra1511117"
+          },
+          {
+            "title": "Rosenthal AK. Calcium pyrophosphate deposition and crowned dens syndrome. Cleve Clin J Med, 2021;88(4):206-207",
+            "url": "https://www.ccjm.org/content/88/4/206"
+          }
+        ]
+      }
     },
     {
       "id": "gout",
       "name": "痛風",
       "red_flag": false,
-      "subregions": ["diffuse"],
+      "subregions": [
+        "diffuse"
+      ],
       "trauma": "no",
       "sex_note": "",
-      "stars_by_age": {"child": 0, "young": null, "middle": null, "elderly": null},
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
       "star_basis": "受診者中の割合を示す文献を確認できなかった。",
-      "findings_support": ["effusion", "redness_heat", "night_pain"],
-      "findings_against": ["pop", "sports"],
+      "findings_support": [
+        "effusion",
+        "redness_heat",
+        "night_pain"
+      ],
+      "findings_against": [
+        "pop",
+        "sports"
+      ],
       "key_points": "中年男性、母趾MTP関節の発作歴。発作中の血清尿酸値は正常なことがあり、確定は関節液の尿酸塩結晶。感染との区別に培養も提出。",
-      "tests": ["関節穿刺（偏光顕微鏡で結晶、細胞数、グラム染色・培養）", "血液検査 尿酸・CRP・CBC・腎機能"],
-      "sources": []
+      "tests": [
+        "関節穿刺（偏光顕微鏡で結晶、細胞数、グラム染色・培養）",
+        "血液検査 尿酸・CRP・CBC・腎機能"
+      ],
+      "sources": [],
+      "age": {
+        "typical": [
+          30,
+          120
+        ],
+        "outside": null,
+        "basis": "英国CPRDのデータでは、痛風は20歳未満では稀で、発生率は男女とも80〜84歳で最も高かった。男女比のピークは30〜34歳（15.4倍）で、男性は若年から、女性は高齢で増える（Kuo 2015）。日本のレセプト解析では、尿酸降下薬の処方頻度が30歳代1.2%から60歳代9.8%へ上昇した（箱田 2013、高尿酸血症の治療の指標であって痛風の発症年齢ではない）。下限30歳は男性を想定した目安。",
+        "sources": [
+          {
+            "title": "Kuo CF, Grainge MJ, Mallen C, Zhang W, Doherty M. Rising burden of gout in the UK but continuing suboptimal management: a nationwide population study. Ann Rheum Dis, 2015",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24431399/"
+          },
+          {
+            "title": "箱田雅之, 冨田眞佐子. 高尿酸血症頻度の年齢差の原因―診療報酬明細書（レセプト）データベースを利用した解析. 痛風と核酸代謝 37(2):111-116, 2013",
+            "url": "https://www.jstage.jst.go.jp/article/gnam/37/2/37_111/_article/-char/ja"
+          }
+        ]
+      }
     },
     {
       "id": "ra",
       "name": "関節リウマチ（小児では若年性特発性関節炎）",
       "red_flag": false,
-      "subregions": ["diffuse"],
+      "subregions": [
+        "diffuse"
+      ],
       "trauma": "no",
       "sex_note": "",
-      "stars_by_age": {"child": null, "young": null, "middle": null, "elderly": null},
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
       "star_basis": "受診者中の割合を示す文献を確認できなかった。",
-      "findings_support": ["multi_joint", "effusion", "redness_heat"],
-      "findings_against": ["pop", "sports"],
+      "findings_support": [
+        "multi_joint",
+        "effusion",
+        "redness_heat"
+      ],
+      "findings_against": [
+        "pop",
+        "sports"
+      ],
       "key_points": "朝のこわばり、手指・手関節など他関節の対称性腫脹。小児の6週以上続く膝の腫脹（跛行あり、痛みは軽いことも）はJIAを考える。",
-      "tests": ["血液検査 CRP・ESR・RF・抗CCP抗体・CBC（小児は抗核抗体も）", "関節穿刺（細胞数・結晶・培養で他疾患除外）", "手・足のX線、関節エコー"],
-      "sources": []
+      "tests": [
+        "血液検査 CRP・ESR・RF・抗CCP抗体・CBC（小児は抗核抗体も）",
+        "関節穿刺（細胞数・結晶・培養で他疾患除外）",
+        "手・足のX線、関節エコー"
+      ],
+      "sources": [],
+      "age": {
+        "typical": [
+          50,
+          69
+        ],
+        "outside": null,
+        "basis": "日本のNinJaデータベース（早期RA）で発症の平均年齢は55.8歳（2002-03）→59.9歳（2012-13）と上昇し、発症ピークは50歳代から60歳代へ移動。小児の若年性特発性関節炎（JIA）はILAR分類で16歳未満発症と定義される（Petty RE, et al. J Rheumatol 2004;31:390-392。PubMed URLは未確認）。",
+        "sources": [
+          {
+            "title": "Kato E, et al. The age at onset of rheumatoid arthritis is increasing in Japan: a nationwide database study. Int J Rheum Dis, 2017",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28205423/"
+          }
+        ]
+      }
     },
     {
       "id": "tibial_plateau_fx",
       "name": "脛骨プラトー骨折",
       "red_flag": false,
-      "subregions": ["lateral", "medial", "diffuse"],
+      "subregions": [
+        "lateral",
+        "medial",
+        "diffuse"
+      ],
       "trauma": "yes",
       "sex_note": "",
-      "stars_by_age": {"child": null, "young": null, "middle": null, "elderly": null},
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
       "star_basis": "膝の受診者中の割合を示す文献を確認できなかった。",
-      "findings_support": ["cannot_bear", "effusion"],
-      "findings_against": ["fever"],
+      "findings_support": [
+        "cannot_bear",
+        "effusion"
+      ],
+      "findings_against": [
+        "fever"
+      ],
       "key_points": "若年は高エネルギー、高齢者は転倒程度でも起こる（外側プラトーの陥没）。X線で見落としやすく、関節血症で脂肪滴があれば骨折を疑う。コンパートメント症候群に注意。",
-      "tests": ["膝X線 正面・側面・両斜位", "CT（骨折型・陥没の評価）", "穿刺した場合は脂肪滴の有無"],
-      "sources": []
+      "tests": [
+        "膝X線 正面・側面・両斜位",
+        "CT（骨折型・陥没の評価）",
+        "穿刺した場合は脂肪滴の有無"
+      ],
+      "sources": [],
+      "age": {
+        "typical": [
+          40,
+          70
+        ],
+        "outside": null,
+        "basis": "デンマークの人口ベース研究（355例、発生率10.3/10万人年）で平均52.6±18.3歳。50歳未満は男性に多く、50歳以上では女性の発生率が著明に上昇（若年男性の高エネルギー外傷と高齢女性の脆弱性骨折の二相性）。最多は40-60歳との引用あり（二次資料）。上限70歳は平均±1SDからの設定。",
+        "sources": [
+          {
+            "title": "Elsoe R, Larsen P, Nielsen NP, Swenne J, Rasmussen S, Ostgaard SE. Population-Based Epidemiology of Tibial Plateau Fractures. Orthopedics, 2015;38(9):e780-e786",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26375535/"
+          }
+        ]
+      }
     },
     {
       "id": "patella_fx",
       "name": "膝蓋骨骨折",
       "red_flag": false,
-      "subregions": ["anterior"],
+      "subregions": [
+        "anterior"
+      ],
       "trauma": "yes",
       "sex_note": "",
-      "stars_by_age": {"child": 2, "young": null, "middle": null, "elderly": null},
+      "stars_by_age": {
+        "child": 2,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
       "star_basis": "Michaleff 2017（英国一般診療、3〜19歳の膝の受診550件）で膝蓋骨骨折のコードが1.3%→★2（年齢範囲が3〜19歳のため小児帯に当てはめた）。成人の受診者中の割合は確認できなかった。",
-      "findings_support": ["cannot_bear", "effusion"],
-      "findings_against": ["fever"],
+      "findings_support": [
+        "cannot_bear",
+        "effusion"
+      ],
+      "findings_against": [
+        "fever"
+      ],
       "key_points": "膝前面の直達外力・転倒。SLR（自動伸展）の可否で伸展機構の連続性を判断。分裂膝蓋骨（上外側）と区別。小児は下極のsleeve fractureに注意。",
-      "tests": ["膝X線 正面・側面・膝蓋骨軸位", "CT（粉砕例）"],
+      "tests": [
+        "膝X線 正面・側面・膝蓋骨軸位",
+        "CT（粉砕例）"
+      ],
       "sources": [
-        {"title": "Michaleff ZA, et al. BMC Musculoskelet Disord. 2017;18:239", "url": "https://pubmed.ncbi.nlm.nih.gov/28576118/"}
-      ]
+        {
+          "title": "Michaleff ZA, et al. BMC Musculoskelet Disord. 2017;18:239",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28576118/"
+        }
+      ],
+      "age": {
+        "typical": [
+          [
+            60,
+            80
+          ],
+          [
+            10,
+            19
+          ]
+        ],
+        "outside": null,
+        "basis": "二峰性。デンマークの756骨折では平均54±21歳（男性46歳、女性61歳）。発生率は60〜80歳の女性で最大（約36/10万/年）、男性は10〜19歳でピーク（約15.4/10万/年）だった。主ピークとして高齢女性を採用した（Larsen 2016）。",
+        "sources": [
+          {
+            "title": "Larsen P, Court-Brown CM, Vedel JO, Vistrup S, Elsoe R. Incidence and epidemiology of patellar fractures. Orthopedics, 2016",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/27536953/"
+          }
+        ]
+      }
     },
     {
       "id": "growing_pains",
       "name": "成長痛",
       "red_flag": false,
-      "subregions": ["posterior", "diffuse"],
+      "subregions": [
+        "posterior",
+        "diffuse"
+      ],
       "trauma": "no",
       "sex_note": "",
-      "stars_by_age": {"child": null, "young": 0, "middle": 0, "elderly": 0},
+      "stars_by_age": {
+        "child": null,
+        "young": 0,
+        "middle": 0,
+        "elderly": 0
+      },
       "star_basis": "受診者中の割合を示す文献を確認できなかった。",
-      "findings_support": ["night_pain"],
-      "findings_against": ["effusion", "redness_heat", "fever", "limp_child", "cannot_bear"],
+      "findings_support": [
+        "night_pain"
+      ],
+      "findings_against": [
+        "effusion",
+        "redness_heat",
+        "fever",
+        "limp_child",
+        "cannot_bear"
+      ],
       "key_points": "幼児〜学童の両側性で夕方〜夜間の痛み、翌朝には消失し日中は元気。片側性・持続痛・跛行・腫脹・発熱があれば成長痛と言わず腫瘍・感染・股関節疾患を除外。",
-      "tests": ["典型例は経過観察", "非典型例は膝・大腿骨X線、股関節X線、血液検査 CBC・CRP・ESR"],
-      "sources": []
+      "tests": [
+        "典型例は経過観察",
+        "非典型例は膝・大腿骨X線、股関節X線、血液検査 CBC・CRP・ESR"
+      ],
+      "sources": [],
+      "age": {
+        "typical": [
+          3,
+          12
+        ],
+        "outside": [
+          2,
+          18
+        ],
+        "basis": "小児リウマチ誌のレビューで主に3〜12歳、ピーク約6歳。通常は小児期後期に消失し、思春期までにほとんどの発作が消える。厳密な年齢下限・上限は文献に明記されていないため、outsideは広めの2〜18歳（成人には考えない）とした。（※隠す年齢範囲は文献の数値ではなく、成長期の疾患であることからの保守的な目安）",
+        "sources": [
+          {
+            "title": "Uziel Y, Hashkes PJ. Growing pains in children. Pediatr Rheumatol Online J, 2007",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1869025/"
+          }
+        ]
+      }
     },
     {
       "id": "septic_arthritis",
       "name": "化膿性膝関節炎",
       "red_flag": true,
-      "subregions": ["diffuse"],
+      "subregions": [
+        "diffuse"
+      ],
       "trauma": "any",
       "sex_note": "50歳以上の韓国全国データでは女性4.2・男性2.7/10万人（2012年）",
-      "stars_by_age": {"child": 1, "young": 1, "middle": 1, "elderly": 1},
+      "stars_by_age": {
+        "child": 1,
+        "young": 1,
+        "middle": 1,
+        "elderly": 1
+      },
       "star_basis": "アイスランド全国調査で化膿性関節炎（全関節・全年齢）は7.1/10万人、50歳以上の膝に限ると2.7〜4.2/10万人（Lee 2015）。仮に全例が膝でも膝症状受診率（小児10.6〜17.4、成人21〜35/1000人年）の1%未満→全年齢★1。",
-      "findings_support": ["fever", "redness_heat", "effusion", "night_pain", "cannot_bear"],
-      "findings_against": ["sports", "pop"],
+      "findings_support": [
+        "fever",
+        "redness_heat",
+        "effusion",
+        "night_pain",
+        "cannot_bear"
+      ],
+      "findings_against": [
+        "sports",
+        "pop"
+      ],
       "key_points": "発熱がないことも多い（発熱の感度57%）。関節内注射後・糖尿病・高齢者でリスク上昇。関節液白血球>5万/μLで陽性尤度比7.7、>10万/μLで28（Margaretten 2007）。結晶が見つかっても感染は否定できない。",
-      "tests": ["関節穿刺（抗菌薬投与前に。細胞数・分画、グラム染色、培養、結晶）", "血液検査 CBC・CRP・ESR、血液培養2セット", "膝X線 正面・側面", "小児は股関節も含めエコー"],
+      "tests": [
+        "関節穿刺（抗菌薬投与前に。細胞数・分画、グラム染色、培養、結晶）",
+        "血液検査 CBC・CRP・ESR、血液培養2セット",
+        "膝X線 正面・側面",
+        "小児は股関節も含めエコー"
+      ],
       "sources": [
-        {"title": "Margaretten ME, et al. Does this adult patient have septic arthritis? JAMA. 2007", "url": "https://pubmed.ncbi.nlm.nih.gov/17405973/"},
-        {"title": "Geirsson AJ, et al. Septic arthritis in Iceland 1990-2002: increasing incidence due to iatrogenic infections. Ann Rheum Dis. 2008", "url": "https://pubmed.ncbi.nlm.nih.gov/17901088/"},
-        {"title": "Lee YK, Kim KC, Ha YC. Utilization of Hyaluronate and Incidence of Septic Knee Arthritis in Adults: Results from the Korean National Claim Registry. Clin Orthop Surg. 2015", "url": "https://pubmed.ncbi.nlm.nih.gov/26330953/"}
-      ]
+        {
+          "title": "Margaretten ME, et al. Does this adult patient have septic arthritis? JAMA. 2007",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17405973/"
+        },
+        {
+          "title": "Geirsson AJ, et al. Septic arthritis in Iceland 1990-2002: increasing incidence due to iatrogenic infections. Ann Rheum Dis. 2008",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17901088/"
+        },
+        {
+          "title": "Lee YK, Kim KC, Ha YC. Utilization of Hyaluronate and Incidence of Septic Knee Arthritis in Adults: Results from the Korean National Claim Registry. Clin Orthop Surg. 2015",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26330953/"
+        }
+      ],
+      "age": {
+        "typical": [
+          60,
+          120
+        ],
+        "outside": null,
+        "basis": "ニュージーランドの人口ベース研究（15歳以上、自己関節248例）で発生率12.0/10万人年、平均60歳（16-97歳）、年齢とともに上昇し90歳超で73.4/10万人年。膝は21%。小児にも別のピークがあり（豪州で約10/10万人年）、全年齢で考慮すべき疾患のため outside は設定しない。",
+        "sources": [
+          {
+            "title": "Kennedy N, Chambers ST, Nolan I, et al. Native Joint Septic Arthritis: Epidemiology, Clinical Features, and Microbiological Causes in a New Zealand Population. J Rheumatol, 2015;42(12):2392-2397",
+            "url": "https://www.jrheum.org/content/42/12/2392"
+          }
+        ]
+      }
     },
     {
       "id": "bone_tumor",
       "name": "骨腫瘍（小児〜若年の骨肉腫・Ewing肉腫、成人の転移性骨腫瘍・骨髄腫）",
       "red_flag": true,
-      "subregions": ["diffuse", "anterior", "medial", "lateral", "posterior"],
+      "subregions": [
+        "diffuse",
+        "anterior",
+        "medial",
+        "lateral",
+        "posterior"
+      ],
       "trauma": "no",
       "sex_note": "",
-      "stars_by_age": {"child": null, "young": null, "middle": null, "elderly": null},
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
       "star_basis": "骨肉腫は膝周囲（大腿骨遠位・脛骨近位）が好発部位だが、膝症状の受診者中の割合に換算できる数値を一次情報で確認できなかった。",
-      "findings_support": ["night_pain", "effusion"],
-      "findings_against": ["pop"],
+      "findings_support": [
+        "night_pain",
+        "effusion"
+      ],
+      "findings_against": [
+        "pop"
+      ],
       "key_points": "運動と無関係な持続痛・夜間痛、骨幹端の腫瘤。「成長痛」「Osgood」「捻挫」として経過観察されやすい。片側で長引く膝痛はまずX線を撮る。成人ではがん既往を確認。",
-      "tests": ["膝X線 正面・側面（大腿骨遠位・脛骨近位の骨幹端まで含める）", "MRI（造影）", "血液検査 CBC・CRP・ALP・LDH（成人はCa・蛋白分画も）", "疑えば穿刺・生検はせず骨軟部腫瘍専門施設へ紹介"],
-      "sources": []
+      "tests": [
+        "膝X線 正面・側面（大腿骨遠位・脛骨近位の骨幹端まで含める）",
+        "MRI（造影）",
+        "血液検査 CBC・CRP・ALP・LDH（成人はCa・蛋白分画も）",
+        "疑えば穿刺・生検はせず骨軟部腫瘍専門施設へ紹介"
+      ],
+      "sources": [],
+      "age": {
+        "typical": [
+          [
+            10,
+            24
+          ],
+          [
+            60,
+            120
+          ]
+        ],
+        "outside": null,
+        "basis": "二峰性。骨肉腫は思春期に主ピークがあり、60歳以上に第2ピークがある（SEER 3,482例、Mirabello 2009）。Ewing肉腫も主に19歳以下の小児・思春期に多い（Esiashvili 2008）。成人では骨髄腫が診断時年齢中央値69歳で65〜74歳に最も多く（SEER 2019〜2023）、転移性骨腫瘍も中高年に多い（転移性骨腫瘍の年齢データは今回確認していない）。見逃すと危険なため除外範囲は設けない。",
+        "sources": [
+          {
+            "title": "Mirabello L, Troisi RJ, Savage SA. Osteosarcoma incidence and survival rates from 1973 to 2004: data from the Surveillance, Epidemiology, and End Results Program. Cancer, 2009",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/19197972/"
+          },
+          {
+            "title": "Esiashvili N, Goodman M, Marcus RB. Changes in incidence and survival of Ewing sarcoma patients over the past 3 decades: SEER data. J Pediatr Hematol Oncol, 2008",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/18525458/"
+          },
+          {
+            "title": "National Cancer Institute SEER. Cancer Stat Facts: Myeloma (SEER 21, 2019-2023)",
+            "url": "https://seer.cancer.gov/statfacts/html/mulmy.html"
+          }
+        ]
+      }
     },
     {
       "id": "hip_referred",
       "name": "股関節疾患からの関連痛（小児: 大腿骨頭すべり症・ペルテス病／成人: 変形性股関節症・大腿骨頸部骨折など）",
       "red_flag": true,
-      "subregions": ["anterior", "medial", "diffuse"],
+      "subregions": [
+        "anterior",
+        "medial",
+        "diffuse"
+      ],
       "trauma": "any",
       "sex_note": "大腿骨頭すべり症は男子に多い（日本の10〜14歳で男子2.22・女子0.76/10万人以上、約3倍）",
-      "stars_by_age": {"child": 1, "young": null, "middle": null, "elderly": null},
+      "stars_by_age": {
+        "child": 1,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
       "star_basis": "日本の大腿骨頭すべり症の年間発生率は10〜14歳で男子2.22・女子0.76/10万人以上（Noguchi 2002。米国では9〜16歳で10.8/10万人、Lehmann 2006）。膝症状受診率10.6〜17.4/1000人年の1%未満→小児★1。ペルテス病・成人の関連痛は換算できる数値を確認できなかった。",
-      "findings_support": ["limp_child", "cannot_bear", "night_pain"],
-      "findings_against": ["effusion", "locking", "pop"],
+      "findings_support": [
+        "limp_child",
+        "cannot_bear",
+        "night_pain"
+      ],
+      "findings_against": [
+        "effusion",
+        "locking",
+        "pop"
+      ],
       "key_points": "膝に所見がない膝痛は股関節を診る。股関節の内旋制限、Drehmann徴候（屈曲で外旋）。肥満の思春期男子の膝痛・跛行はすべり症を疑い、荷重を控えさせる。",
-      "tests": ["両股関節X線 正面・ラウエンシュタイン（側面）", "股関節エコー（液貯留）", "MRI（初期のペルテス病・すべり症前段階）"],
+      "tests": [
+        "両股関節X線 正面・ラウエンシュタイン（側面）",
+        "股関節エコー（液貯留）",
+        "MRI（初期のペルテス病・すべり症前段階）"
+      ],
       "sources": [
-        {"title": "Noguchi Y, et al. Epidemiology and demographics of slipped capital femoral epiphysis in Japan: a multicenter study by the Japanese Paediatric Orthopaedic Association. J Orthop Sci. 2002", "url": "https://pubmed.ncbi.nlm.nih.gov/12486462/"},
-        {"title": "Lehmann CL, et al. The epidemiology of slipped capital femoral epiphysis: an update. J Pediatr Orthop. 2006", "url": "https://pubmed.ncbi.nlm.nih.gov/16670536/"}
-      ]
+        {
+          "title": "Noguchi Y, et al. Epidemiology and demographics of slipped capital femoral epiphysis in Japan: a multicenter study by the Japanese Paediatric Orthopaedic Association. J Orthop Sci. 2002",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12486462/"
+        },
+        {
+          "title": "Lehmann CL, et al. The epidemiology of slipped capital femoral epiphysis: an update. J Pediatr Orthop. 2006",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16670536/"
+        }
+      ],
+      "age": {
+        "typical": [
+          4,
+          16
+        ],
+        "outside": null,
+        "basis": "二峰性。typicalは小児ピーク（ペルテス病は4〜8歳・平均6.5歳、大腿骨頭すべり症は男児約12.7〜13.5歳・女児約11.2〜12歳）。成人では変形性股関節症（中年以降で年齢とともに増加）・大腿骨頸部骨折（高齢者）による関連痛があり、成人側の好発年齢の数値は今回一次情報で確認できなかった。見逃すと危険なためoutsideはnull。",
+        "sources": [
+          {
+            "title": "Loder RT, Skopelja EN. The epidemiology and demographics of Legg-Calvé-Perthes' disease. ISRN Orthop, 2011",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24977062/"
+          },
+          {
+            "title": "Novais EN, Millis MB. Slipped capital femoral epiphysis: prevalence, pathogenesis, and natural history. Clin Orthop Relat Res, 2012",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/23054509/"
+          }
+        ]
+      }
     },
     {
       "id": "dvt",
       "name": "深部静脈血栓症（DVT）",
       "red_flag": true,
-      "subregions": ["posterior"],
+      "subregions": [
+        "posterior"
+      ],
       "trauma": "any",
       "sex_note": "",
-      "stars_by_age": {"child": 0, "young": null, "middle": null, "elderly": null},
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
       "star_basis": "膝症状の受診者中の割合を示す文献を確認できなかった。",
-      "findings_support": ["calf_swelling"],
-      "findings_against": ["locking", "pop"],
+      "findings_support": [
+        "calf_swelling"
+      ],
+      "findings_against": [
+        "locking",
+        "pop"
+      ],
       "key_points": "膝窩〜ふくらはぎの痛み・腫脹。術後・ギプス固定・長期臥床・がん・経口避妊薬がリスク。Baker嚢腫破裂と紛らわしく、下腿腫脹ではDVTを先に除外する。",
-      "tests": ["Wellsスコアで検査前確率を評価", "Dダイマー", "下肢静脈エコー（膝窩静脈を含む）"],
-      "sources": []
+      "tests": [
+        "Wellsスコアで検査前確率を評価",
+        "Dダイマー",
+        "下肢静脈エコー（膝窩静脈を含む）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": [
+          60,
+          120
+        ],
+        "outside": null,
+        "basis": "米国Olmsted Countyの25年人口ベース研究（2,218例）でVTE発生率は117/10万人年、男女とも年齢とともに著明に上昇。日本のCOMMAND VTE Registry（3,027例）の平均年齢は67歳（院外発症66.9±15.5歳）。若年でも術後・妊娠・経口避妊薬・血栓性素因等で発生するため outside は設定しない。",
+        "sources": [
+          {
+            "title": "Silverstein MD, Heit JA, Mohr DN, et al. Trends in the incidence of deep vein thrombosis and pulmonary embolism: a 25-year population-based study. Arch Intern Med, 1998;158(6):585-593",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/9521222/"
+          },
+          {
+            "title": "Nishimoto Y, et al. Clinical Characteristics and Outcomes of Venous Thromboembolisms According to an Out-of-Hospital vs. In-Hospital Onset: From the COMMAND VTE Registry. Circ J, 2019;83(6)",
+            "url": "https://www.jstage.jst.go.jp/article/circj/83/6/83_CJ-18-1314/_html/-char/en"
+          }
+        ]
+      }
     },
     {
       "id": "knee_dislocation_vascular",
       "name": "膝関節脱臼に伴う膝窩動脈損傷",
       "red_flag": true,
-      "subregions": ["posterior", "diffuse"],
+      "subregions": [
+        "posterior",
+        "diffuse"
+      ],
       "trauma": "yes",
       "sex_note": "",
-      "stars_by_age": {"child": null, "young": null, "middle": null, "elderly": null},
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
       "star_basis": "膝症状の受診者中の割合を示す文献を確認できなかった。",
-      "findings_support": ["cannot_bear", "giving_way", "effusion"],
-      "findings_against": ["fever"],
+      "findings_support": [
+        "cannot_bear",
+        "giving_way",
+        "effusion"
+      ],
+      "findings_against": [
+        "fever"
+      ],
       "key_points": "自然整復されて来院すると単なる多靱帯損傷に見える。2本以上の靱帯の高度不安定性は脱臼後とみなし、足背・後脛骨動脈の拍動、ABI、腓骨神経を必ず確認する。",
-      "tests": ["足背・後脛骨動脈の触知とABI（0.9未満なら血管評価）", "CTアンギオグラフィ", "膝X線 正面・側面", "腓骨神経の評価"],
-      "sources": []
+      "tests": [
+        "足背・後脛骨動脈の触知とABI（0.9未満なら血管評価）",
+        "CTアンギオグラフィ",
+        "膝X線 正面・側面",
+        "腓骨神経の評価"
+      ],
+      "sources": [],
+      "age": {
+        "typical": [
+          20,
+          45
+        ],
+        "outside": null,
+        "basis": "膝関節脱臼のシステマティックレビュー（年齢を報告した15研究756人）では平均年齢31.6歳（12〜78歳）、血管損傷の頻度は18%（862人中）だった（Medina 2014）。typicalの幅は平均年齢と範囲からの目安。見逃すと危険なため除外範囲は設けない。",
+        "sources": [
+          {
+            "title": "Medina O, Arom GA, Yeranosian MG, Petrigliano FA, McAllister DR. Vascular and nerve injury after knee dislocation: a systematic review. Clin Orthop Relat Res, 2014",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24554457/"
+          }
+        ]
+      }
     },
     {
       "id": "fracture_redflag",
       "name": "骨折（高齢者の軽微外傷・脆弱性骨折、大腿骨遠位部骨折を含む）",
       "red_flag": true,
-      "subregions": ["diffuse", "medial", "lateral", "anterior"],
+      "subregions": [
+        "diffuse",
+        "medial",
+        "lateral",
+        "anterior"
+      ],
       "trauma": "yes",
       "sex_note": "",
-      "stars_by_age": {"child": null, "young": null, "middle": null, "elderly": null},
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
       "star_basis": "膝外傷の受診者中に骨折が占める割合を年齢帯別に示す一次情報を確認できなかった（小児の膝蓋骨骨折は別項目）。",
-      "findings_support": ["cannot_bear", "effusion"],
-      "findings_against": ["fever"],
+      "findings_support": [
+        "cannot_bear",
+        "effusion"
+      ],
+      "findings_against": [
+        "fever"
+      ],
       "key_points": "Ottawa knee rule（55歳以上、腓骨頭の圧痛、膝蓋骨のみの圧痛、90度屈曲不能、受傷直後と診察時に4歩荷重できない）でX線の要否を判断（Stiell 1997で感度1.0）。高齢者は転倒程度でも骨折し、初回X線陰性でも荷重困難が続けばCT・MRI。",
-      "tests": ["膝X線 正面・側面（必要に応じ両斜位・膝蓋骨軸位）", "X線陰性でも荷重困難が続けばCTまたはMRI"],
+      "tests": [
+        "膝X線 正面・側面（必要に応じ両斜位・膝蓋骨軸位）",
+        "X線陰性でも荷重困難が続けばCTまたはMRI"
+      ],
       "sources": [
-        {"title": "Stiell IG, et al. Implementation of the Ottawa Knee Rule for the use of radiography in acute knee injuries. JAMA. 1997", "url": "https://pubmed.ncbi.nlm.nih.gov/9403421/"}
-      ]
+        {
+          "title": "Stiell IG, et al. Implementation of the Ottawa Knee Rule for the use of radiography in acute knee injuries. JAMA. 1997",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9403421/"
+        }
+      ],
+      "age": {
+        "typical": [
+          65,
+          120
+        ],
+        "outside": null,
+        "basis": "大腿骨遠位部骨折2,165例（スイスAO記録1980-89）で二峰性：若年男性（約20歳、交通・スポーツ）と高齢女性（約70歳、自宅転倒・骨粗鬆症）。typicalは本項目の主眼である高齢者の脆弱性骨折側のピーク。若年の高エネルギー外傷もあり、見逃すと危険なためoutsideはnull。",
+        "sources": [
+          {
+            "title": "Martinet O, et al. The epidemiology of fractures of the distal femur. Injury, 2000",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/11052383/"
+          }
+        ]
+      }
     },
     {
       "id": "extensor_rupture",
       "name": "伸展機構断裂（大腿四頭筋腱断裂・膝蓋腱断裂）",
       "red_flag": true,
-      "subregions": ["anterior"],
+      "subregions": [
+        "anterior"
+      ],
       "trauma": "yes",
       "sex_note": "男性に多い（英国の単施設研究で男女比7.8:1）",
-      "stars_by_age": {"child": 0, "young": null, "middle": 1, "elderly": 1},
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 1,
+        "elderly": 1
+      },
       "star_basis": "英国単施設で大腿四頭筋腱・膝蓋腱断裂の年間発生率は4.6〜8.3/10万人、年齢中央値63歳（Murugesan 2025）。成人の膝症状受診率21〜35/1000人年の1%未満→中年・高齢★1。若年は年齢別の数値なし。",
-      "findings_support": ["cannot_bear", "pop", "effusion"],
-      "findings_against": ["fever", "locking"],
+      "findings_support": [
+        "cannot_bear",
+        "pop",
+        "effusion"
+      ],
+      "findings_against": [
+        "fever",
+        "locking"
+      ],
       "key_points": "つまずき・踏ん張りで受傷し、自動伸展（SLR）ができない。膝蓋骨上（四頭筋腱）または下（膝蓋腱）の陥凹。関節血症で痛みが強いと「捻挫」と誤認されやすい。腎不全・ステロイド・フルオロキノロン使用歴を確認。",
-      "tests": ["自動SLR・伸展保持の可否", "膝X線 側面（膝蓋骨高位＝膝蓋腱断裂、低位＝四頭筋腱断裂）", "エコー（断裂部の確認）", "MRI"],
+      "tests": [
+        "自動SLR・伸展保持の可否",
+        "膝X線 側面（膝蓋骨高位＝膝蓋腱断裂、低位＝四頭筋腱断裂）",
+        "エコー（断裂部の確認）",
+        "MRI"
+      ],
       "sources": [
-        {"title": "Murugesan T, et al. The Profound Impact of the COVID-19 Pandemic on the Epidemiology of Quadriceps and Patellar Tendon Ruptures: Insights From a Single Trust in the United Kingdom. Cureus. 2025", "url": "https://pubmed.ncbi.nlm.nih.gov/41466887/"}
-      ]
+        {
+          "title": "Murugesan T, et al. The Profound Impact of the COVID-19 Pandemic on the Epidemiology of Quadriceps and Patellar Tendon Ruptures: Insights From a Single Trust in the United Kingdom. Cureus. 2025",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41466887/"
+        }
+      ],
+      "age": {
+        "typical": [
+          30,
+          75
+        ],
+        "outside": null,
+        "basis": "手術例726例の解析で、大腿四頭筋腱断裂は平均61.0±13.1歳（20-92歳）、膝蓋腱断裂は平均39.5±12.2歳（18-72歳）と年齢層が異なる（ともに男性が9割超）。目安は40歳以上なら四頭筋腱、40歳未満なら膝蓋腱。範囲は両者の平均±1SDを合わせたもの。",
+        "sources": [
+          {
+            "title": "Garner MR, Gausden EB, Berkes MB, Nguyen JT, Lorich DG. Extensor Mechanism Injuries of the Knee: Demographic Characteristics and Comorbidities from a Review of 726 Patient Records. J Bone Joint Surg Am, 2015;97(19)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26446967/"
+          }
+        ]
+      }
     }
   ]
 }

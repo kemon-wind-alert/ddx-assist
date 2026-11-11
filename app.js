@@ -2,15 +2,36 @@
 // 入力内容はどこにも保存・送信しない（画面を閉じれば消える）。
 "use strict";
 
-const APP_VERSION = "0.1.0";
+const APP_VERSION = "0.2.0";
 const AGES = ["child", "young", "middle", "elderly"];
 
-const state = { age: null, sex: null, trauma: null, region: null, sub: null, findings: new Set() };
+const state = { years: null, age: null, sex: null, trauma: null, region: null, sub: null, findings: new Set() };
 let regions = [];
 const cache = {}; // region id -> 読み込んだデータ
 
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+// ---------- 年齢（数字入力 → ★を引く年齢帯に変換） ----------
+const BAND_LABEL = { child: "小児", young: "若年", middle: "中年", elderly: "高齢" };
+function bandOf(y) {
+  if (y == null) return null;
+  return y < 15 ? "child" : y < 40 ? "young" : y < 65 ? "middle" : "elderly";
+}
+function setAge(text) {
+  const t = String(text).replace(/[０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0)).replace(/\D/g, "");
+  const y = t === "" ? null : Math.min(Number(t), 120);
+  state.years = y;
+  state.age = bandOf(y);
+  $("#ageband").textContent = y == null ? "" : `→ ${BAND_LABEL[state.age]}の★`;
+}
+$("#age").addEventListener("input", (e) => { setAge(e.target.value); render(); });
+// Enter／完了で数字キーボードを閉じる
+$("#age").addEventListener("keydown", (e) => { if (e.key === "Enter") e.target.blur(); });
+
+// 範囲は [下限,上限] か、二峰性なら [[下限,上限],[下限,上限]]
+const ranges = (r) => (!Array.isArray(r) ? [] : Array.isArray(r[0]) ? r : [r]);
+const inRange = (y, r) => ranges(r).some(([lo, hi]) => y >= lo && y <= hi);
 
 // ---------- 入力ボタン ----------
 function chipHTML(v, label) {
@@ -47,6 +68,8 @@ document.addEventListener("click", async (e) => {
 });
 
 $("#reset").addEventListener("click", () => {
+  $("#age").value = "";
+  setAge("");
   Object.assign(state, { age: null, sex: null, trauma: null, region: null, sub: null });
   state.findings.clear();
   $("#subrow").hidden = true;
@@ -103,6 +126,9 @@ function applies(dx) {
   const subs = dx.subregions || [];
   if (state.sub && state.sub !== "diffuse" && !dx.red_flag && !subs.includes(state.sub) && !subs.includes("diffuse")) return false;
   if (state.age && (dx.stars_by_age || {})[state.age] === 0) return false; // その年齢ではまず考えない
+  // 好発年齢から明らかに外れる（文献で言える場合のみ設定）。見逃し厳禁は年齢で隠さない
+  const out = (dx.age || {}).outside;
+  if (state.years != null && !dx.red_flag && Array.isArray(out) && !inRange(state.years, out)) return false;
   return true;
 }
 
@@ -110,24 +136,35 @@ function scored(list) {
   return list.map((dx) => {
     const match = (dx.findings_support || []).filter((f) => state.findings.has(f));
     const against = (dx.findings_against || []).filter((f) => state.findings.has(f));
-    return { dx, stars: starsFor(dx), mine: myStarsFor(dx), match, against };
+    const typical = state.years != null && inRange(state.years, (dx.age || {}).typical);
+    return { dx, stars: starsFor(dx), mine: myStarsFor(dx), match, against, typical };
   }).sort((a, b) =>
     (b.match.length - b.against.length) - (a.match.length - a.against.length) ||
     // 並び順は文献の★を優先し、文献が空欄のときだけ自分の★を使う
     (b.stars ?? b.mine ?? -1) - (a.stars ?? a.mine ?? -1) ||
+    // ★が同じなら好発年齢に合う方を上に（★の低い疾患が好発年齢だけで追い越さないよう、★の後）
+    (b.typical - a.typical) ||
     a.dx.name.localeCompare(b.dx.name, "ja"));
 }
 
 // ---------- 表示 ----------
+function ageHTML(a) {
+  if (!a || !Array.isArray(a.typical)) return "";
+  const range = ranges(a.typical).map(([lo, hi]) => (hi >= 120 ? `${lo}歳〜` : `${lo}〜${hi}歳`)).join("・");
+  const src = (a.sources || []).map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join("");
+  return `<h3>好発年齢</h3><p>${esc(range)}</p><p class="basis">${esc(a.basis || "")}</p>${src ? `<ul>${src}</ul>` : ""}`;
+}
+
 function starHTML(n) {
   if (typeof n !== "number") return `<span class="stars unk">★未確認</span>`;
   return `<span class="stars">${"★".repeat(n)}${"☆".repeat(5 - n)}</span>`;
 }
 
 function dxHTML(item, labels) {
-  const { dx, stars, mine, match, against } = item;
+  const { dx, stars, mine, match, against, typical } = item;
   const mineHTML = typeof mine === "number" ? `<span class="stars mine">自分${"★".repeat(mine)}</span>` : "";
   const tags = [
+    ...(typical ? [`<span class="tag age">好発年齢</span>`] : []),
     ...match.map((f) => `<span class="tag match">合致: ${esc(labels[f])}</span>`),
     ...against.map((f) => `<span class="tag against">否定的: ${esc(labels[f])}</span>`),
   ].join("");
@@ -138,6 +175,7 @@ function dxHTML(item, labels) {
   <div class="body">
     ${dx.key_points ? `<h3>ポイント</h3><p>${esc(dx.key_points)}</p>` : ""}
     ${dx.tests && dx.tests.length ? `<h3>検査</h3><ol>${dx.tests.map((t) => `<li>${esc(t)}</li>`).join("")}</ol>` : ""}
+    ${ageHTML(dx.age)}
     ${dx.sex_note ? `<h3>性差</h3><p>${esc(dx.sex_note)}</p>` : ""}
     <h3>★の根拠</h3><p class="basis">${esc(dx.star_basis || "—")}</p>
     ${src ? `<h3>出典</h3><ul>${src}</ul>` : `<h3>出典</h3><p class="basis">出典未確認</p>`}
@@ -156,7 +194,7 @@ function render() {
   const list = d.diseases.filter(applies);
   const red = scored(list.filter((x) => x.red_flag));
   const normal = scored(list.filter((x) => !x.red_flag));
-  const note = state.age ? "" : `<p class="hint">年齢を選ぶと年齢別の★になります（今は全年齢の最大値）。</p>`;
+  const note = state.age ? "" : `<p class="hint">年齢を入れると年齢別の★になります（今は全年齢の最大値）。</p>`;
   out.innerHTML =
     (red.length ? `<div class="redbox"><h2>⚠ 見逃し厳禁（${red.length}）</h2>${red.map((i) => dxHTML(i, labels)).join("")}</div>` : "") +
     `<h2>鑑別（${normal.length}）</h2>${note}` +
