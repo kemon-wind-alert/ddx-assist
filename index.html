@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>鑑別アシスト</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="鑑別">
+<meta name="theme-color" content="#1f5f8b">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>鑑別アシスト</h1>
+  <button id="reset" type="button">リセット</button>
+</header>
+
+<main>
+  <section class="inputs">
+    <div class="row">
+      <div class="label">年齢</div>
+      <div class="chips" data-key="age">
+        <button data-v="child">小児<small>〜14</small></button>
+        <button data-v="young">若年<small>15〜39</small></button>
+        <button data-v="middle">中年<small>40〜64</small></button>
+        <button data-v="elderly">高齢<small>65〜</small></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="label">性別</div>
+      <div class="chips" data-key="sex">
+        <button data-v="M">男</button>
+        <button data-v="F">女</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="label">外傷</div>
+      <div class="chips" data-key="trauma">
+        <button data-v="yes">あり</button>
+        <button data-v="no">なし</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="label">部位</div>
+      <div class="chips" id="regions" data-key="region"></div>
+    </div>
+    <div class="row" id="subrow" hidden>
+      <div class="label">詳細</div>
+      <div class="chips" id="subregions" data-key="sub"></div>
+    </div>
+    <div class="row" id="findrow" hidden>
+      <div class="label">所見<small>複数可</small></div>
+      <div class="chips multi" id="findings"></div>
+    </div>
+  </section>
+
+  <section id="results">
+    <p class="hint">部位を選ぶと鑑別が表示されます。</p>
+  </section>
+</main>
+
+<footer>
+  <p>★は文献に基づく相対頻度（根拠は各疾患をタップ）。★未確認＝文献で裏付けられていない。青の「自分★」は自分の臨床感覚（文献ではない）。入力内容は保存・送信されません。最終判断は診察に基づいて行うこと。</p>
+  <p id="ver"></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
