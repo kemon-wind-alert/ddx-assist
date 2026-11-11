@@ -72,6 +72,9 @@ main { padding: 8px 12px 16px; max-width: 760px; margin: 0 auto; }
 }
 #age:focus { outline: 2px solid var(--accent); outline-offset: 0; }
 #ageband { font-size: 13px; color: var(--muted); }
+.tag.strong { background: var(--match); color: var(--card); font-weight: 700; }
+.body .lr { margin: 0; padding-left: 18px; }
+.body .lr li { margin-bottom: 4px; }
 .tag.age { background: var(--accent); color: var(--accent-ink); }
 
 #results { margin-top: 12px; }

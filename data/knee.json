@@ -77,6 +77,90 @@
     {
       "id": "limp_child",
       "label": "（小児）跛行・股関節の動きが悪い"
+    },
+    {
+      "id": "lachman",
+      "label": "Lachman陽性",
+      "group": "exam"
+    },
+    {
+      "id": "ant_drawer",
+      "label": "前方引き出し陽性",
+      "group": "exam"
+    },
+    {
+      "id": "pivot_shift",
+      "label": "ピボットシフト陽性",
+      "group": "exam"
+    },
+    {
+      "id": "lever_sign",
+      "label": "Lever sign陽性",
+      "group": "exam"
+    },
+    {
+      "id": "post_drawer",
+      "label": "後方引き出し/sag陽性",
+      "group": "exam"
+    },
+    {
+      "id": "valgus_stress",
+      "label": "外反ストレス痛",
+      "group": "exam"
+    },
+    {
+      "id": "jlt",
+      "label": "関節裂隙の圧痛",
+      "group": "exam"
+    },
+    {
+      "id": "mcmurray",
+      "label": "McMurray陽性",
+      "group": "exam"
+    },
+    {
+      "id": "thessaly",
+      "label": "Thessaly陽性",
+      "group": "exam"
+    },
+    {
+      "id": "apprehension",
+      "label": "膝蓋骨不安感テスト陽性",
+      "group": "exam"
+    },
+    {
+      "id": "jf_wbc50k",
+      "label": "関節液WBC>5万",
+      "group": "exam"
+    },
+    {
+      "id": "jf_wbc100k",
+      "label": "関節液WBC>10万",
+      "group": "exam"
+    },
+    {
+      "id": "jf_pmn90",
+      "label": "関節液多核球≥90%",
+      "group": "exam"
+    },
+    {
+      "id": "recent_joint_surgery",
+      "label": "最近の関節手術"
+    },
+    {
+      "id": "ottawa",
+      "label": "Ottawa膝ルール陽性",
+      "group": "exam"
+    },
+    {
+      "id": "wells_high",
+      "label": "Wells高確率",
+      "group": "exam"
+    },
+    {
+      "id": "pulse_abn",
+      "label": "足部動脈拍動の異常",
+      "group": "exam"
     }
   ],
   "diseases": [
@@ -242,6 +326,38 @@
             "url": "https://actaorthop.org/actao/article/view/22430"
           }
         ]
+      },
+      "lr": {
+        "jlt": {
+          "lr_pos": 4.9,
+          "lr_neg": 0.2,
+          "basis": "9研究のメタ解析で感度83%(95%CI 73-90)・特異度83%(61-94)から算出。研究の質が低く異質性大。Solomon 2001のメタ解析ではLR+0.9・LR−1.1と無価値に近く、文献間の乖離が非常に大きい。外傷性と変性を分けた解析ではない。（※研究が少ない／文献間で値が大きく異なるため参考値）",
+          "source": {
+            "title": "Smith BE, Thacker D, Crewesmith A, Hall M. Special tests for assessing meniscal tears within the knee: a systematic review and meta-analysis. Evid Based Med, 2015",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25724195/"
+          },
+          "low_quality": true
+        },
+        "mcmurray": {
+          "lr_pos": 3.8,
+          "lr_neg": 0.46,
+          "basis": "メタ解析で感度61%(95%CI 45-74)・特異度84%(69-92)から算出。研究の質が低く異質性大。Solomon 2001ではLR+1.3(0.9-1.7)と低く、文献間でばらつく。外傷性と変性を分けた解析ではない。（※研究が少ない／文献間で値が大きく異なるため参考値）",
+          "source": {
+            "title": "Smith BE, Thacker D, Crewesmith A, Hall M. Special tests for assessing meniscal tears within the knee: a systematic review and meta-analysis. Evid Based Med, 2015",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25724195/"
+          },
+          "low_quality": true
+        },
+        "thessaly": {
+          "lr_pos": 5.8,
+          "lr_neg": 0.29,
+          "basis": "メタ解析でThessaly(20度)の感度75%(95%CI 53-89)・特異度87%(65-96)から算出。研究数が少なく質も低い。原著(Karachalios 2005)の感度89%・特異度97%より低い。外傷性と変性を分けた解析ではない。（※研究が少ない／文献間で値が大きく異なるため参考値）",
+          "source": {
+            "title": "Smith BE, Thacker D, Crewesmith A, Hall M. Special tests for assessing meniscal tears within the knee: a systematic review and meta-analysis. Evid Based Med, 2015",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25724195/"
+          },
+          "low_quality": true
+        }
       }
     },
     {
@@ -305,6 +421,53 @@
             "url": "https://pubmed.ncbi.nlm.nih.gov/28840155/"
           }
         ]
+      },
+      "lr": {
+        "lachman": {
+          "lr_pos": 5.4,
+          "lr_neg": 0.22,
+          "basis": "覚醒下を主とする診断精度研究の2変量メタ解析で感度81%(95%CI 73-87)・特異度85%(73-92)から算出。旧来のメタ解析ではより高値(Benjaminse 2006: 感度85%・特異度94%→LR+約14、Solomon 2001: LR+25(2.7-651))で、著者らは従来値は過大評価と結論。",
+          "source": {
+            "title": "Sokal PA, Norris R, Maddox TW, Oldershaw RA. The diagnostic accuracy of clinical tests for anterior cruciate ligament tears are comparable but the Lachman test has been previously overestimated: a systematic review and meta-analysis. Knee Surg Sports Traumatol Arthrosc, 2022",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35150292/"
+          }
+        },
+        "ant_drawer": {
+          "lr_pos": 5.5,
+          "lr_neg": 0.2,
+          "basis": "2変量メタ解析で感度83%(95%CI 77-88)・特異度85%(64-95)から算出。急性期は感度が低い(van Eck 2013: 急性・覚醒下で感度38%)ため、急性期の陰性は除外に使いにくい。",
+          "source": {
+            "title": "Sokal PA, Norris R, Maddox TW, Oldershaw RA. The diagnostic accuracy of clinical tests for anterior cruciate ligament tears are comparable but the Lachman test has been previously overestimated: a systematic review and meta-analysis. Knee Surg Sports Traumatol Arthrosc, 2022",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35150292/"
+          }
+        },
+        "pivot_shift": {
+          "lr_pos": 9.2,
+          "lr_neg": 0.48,
+          "basis": "2変量メタ解析で感度55%(95%CI 47-62)・特異度94%(88-97)から算出。確定向きの検査。覚醒下では感度が低く(van Eck 2013: 覚醒下28%、麻酔下73%)、Benjaminse 2006では感度24%・特異度98%(LR+約12)。",
+          "source": {
+            "title": "Sokal PA, Norris R, Maddox TW, Oldershaw RA. The diagnostic accuracy of clinical tests for anterior cruciate ligament tears are comparable but the Lachman test has been previously overestimated: a systematic review and meta-analysis. Knee Surg Sports Traumatol Arthrosc, 2022",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35150292/"
+          }
+        },
+        "lever_sign": {
+          "lr_pos": 9.2,
+          "lr_neg": 0.19,
+          "basis": "2変量メタ解析で感度83%(95%CI 68-92)・特異度91%(83-95)から算出。他の3検査より研究数が少ない点に注意。",
+          "source": {
+            "title": "Sokal PA, Norris R, Maddox TW, Oldershaw RA. The diagnostic accuracy of clinical tests for anterior cruciate ligament tears are comparable but the Lachman test has been previously overestimated: a systematic review and meta-analysis. Knee Surg Sports Traumatol Arthrosc, 2022",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35150292/"
+          }
+        },
+        "pop": {
+          "lr_pos": 2.3,
+          "lr_neg": 0.51,
+          "basis": "一般診療所を受診した外傷性膝損傷134例(参照基準MRI)の単一研究。受傷時のポップ感は感度63%・特異度73%、LR+2.3(論文記載)、LR−は感度・特異度から算出。系統的レビューではない。",
+          "source": {
+            "title": "Wagemakers HP, et al. Diagnostic accuracy of history taking and physical examination for assessing anterior cruciate ligament lesions of the knee in primary care. Arch Phys Med Rehabil, 2010",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/20801267/"
+          }
+        }
       }
     },
     {
@@ -356,6 +519,17 @@
             "url": "https://pubmed.ncbi.nlm.nih.gov/24603529/"
           }
         ]
+      },
+      "lr": {
+        "valgus_stress": {
+          "lr_pos": 2.3,
+          "lr_neg": null,
+          "basis": "一般診療所の外傷性膝損傷134例(MRIでMCL損傷35例)の単一研究。30度屈曲位外反ストレスでの疼痛でLR+2.3。病歴＋外反時疼痛＋不安定性の組み合わせでLR+6.4。LR−・CIは抄録に記載なし。",
+          "source": {
+            "title": "Kastelein M, Wagemakers HP, Luijsterburg PA, Verhaar JA, Koes BW, Bierma-Zeinstra SM. Assessing medial collateral ligament knee lesions in general practice. Am J Med, 2008",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/18954845/"
+          }
+        }
       }
     },
     {
@@ -454,6 +628,18 @@
             "url": "https://pubmed.ncbi.nlm.nih.gov/26922055/"
           }
         ]
+      },
+      "lr": {
+        "post_drawer": {
+          "lr_pos": 90,
+          "lr_neg": 0.1,
+          "basis": "慢性単独PCL損傷18例(19膝)と対照の盲検化研究。臨床診察全体のPCL損傷検出で感度90%・特異度99%から算出(後方引き出し＋脛骨段差の触診が最も感度・特異度の高い検査と記載)。小規模・慢性例のみで、特異度99%に依存した値のためLR+は不安定。PCLの系統的レビュー(Kopkow 2013)はメタ解析不能で精度は大部分不明と結論。（※研究が少ない／文献間で値が大きく異なるため参考値）",
+          "source": {
+            "title": "Rubinstein RA, Shelbourne KD, McCarroll JR, VanMeter CD, Rettig AC. The accuracy of the clinical examination in the setting of posterior cruciate ligament injuries. Am J Sports Med, 1994",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/7943523/"
+          },
+          "low_quality": true
+        }
       }
     },
     {
@@ -507,6 +693,18 @@
             "url": "https://pubmed.ncbi.nlm.nih.gov/15262631/"
           }
         ]
+      },
+      "lr": {
+        "apprehension": {
+          "lr_pos": 8.6,
+          "lr_neg": null,
+          "basis": "手術予定51例の単一研究(Level 3)。moving patellar apprehension testで感度100%・特異度88.4%から算出(参照基準は麻酔下の膝蓋骨脱臼性)。感度100%のためLR−は計算上0だが小規模で信頼できず非表示。系統的レビュー(Abelleyra Lastoria 2023)は数値報告2研究のみでメタ解析不能。（※研究が少ない／文献間で値が大きく異なるため参考値）",
+          "source": {
+            "title": "Ahmad CS, McCarthy M, Gomez JA, Shubin Stein BE. The moving patellar apprehension test for lateral patellar instability. Am J Sports Med, 2009",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/19193601/"
+          },
+          "low_quality": true
+        }
       }
     },
     {
@@ -1378,6 +1576,44 @@
             "url": "https://www.jrheum.org/content/42/12/2392"
           }
         ]
+      },
+      "lr": {
+        "jf_wbc50k": {
+          "lr_pos": 7.7,
+          "lr_neg": null,
+          "basis": "成人の化膿性関節炎疑いを対象としたJAMA Rational Clinical Examの系統的レビュー。関節液WBC>50,000/µLでLR 7.7（95%CI 5.7-11.0）。この閾値の陰性LRは抄録に記載なし（参考: <25,000/µLでLR 0.32 [0.23-0.43]）",
+          "source": {
+            "title": "Margaretten ME, Kohlwes J, Moore D, Bent S. Does this adult patient have septic arthritis? JAMA. 2007;297(13):1478-1488",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17405973/"
+          }
+        },
+        "jf_wbc100k": {
+          "lr_pos": 28.0,
+          "lr_neg": null,
+          "basis": "同じ系統的レビュー。関節液WBC>100,000/µLでLR 28.0（95%CI 12.0-66.0）。CIが広く、点推定の精度は低い",
+          "source": {
+            "title": "Margaretten ME, Kohlwes J, Moore D, Bent S. Does this adult patient have septic arthritis? JAMA. 2007;297(13):1478-1488",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17405973/"
+          }
+        },
+        "jf_pmn90": {
+          "lr_pos": 3.4,
+          "lr_neg": 0.34,
+          "basis": "同じ系統的レビュー。関節液の多核球≥90%でLR 3.4（95%CI 2.8-4.2）、<90%でLR 0.34（95%CI 0.25-0.47）",
+          "source": {
+            "title": "Margaretten ME, Kohlwes J, Moore D, Bent S. Does this adult patient have septic arthritis? JAMA. 2007;297(13):1478-1488",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17405973/"
+          }
+        },
+        "recent_joint_surgery": {
+          "lr_pos": 6.9,
+          "lr_neg": null,
+          "basis": "救急外来の急性単関節痛を対象とした系統的レビュー・メタ解析（非淋菌性化膿性関節炎の有病率27%）。最近の関節手術で+LR 6.9（抄録にCI記載なし）。人工膝・股関節上の皮膚感染は+LR 15.0",
+          "source": {
+            "title": "Carpenter CR, Schuur JD, Everett WW, Pines JM. Evidence-based diagnostics: adult septic arthritis. Acad Emerg Med. 2011;18(8):781-796",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21843213/"
+          }
+        }
       }
     },
     {
@@ -1554,6 +1790,26 @@
             "url": "https://www.jstage.jst.go.jp/article/circj/83/6/83_CJ-18-1314/_html/-char/en"
           }
         ]
+      },
+      "lr": {
+        "wells_high": {
+          "lr_pos": 5.2,
+          "lr_neg": null,
+          "basis": "DVT疑い患者の臨床評価に関するメタ解析。Wellsスコア高確率でLR 5.2（抄録にCI記載なし、研究間の異質性大）。低確率はLR 0.25（「高確率でない」ことのLR−ではないためnull）。近位DVTで層別化能が高く、高齢・DVT既往例を含むコホートでは性能低下",
+          "source": {
+            "title": "Goodacre S, Sutton AJ, Sampson FC. Meta-analysis: the value of clinical assessment in the diagnosis of deep venous thrombosis. Ann Intern Med. 2005;143(2):129-139",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16027455/"
+          }
+        },
+        "calf_swelling": {
+          "lr_pos": 1.8,
+          "lr_neg": 0.57,
+          "basis": "同じメタ解析の個別所見。下腿周径差（calf diameter difference）ありでLR 1.80、なしでLR 0.57（抄録にCI記載なし）。「ふくらはぎの腫れ・圧痛」に最も近い指標として採用（圧痛単独の値ではない）。下腿腫脹がないことのLRは0.67",
+          "source": {
+            "title": "Goodacre S, Sutton AJ, Sampson FC. Meta-analysis: the value of clinical assessment in the diagnosis of deep venous thrombosis. Ann Intern Med. 2005;143(2):129-139",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16027455/"
+          }
+        }
       }
     },
     {
@@ -1602,6 +1858,17 @@
             "url": "https://pubmed.ncbi.nlm.nih.gov/24554457/"
           }
         ]
+      },
+      "lr": {
+        "pulse_abn": {
+          "lr_pos": 8.8,
+          "lr_neg": 0.23,
+          "basis": "外傷性膝関節脱臼における手術を要する動脈損傷のメタ解析（7研究・284損傷）。足部動脈拍動異常の感度79%（95%CI 64-89）・特異度91%（78-96）から算出。著者は「拍動正常だけでは除外に不十分」と結論",
+          "source": {
+            "title": "Barnes CJ, Pietrobon R, Higgins LD. Does the pulse examination in patients with traumatic knee dislocation predict a surgical arterial injury? A meta-analysis. J Trauma. 2002;53(6):1109-1114",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/12478036/"
+          }
+        }
       }
     },
     {
@@ -1654,6 +1921,17 @@
             "url": "https://pubmed.ncbi.nlm.nih.gov/11052383/"
           }
         ]
+      },
+      "lr": {
+        "ottawa": {
+          "lr_pos": 1.86,
+          "lr_neg": 0.07,
+          "basis": "成人の急性膝外傷を対象とした系統的レビュー・メタ解析（8研究・7,385例、参照基準はX線）。感度0.99（95%CI 0.97-1.00）・特異度0.49（0.47-0.51）、LR+ 1.86（1.72-2.01）、LR− 0.07（0.02-0.24）。陽性でのrule-in力は弱く、主目的は陰性での骨折除外（X線省略）。Bachmann 2004（Ann Intern Med, PMID 14734335）でもLR− 0.05（0.02-0.23）",
+          "source": {
+            "title": "Sims JI, Chau MT, Davies JR. Diagnostic accuracy of the Ottawa Knee Rule in adult acute knee injuries: a systematic review and meta-analysis. Eur Radiol. 2020",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32222797/"
+          }
+        }
       }
     },
     {

@@ -2,7 +2,8 @@
 // 入力内容はどこにも保存・送信しない（画面を閉じれば消える）。
 "use strict";
 
-const APP_VERSION = "0.2.0";
+const APP_VERSION = "0.3.0";
+const STRONG_LR = 5; // LR+ がこれ以上なら「強く合致」
 const AGES = ["child", "young", "middle", "elderly"];
 
 const state = { years: null, age: null, sex: null, trauma: null, region: null, sub: null, findings: new Set() };
@@ -43,7 +44,7 @@ function syncChips() {
     const key = box.dataset.key;
     box.querySelectorAll("button").forEach((b) => b.classList.toggle("on", state[key] === b.dataset.v));
   });
-  $("#findings").querySelectorAll("button").forEach((b) => b.classList.toggle("on", state.findings.has(b.dataset.v)));
+  document.querySelectorAll("#findings button, #exams button").forEach((b) => b.classList.toggle("on", state.findings.has(b.dataset.v)));
 }
 
 // 単一選択：同じボタンをもう一度押すと解除
@@ -74,6 +75,7 @@ $("#reset").addEventListener("click", () => {
   state.findings.clear();
   $("#subrow").hidden = true;
   $("#findrow").hidden = true;
+  $("#examrow").hidden = true;
   syncChips();
   render();
   window.scrollTo({ top: 0 });
@@ -91,15 +93,20 @@ async function loadRegion() {
   if (!state.region) {
     $("#subrow").hidden = true;
     $("#findrow").hidden = true;
+    $("#examrow").hidden = true;
     return;
   }
   const meta = regions.find((r) => r.id === state.region);
   if (!cache[state.region]) cache[state.region] = await fetchJSON(meta.file);
   const d = cache[state.region];
   sub.innerHTML = d.subregions.map((s) => chipHTML(s.id, s.name)).join("");
-  fnd.innerHTML = d.findings.map((f) => chipHTML(f.id, f.label)).join("");
+  // 問診・視診の所見と、診察テスト・検査（group: "exam"）を別の行に分ける
+  fnd.innerHTML = d.findings.filter((f) => f.group !== "exam").map((f) => chipHTML(f.id, f.label)).join("");
+  const exams = d.findings.filter((f) => f.group === "exam");
+  $("#exams").innerHTML = exams.map((f) => chipHTML(f.id, f.label)).join("");
   $("#subrow").hidden = false;
   $("#findrow").hidden = false;
+  $("#examrow").hidden = exams.length === 0;
 }
 
 // ---------- 判定 ----------
@@ -134,12 +141,18 @@ function applies(dx) {
 
 function scored(list) {
   return list.map((dx) => {
-    const match = (dx.findings_support || []).filter((f) => state.findings.has(f));
+    // 尤度比の文献がある所見（dx.lr）は LR+>1 なら合致として扱う
+    const lr = dx.lr || {};
+    const sup = new Set([...(dx.findings_support || []), ...Object.keys(lr).filter((f) => lr[f].lr_pos > 1)]);
+    const match = [...sup].filter((f) => state.findings.has(f));
+    // 質の低い値（low_quality）は LR+ が高くても「強く合致」にしない
+    const strong = match.filter((f) => lr[f] && !lr[f].low_quality && lr[f].lr_pos >= STRONG_LR);
     const against = (dx.findings_against || []).filter((f) => state.findings.has(f));
     const typical = state.years != null && inRange(state.years, (dx.age || {}).typical);
-    return { dx, stars: starsFor(dx), mine: myStarsFor(dx), match, against, typical };
+    return { dx, stars: starsFor(dx), mine: myStarsFor(dx), match, strong, against, typical };
   }).sort((a, b) =>
-    (b.match.length - b.against.length) - (a.match.length - a.against.length) ||
+    // 強く合致（LR+≥5）は合致2つ分
+    (b.match.length + b.strong.length - b.against.length) - (a.match.length + a.strong.length - a.against.length) ||
     // 並び順は文献の★を優先し、文献が空欄のときだけ自分の★を使う
     (b.stars ?? b.mine ?? -1) - (a.stars ?? a.mine ?? -1) ||
     // ★が同じなら好発年齢に合う方を上に（★の低い疾患が好発年齢だけで追い越さないよう、★の後）
@@ -161,20 +174,26 @@ function starHTML(n) {
 }
 
 function dxHTML(item, labels) {
-  const { dx, stars, mine, match, against, typical } = item;
+  const { dx, stars, mine, match, strong, against, typical } = item;
+  const lr = dx.lr || {};
+  const lrTxt = (f) => (lr[f] ? ` LR+ ${lr[f].lr_pos}${lr[f].low_quality ? "（参考）" : ""}` : "");
   const mineHTML = typeof mine === "number" ? `<span class="stars mine">自分${"★".repeat(mine)}</span>` : "";
   const tags = [
     ...(typical ? [`<span class="tag age">好発年齢</span>`] : []),
-    ...match.map((f) => `<span class="tag match">合致: ${esc(labels[f])}</span>`),
+    ...strong.map((f) => `<span class="tag strong">強く合致: ${esc(labels[f])}${lrTxt(f)}</span>`),
+    ...match.filter((f) => !strong.includes(f)).map((f) => `<span class="tag match">合致: ${esc(labels[f])}${lrTxt(f)}</span>`),
     ...against.map((f) => `<span class="tag against">否定的: ${esc(labels[f])}</span>`),
   ].join("");
   const src = (dx.sources || []).map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join("");
   const dim = against.length > match.length ? " dim" : "";
+  const lrList = Object.entries(lr).map(([f, v]) =>
+    `<li><b>${esc(labels[f] || f)}</b> LR+ ${esc(v.lr_pos)}${v.low_quality ? "（参考値）" : ""}${v.lr_neg != null ? ` ／ LR− ${esc(v.lr_neg)}` : ""}<br><span class="basis">${esc(v.basis || "")}${v.source ? ` <a href="${esc(v.source.url)}" target="_blank" rel="noopener">${esc(v.source.title)}</a>` : ""}</span></li>`).join("");
   return `<details class="dx${dim}">
   <summary><span class="name">${esc(dx.name)}</span>${starHTML(stars)}${mineHTML}${tags ? `<span class="tags">${tags}</span>` : ""}</summary>
   <div class="body">
     ${dx.key_points ? `<h3>ポイント</h3><p>${esc(dx.key_points)}</p>` : ""}
     ${dx.tests && dx.tests.length ? `<h3>検査</h3><ol>${dx.tests.map((t) => `<li>${esc(t)}</li>`).join("")}</ol>` : ""}
+    ${lrList ? `<h3>尤度比（文献）</h3><ul class="lr">${lrList}</ul>` : ""}
     ${ageHTML(dx.age)}
     ${dx.sex_note ? `<h3>性差</h3><p>${esc(dx.sex_note)}</p>` : ""}
     <h3>★の根拠</h3><p class="basis">${esc(dx.star_basis || "—")}</p>
