@@ -1108,11 +1108,11 @@
       ],
       "age": {
         "typical": [
-          40,
-          59
+          35,
+          61
         ],
         "outside": null,
-        "basis": "Rochesterの人口ベース研究（561例、13〜91歳）で年齢別発生率は50〜54歳が最高の202.9/10万人。",
+        "basis": "米国Rochesterの人口ベース研究（561例、13〜91歳）で平均年齢は男性47.6±13.1歳・女性48.2±13.8歳、年齢別発生率のピークは50〜54歳（202.9/10万人年）。typical は平均±1SDの範囲（手・頸部と統一）。",
         "sources": [
           {
             "title": "Radhakrishnan K, et al. Epidemiology of cervical radiculopathy. Brain. 1994;117(Pt 2):325-335",

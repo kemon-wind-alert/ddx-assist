@@ -1309,11 +1309,11 @@
       ],
       "age": {
         "typical": [
-          50,
-          54
+          35,
+          61
         ],
         "outside": null,
-        "basis": "米国Rochesterの人口ベース研究で年齢別発生率は50〜54歳でピーク（202.9/10万人年）。C7神経根が最多、次いでC6。ピーク年齢帯のみを示しており、前後の年齢でも多い。",
+        "basis": "米国Rochesterの人口ベース研究（561例、13〜91歳）で平均年齢は男性47.6±13.1歳・女性48.2±13.8歳、年齢別発生率のピークは50〜54歳（202.9/10万人年）。typical は平均±1SDの範囲（手・頸部と統一）。",
         "sources": [
           {
             "title": "Radhakrishnan K, et al. Epidemiology of cervical radiculopathy. A population-based study from Rochester, Minnesota, 1976 through 1990. Brain. 1994;117(2):325-335",
