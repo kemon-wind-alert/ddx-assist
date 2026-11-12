@@ -2,7 +2,7 @@
 // 入力内容はどこにも保存・送信しない（画面を閉じれば消える）。
 "use strict";
 
-const APP_VERSION = "0.3.0";
+const APP_VERSION = "0.4.0";
 const STRONG_LR = 5; // LR+ がこれ以上なら「強く合致」
 const AGES = ["child", "young", "middle", "elderly"];
 

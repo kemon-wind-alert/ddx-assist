@@ -1,0 +1,1373 @@
+{
+  "region": "elbow",
+  "name": "肘",
+  "updated": "2026-11-12",
+  "star_scale": "★＝その年齢帯で肘の症状（外傷疾患は肘外傷）で受診した患者のうち、その疾患が占める割合の目安。★5: 30%以上／★4: 15〜29%／★3: 5〜14%／★2: 1〜4.9%／★1: 1%未満（まれだが鑑別に入る）。成人は、人口あたり発生率を一般診療での肘の訴えの新規発生（オランダ第2回全国一般診療調査で約7.2/1000人年＝720/10万人年、Bot 2005が引用。年齢別の値は確認できず全年齢の値を使用）で割って換算した。小児の外傷は、小児の肘骨折の発生（デンマーク<15歳で308/10万人年［Houshian 2001］、スウェーデン<16歳で12/1万人年［Landin 1986］）と骨折型の内訳を基準にした。紹介外来・救急・軍・野球検診など母集団が偏ったデータも含むため粗い目安であり、一般整形外来での実数とはずれうる。null＝鑑別には挙がるが頻度を裏付ける文献を確認できなかった（★未確認）。0＝その年齢帯ではまず考えない（非表示）。",
+  "subregions": [
+    {
+      "id": "lateral",
+      "name": "外側（外側上顆・橈骨頭）"
+    },
+    {
+      "id": "medial",
+      "name": "内側（内側上顆・尺骨神経）"
+    },
+    {
+      "id": "posterior",
+      "name": "後面（肘頭）"
+    },
+    {
+      "id": "anterior",
+      "name": "前面（肘窩）"
+    },
+    {
+      "id": "diffuse",
+      "name": "全体・はっきりしない"
+    }
+  ],
+  "findings": [
+    {
+      "id": "night_pain",
+      "label": "夜間痛・安静時痛"
+    },
+    {
+      "id": "fever",
+      "label": "発熱"
+    },
+    {
+      "id": "redness_heat",
+      "label": "発赤・熱感"
+    },
+    {
+      "id": "olecranon_swelling",
+      "label": "肘頭部のぶよぶよ腫れ"
+    },
+    {
+      "id": "grip_pain",
+      "label": "物をつかむと痛い"
+    },
+    {
+      "id": "throwing",
+      "label": "投球・野球歴"
+    },
+    {
+      "id": "ulnar_numb",
+      "label": "小指・環指のしびれ"
+    },
+    {
+      "id": "locking",
+      "label": "引っかかり・ロッキング"
+    },
+    {
+      "id": "pulled",
+      "label": "手を引っ張られた後"
+    },
+    {
+      "id": "fall_on_hand",
+      "label": "転倒し手をついた"
+    },
+    {
+      "id": "deformity_swelling",
+      "label": "変形・強い腫脹"
+    },
+    {
+      "id": "pop_anterior",
+      "label": "肘前面でブチッ"
+    },
+    {
+      "id": "neck_radiating",
+      "label": "頸部痛・腕へ放散"
+    },
+    {
+      "id": "multi_joint",
+      "label": "複数関節の痛み"
+    },
+    {
+      "id": "ext_test_pos",
+      "label": "肘伸展テスト陽性",
+      "group": "exam"
+    },
+    {
+      "id": "hook_test_pos",
+      "label": "hook test陽性",
+      "group": "exam"
+    },
+    {
+      "id": "cozen_pos",
+      "label": "Cozen/中指伸展陽性",
+      "group": "exam"
+    },
+    {
+      "id": "tinel_cubital",
+      "label": "肘部管Tinel陽性",
+      "group": "exam"
+    },
+    {
+      "id": "flex_compression",
+      "label": "肘屈曲圧迫テスト陽性",
+      "group": "exam"
+    },
+    {
+      "id": "bursa_wbc2k",
+      "label": "滑液包液WBC>2000",
+      "group": "exam"
+    },
+    {
+      "id": "jf_wbc50k",
+      "label": "関節液WBC>5万",
+      "group": "exam"
+    }
+  ],
+  "diseases": [
+    {
+      "id": "lateral_epicondylitis",
+      "name": "上腕骨外側上顆炎（テニス肘）",
+      "red_flag": false,
+      "subregions": [
+        "lateral"
+      ],
+      "trauma": "no",
+      "sex_note": "フィンランド住民調査（30〜64歳）で有病率に男女差なし（Shiri 2006）。米国Olmsted Countyでも診断時平均年齢は男女とも47歳（Sanders 2015）",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 5,
+        "elderly": null
+      },
+      "star_basis": "英国一般診療データベース（THIN）で発生率2.45/1000人年、45〜49歳で最大7.35/1000人年（Titchener 2012）。肘の訴え全体の新規発生約7.2/1000人年と比べると40〜64歳では肘の訴えの過半を占める計算→★5。15〜39歳・65歳以上は年齢別の率を一次情報で確認できず null。",
+      "findings_support": [
+        "grip_pain",
+        "cozen_pos"
+      ],
+      "findings_against": [
+        "fever",
+        "redness_heat",
+        "ulnar_numb",
+        "deformity_swelling",
+        "locking"
+      ],
+      "key_points": "外側上顆（短橈側手根伸筋起始部）の圧痛と、手関節抵抗背屈・中指伸展での誘発痛。安静時痛・夜間痛、可動域制限、ロッキングがあれば関節内病変（滑膜ひだ・OA）や橈骨管症候群、頸椎由来を考える。診療ガイドラインは2024年に改訂第3版が出ている（Minds掲載）。",
+      "tests": [
+        "肘X線 正面・側面（石灰化・OAの除外）",
+        "エコー（伸筋腱起始部の低エコー・肥厚）"
+      ],
+      "sources": [
+        {
+          "title": "Titchener AG, et al. Study of lateral epicondylitis (tennis elbow) using the Health Improvement Network database. Shoulder Elbow. 2012",
+          "url": "https://doi.org/10.1111/j.1758-5740.2012.00182.x"
+        },
+        {
+          "title": "Shiri R, et al. Prevalence and determinants of lateral and medial epicondylitis: a population study. Am J Epidemiol. 2006;164(11):1065-1074",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16968862/"
+        },
+        {
+          "title": "Bot SD, et al. Course and prognosis of elbow complaints: a cohort study in general practice. Ann Rheum Dis. 2005;64:1331-1336",
+          "url": "https://ard.bmj.com/content/64/9/1331"
+        },
+        {
+          "title": "上腕骨外側上顆炎診療ガイドライン2024（改訂第3版）Mindsガイドラインライブラリ掲載ページ",
+          "url": "https://minds.jcqhc.or.jp/summary/c00905/"
+        }
+      ],
+      "age": {
+        "typical": [
+          36,
+          58
+        ],
+        "outside": null,
+        "basis": "米国Olmsted Countyの人口ベース研究（2000〜2012年）で診断時平均47±11歳（平均±1SDを好発範囲とした）。英国THINでは45〜49歳が最多（7.35/1000人年）、フィンランド住民調査でも有病率は45〜54歳で最高。",
+        "sources": [
+          {
+            "title": "Sanders TL, et al. The epidemiology and health care burden of tennis elbow: a population-based study. Am J Sports Med. 2015;43(5):1066-1071",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25656546/"
+          },
+          {
+            "title": "Shiri R, et al. Prevalence and determinants of lateral and medial epicondylitis: a population study. Am J Epidemiol. 2006;164(11):1065-1074",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16968862/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "medial_epicondylitis",
+      "name": "上腕骨内側上顆炎（ゴルフ肘）",
+      "red_flag": false,
+      "subregions": [
+        "medial"
+      ],
+      "trauma": "no",
+      "sex_note": "有病率に男女差なし（Shiri 2006）。喫煙・肥満・反復動作・力仕事が独立した関連因子",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 3,
+        "elderly": null
+      },
+      "star_basis": "フィンランド住民調査（30〜64歳）で確実例の有病率は外側上顆炎1.3%に対し内側上顆炎0.4%（約1/3）。外側上顆炎（中年で★5相当）の約1/3と仮定して換算→40〜64歳★3。有病率比からの間接推定であり粗い。小児の内側痛は成人型の上顆炎ではなく内側上顆の骨端障害を考えるため0。",
+      "findings_support": [
+        "grip_pain"
+      ],
+      "findings_against": [
+        "fever",
+        "redness_heat",
+        "deformity_swelling"
+      ],
+      "key_points": "内側上顆（回内屈筋群起始部）の圧痛と、抵抗下の手関節掌屈・前腕回内での誘発痛。尺骨神経障害（肘部管症候群）の合併があるため小指・環指のしびれを必ず確認する。",
+      "tests": [
+        "肘X線 正面・側面",
+        "エコー（屈筋腱起始部）"
+      ],
+      "sources": [
+        {
+          "title": "Shiri R, et al. Prevalence and determinants of lateral and medial epicondylitis: a population study. Am J Epidemiol. 2006;164(11):1065-1074",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16968862/"
+        }
+      ],
+      "age": {
+        "typical": [
+          45,
+          54
+        ],
+        "outside": null,
+        "basis": "フィンランドの代表標本（30〜64歳、4,783人）で有病率は45〜54歳で最も高い。30歳未満・65歳以上は調査対象外。",
+        "sources": [
+          {
+            "title": "Shiri R, et al. Prevalence and determinants of lateral and medial epicondylitis: a population study. Am J Epidemiol. 2006;164(11):1065-1074",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16968862/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cubital_tunnel",
+      "name": "肘部管症候群（尺骨神経障害）",
+      "red_flag": false,
+      "subregions": [
+        "medial",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "米国保険データで男31.2・女28.8/10万人年（未調整）。50歳未満ではやや女性に多い",
+      "stars_by_age": {
+        "child": null,
+        "young": 2,
+        "middle": 2,
+        "elderly": 2
+      },
+      "star_basis": "米国全国保険データで発生率30.0/10万人年（調整後）、50歳未満で約20/10万人年、年齢とともに上昇（Osei 2017）。肘の訴え約720/10万人年で割ると約3〜4%→★2。高齢では率が上がるため★3に近い可能性。主訴が手のしびれで肘痛として来ない例も多い。",
+      "findings_support": [
+        "ulnar_numb",
+        "tinel_cubital",
+        "flex_compression",
+        "night_pain"
+      ],
+      "findings_against": [
+        "fever",
+        "redness_heat"
+      ],
+      "key_points": "小指・環指尺側のしびれ、骨間筋萎縮・Froment徴候で重症度を見る。Tinel・肘屈曲圧迫テストは単独では診断力が低い（下記LR）ので、神経伝導検査やエコーで裏付ける。頸椎C8神経根症・胸郭出口症候群・Guyon管との鑑別が必要。",
+      "tests": [
+        "神経伝導検査（肘部での尺骨神経伝導速度低下）",
+        "エコー（尺骨神経の腫大・断面積）",
+        "肘X線（変形性肘関節症・外反肘の有無）"
+      ],
+      "sources": [
+        {
+          "title": "Osei DA, et al. Cubital Tunnel Syndrome: Incidence and Demographics in a National Administrative Database. Neurosurgery. 2017",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28362959/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "米国全国保険データで男女とも年齢とともに新規例が増加（Osei 2017）。好発年齢の範囲を示す一次情報は確認できなかった。",
+        "sources": [
+          {
+            "title": "Osei DA, et al. Cubital Tunnel Syndrome: Incidence and Demographics in a National Administrative Database. Neurosurgery. 2017",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28362959/"
+          }
+        ]
+      },
+      "lr": {
+        "tinel_cubital": {
+          "lr_pos": 1.32,
+          "lr_neg": 0.72,
+          "basis": "オランダの単施設前向き研究（尺骨神経障害疑いの患者、参照基準は神経伝導検査等）。Tinel徴候は感度62%・特異度53%で、LRは感度・特異度から算出。Novak 1994（電気診断で確定した32例と対照33例の症例対照研究）では感度70%と報告され、研究間で値が大きく異なる。",
+          "source": {
+            "title": "Beekman R, et al. The diagnostic value of provocative clinical tests in ulnar neuropathy at the elbow is marginal. J Neurol Neurosurg Psychiatry. 2009;80:1369-1374",
+            "url": "https://doi.org/10.1136/jnnp.2009.180844"
+          },
+          "low_quality": true
+        },
+        "flex_compression": {
+          "lr_pos": 1.02,
+          "lr_neg": 0.98,
+          "basis": "同じ研究で肘屈曲圧迫テストは感度61%・特異度40%（LRは感度・特異度から算出）＝実質的に診断の役に立たない。Novak 1994（症例対照）では30秒で感度91%と高く対照群ではまれにしか陽性にならなかったと報告されたが、症例対照デザインのため過大評価の可能性。",
+          "source": {
+            "title": "Beekman R, et al. The diagnostic value of provocative clinical tests in ulnar neuropathy at the elbow is marginal. J Neurol Neurosurg Psychiatry. 2009;80:1369-1374",
+            "url": "https://doi.org/10.1136/jnnp.2009.180844"
+          },
+          "low_quality": true
+        }
+      }
+    },
+    {
+      "id": "baseball_medial",
+      "name": "野球肘 内側障害（内側上顆骨端障害・内側側副靱帯損傷）",
+      "red_flag": false,
+      "subregions": [
+        "medial"
+      ],
+      "trauma": "any",
+      "sex_note": "対象研究は主に男子の少年野球選手",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": 0,
+        "elderly": 0
+      },
+      "star_basis": "日本の少年野球検診で9〜12歳の約2割にエコーで内側上顆の異常（研究ごとに定義が異なる）。ただし母集団が野球選手に限られ、肘の症状で受診した小児全体に占める割合は確認できず null。",
+      "findings_support": [
+        "throwing"
+      ],
+      "findings_against": [
+        "fever",
+        "redness_heat",
+        "pulled"
+      ],
+      "key_points": "投球時の内側痛、内側上顆の圧痛、外反ストレス痛。骨端の分節・不整は11〜12歳で多い。内側障害を見たら同時に外側（小頭OCD）をエコーで確認する（OCD初期は痛みが乏しい）。高校生以上ではUCL損傷を考える。",
+      "tests": [
+        "肘X線 正面・側面＋45度屈曲正面（tangential view）・健側比較",
+        "エコー（内側上顆・UCL・小頭）"
+      ],
+      "sources": [
+        {
+          "title": "Otoshi K, et al. Age-Specific Prevalence and Clinical Characteristics of Humeral Medial Epicondyle Apophysitis and Osteochondritis Dissecans: Ultrasonographic Assessment of 4249 Players. Orthop J Sports Med. 2017",
+          "url": "https://doi.org/10.1177/2325967117707703"
+        }
+      ],
+      "age": {
+        "typical": [
+          9,
+          12
+        ],
+        "outside": null,
+        "basis": "日本の少年野球検診（6〜17歳4,249人のエコー）で内側上顆の分節・不整型は11〜12歳でピーク（二次情報経由で確認、原著の年齢別数値は未確認）。13歳以降は骨端閉鎖に伴い靱帯損傷の比重が増すとされるが、年齢別の数値は確認できなかった。",
+        "sources": [
+          {
+            "title": "Otoshi K, et al. Age-Specific Prevalence and Clinical Characteristics of Humeral Medial Epicondyle Apophysitis and Osteochondritis Dissecans: Ultrasonographic Assessment of 4249 Players. Orthop J Sports Med. 2017",
+            "url": "https://doi.org/10.1177/2325967117707703"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ocd_capitellum",
+      "name": "上腕骨小頭離断性骨軟骨炎（野球肘 外側型）",
+      "red_flag": false,
+      "subregions": [
+        "lateral"
+      ],
+      "trauma": "no",
+      "sex_note": "対象研究は主に男子の野球選手",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": 0,
+        "elderly": 0
+      },
+      "star_basis": "日本の中学・高校野球選手2,433人のエコー検診で有病率3.4%（潜在例を含む、Kida 2014）。母集団が野球選手に限られ、肘の症状で受診した患者全体に占める割合は確認できず null。",
+      "findings_support": [
+        "throwing",
+        "locking"
+      ],
+      "findings_against": [
+        "fever",
+        "redness_heat",
+        "pulled"
+      ],
+      "key_points": "初期は無症状〜軽い痛みのことが多く、検診のエコーで見つかる。伸展制限・ロッキングは進行例（遊離体）を示唆。早期（透亮期）に投球中止すれば修復が期待でき、見逃すと手術が必要になる。体操選手にも起こる。",
+      "tests": [
+        "肘X線 45度屈曲正面（tangential view）・健側比較",
+        "エコー（小頭の不整・軟骨下骨の断裂）",
+        "MRI（病期と安定性の評価）"
+      ],
+      "sources": [
+        {
+          "title": "Kida Y, Morihara T, et al. Prevalence and clinical characteristics of osteochondritis dissecans of the humeral capitellum among adolescent baseball players. Am J Sports Med. 2014;42(8):1963-1971",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24944293/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "中学・高校生（平均14.5歳）の検診で3.4%（Kida 2014）、小学生の検診でも約2%の報告がある。検診対象の年齢で有病率が決まっており、好発年齢の範囲を一次情報で確定できなかった。",
+        "sources": [
+          {
+            "title": "Kida Y, Morihara T, et al. Prevalence and clinical characteristics of osteochondritis dissecans of the humeral capitellum among adolescent baseball players. Am J Sports Med. 2014;42(8):1963-1971",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24944293/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "olecranon_bursitis",
+      "name": "肘頭滑液包炎（非化膿性）",
+      "red_flag": false,
+      "subregions": [
+        "posterior"
+      ],
+      "trauma": "any",
+      "sex_note": "男性に多い（救急受診コホートで85%が男性）",
+      "stars_by_age": {
+        "child": null,
+        "young": 2,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "イスラエル軍（若年成人）で肘頭滑液包炎の粗発生率29/10万人年、うち化膿性24%（Schermann 2017）→非化膿性は約22/10万人年で、肘の訴え約720/10万人年の約3%→15〜39歳★2。軍の集団（戦闘職で97/10万人年）で一般人口より高い可能性。中高年の発生率は確認できず null。",
+      "findings_support": [
+        "olecranon_swelling"
+      ],
+      "findings_against": [
+        "fever",
+        "redness_heat",
+        "deformity_swelling",
+        "locking",
+        "bursa_wbc2k"
+      ],
+      "key_points": "肘頭部の波動性の腫れ。痛み・発赤・熱感・皮膚の傷があれば化膿性を疑い穿刺。痛風・関節リウマチでも起こる（結晶・リウマトイド結節）。肘関節自体の可動域は保たれるのが関節炎との違い。",
+      "tests": [
+        "穿刺（細胞数、グラム染色・培養、結晶）",
+        "肘X線（肘頭骨棘・骨折・異物）",
+        "エコー"
+      ],
+      "sources": [
+        {
+          "title": "Schermann H, et al. Olecranon bursitis in a military population: epidemiology and evidence for prolonged morbidity in combat recruits. Mil Med. 2017;182(9):e1976-e1980",
+          "url": "https://doi.org/10.7205/MILMED-D-16-00402"
+        },
+        {
+          "title": "Beyde, et al. Efficacy of empiric antibiotic management of septic olecranon bursitis without bursal aspiration in emergency department patients. Acad Emerg Med. 2022",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34698411/"
+        }
+      ],
+      "age": {
+        "typical": [
+          42,
+          69
+        ],
+        "outside": null,
+        "basis": "米国ミネソタの大学病院救急外来の肘頭滑液包炎264例（2011〜2018年）で年齢中央値57歳（四分位42〜69歳）、85%が男性。救急受診例のため化膿性疑いが多く含まれる。",
+        "sources": [
+          {
+            "title": "Beyde, et al. Efficacy of empiric antibiotic management of septic olecranon bursitis without bursal aspiration in emergency department patients. Acad Emerg Med. 2022",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34698411/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "septic_bursitis",
+      "name": "化膿性肘頭滑液包炎",
+      "red_flag": true,
+      "subregions": [
+        "posterior"
+      ],
+      "trauma": "any",
+      "sex_note": "手術例91例で男性68%（El Zein 2024）",
+      "stars_by_age": {
+        "child": null,
+        "young": 1,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "イスラエル軍（若年成人）で肘頭滑液包炎29/10万人年のうち化膿性24%＝約7/10万人年（Schermann 2017）。肘の訴え約720/10万人年の約1%→15〜39歳★1（境界）。中高年の率は確認できず null。",
+      "findings_support": [
+        "olecranon_swelling",
+        "redness_heat",
+        "fever",
+        "bursa_wbc2k"
+      ],
+      "findings_against": [
+        "locking",
+        "throwing"
+      ],
+      "key_points": "皮膚の擦過創・肘をつく習慣が誘因。発熱がなくてもよい。起炎菌は黄色ブドウ球菌が最多。穿刺液WBC>2,000/µLで化膿性寄り（下記LR、小規模研究）。周囲の蜂窩織炎・関節内への波及（可動域制限）を確認。",
+      "tests": [
+        "滑液包穿刺（細胞数、グラム染色、培養は液体培地も、結晶）",
+        "血液検査 CBC・CRP",
+        "肘X線"
+      ],
+      "sources": [
+        {
+          "title": "Schermann H, et al. Olecranon bursitis in a military population: epidemiology and evidence for prolonged morbidity in combat recruits. Mil Med. 2017;182(9):e1976-e1980",
+          "url": "https://doi.org/10.7205/MILMED-D-16-00402"
+        },
+        {
+          "title": "El Zein S, et al. Optimal antibiotics duration following surgical management of septic olecranon bursitis: a 12-year retrospective analysis. J Bone Jt Infect. 2024;9:107-115",
+          "url": "https://jbji.copernicus.org/articles/9/107/2024/"
+        }
+      ],
+      "age": {
+        "typical": [
+          51,
+          74
+        ],
+        "outside": null,
+        "basis": "米Mayo Clinicで手術した化膿性肘頭滑液包炎91例（2000〜2022年）の年齢中央値62歳（四分位51〜74歳）。手術例に偏る。",
+        "sources": [
+          {
+            "title": "El Zein S, et al. Optimal antibiotics duration following surgical management of septic olecranon bursitis: a 12-year retrospective analysis. J Bone Jt Infect. 2024;9:107-115",
+            "url": "https://jbji.copernicus.org/articles/9/107/2024/"
+          }
+        ]
+      },
+      "lr": {
+        "bursa_wbc2k": {
+          "lr_pos": 4.5,
+          "lr_neg": 0.08,
+          "basis": "肘頭（28例）・膝蓋前（8例）滑液包炎36例（化膿性17・非化膿性19）。滑液包液WBC>2×10^9/L（2,000/µL）で感度94%・特異度79%、LRは感度・特異度から算出。参照基準は専門家判断で小規模。液体培地での培養は感度100%・特異度89%。",
+          "source": {
+            "title": "Stell IM, Gransden WR. Simple tests for septic bursitis: comparative study. BMJ. 1998;316(7148):1877-1880",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC28586/"
+          },
+          "low_quality": true
+        }
+      }
+    },
+    {
+      "id": "elbow_oa",
+      "name": "変形性肘関節症",
+      "red_flag": false,
+      "subregions": [
+        "diffuse",
+        "posterior",
+        "medial"
+      ],
+      "trauma": "no",
+      "sex_note": "日本の住民調査（50〜89歳）でX線上のOA（KL≥2）は男性27.3%・女性23.2%",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "長野県小布施町の住民調査でX線上の一次性肘OAは25.2%だが、症候性は0.9%と大半が無症状（Nakayama 2021）。有病率であり受診者中の割合に換算できず null。",
+      "findings_support": [
+        "locking",
+        "ulnar_numb"
+      ],
+      "findings_against": [
+        "fever",
+        "redness_heat",
+        "pulled"
+      ],
+      "key_points": "伸展・屈曲の最終域での痛みと可動域制限、遊離体によるロッキング。肘部管症候群の合併（骨棘による尺骨神経圧迫）に注意。重労働・投球歴・外傷歴が背景にあることが多い。",
+      "tests": [
+        "肘X線 正面・側面",
+        "CT（骨棘・遊離体の位置）",
+        "尺骨神経症状があれば神経伝導検査"
+      ],
+      "sources": [
+        {
+          "title": "Nakayama K, et al. Prevalence and associated factors of primary elbow osteoarthritis in the Japanese general elderly population. J Shoulder Elbow Surg. 2021",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34454037/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "日本の住民調査（50〜89歳、平均69.2歳）で年齢とBMIがX線上のOAの関連因子。好発年齢の範囲を示す一次情報は確認できなかった。",
+        "sources": [
+          {
+            "title": "Nakayama K, et al. Prevalence and associated factors of primary elbow osteoarthritis in the Japanese general elderly population. J Shoulder Elbow Surg. 2021",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34454037/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "distal_biceps",
+      "name": "上腕二頭筋遠位腱断裂",
+      "red_flag": false,
+      "subregions": [
+        "anterior"
+      ],
+      "trauma": "yes",
+      "sex_note": "ほぼ男性（米国全国データで95%、英国の手術例202例では201例が男性）",
+      "stars_by_age": {
+        "child": 0,
+        "young": 1,
+        "middle": 1,
+        "elderly": null
+      },
+      "star_basis": "米国全国保険データで2.55/10万人年（地域コホートで5.35/10万人年）（Kelly 2015）。肘の訴え約720/10万人年の1%未満→★1。男性に限ればこの約2倍。",
+      "findings_support": [
+        "pop_anterior",
+        "hook_test_pos"
+      ],
+      "findings_against": [
+        "fever",
+        "ulnar_numb",
+        "pulled"
+      ],
+      "key_points": "重い物を持ち上げた瞬間（肘屈曲位での伸展強制）の前面のブチッ感、前腕の回外筋力低下、上腕二頭筋の近位への退縮（逆Popeye）。hook testは原著で感度・特異度100%（O'Driscoll 2007、45例）だが、追試では完全断裂で感度86%、腱膜（lacertus fibrosus）温存例45%、部分断裂30%（Luokkala 2020）。陰性でも否定しない。修復は早いほど容易。",
+      "tests": [
+        "hook test",
+        "エコー",
+        "MRI（屈曲・外転・回外位：FABS view）"
+      ],
+      "sources": [
+        {
+          "title": "Kelly MP, et al. Distal Biceps Tendon Ruptures: An Epidemiological Analysis Using a Large Population Database. Am J Sports Med. 2015",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26063401/"
+        },
+        {
+          "title": "Luokkala T, et al. Distal biceps hook test - Sensitivity in acute and chronic tears and ability to predict the need for graft reconstruction. Shoulder Elbow. 2020;12(4):294-298",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7400716/"
+        },
+        {
+          "title": "O'Driscoll SW, et al. The hook test for distal biceps tendon avulsion. Am J Sports Med. 2007",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17687121/"
+        }
+      ],
+      "age": {
+        "typical": [
+          30,
+          59
+        ],
+        "outside": null,
+        "basis": "米国地域コホートで平均46.3歳・中央値46歳（Kelly 2015）。Safran 2002（他論文の引用で確認）では大半が30〜49歳の男性。英国の手術例202例で平均42歳（Luokkala 2020）。これらを合わせ30〜50代とした。",
+        "sources": [
+          {
+            "title": "Kelly MP, et al. Distal Biceps Tendon Ruptures: An Epidemiological Analysis Using a Large Population Database. Am J Sports Med. 2015",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26063401/"
+          },
+          {
+            "title": "Luokkala T, et al. Distal biceps hook test - Sensitivity in acute and chronic tears and ability to predict the need for graft reconstruction. Shoulder Elbow. 2020;12(4):294-298",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7400716/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pulled_elbow",
+      "name": "肘内障（橈骨頭亜脱臼）",
+      "red_flag": false,
+      "subregions": [
+        "diffuse",
+        "lateral"
+      ],
+      "trauma": "yes",
+      "sex_note": "やや女児に多い（救急1,228例で女児59.7%）、左腕が59.8%",
+      "stars_by_age": {
+        "child": 3,
+        "young": 0,
+        "middle": 0,
+        "elderly": 0
+      },
+      "star_basis": "米国救急データ（NEISS 2004〜2018年）で6歳以下の発生6.03/1万人年（Zhou 2022）。0〜14歳全体に均すと約28/10万人年で、小児の肘骨折（120〜308/10万人年）と合わせた肘外傷の約8〜19%→★3。1〜4歳に限ればはるかに高い割合になる。",
+      "findings_support": [
+        "pulled"
+      ],
+      "findings_against": [
+        "deformity_swelling",
+        "fever",
+        "fall_on_hand"
+      ],
+      "key_points": "腕を下垂・軽度屈曲回内位で動かさない幼児。引っ張られた病歴が典型だが、米国データでは転倒（39.4%）が引っ張り（36.2%）より多い。転倒機転・腫脹・限局圧痛があれば整復前にX線で骨折を除外する。",
+      "tests": [
+        "機転が典型なら整復（回内法または回外屈曲法）→数分後に腕を使うか確認",
+        "転倒機転・腫脹・整復不成功ならX線"
+      ],
+      "sources": [
+        {
+          "title": "Zhou T, et al. Trends and epidemiology of radial head subluxation in the United States from 2004 to 2018. Eur J Orthop Surg Traumatol. 2022",
+          "url": "https://aminer.org/pub/610fb2f85244ab9dcbbb40e6/trends-and-epidemiology-of-radial-head-subluxation-in-the-united-states-from"
+        },
+        {
+          "title": "Vitello S, et al. Epidemiology of Nursemaid's Elbow. West J Emerg Med. 2014;15(4):554-557",
+          "url": "https://westjem.com/original-research/epidemiology-of-nursemaids-elbow.html"
+        },
+        {
+          "title": "Landin LA, Danielsson LG. Elbow fractures in children: an epidemiological analysis of 589 cases. Acta Orthop Scand. 1986;57(4):309-312",
+          "url": "https://doi.org/10.3109/17453678608994398"
+        }
+      ],
+      "age": {
+        "typical": [
+          1,
+          4
+        ],
+        "outside": null,
+        "basis": "米国救急1,228例で平均28.6±12.6か月、44%が18〜29か月。典型年齢は1〜4歳と記載（Vitello 2014）。",
+        "sources": [
+          {
+            "title": "Vitello S, et al. Epidemiology of Nursemaid's Elbow. West J Emerg Med. 2014;15(4):554-557",
+            "url": "https://westjem.com/original-research/epidemiology-of-nursemaids-elbow.html"
+          }
+        ]
+      }
+    },
+    {
+      "id": "supracondylar_fx",
+      "name": "上腕骨顆上骨折（小児）",
+      "red_flag": true,
+      "subregions": [
+        "diffuse",
+        "posterior"
+      ],
+      "trauma": "yes",
+      "sex_note": "デンマークの小児肘骨折355例では男児46%。研究により男女比は異なる",
+      "stars_by_age": {
+        "child": 5,
+        "young": 0,
+        "middle": 0,
+        "elderly": 0
+      },
+      "star_basis": "小児の肘骨折に占める割合はスウェーデン589例で55%（Landin 1986）、デンマーク355例で58%（Houshian 2001）→★5（骨折に限った割合。打撲・肘内障を含む肘外傷全体では下がる）。",
+      "findings_support": [
+        "fall_on_hand",
+        "deformity_swelling",
+        "ext_test_pos"
+      ],
+      "findings_against": [
+        "pulled",
+        "fever"
+      ],
+      "key_points": "最重要は神経血管の評価：神経損傷は11.3%（伸展型では前骨間神経が最多）（Babal 2010メタ解析）。橈骨動脈拍動・手の色調・毛細血管再充満、AIN（OKサイン）・橈骨・尺骨神経を整復前に記録。他動伸展での前腕痛の増悪・鎮痛薬が効かない痛みはコンパートメント症候群を疑う。転位がわずかでも後方fat pad sign・前上腕骨線の偏位を確認。",
+      "tests": [
+        "肘X線 正面・側面（前上腕骨線・fat pad sign・Baumann角）",
+        "神経血管所見の記録（整復前後）",
+        "必要に応じて健側X線"
+      ],
+      "sources": [
+        {
+          "title": "Landin LA, Danielsson LG. Elbow fractures in children: an epidemiological analysis of 589 cases. Acta Orthop Scand. 1986;57(4):309-312",
+          "url": "https://doi.org/10.3109/17453678608994398"
+        },
+        {
+          "title": "Houshian S, Mehdi B, Larsen MS. The epidemiology of elbow fracture in children: analysis of 355 fractures, with special reference to supracondylar humerus fractures. J Orthop Sci. 2001;6:312-315",
+          "url": "https://link.springer.com/doi/10.1007/s007760100024"
+        },
+        {
+          "title": "Babal JC, Mehlman CT, Klein G. Nerve injuries associated with pediatric supracondylar humeral fractures: a meta-analysis. J Pediatr Orthop. 2010",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20357592/"
+        }
+      ],
+      "age": {
+        "typical": [
+          5,
+          9
+        ],
+        "outside": null,
+        "basis": "ニュージーランドの地域外傷レジストリ（0〜14歳の入院1,563例、2012〜2022年）で62.8%が5〜9歳、同年齢の発生率131.5/10万人年。デンマーク355例の小児肘骨折では平均7.9歳。",
+        "sources": [
+          {
+            "title": "The Burden of Paediatric Supracondylar Humeral Fractures Admitted Within a Health Region in New Zealand. J Paediatr Child Health. 2025;61(6):919-925",
+            "url": "https://doi.org/10.1111/jpc.70045"
+          },
+          {
+            "title": "Houshian S, Mehdi B, Larsen MS. The epidemiology of elbow fracture in children: analysis of 355 fractures, with special reference to supracondylar humerus fractures. J Orthop Sci. 2001;6:312-315",
+            "url": "https://link.springer.com/doi/10.1007/s007760100024"
+          }
+        ]
+      },
+      "lr": {
+        "ext_test_pos": {
+          "lr_pos": 1.9,
+          "lr_neg": 0.11,
+          "basis": "英国の救急多施設前向き研究（肘外傷の成人・小児、参照基準はX線と経過観察）。小児で肘が完全伸展できれば骨折のLR−0.11（95%CI 0.06-0.19、論文記載）、LR+は小児の感度94.6%・特異度49.5%（BestBETs要約の値）から算出。肘骨折全般に対する値で顆上骨折に限った値ではない。著者らは小児では単独の判断材料にしないよう注意している。",
+          "source": {
+            "title": "Appelboam A, et al. Elbow extension test to rule out elbow fracture: multicentre prospective validation and observational study of diagnostic accuracy in adults and children. BMJ. 2008;337:a2428",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/19066257/"
+          }
+        }
+      }
+    },
+    {
+      "id": "lateral_condyle_fx",
+      "name": "上腕骨外側顆骨折（小児）",
+      "red_flag": true,
+      "subregions": [
+        "lateral"
+      ],
+      "trauma": "yes",
+      "sex_note": "男児に多い（Landin 1986）",
+      "stars_by_age": {
+        "child": 3,
+        "young": 0,
+        "middle": 0,
+        "elderly": 0
+      },
+      "star_basis": "小児の肘骨折589例中12%（Landin 1986）、米国保険データの小児上腕骨遠位端骨折1,411例中10.9%（Klahs 2024）→★3。",
+      "findings_support": [
+        "fall_on_hand",
+        "ext_test_pos"
+      ],
+      "findings_against": [
+        "pulled",
+        "fever"
+      ],
+      "key_points": "見逃されやすい小児肘骨折の代表。外側の限局した腫脹・圧痛で顆上骨折より腫れが軽いことがある。関節内骨折で、わずかな転位でも偽関節・外反肘・遅発性尺骨神経麻痺の原因になるため、斜位像を追加して転位を評価する。",
+      "tests": [
+        "肘X線 正面・側面＋内旋斜位（転位の評価）",
+        "判断に迷えば健側比較・MRI/エコー"
+      ],
+      "sources": [
+        {
+          "title": "Landin LA, Danielsson LG. Elbow fractures in children: an epidemiological analysis of 589 cases. Acta Orthop Scand. 1986;57(4):309-312",
+          "url": "https://doi.org/10.3109/17453678608994398"
+        },
+        {
+          "title": "Klahs KJ, et al. Epidemiologic investigation of pediatric distal humerus fractures: An American insurance claims database study. World J Orthop. 2024;15(1):52-60",
+          "url": "https://www.wjgnet.com/2218-5836/full/v15/i1/52.htm"
+        }
+      ],
+      "age": {
+        "typical": [
+          4,
+          11
+        ],
+        "outside": null,
+        "basis": "米国保険データの外側顆骨折154例で平均7.75±4.2歳（平均±1SDを好発範囲とした）（Klahs 2024）。",
+        "sources": [
+          {
+            "title": "Klahs KJ, et al. Epidemiologic investigation of pediatric distal humerus fractures: An American insurance claims database study. World J Orthop. 2024;15(1):52-60",
+            "url": "https://www.wjgnet.com/2218-5836/full/v15/i1/52.htm"
+          }
+        ]
+      },
+      "lr": {
+        "ext_test_pos": {
+          "lr_pos": 1.9,
+          "lr_neg": 0.11,
+          "basis": "Appelboam 2008の小児の値（肘骨折全般に対するもの。外側顆骨折に限った値ではない）。完全伸展できても骨折は否定しきれない。",
+          "source": {
+            "title": "Appelboam A, et al. Elbow extension test to rule out elbow fracture: multicentre prospective validation and observational study of diagnostic accuracy in adults and children. BMJ. 2008;337:a2428",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/19066257/"
+          }
+        }
+      }
+    },
+    {
+      "id": "medial_epicondyle_fx",
+      "name": "上腕骨内側上顆骨折（小児・思春期）",
+      "red_flag": false,
+      "subregions": [
+        "medial"
+      ],
+      "trauma": "yes",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 3,
+        "young": null,
+        "middle": 0,
+        "elderly": 0
+      },
+      "star_basis": "米国保険データの小児上腕骨遠位端骨折1,411例中8.8%（Klahs 2024）。同データでは顆上骨折が80%と他研究（55〜58%）より高く、肘骨折全体に占める割合に補正すると約6%→★3（粗い推定）。",
+      "findings_support": [
+        "fall_on_hand",
+        "throwing",
+        "ulnar_numb"
+      ],
+      "findings_against": [
+        "pulled",
+        "fever"
+      ],
+      "key_points": "肘関節脱臼に合併しやすく、骨片が関節内に嵌頓することがある（脱臼整復後のX線で必ず確認）。投球動作での裂離骨折もある。尺骨神経症状を確認。",
+      "tests": [
+        "肘X線 正面・側面・健側比較（骨端核の位置）",
+        "脱臼合併例は整復後X線"
+      ],
+      "sources": [
+        {
+          "title": "Klahs KJ, et al. Epidemiologic investigation of pediatric distal humerus fractures: An American insurance claims database study. World J Orthop. 2024;15(1):52-60",
+          "url": "https://www.wjgnet.com/2218-5836/full/v15/i1/52.htm"
+        }
+      ],
+      "age": {
+        "typical": [
+          7,
+          15
+        ],
+        "outside": null,
+        "basis": "米国保険データの内側上顆骨折124例で平均11±3.86歳（平均±1SDを好発範囲とした）（Klahs 2024）。",
+        "sources": [
+          {
+            "title": "Klahs KJ, et al. Epidemiologic investigation of pediatric distal humerus fractures: An American insurance claims database study. World J Orthop. 2024;15(1):52-60",
+            "url": "https://www.wjgnet.com/2218-5836/full/v15/i1/52.htm"
+          }
+        ]
+      }
+    },
+    {
+      "id": "radial_head_fx",
+      "name": "橈骨頭・頸部骨折",
+      "red_flag": false,
+      "subregions": [
+        "lateral"
+      ],
+      "trauma": "yes",
+      "sex_note": "男女比2:3、平均年齢は女性52.8歳・男性40.5歳（Kaas 2010）。女性は低エネルギー転倒が多く骨粗鬆症の評価を考慮（Duckworth 2012）",
+      "stars_by_age": {
+        "child": 3,
+        "young": 2,
+        "middle": 2,
+        "elderly": 2
+      },
+      "star_basis": "成人：オランダで2.8/1万人年＝28/10万人年（Kaas 2010）→肘の訴え約720/10万人年の約4%で★2（年齢別の率は未確認、成人全体の率から換算）。小児：橈骨頸部骨折が小児肘骨折589例の14%（Landin 1986）→★3。",
+      "findings_support": [
+        "fall_on_hand",
+        "ext_test_pos"
+      ],
+      "findings_against": [
+        "fever",
+        "pulled"
+      ],
+      "key_points": "手をついて転倒→外側の圧痛と前腕回旋痛。X線で骨折線が見えなくても後方fat pad signがあれば潜在骨折として扱う。回旋のブロック、手関節痛（Essex-Lopresti）、内側の圧痛（靱帯損傷の合併）を確認。合併骨傷は12.4%（Kaas 2010）。",
+      "tests": [
+        "肘X線 正面・側面＋橈骨頭撮影（Greenspan view）",
+        "CT（転位・粉砕の評価）",
+        "手関節の診察"
+      ],
+      "sources": [
+        {
+          "title": "Kaas L, et al. The epidemiology of radial head fractures. J Shoulder Elbow Surg. 2010;19(4):520-523",
+          "url": "https://read.qxmd.com/read/20149972/the-epidemiology-of-radial-head-fractures"
+        },
+        {
+          "title": "Duckworth AD, et al. The epidemiology of radial head and neck fractures. J Hand Surg Am. 2012;37(1):112-119",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4456693/"
+        },
+        {
+          "title": "Landin LA, Danielsson LG. Elbow fractures in children: an epidemiological analysis of 589 cases. Acta Orthop Scand. 1986;57(4):309-312",
+          "url": "https://doi.org/10.3109/17453678608994398"
+        }
+      ],
+      "age": {
+        "typical": [
+          40,
+          55
+        ],
+        "outside": null,
+        "basis": "オランダの328骨折で平均48.0歳（14〜88歳）、男性40.5歳・女性52.8歳（Kaas 2010）。英国エジンバラ285例で年齢中央値43歳（13〜94歳）（Duckworth 2012）。",
+        "sources": [
+          {
+            "title": "Kaas L, et al. The epidemiology of radial head fractures. J Shoulder Elbow Surg. 2010;19(4):520-523",
+            "url": "https://read.qxmd.com/read/20149972/the-epidemiology-of-radial-head-fractures"
+          },
+          {
+            "title": "Duckworth AD, et al. The epidemiology of radial head and neck fractures. J Hand Surg Am. 2012;37(1):112-119",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4456693/"
+          }
+        ]
+      },
+      "lr": {
+        "ext_test_pos": {
+          "lr_pos": 1.9,
+          "lr_neg": 0.03,
+          "basis": "英国の救急多施設前向き研究の成人：完全伸展できれば骨折のLR−0.03（95%CI 0.01-0.08、論文記載）、成人の感度98.4%・特異度47.7%からLR+約1.9を算出。肘骨折全般に対する値。伸展できても肘頭骨折は否定できない（著者の注意）。",
+          "source": {
+            "title": "Appelboam A, et al. Elbow extension test to rule out elbow fracture: multicentre prospective validation and observational study of diagnostic accuracy in adults and children. BMJ. 2008;337:a2428",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/19066257/"
+          }
+        }
+      }
+    },
+    {
+      "id": "olecranon_fx",
+      "name": "肘頭骨折",
+      "red_flag": false,
+      "subregions": [
+        "posterior"
+      ],
+      "trauma": "yes",
+      "sex_note": "高齢女性の低エネルギー転倒に多い（Duckworthのデータを引用したイタリアの研究）",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": 2
+      },
+      "star_basis": "発生率は11.5〜12/10万人年と報告（イタリアの単施設疫学研究の文献レビュー部分）→肘の訴え約720/10万人年の約1.6%→★2。高齢者に多いため65歳以上のみ数値化（年齢別の率は未確認）。",
+      "findings_support": [
+        "fall_on_hand",
+        "deformity_swelling"
+      ],
+      "findings_against": [
+        "pulled",
+        "fever"
+      ],
+      "key_points": "肘を直接ついての転倒。肘頭の圧痛・陥凹と自動伸展不能（上腕三頭筋の連続性の途絶）。肘伸展テストで伸展できても肘頭骨折は否定できない点に注意。",
+      "tests": [
+        "肘X線 正面・側面（真の側面像）",
+        "粉砕・脱臼骨折はCT"
+      ],
+      "sources": [
+        {
+          "title": "Epidemiology of isolated olecranon fractures: a detailed survey on a large sample of patients in a suburban area. JSES Int. 2022",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8888171/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "高齢者で発生率が高いとの記載はあるが、好発年齢の数値範囲は確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "elbow_dislocation",
+      "name": "肘関節脱臼",
+      "red_flag": false,
+      "subregions": [
+        "diffuse",
+        "posterior"
+      ],
+      "trauma": "yes",
+      "sex_note": "男女の発生率はほぼ同じ（5.26 vs 5.16/10万人年）。女性は体操・スケート、男性はフットボールが多い",
+      "stars_by_age": {
+        "child": 2,
+        "young": 1,
+        "middle": 1,
+        "elderly": 1
+      },
+      "star_basis": "米国救急データ（NEISS）で5.21/10万人年、10〜19歳で最大6.87/10万人年（Stoneback 2012）。成人：肘の訴え約720/10万人年の1%未満→★1。小児：小児肘骨折308/10万人年（Houshian 2001）と比べ約2%→★2（年齢区分が異なる粗い換算）。",
+      "findings_support": [
+        "fall_on_hand",
+        "deformity_swelling",
+        "ext_test_pos"
+      ],
+      "findings_against": [
+        "pulled",
+        "fever"
+      ],
+      "key_points": "整復前後で正中・尺骨神経と橈骨動脈を記録。整復後は合併骨折（橈骨頭・鉤状突起＝terrible triad、小児では内側上顆の関節内嵌頓）をX線で確認し、可動域内での安定性を評価する。",
+      "tests": [
+        "肘X線 正面・側面（整復前後）",
+        "合併骨折が疑わしければCT",
+        "神経血管所見の記録"
+      ],
+      "sources": [
+        {
+          "title": "Stoneback JW, et al. Incidence of elbow dislocations in the United States population. J Bone Joint Surg Am. 2012;94(3):240-245",
+          "url": "https://www.scilit.net/publications/09e88ff8fd9c76e806b0cba94356da3d"
+        },
+        {
+          "title": "Houshian S, Mehdi B, Larsen MS. The epidemiology of elbow fracture in children: analysis of 355 fractures, with special reference to supracondylar humerus fractures. J Orthop Sci. 2001;6:312-315",
+          "url": "https://link.springer.com/doi/10.1007/s007760100024"
+        }
+      ],
+      "age": {
+        "typical": [
+          10,
+          19
+        ],
+        "outside": null,
+        "basis": "米国全国救急データで10〜19歳が全脱臼の43.5%、発生率6.87/10万人年で最大（Stoneback 2012）。",
+        "sources": [
+          {
+            "title": "Stoneback JW, et al. Incidence of elbow dislocations in the United States population. J Bone Joint Surg Am. 2012;94(3):240-245",
+            "url": "https://www.scilit.net/publications/09e88ff8fd9c76e806b0cba94356da3d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "septic_arthritis",
+      "name": "化膿性肘関節炎",
+      "red_flag": true,
+      "subregions": [
+        "diffuse"
+      ],
+      "trauma": "any",
+      "sex_note": "Mayo Clinicの手術例19例で男性73.7%",
+      "stars_by_age": {
+        "child": null,
+        "young": 1,
+        "middle": 1,
+        "elderly": 1
+      },
+      "star_basis": "成人の化膿性関節炎（自己関節）は12.0/10万人年（Kennedy 2015、NZ）、うち肘は3.4%（Mayo Clinic 557例、Damronglerd 2025）〜6〜9%（既報）→1/10万人年前後で、肘の訴え約720/10万人年の1%未満→成人★1。小児は肘の割合を確認できず null。",
+      "findings_support": [
+        "fever",
+        "redness_heat",
+        "night_pain",
+        "deformity_swelling",
+        "jf_wbc50k"
+      ],
+      "findings_against": [
+        "throwing",
+        "pulled"
+      ],
+      "key_points": "肘関節全体の腫脹と全方向の可動域制限・強い他動痛（滑液包炎は関節可動域が保たれる）。糖尿病・腎不全・免疫抑制がリスク。肘の化膿性関節炎の手術例では関節液WBC>5万/µLは37.5%しかなく、低い値でも否定しない。抗菌薬前に穿刺・培養。",
+      "tests": [
+        "関節穿刺（抗菌薬投与前。細胞数・分画、グラム染色、培養、結晶）",
+        "血液検査 CBC・CRP・ESR、血液培養2セット",
+        "肘X線"
+      ],
+      "sources": [
+        {
+          "title": "Damronglerd P, et al. Ten years of experience with elbow native joint arthritis: a multicenter retrospective cohort study. J Bone Jt Infect. 2025;10:25-31",
+          "url": "https://jbji.copernicus.org/articles/10/25/2025/"
+        },
+        {
+          "title": "Kennedy N, Chambers ST, Nolan I, et al. Native Joint Septic Arthritis: Epidemiology, Clinical Features, and Microbiological Causes in a New Zealand Population. J Rheumatol. 2015;42(12):2392-2397",
+          "url": "https://www.jrheum.org/content/42/12/2392"
+        },
+        {
+          "title": "Margaretten ME, et al. Does this adult patient have septic arthritis? JAMA. 2007;297(13):1478-1488",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17405973/"
+        }
+      ],
+      "age": {
+        "typical": [
+          45,
+          75
+        ],
+        "outside": null,
+        "basis": "Mayo Clinicで手術した成人の化膿性肘関節炎19例の年齢中央値64歳（四分位45〜75歳）。少数・手術例のみ。全年齢で考慮すべき疾患のため outside は設定しない。",
+        "sources": [
+          {
+            "title": "Damronglerd P, et al. Ten years of experience with elbow native joint arthritis: a multicenter retrospective cohort study. J Bone Jt Infect. 2025;10:25-31",
+            "url": "https://jbji.copernicus.org/articles/10/25/2025/"
+          }
+        ]
+      },
+      "lr": {
+        "jf_wbc50k": {
+          "lr_pos": 7.7,
+          "lr_neg": null,
+          "basis": "成人の化膿性関節炎疑い（全関節）を対象としたJAMA Rational Clinical Examの系統的レビュー。関節液WBC>50,000/µLでLR 7.7（95%CI 5.7-11.0）。肘に限った値ではなく、肘の手術例では>5万は37.5%のみ（Damronglerd 2025）。",
+          "source": {
+            "title": "Margaretten ME, Kohlwes J, Moore D, Bent S. Does this adult patient have septic arthritis? JAMA. 2007;297(13):1478-1488",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17405973/"
+          }
+        }
+      }
+    },
+    {
+      "id": "crystal_arthritis",
+      "name": "痛風・偽痛風（結晶性関節炎・滑液包炎）",
+      "red_flag": false,
+      "subregions": [
+        "diffuse",
+        "posterior"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "肘に限った頻度の一次情報を確認できず null。",
+      "findings_support": [
+        "redness_heat",
+        "olecranon_swelling",
+        "multi_joint",
+        "fever"
+      ],
+      "findings_against": [
+        "throwing",
+        "pulled"
+      ],
+      "key_points": "急性の発赤・腫脹で化膿性と区別できないことがあり、穿刺で結晶と培養を両方確認する（結晶があっても感染は否定できない）。痛風では肘頭滑液包炎・痛風結節の形で出ることがある。",
+      "tests": [
+        "穿刺（偏光顕微鏡で結晶、細胞数、グラム染色・培養）",
+        "血清尿酸値（発作中は低値のことあり）",
+        "肘X線（軟骨石灰化・骨びらん）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "肘に限った好発年齢の一次情報は確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "ra_elbow",
+      "name": "関節リウマチ（肘病変）",
+      "red_flag": false,
+      "subregions": [
+        "diffuse",
+        "posterior"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "肘病変の受診者中の割合を示す一次情報を確認できず null。",
+      "findings_support": [
+        "multi_joint",
+        "olecranon_swelling",
+        "night_pain"
+      ],
+      "findings_against": [
+        "throwing",
+        "pulled",
+        "fall_on_hand"
+      ],
+      "key_points": "両側性・多関節（手指・手関節）の朝のこわばり。肘頭部のリウマトイド結節や滑液包炎で気づかれることもある。小児では若年性特発性関節炎を考える。",
+      "tests": [
+        "血液検査 RF・抗CCP抗体・CRP・ESR",
+        "肘・手のX線",
+        "エコー（滑膜炎）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "肘に限った好発年齢の一次情報は確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "radial_tunnel",
+      "name": "後骨間神経麻痺・橈骨管症候群",
+      "red_flag": false,
+      "subregions": [
+        "lateral",
+        "anterior"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "頻度の一次情報を確認できず null。",
+      "findings_support": [
+        "grip_pain",
+        "night_pain"
+      ],
+      "findings_against": [
+        "fever",
+        "ulnar_numb"
+      ],
+      "key_points": "外側上顆炎と紛らわしい：圧痛点が外側上顆より遠位（回外筋入口部）。後骨間神経麻痺では感覚障害なく手指MP伸展不能（下垂指）で、腫瘤（ガングリオン・脂肪腫）や神経炎の検索が必要。",
+      "tests": [
+        "エコー・MRI（腫瘤の除外）",
+        "神経伝導検査・筋電図"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢の一次情報は確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "cervical_radiculopathy",
+      "name": "頸椎神経根症（肘への関連痛）",
+      "red_flag": true,
+      "subregions": [
+        "diffuse",
+        "lateral",
+        "medial"
+      ],
+      "trauma": "no",
+      "sex_note": "男性に多い（年齢調整発生率 男107.3・女63.5/10万人年）",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "米国Rochesterの人口ベース研究で83.2/10万人年（Radhakrishnan 1994）だが、肘の痛みとして受診する割合は確認できず null。",
+      "findings_support": [
+        "neck_radiating",
+        "night_pain",
+        "ulnar_numb"
+      ],
+      "findings_against": [
+        "olecranon_swelling",
+        "redness_heat",
+        "pulled"
+      ],
+      "key_points": "肘に局所の圧痛・誘発痛がない肘痛は頸椎由来を考える。C6はテニス肘、C8は肘部管症候群と紛らわしい。Spurlingテスト・反射・筋力・感覚分布を確認し、筋力低下の進行や脊髄症状（巧緻運動障害・歩行障害）は早期に精査。",
+      "tests": [
+        "神経学的診察（反射・筋力・感覚の分布）",
+        "頸椎X線・MRI"
+      ],
+      "sources": [
+        {
+          "title": "Radhakrishnan K, et al. Epidemiology of cervical radiculopathy. A population-based study from Rochester, Minnesota, 1976 through 1990. Brain. 1994;117(2):325-335",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8186959/"
+        }
+      ],
+      "age": {
+        "typical": [
+          50,
+          54
+        ],
+        "outside": null,
+        "basis": "米国Rochesterの人口ベース研究で年齢別発生率は50〜54歳でピーク（202.9/10万人年）。C7神経根が最多、次いでC6。ピーク年齢帯のみを示しており、前後の年齢でも多い。",
+        "sources": [
+          {
+            "title": "Radhakrishnan K, et al. Epidemiology of cervical radiculopathy. A population-based study from Rochester, Minnesota, 1976 through 1990. Brain. 1994;117(2):325-335",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/8186959/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tumor",
+      "name": "骨・軟部腫瘍（肘周囲）",
+      "red_flag": true,
+      "subregions": [
+        "diffuse",
+        "anterior",
+        "posterior",
+        "lateral",
+        "medial"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "肘は骨・軟部腫瘍の好発部位ではなく、受診者中の割合を示す一次情報は確認できず null。",
+      "findings_support": [
+        "night_pain",
+        "deformity_swelling"
+      ],
+      "findings_against": [
+        "throwing",
+        "pulled"
+      ],
+      "key_points": "外傷のない腫瘤・夜間痛・安静時痛、増大する腫瘤は画像で精査。ブラジルの肘周囲腫瘍37例では骨と軟部がほぼ半々で、多くは良性。成人の骨病変では転移・骨髄腫も考える。",
+      "tests": [
+        "肘X線 正面・側面",
+        "MRI（造影）",
+        "必要に応じて骨シンチ・CT、専門施設紹介"
+      ],
+      "sources": [
+        {
+          "title": "Epidemiological profile and evolution in musculoskeletal tumors at the level of the elbow. Acta Ortop Bras.",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9949311/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "腫瘍の種類により好発年齢が異なり、肘周囲としてまとめた好発年齢は示せない。",
+        "sources": []
+      }
+    }
+  ]
+}

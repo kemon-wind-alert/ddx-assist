@@ -1,0 +1,1460 @@
+{
+  "region": "foot",
+  "name": "足・足関節",
+  "updated": "2026-11-12",
+  "star_scale": "★＝その年齢帯で足・足関節の症状（外傷疾患は足関節・足部外傷）で受診した患者のうち、その疾患が占める割合の目安。★5: 30%以上／★4: 15〜29%／★3: 5〜14%／★2: 1〜4.9%／★1: 1%未満（まれだが鑑別に入る）。受診者中の割合が直接ない場合は、人口あたり発生率を同年齢の足・足関節症状の受診率で割って換算した。分母: 成人は英国一般診療（CiPCA、2006年）の足・足関節の筋骨格系受診有病率 290/1万人年（＝29/1000人年、65〜74歳で最大411/1万人年）［Menz 2010］、小児は オランダ一般診療（2001年、0〜17歳）の足の問題の受診発生率 17.4/1000人年［Krul 2009］。外傷は米国救急の足関節外傷（14〜22歳）の診断内訳［Wiersma 2018］を用いた。救急・スポーツ・手術例など母集団が偏ったデータを含むため粗い目安であり、一般整形外来での実数とはずれうる。null＝鑑別には挙がるが頻度を裏付ける文献を確認できなかった（★未確認）。0＝その年齢帯ではまず考えない（非表示）。",
+  "subregions": [
+    {
+      "id": "lateral",
+      "name": "外側（外果・前距腓靱帯・第5中足骨）"
+    },
+    {
+      "id": "medial",
+      "name": "内側（内果・舟状骨・後脛骨筋腱）"
+    },
+    {
+      "id": "heel",
+      "name": "踵・アキレス腱（後面・足底踵部）"
+    },
+    {
+      "id": "midfoot",
+      "name": "足背・中足部（リスフラン関節）"
+    },
+    {
+      "id": "forefoot",
+      "name": "前足部・足趾"
+    },
+    {
+      "id": "diffuse",
+      "name": "全体・はっきりしない"
+    }
+  ],
+  "findings": [
+    {
+      "id": "night_pain",
+      "label": "夜間痛・安静時痛"
+    },
+    {
+      "id": "fever",
+      "label": "発熱"
+    },
+    {
+      "id": "redness_heat",
+      "label": "発赤・熱感"
+    },
+    {
+      "id": "inversion_injury",
+      "label": "内返し捻挫で受傷"
+    },
+    {
+      "id": "pop",
+      "label": "断裂音・蹴られた感じ"
+    },
+    {
+      "id": "cannot_bear",
+      "label": "荷重・歩行できない"
+    },
+    {
+      "id": "first_step_pain",
+      "label": "起床時の第一歩痛"
+    },
+    {
+      "id": "running_sports",
+      "label": "ランニング・跳躍競技"
+    },
+    {
+      "id": "toe_numbness",
+      "label": "趾のしびれ・灼熱痛"
+    },
+    {
+      "id": "diabetes",
+      "label": "糖尿病・神経障害"
+    },
+    {
+      "id": "calf_swelling",
+      "label": "下腿の腫脹・左右差"
+    },
+    {
+      "id": "claudication",
+      "label": "間欠性跛行"
+    },
+    {
+      "id": "pain_out_of_prop",
+      "label": "外傷に不釣合いな痛み"
+    },
+    {
+      "id": "plantar_ecchymosis",
+      "label": "足底の皮下出血"
+    },
+    {
+      "id": "ottawa_ankle",
+      "label": "Ottawa足関節陽性",
+      "group": "exam"
+    },
+    {
+      "id": "ottawa_midfoot",
+      "label": "Ottawa中足部陽性",
+      "group": "exam"
+    },
+    {
+      "id": "ant_drawer",
+      "label": "前方引き出し陽性",
+      "group": "exam"
+    },
+    {
+      "id": "squeeze_test",
+      "label": "squeeze test陽性",
+      "group": "exam"
+    },
+    {
+      "id": "thompson",
+      "label": "Thompson陽性",
+      "group": "exam"
+    },
+    {
+      "id": "gap_palpable",
+      "label": "アキレス腱の陥凹触知",
+      "group": "exam"
+    },
+    {
+      "id": "windlass",
+      "label": "Windlass陽性",
+      "group": "exam"
+    },
+    {
+      "id": "probe_to_bone",
+      "label": "潰瘍から骨を触知",
+      "group": "exam"
+    },
+    {
+      "id": "pedal_pulse_abn",
+      "label": "足背動脈等の脈拍異常",
+      "group": "exam"
+    }
+  ],
+  "diseases": [
+    {
+      "id": "ankle_sprain",
+      "name": "足関節捻挫（外側靱帯損傷）",
+      "red_flag": false,
+      "subregions": [
+        "lateral"
+      ],
+      "trauma": "yes",
+      "sex_note": "米国救急データで全体の男女差なし（IRR 1.04）。15〜24歳は男性、30歳以上は女性で多い（Waterman 2010）",
+      "stars_by_age": {
+        "child": null,
+        "young": 5,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "米国救急を受診した14〜22歳の足関節外傷20,261例で捻挫・挫傷が80%超（Wiersma 2018）→★5。救急データのため対象が偏る。小児・中高年の外傷内訳は未確認（英国一般診療では捻挫関連の記録語が足・足関節受診の約5%だが、非特異的な「足関節損傷」4.2%が別にある［Menz 2010］）。",
+      "findings_support": [
+        "inversion_injury",
+        "ant_drawer"
+      ],
+      "findings_against": [
+        "fever",
+        "pain_out_of_prop",
+        "plantar_ecchymosis"
+      ],
+      "key_points": "まずOttawa ruleで骨折を除外し、第5中足骨基部・腓骨遠位端・踵骨前方突起・距骨外側突起も押さえる。前方引き出しは急性期の腫脹で感度が落ちるため、陰性でも除外に使いにくい（陽性で確定寄り）。前方引き出し陽性はLR+4.2（Netterström-Wedin 2022）。",
+      "tests": [
+        "Ottawa陽性なら足関節X線 正面・側面・mortise",
+        "必要に応じエコー（前距腓靱帯）"
+      ],
+      "sources": [
+        {
+          "title": "Wiersma AJ, Brou L, Fields SK, Comstock RD, Kerr ZY. Epidemiologic comparison of ankle injuries presenting to US emergency departments versus high school and collegiate athletic training settings. Inj Epidemiol. 2018;5:33",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30175385/"
+        },
+        {
+          "title": "Waterman BR, Owens BD, Davey S, Zacchilli MA, Belmont PJ Jr. The epidemiology of ankle sprains in the United States. J Bone Joint Surg Am. 2010;92(13):2279-2284",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20926721/"
+        }
+      ],
+      "age": {
+        "typical": [
+          10,
+          24
+        ],
+        "outside": null,
+        "basis": "米国救急データ（NEISS 2010〜2024年、約740万件）で発生率は15〜19歳がピーク（2.60/1000人年）、半数以上が10〜24歳。女性のピークは10〜14歳、男性は15〜19歳（Tyler 2025）。2002〜2006年データでもピークは15〜19歳（7.2/1000人年、Waterman 2010）。",
+        "sources": [
+          {
+            "title": "Tyler JR, Sandler AB, Albagli A, et al. The National Epidemiology of Ankle Sprains in the United States: Updates From 2010 to 2024. Orthopedics. 2025;48(6):371-377",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/41337550/"
+          },
+          {
+            "title": "Waterman BR, et al. The epidemiology of ankle sprains in the United States. J Bone Joint Surg Am. 2010;92(13):2279-2284",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/20926721/"
+          }
+        ]
+      },
+      "lr": {
+        "ant_drawer": {
+          "lr_pos": 4.2,
+          "lr_neg": 0.53,
+          "basis": "前距腓靱帯損傷に対する臨床テストの系統的レビュー・メタ解析（参照基準は画像または手術）。前方引き出しは6研究885観察で感度54%(95%CI 35-71)・特異度87%(63-96)、ここから算出。著者らは前距腓靱帯の圧痛（感度95〜100%）で除外、前方引き出しで確定、の組み合わせを推奨。",
+          "source": {
+            "title": "Netterström-Wedin F, Matthews M, Bleakley C. Diagnostic Accuracy of Clinical Tests Assessing Ligamentous Injury of the Talocrural and Subtalar Joints: A Systematic Review With Meta-Analysis. Sports Health. 2022;14(3):336-347",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34286639/"
+          }
+        }
+      }
+    },
+    {
+      "id": "syndesmosis",
+      "name": "遠位脛腓靱帯損傷（高位足関節捻挫）",
+      "red_flag": false,
+      "subregions": [
+        "lateral",
+        "diffuse"
+      ],
+      "trauma": "yes",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合を示す文献を確認できなかった（★未確認）。",
+      "findings_support": [
+        "pain_out_of_prop",
+        "squeeze_test",
+        "cannot_bear"
+      ],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "外旋強制で受傷し、通常の捻挫より回復が遅い。前脛腓靱帯の圧痛は感度が高く（陰性LR 0.28）、squeeze testは特異度が高い（Sman 2015）。腓骨近位の圧痛があればMaisonneuve骨折を疑い下腿全長を撮る。",
+      "tests": [
+        "足関節X線（荷重位mortise：内側clear space・脛腓間の開大）",
+        "下腿全長X線（腓骨近位）",
+        "MRI"
+      ],
+      "sources": [
+        {
+          "title": "Sman AD, Hiller CE, Rae K, et al. Diagnostic accuracy of clinical tests for ankle syndesmosis injury. Br J Sports Med. 2015;49(5):323-329",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24255766/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を示す一次文献を確認できなかった。",
+        "sources": []
+      },
+      "lr": {
+        "squeeze_test": {
+          "lr_pos": 2.15,
+          "lr_neg": null,
+          "basis": "急性足関節損傷の前向き研究（参照基準MRI）。squeeze testは特異度88%、LR+ 2.15(95%CI 0.86-5.39)。CIが1をまたぐ。",
+          "source": {
+            "title": "Sman AD, Hiller CE, Rae K, et al. Diagnostic accuracy of clinical tests for ankle syndesmosis injury. Br J Sports Med. 2015;49(5):323-329",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24255766/"
+          },
+          "low_quality": true
+        },
+        "pain_out_of_prop": {
+          "lr_pos": 3.05,
+          "lr_neg": null,
+          "basis": "同じ研究。外傷に不釣り合いな痛みは特異度79%、LR+ 3.05(95%CI 1.68-5.55)。同研究で前脛腓靱帯の圧痛は感度92%・LR− 0.28(0.09-0.89)、片脚ホップ不能は感度89%・LR− 0.37(0.13-1.03)。",
+          "source": {
+            "title": "Sman AD, Hiller CE, Rae K, et al. Diagnostic accuracy of clinical tests for ankle syndesmosis injury. Br J Sports Med. 2015;49(5):323-329",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24255766/"
+          }
+        }
+      }
+    },
+    {
+      "id": "ankle_fracture",
+      "name": "足関節果部骨折",
+      "red_flag": false,
+      "subregions": [
+        "lateral",
+        "medial",
+        "diffuse"
+      ],
+      "trauma": "yes",
+      "sex_note": "スウェーデン骨折登録（16歳以上57,443骨折）で女性61%、男性の方が受傷年齢が若い（Rydberg 2023）。高齢女性で増加（Thur 2012）",
+      "stars_by_age": {
+        "child": null,
+        "young": 3,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "米国救急の14〜22歳の足関節外傷で骨折は9.5%（Wiersma 2018）→★3。足関節・中足部骨折を合わせた有病率は救急で約15%未満（Bachmann 2003）。中高年は骨折の割合が上がる可能性があるが、受診者中の割合は未確認。",
+      "findings_support": [
+        "cannot_bear",
+        "ottawa_ankle"
+      ],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "Ottawa ankle rule陰性なら骨折はほぼ除外できる（陰性LR 0.08）。陽性のLR+は約1.4と低く、陽性は撮影の適応を示すだけ。内側の圧痛・腫脹は三角靱帯損傷を伴う不安定型を示唆し、荷重位やストレス撮影で評価する。",
+      "tests": [
+        "足関節X線 正面・側面・mortise",
+        "腓骨近位の圧痛があれば下腿全長",
+        "関節面骨折はCT"
+      ],
+      "sources": [
+        {
+          "title": "Wiersma AJ, et al. Epidemiologic comparison of ankle injuries presenting to US emergency departments versus high school and collegiate athletic training settings. Inj Epidemiol. 2018;5:33",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30175385/"
+        },
+        {
+          "title": "Bachmann LM, Kolb E, Koller MT, Steurer J, ter Riet G. Accuracy of Ottawa ankle rules to exclude fractures of the ankle and mid-foot: systematic review. BMJ. 2003;326(7386):417",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12595378/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "スウェーデン骨折登録（2012〜2022年、16歳以上）で受傷時平均55歳、男性の方が若い（Rydberg 2023）。入院例（1987〜2004年）では平均 男性45±19歳・女性58±18歳、受傷機転は同一平面での転倒が64%（Thur 2012）。幅が広く好発年齢の範囲は設定しない。",
+        "sources": [
+          {
+            "title": "Rydberg EM, Wennergren D, Stigevall C, Ekelund J, Möller M. Epidemiology of more than 50,000 ankle fractures in the Swedish Fracture Register during a period of 10 years. J Orthop Surg Res. 2023;18:79",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36721256/"
+          },
+          {
+            "title": "Thur CK, Edgren G, Jansson KÅ, Wretenberg P. Epidemiology of adult ankle fractures in Sweden between 1987 and 2004. Acta Orthop. 2012;83(3):276-281",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22401675/"
+          }
+        ]
+      },
+      "lr": {
+        "ottawa_ankle": {
+          "lr_pos": 1.4,
+          "lr_neg": 0.08,
+          "basis": "Ottawa ankle rulesの系統的レビュー（27研究15,581例）。足関節の統合陰性LR 0.08(95%CI 0.03-0.18)、小児は足関節・中足部合わせて0.07(0.03-0.18)。原著は特異度を統合していないため、LR+はAAFPの要約に記載の感度97.6%・特異度31.5%からの算出値（参考値）。",
+          "source": {
+            "title": "Bachmann LM, Kolb E, Koller MT, Steurer J, ter Riet G. Accuracy of Ottawa ankle rules to exclude fractures of the ankle and mid-foot: systematic review. BMJ. 2003;326(7386):417",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/12595378/"
+          }
+        }
+      }
+    },
+    {
+      "id": "fifth_mt_base",
+      "name": "第5中足骨基部裂離骨折（下駄履き骨折）",
+      "red_flag": false,
+      "subregions": [
+        "lateral",
+        "midfoot"
+      ],
+      "trauma": "yes",
+      "sex_note": "多施設整形外科の第5中足骨骨折1,275例でzone 1（基部裂離）の75%が女性。若年は男性、高齢は女性が多い（Kane 2015）",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合を示す文献を確認できなかった（★未確認）。英国一般診療では中足骨骨折の記録語が足・足関節受診の0.6%（Menz 2010）だが、骨折は救急・病院へ流れるため過小評価。",
+      "findings_support": [
+        "inversion_injury",
+        "ottawa_midfoot"
+      ],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "内返し捻挫で起こり、捻挫と誤認されやすい。第5中足骨基部の圧痛はOttawa foot ruleの項目。Jones骨折（骨幹端-骨幹部移行部）との区別が治療方針を分ける。小児の骨端線・os vesalianumと混同しない。",
+      "tests": [
+        "足部X線 正面・斜位・側面"
+      ],
+      "sources": [
+        {
+          "title": "Kane JM, Sandrowski K, Saffel H, et al. The Epidemiology of Fifth Metatarsal Fracture. Foot Ankle Spec. 2015;8(5):354-359",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25666689/"
+        },
+        {
+          "title": "Menz HB, Jordan KP, Roddy E, Croft PR. Characteristics of primary care consultations for musculoskeletal foot and ankle problems in the UK. Rheumatology (Oxford). 2010;49(7):1391-1398",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20403912/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "Kane 2015の抄録に年齢分布の数値はなく、好発年齢は設定しない。",
+        "sources": []
+      },
+      "lr": {
+        "ottawa_midfoot": {
+          "lr_pos": 1.4,
+          "lr_neg": 0.08,
+          "basis": "Ottawa ankle/foot rulesの系統的レビュー。中足部の統合陰性LR 0.08(95%CI 0.03-0.20)。LR+はAAFP要約の全体の感度97.6%・特異度31.5%からの算出値（参考値、中足部単独ではない）。",
+          "source": {
+            "title": "Bachmann LM, et al. Accuracy of Ottawa ankle rules to exclude fractures of the ankle and mid-foot: systematic review. BMJ. 2003;326(7386):417",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/12595378/"
+          }
+        }
+      }
+    },
+    {
+      "id": "jones_fracture",
+      "name": "Jones骨折（第5中足骨近位骨幹部骨折）",
+      "red_flag": false,
+      "subregions": [
+        "lateral",
+        "midfoot"
+      ],
+      "trauma": "any",
+      "sex_note": "日本の手術例で男性は10代後半に単峰性、女性は50歳にもピークのある二峰性（Ogawa 2025）",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合を示す文献を確認できなかった（★未確認）。",
+      "findings_support": [
+        "running_sports",
+        "ottawa_midfoot"
+      ],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "サッカー等の切り返し動作で生じる疲労骨折型が多く、前駆痛があることも。血流が乏しく遷延治癒・再骨折が多いため、基部裂離骨折と分けて扱う（競技者は手術を検討）。",
+      "tests": [
+        "足部X線 正面・斜位・側面",
+        "初期で写らなければMRI・CT"
+      ],
+      "sources": [
+        {
+          "title": "Ogawa T, Nishi R, Ukita H, et al. The epidemiology of fifth metatarsal fracture surgeries in Japan using nationwide hospital claim database. J Orthop Sci. 2025;30(5):873-878",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40011147/"
+        }
+      ],
+      "age": {
+        "typical": [
+          15,
+          19
+        ],
+        "outside": null,
+        "basis": "日本のDPCデータ（2010〜2021年）で第5中足骨骨折の観血的整復固定2,044例は平均17.9歳、男女とも高校生年代（特に17歳）でピーク。Jones骨折に限った集計ではない点に注意。",
+        "sources": [
+          {
+            "title": "Ogawa T, et al. The epidemiology of fifth metatarsal fracture surgeries in Japan using nationwide hospital claim database. J Orthop Sci. 2025;30(5):873-878",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40011147/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lisfranc",
+      "name": "Lisfranc損傷（足根中足関節損傷）",
+      "red_flag": true,
+      "subregions": [
+        "midfoot"
+      ],
+      "trauma": "yes",
+      "sex_note": "不安定型は女性に多い（Stødle 2020）",
+      "stars_by_age": {
+        "child": null,
+        "young": 1,
+        "middle": 1,
+        "elderly": 1
+      },
+      "star_basis": "ノルウェーの人口ベース研究で発生率14/10万人年（不安定型6/10万人年）（Stødle 2020）。成人の足・足関節受診率29/1000人年で割ると約0.5%→★1。",
+      "findings_support": [
+        "plantar_ecchymosis",
+        "cannot_bear",
+        "ottawa_midfoot"
+      ],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "高エネルギー外傷は31%のみで、ひねり程度の低エネルギーでも起こる（Stødle 2020）。足底の皮下出血・中足部の圧痛は要注意。非荷重X線では見逃されやすく、経験ある読影者でも微細例を見逃す（Sherief 2007）。疑えば荷重位X線（健側比較）・CT。",
+      "tests": [
+        "足部X線 荷重位 正面（健側比較）・斜位・側面",
+        "CT",
+        "MRI（靱帯損傷のみの場合）"
+      ],
+      "sources": [
+        {
+          "title": "Stødle AH, Hvaal KH, Enger M, et al. Lisfranc injuries: Incidence, mechanisms of injury and predictors of instability. Foot Ankle Surg. 2020;26(5):535-540",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31257042/"
+        },
+        {
+          "title": "Sherief TI, Mucci B, Greiss M. Lisfranc injury: how frequently does it get missed? And how can we improve? Injury. 2007;38(7):856-860",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17214988/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を示す数値を確認できなかった。red flagのため範囲外は設定しない。",
+        "sources": []
+      },
+      "lr": {
+        "ottawa_midfoot": {
+          "lr_pos": 1.4,
+          "lr_neg": 0.08,
+          "basis": "Ottawa ankle/foot rulesの系統的レビュー。中足部の統合陰性LR 0.08(95%CI 0.03-0.20)。ただし靱帯のみのLisfranc損傷は骨折を対象とした本ルールの評価範囲外で、陰性でも臨床的に疑えば荷重位撮影を。LR+は参考値。",
+          "source": {
+            "title": "Bachmann LM, et al. Accuracy of Ottawa ankle rules to exclude fractures of the ankle and mid-foot: systematic review. BMJ. 2003;326(7386):417",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/12595378/"
+          }
+        }
+      }
+    },
+    {
+      "id": "achilles_rupture",
+      "name": "アキレス腱断裂",
+      "red_flag": true,
+      "subregions": [
+        "heel"
+      ],
+      "trauma": "yes",
+      "sex_note": "デンマーク全国データで男女比3:1（Ganestam 2016）。フィンランド・オウル市の古いデータでは5.5:1（Leppilahti 1996）",
+      "stars_by_age": {
+        "child": null,
+        "young": 2,
+        "middle": 2,
+        "elderly": 1
+      },
+      "star_basis": "デンマーク全国登録（1994〜2013年）で発生率27〜31/10万人年（Ganestam 2016）。成人の足・足関節受診率29/1000人年で割ると約1%→15〜64歳は★2（30〜50代は発生率が高い）。65歳以上は分母が約41/1000人年と大きく★1とした。",
+      "findings_support": [
+        "pop",
+        "thompson",
+        "gap_palpable",
+        "running_sports"
+      ],
+      "findings_against": [
+        "fever",
+        "inversion_injury"
+      ],
+      "key_points": "「後ろから蹴られた」感覚。つま先立ち不能でも足趾屈筋で底屈はできるため「底屈できる＝断裂なし」ではない（見逃しの典型）。Thompson（calf squeeze）陽性はLR+約14、陰性LR約0.04（Maffulli 1998）。",
+      "tests": [
+        "Thompson・Matles test",
+        "エコー（断端間距離）",
+        "必要時MRI"
+      ],
+      "sources": [
+        {
+          "title": "Ganestam A, Kallemose T, Troelsen A, Barfod KW. Increasing incidence of acute Achilles tendon rupture and a noticeable decline in surgical treatment from 1994 to 2013. Knee Surg Sports Traumatol Arthrosc. 2016;24(12):3730-3737",
+          "url": "https://doi.org/10.1007/s00167-015-3544-5"
+        },
+        {
+          "title": "Maffulli N. The clinical diagnosis of subcutaneous tear of the Achilles tendon. A prospective study in 174 patients. Am J Sports Med. 1998;26(2):266-270",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9548122/"
+        }
+      ],
+      "age": {
+        "typical": [
+          30,
+          59
+        ],
+        "outside": null,
+        "basis": "デンマーク全国登録で平均年齢 男性45歳・女性44歳、50歳超で発生率が増加（Ganestam 2016）。フィンランドでは30〜39歳が最多、81%がスポーツ関連（Leppilahti 1996）。red flagのため範囲外は設定しない。",
+        "sources": [
+          {
+            "title": "Ganestam A, et al. Knee Surg Sports Traumatol Arthrosc. 2016;24(12):3730-3737",
+            "url": "https://doi.org/10.1007/s00167-015-3544-5"
+          },
+          {
+            "title": "Leppilahti J, Puranen J, Orava S. Incidence of Achilles tendon rupture. Acta Orthop Scand. 1996;67(3):277-279",
+            "url": "https://actaorthop.org/actao/article/view/21019"
+          }
+        ]
+      },
+      "lr": {
+        "thompson": {
+          "lr_pos": 13.7,
+          "lr_neg": 0.04,
+          "basis": "臨床的に断裂と診断された174例（感度）と、断裂疑いで画像上断裂なしの28例（特異度）の前向き研究。calf squeeze（Thompson）は感度0.96・特異度0.93から算出。特異度の母数が28例と少なく、症例対照的な設計のため過大評価の可能性。",
+          "source": {
+            "title": "Maffulli N. The clinical diagnosis of subcutaneous tear of the Achilles tendon. A prospective study in 174 patients. Am J Sports Med. 1998;26(2):266-270",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/9548122/"
+          },
+          "low_quality": true
+        },
+        "gap_palpable": {
+          "lr_pos": 6.6,
+          "lr_neg": 0.3,
+          "basis": "同じ研究。陥凹の触知は覚醒下で感度0.73（麻酔下0.81）・特異度0.89から算出。同研究のMatles testは感度0.88・特異度0.85（LR+約5.9、LR−約0.14）。",
+          "source": {
+            "title": "Maffulli N. The clinical diagnosis of subcutaneous tear of the Achilles tendon. A prospective study in 174 patients. Am J Sports Med. 1998;26(2):266-270",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/9548122/"
+          },
+          "low_quality": true
+        }
+      }
+    },
+    {
+      "id": "achilles_tendinopathy",
+      "name": "アキレス腱症（付着部症を含む）",
+      "red_flag": false,
+      "subregions": [
+        "heel"
+      ],
+      "trauma": "no",
+      "sex_note": "下肢腱症全体では男女差なし（Albers 2016）",
+      "stars_by_age": {
+        "child": null,
+        "young": 3,
+        "middle": 3,
+        "elderly": 3
+      },
+      "star_basis": "オランダ一般診療（1診療所、約10,500人）でアキレス腱症の発生率2.16/1000人年（Albers 2016）。成人の足・足関節受診率29〜41/1000人年で割ると約5〜10%→★3。下肢腱症全体は45歳以上で多いが、アキレス腱単独の年齢別は未報告。",
+      "findings_support": [
+        "running_sports",
+        "first_step_pain"
+      ],
+      "findings_against": [
+        "pop",
+        "fever",
+        "thompson"
+      ],
+      "key_points": "中央部（付着部の2〜6cm近位）の紡錘状腫大と、付着部（踵骨後上隆起・Haglund）の2型に分けて考える。急な悪化や陥凹があれば断裂を除外。フルオロキノロン・ステロイド使用歴を確認。",
+      "tests": [
+        "エコー（腱の肥厚・血流）",
+        "踵骨側面X線（付着部の骨棘・Haglund）"
+      ],
+      "sources": [
+        {
+          "title": "Albers IS, Zwerver J, Diercks RL, Dekker JH, Van den Akker-Scheek I. Incidence and prevalence of lower extremity tendinopathy in a Dutch general practice population: a cross sectional study. BMC Musculoskelet Disord. 2016;17:16",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26759254/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "Albers 2016で下肢腱症患者全体の平均年齢46歳（診療所人口36歳）。アキレス腱症単独の好発年齢は抄録・本文で確認できず、範囲は設定しない。",
+        "sources": [
+          {
+            "title": "Albers IS, et al. BMC Musculoskelet Disord. 2016;17:16",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26759254/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "plantar_fasciitis",
+      "name": "足底腱膜炎（足底踵部痛）",
+      "red_flag": false,
+      "subregions": [
+        "heel"
+      ],
+      "trauma": "no",
+      "sex_note": "オランダ一般診療で女性4.64・男性2.98/1000人年（Rasenberg 2019）",
+      "stars_by_age": {
+        "child": null,
+        "young": 3,
+        "middle": 4,
+        "elderly": 3
+      },
+      "star_basis": "オランダ一般診療（約190万人）で足底踵部痛の発生率は全体3.83/1000人年、ピークは女性50歳で11.2、男性55歳で5.5/1000人年（Rasenberg 2019）。成人の足・足関節受診率29/1000人年で割ると全体で約13%（★3）、40〜64歳は約20〜38%（★4）。英国一般診療でも足底腱膜炎の記録語は足・足関節受診の7.5%（Menz 2010）。",
+      "findings_support": [
+        "first_step_pain",
+        "windlass",
+        "running_sports"
+      ],
+      "findings_against": [
+        "fever",
+        "toe_numbness",
+        "night_pain"
+      ],
+      "key_points": "踵骨内側結節の圧痛と起床時の第一歩痛が典型。Windlass testは感度約32%と低いが、比較群で陽性例がなく特異度は高い（De Garceau 2003、小規模）。両側性・他関節痛があれば脊椎関節炎の付着部炎、しびれがあれば足根管症候群・踵骨疲労骨折も考える。",
+      "tests": [
+        "踵骨側面X線（踵骨棘は無症状でもあり診断根拠にならない）",
+        "エコー（足底腱膜の肥厚）"
+      ],
+      "sources": [
+        {
+          "title": "Rasenberg N, Bierma-Zeinstra SM, Bindels PJ, van der Lei J, van Middelkoop M. Incidence, prevalence, and management of plantar heel pain: a retrospective cohort study in Dutch primary care. Br J Gen Pract. 2019;69(688):e801-e808",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31636128/"
+        },
+        {
+          "title": "De Garceau D, Dean D, Requejo SM, Thordarson DB. The association between diagnosis of plantar fasciitis and Windlass test results. Foot Ankle Int. 2003;24(3):251-255",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12793489/"
+        }
+      ],
+      "age": {
+        "typical": [
+          34,
+          67
+        ],
+        "outside": null,
+        "basis": "Rasenberg 2019の新規発症例は平均50.3歳（SD 16.6）で、範囲は平均±1SD。発生率のピークは女性50歳・男性55歳。10歳前後にも小さなピークあり。",
+        "sources": [
+          {
+            "title": "Rasenberg N, et al. Br J Gen Pract. 2019;69(688):e801-e808",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/31636128/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hallux_valgus",
+      "name": "外反母趾",
+      "red_flag": false,
+      "subregions": [
+        "forefoot"
+      ],
+      "trauma": "no",
+      "sex_note": "有病率 女性30%・男性13%（Nix 2010のメタ解析）",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": 2,
+        "elderly": 2
+      },
+      "star_basis": "英国一般診療で「bunion」「hallux valgus」の記録語が足・足関節受診の計2.5%（全年齢、Menz 2010）→★2。有病率は高い（18〜65歳23%、65歳超35.7%）が多くは受診しない。整形外科外来では割合が上がる可能性。",
+      "findings_support": [],
+      "findings_against": [
+        "fever",
+        "pop"
+      ],
+      "key_points": "母趾MTP内側の疼痛（バニオン）、第2趾MTPの胼胝・転移痛、第2趾の脱臼を伴うことがある。急な発赤・腫脹は痛風発作を考える。",
+      "tests": [
+        "足部X線 荷重位 正面・側面（外反母趾角・第1-2中足骨間角）"
+      ],
+      "sources": [
+        {
+          "title": "Menz HB, et al. Characteristics of primary care consultations for musculoskeletal foot and ankle problems in the UK. Rheumatology (Oxford). 2010;49(7):1391-1398",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20403912/"
+        },
+        {
+          "title": "Nix S, Smith M, Vicenzino B. Prevalence of hallux valgus in the general population: a systematic review and meta-analysis. J Foot Ankle Res. 2010;3:21",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20868524/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "有病率は18〜65歳で23%、65歳超で35.7%と年齢とともに上昇（Nix 2010）。症状で受診する好発年齢の範囲は確認できず設定しない。",
+        "sources": [
+          {
+            "title": "Nix S, et al. J Foot Ankle Res. 2010;3:21",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/20868524/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hallux_rigidus",
+      "name": "強剛母趾（母趾MTP関節症）",
+      "red_flag": false,
+      "subregions": [
+        "forefoot"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合を示す文献を確認できなかった（★未確認）。",
+      "findings_support": [],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "母趾MTPの背屈制限と背側骨棘（靴で当たる）。蹴り出しで痛む。痛風・外反母趾との鑑別。",
+      "tests": [
+        "足部X線 荷重位 正面・側面"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を示す一次文献を確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "morton",
+      "name": "Morton病（趾間神経腫）",
+      "red_flag": false,
+      "subregions": [
+        "forefoot"
+      ],
+      "trauma": "no",
+      "sex_note": "英国一般診療の年齢調整発生率 女性87.5・男性50.2/10万人（Latinovic 2006）",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": 2,
+        "elderly": null
+      },
+      "star_basis": "英国一般診療で年間発生率50〜88/10万人（Latinovic 2006、年齢調整）。成人の足・足関節受診率29/1000人年で割ると約2〜3%→★2。年齢別は未確認のため40〜64歳のみ記載。",
+      "findings_support": [
+        "toe_numbness"
+      ],
+      "findings_against": [
+        "fever",
+        "pop"
+      ],
+      "key_points": "第3-4趾間（次いで第2-3）の灼熱痛・しびれ、きつい靴で悪化し脱ぐと楽になる。趾間の直接圧痛、Mulderクリック（疼痛再現を伴うもの）。手術例43病変の後ろ向き研究で臨床診断の感度98%（Pastides 2012）。MRIでは無症候性の神経腫も多い。",
+      "tests": [
+        "エコー",
+        "診断的ブロック",
+        "MRI（複数趾間や診断不確実な場合）"
+      ],
+      "sources": [
+        {
+          "title": "Latinovic R, Gulliford MC, Hughes RA. Incidence of common compressive neuropathies in primary care. J Neurol Neurosurg Psychiatry. 2006;77(2):263-265",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16421136/"
+        },
+        {
+          "title": "Pastides P, El-Sallakh S, Charalambides C. Morton's neuroma: A clinical versus radiological diagnosis. Foot Ankle Surg. 2012;18(1):22-24",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22325999/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢の数値を確認できた一次文献なし。",
+        "sources": []
+      }
+    },
+    {
+      "id": "stress_fracture",
+      "name": "疲労骨折（中足骨・舟状骨・踵骨）",
+      "red_flag": false,
+      "subregions": [
+        "forefoot",
+        "midfoot",
+        "heel",
+        "medial"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合を示す文献を確認できなかった（★未確認）。",
+      "findings_support": [
+        "running_sports"
+      ],
+      "findings_against": [
+        "fever",
+        "pop"
+      ],
+      "key_points": "運動量増加後の限局した骨圧痛。初期X線は陰性が多い。舟状骨（N-spot）・第5中足骨近位・内果は高リスク型で見逃すと偽関節化しやすい。女性選手はエネルギー不足・月経異常・骨密度を確認。高齢者の脆弱性骨折も含めて考える。",
+      "tests": [
+        "X線（2〜3週後の再撮影）",
+        "MRI",
+        "舟状骨はCT"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を示す一次文献を確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "pttd",
+      "name": "後脛骨筋腱機能不全（成人期扁平足）",
+      "red_flag": false,
+      "subregions": [
+        "medial"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合を示す文献を確認できなかった（★未確認）。",
+      "findings_support": [],
+      "findings_against": [
+        "fever",
+        "pop"
+      ],
+      "key_points": "内果後下方の腫脹・圧痛、片脚つま先立ち困難、後方から見たtoo many toes sign。進行すると外側（足根洞・踵腓骨間）の衝突痛へ移る。",
+      "tests": [
+        "足部・足関節X線 荷重位",
+        "エコー・MRI（腱の変性・断裂）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を示す一次文献を確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "flatfoot_child",
+      "name": "小児の扁平足",
+      "red_flag": false,
+      "subregions": [
+        "medial",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 4,
+        "young": null,
+        "middle": 0,
+        "elderly": 0
+      },
+      "star_basis": "オランダ一般診療（2001年、0〜17歳）で扁平足の受診発生率3.4/1000人年、足の問題全体17.4/1000人年（Krul 2009）→約20%→★4。成人は後脛骨筋腱機能不全など別項目で扱う。",
+      "findings_support": [],
+      "findings_against": [
+        "fever",
+        "night_pain"
+      ],
+      "key_points": "つま先立ちでアーチが出る柔軟性扁平足は多くが経過観察。硬い扁平足・強い痛み・片側性は足根骨癒合症などを考える。",
+      "tests": [
+        "つま先立ち・Jack test（柔軟性の確認）",
+        "硬性なら足部X線 斜位・CT（足根骨癒合症）"
+      ],
+      "sources": [
+        {
+          "title": "Krul M, van der Wouden JC, Schellevis FG, van Suijlekom-Smit LW, Koes BW. Foot problems in children presented to the family physician: a comparison between 1987 and 2001. Fam Pract. 2009;26(3):174-179",
+          "url": "https://nivel.nl/nl/publicatie/foot-problems-children-presented-general-practitioner-comparison-between-1987-and-2001"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢の範囲を示す一次文献を確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "ankle_oa",
+      "name": "変形性足関節症",
+      "red_flag": false,
+      "subregions": [
+        "diffuse",
+        "medial"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合を示す文献を確認できなかった（★未確認）。",
+      "findings_support": [],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "膝・股と異なり外傷後（果部骨折・反復捻挫）の二次性が多いとされる。日本では内反型が多い。荷重時痛と可動域制限。",
+      "tests": [
+        "足関節X線 荷重位 正面・側面"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を示す一次文献を確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "sever",
+      "name": "踵骨骨端症（Sever病）",
+      "red_flag": false,
+      "subregions": [
+        "heel"
+      ],
+      "trauma": "no",
+      "sex_note": "トルコの小児外来データで男児に多い（Ceylan 2018）",
+      "stars_by_age": {
+        "child": 4,
+        "young": null,
+        "middle": 0,
+        "elderly": 0
+      },
+      "star_basis": "オランダ一般診療34施設で6〜17歳の発生率3.7/1000人（Wiegerinck 2014）。小児の足の問題の受診発生率17.4/1000人年（0〜17歳、Krul 2009）で割ると約21%→★4（年齢範囲がずれる粗い換算）。成人は骨端線閉鎖後のため0。",
+      "findings_support": [
+        "running_sports"
+      ],
+      "findings_against": [
+        "fever",
+        "night_pain",
+        "pop"
+      ],
+      "key_points": "成長期スポーツ児の踵後方〜底部痛、踵骨を左右から挟むと痛む（squeeze）。両側性もある。夜間痛・発熱・片側の強い痛みは骨髄炎・腫瘍・疲労骨折を考えX線を。",
+      "tests": [
+        "踵骨側面X線（他疾患除外目的。骨端の硬化・分節は正常でも見られる）"
+      ],
+      "sources": [
+        {
+          "title": "Wiegerinck JI, Yntema C, Brouwer HJ, Struijs PA. Incidence of calcaneal apophysitis in the general population. Eur J Pediatr. 2014;173(5):677-679",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24297670/"
+        },
+        {
+          "title": "Krul M, et al. Foot problems in children presented to the family physician: a comparison between 1987 and 2001. Fam Pract. 2009;26(3):174-179",
+          "url": "https://nivel.nl/nl/publicatie/foot-problems-children-presented-general-practitioner-comparison-between-1987-and-2001"
+        },
+        {
+          "title": "Ceylan HH, Caypinar B. Incidence of calcaneal apophysitis in Northwest Istanbul. BMC Musculoskelet Disord. 2018;19:267",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30053810/"
+        }
+      ],
+      "age": {
+        "typical": [
+          10,
+          14
+        ],
+        "outside": null,
+        "basis": "ドイツのユースサッカーアカデミー10年間の診断時平均11.8±2.1歳（Belikan 2022、範囲は平均±約1SD）。母集団がサッカー選手に偏る。",
+        "sources": [
+          {
+            "title": "Belikan P, Färber LC, Abel F, et al. Incidence of calcaneal apophysitis (Sever's disease) and return-to-play in adolescent athletes of a German youth soccer academy: a retrospective study of 10 years. J Orthop Surg Res. 2022;17:83",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35139872/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "accessory_navicular",
+      "name": "有痛性外脛骨",
+      "red_flag": false,
+      "subregions": [
+        "medial"
+      ],
+      "trauma": "any",
+      "sex_note": "女性に多いとの報告あり（Mosel 2004、画像の総説）",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合を示す文献を確認できなかった（★未確認）。",
+      "findings_support": [
+        "running_sports"
+      ],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "舟状骨内側の骨性隆起の圧痛、捻挫を契機に痛み出すことがある。扁平足を伴いやすい。両側性が多いので健側も撮る。",
+      "tests": [
+        "足部X線 正面・外斜位（内側の副骨）",
+        "MRI（骨髄浮腫）"
+      ],
+      "sources": [
+        {
+          "title": "Mosel LD, Kat E, Voyvodic F. Imaging of the symptomatic type II accessory navicular bone. Australas Radiol. 2004;48(2):267-271",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15230772/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を示す一次文献を確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "kohler",
+      "name": "第1Köhler病（舟状骨骨端症）",
+      "red_flag": false,
+      "subregions": [
+        "medial",
+        "midfoot"
+      ],
+      "trauma": "no",
+      "sex_note": "男児に多いとされるが、確認できたのは症例報告・総説レベル（一次の疫学研究は未確認）",
+      "stars_by_age": {
+        "child": null,
+        "young": 0,
+        "middle": 0,
+        "elderly": 0
+      },
+      "star_basis": "受診者中の割合を示す文献を確認できなかった（★未確認）。幼児期の疾患のため15歳以上は0。",
+      "findings_support": [],
+      "findings_against": [
+        "fever",
+        "pop"
+      ],
+      "key_points": "幼児の跛行・足内側中央の圧痛。X線で舟状骨の扁平化・硬化。自然軽快が基本。発熱・炎症反応があれば骨髄炎を除外。",
+      "tests": [
+        "足部X線 正面・側面（健側比較）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "幼児期（概ね2〜9歳）とする記載は症例報告・二次資料のみで、一次の疫学データを確認できなかったため数値は設定しない。",
+        "sources": []
+      }
+    },
+    {
+      "id": "gout",
+      "name": "痛風発作（母趾MTP関節など）",
+      "red_flag": false,
+      "subregions": [
+        "forefoot",
+        "midfoot",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 2,
+        "elderly": 2
+      },
+      "star_basis": "英国の痛風発生率1.77/1000人年（2012年、Kuo 2015）、初回発作の56〜78%が母趾MTP（Roddy 2011の総説）→足の初発発作で約1.0〜1.4/1000人年。成人の足・足関節受診率29〜41/1000人年で割ると約2.5〜5%→★2（再発発作は含まない、年齢別は未確認）。",
+      "findings_support": [
+        "redness_heat",
+        "night_pain"
+      ],
+      "findings_against": [
+        "pop",
+        "running_sports"
+      ],
+      "key_points": "急性の激痛・発赤・腫脹で、数時間でピークに。発作中の血清尿酸値は正常のことがある。発熱を伴えば化膿性関節炎を必ず鑑別（結晶があっても感染は否定できない）。",
+      "tests": [
+        "関節穿刺（偏光顕微鏡で尿酸塩結晶、細胞数・培養）",
+        "血清尿酸値（発作後に再検）",
+        "エコー（double contour sign）"
+      ],
+      "sources": [
+        {
+          "title": "Kuo CF, Grainge MJ, Mallen C, Zhang W, Doherty M. Rising burden of gout in the UK but continuing suboptimal management: a nationwide population study. Ann Rheum Dis. 2015;74(4):661-667",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24431399/"
+        },
+        {
+          "title": "Roddy E. Revisiting the pathogenesis of podagra: why does gout target the foot? J Foot Ankle Res. 2011;4:13",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3117776/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "Kuo 2015の抄録に年齢別の数値なし。好発年齢の範囲は設定しない。",
+        "sources": []
+      }
+    },
+    {
+      "id": "septic_dfi",
+      "name": "化膿性関節炎・糖尿病足感染（骨髄炎）",
+      "red_flag": true,
+      "subregions": [
+        "diffuse",
+        "forefoot"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "足・足関節に限った受診者中の割合を示す文献を確認できなかった（★未確認）。",
+      "findings_support": [
+        "fever",
+        "redness_heat",
+        "diabetes",
+        "night_pain",
+        "probe_to_bone"
+      ],
+      "findings_against": [
+        "inversion_injury",
+        "pop"
+      ],
+      "key_points": "糖尿病神経障害があると痛みが乏しく、発熱もないことが多い。潰瘍から金属プローブで骨を触れれば骨髄炎を強く疑う（probe-to-bone、LR+約6）。小児の跛行＋発熱は骨髄炎・化膿性関節炎を最優先で除外。",
+      "tests": [
+        "関節穿刺（抗菌薬投与前に。細胞数・グラム染色・培養・結晶）",
+        "血液検査 CBC・CRP・ESR・血糖、血液培養",
+        "足部X線（骨髄炎は初期に陰性）・MRI"
+      ],
+      "sources": [
+        {
+          "title": "Calvo-Wright MDM, Álvaro-Afonso FJ, López-Moral M, et al. Is the Combination of Plain X-ray and Probe-to-Bone Test Useful for Diagnosing Diabetic Foot Osteomyelitis? A Systematic Review and Meta-Analysis. J Clin Med. 2023;12(16):5369",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37629412/"
+        },
+        {
+          "title": "Margaretten ME, Kohlwes J, Moore D, Bent S. Does this adult patient have septic arthritis? JAMA. 2007;297(13):1478-1488",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17405973/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "全年齢で考慮すべき疾患のため範囲は設定しない。",
+        "sources": []
+      },
+      "lr": {
+        "probe_to_bone": {
+          "lr_pos": 6.3,
+          "lr_neg": 0.1,
+          "basis": "糖尿病足骨髄炎に対するprobe-to-bone testの系統的レビュー・メタ解析。単独で感度0.91・特異度0.86、LR+ 6.34（論文記載）、LR−は感度・特異度から算出。単純X線と組み合わせると感度0.94・特異度0.83。",
+          "source": {
+            "title": "Calvo-Wright MDM, et al. Is the Combination of Plain X-ray and Probe-to-Bone Test Useful for Diagnosing Diabetic Foot Osteomyelitis? A Systematic Review and Meta-Analysis. J Clin Med. 2023;12(16):5369",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37629412/"
+          }
+        }
+      }
+    },
+    {
+      "id": "charcot",
+      "name": "シャルコー足（神経病性関節症）",
+      "red_flag": true,
+      "subregions": [
+        "midfoot",
+        "diffuse"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合を示す文献を確認できなかった（★未確認）。",
+      "findings_support": [
+        "diabetes",
+        "redness_heat"
+      ],
+      "findings_against": [
+        "fever",
+        "pop"
+      ],
+      "key_points": "糖尿病神経障害の足が、痛みは軽いのに片側だけ赤く腫れて熱い（健側との皮膚温差）。蜂窩織炎・痛風・DVTと誤診されやすい。急性期は免荷（全面接触ギプス）が要で、見逃すと中足部の崩壊（舟底足）に進む。",
+      "tests": [
+        "足部X線 荷重位（初期は正常のことあり）",
+        "MRI（骨髄浮腫）",
+        "皮膚温の左右差"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を示す一次文献を確認できなかった。red flagのため範囲外は設定しない。",
+        "sources": []
+      }
+    },
+    {
+      "id": "dvt",
+      "name": "深部静脈血栓症（下腿）",
+      "red_flag": true,
+      "subregions": [
+        "diffuse",
+        "heel"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "足・足関節症状の受診者中の割合を示す文献を確認できなかった（★未確認）。",
+      "findings_support": [
+        "calf_swelling"
+      ],
+      "findings_against": [
+        "inversion_injury",
+        "fever"
+      ],
+      "key_points": "足関節外傷後のギプス固定・免荷中、術後、長距離移動後のふくらはぎ痛・腫脹は要注意。アキレス腱断裂・腓腹筋損傷・Baker嚢腫破裂と症状が重なる。Wellsスコア＋Dダイマー、エコーで評価。",
+      "tests": [
+        "下肢静脈エコー",
+        "Dダイマー"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "全年齢で考慮すべき疾患のため範囲は設定しない。",
+        "sources": []
+      }
+    },
+    {
+      "id": "pad",
+      "name": "末梢動脈疾患（下肢虚血）",
+      "red_flag": true,
+      "subregions": [
+        "forefoot",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "足・足関節症状の受診者中の割合を示す文献を確認できなかった（★未確認）。",
+      "findings_support": [
+        "claudication",
+        "pedal_pulse_abn",
+        "diabetes",
+        "night_pain"
+      ],
+      "findings_against": [
+        "pop",
+        "inversion_injury"
+      ],
+      "key_points": "歩行で悪化し立ち止まると改善（腰部脊柱管狭窄症は前屈・座位で改善）。足趾の安静時痛・潰瘍は重症下肢虚血。足背・後脛骨動脈の触知とABIは外来で数分でできる。",
+      "tests": [
+        "足背・後脛骨動脈の触知",
+        "ABI（足関節上腕血圧比）",
+        "下肢動脈エコー"
+      ],
+      "sources": [
+        {
+          "title": "Khan NA, Rahim SA, Anand SS, Simel DL, Panju A. Does the clinical examination predict lower extremity peripheral arterial disease? JAMA. 2006;295(5):536-546",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16449619/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢の範囲を示す一次文献を本調査で確認しなかった。red flagのため範囲外は設定しない。",
+        "sources": []
+      },
+      "lr": {
+        "pedal_pulse_abn": {
+          "lr_pos": 4.7,
+          "lr_neg": 0.38,
+          "basis": "JAMA Rational Clinical Examinationの系統的レビュー。症状のある患者で触知できる脈拍の異常はLR 4.7(95%CI 2.2-9.9)、脈拍異常なしはLR 0.38(0.23-0.64)。同レビューで皮膚の冷感はLR 5.9(4.1-8.6)。参照基準はABI等。",
+          "source": {
+            "title": "Khan NA, Rahim SA, Anand SS, Simel DL, Panju A. Does the clinical examination predict lower extremity peripheral arterial disease? JAMA. 2006;295(5):536-546",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16449619/"
+          }
+        },
+        "claudication": {
+          "lr_pos": 3.3,
+          "lr_neg": null,
+          "basis": "同じレビュー。無症状者のスクリーニング文脈で、跛行の病歴はLR 3.30(95%CI 2.30-4.80)。陰性LRは抄録に記載なし。",
+          "source": {
+            "title": "Khan NA, Rahim SA, Anand SS, Simel DL, Panju A. Does the clinical examination predict lower extremity peripheral arterial disease? JAMA. 2006;295(5):536-546",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16449619/"
+          }
+        }
+      }
+    },
+    {
+      "id": "compartment",
+      "name": "足部・下腿コンパートメント症候群",
+      "red_flag": true,
+      "subregions": [
+        "diffuse",
+        "midfoot"
+      ],
+      "trauma": "yes",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合を示す文献を確認できなかった（★未確認）。",
+      "findings_support": [
+        "pain_out_of_prop",
+        "cannot_bear"
+      ],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "踵骨骨折・Lisfranc損傷・挫滅後に、外傷に不釣り合いな痛みと足趾の他動伸展時痛。脈が触れても否定できない。疑えば区画内圧測定・緊急減張切開の判断へ（腹部コンパートメント症候群と同じく時間勝負）。",
+      "tests": [
+        "区画内圧測定",
+        "足部X線・CT（原因骨折）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を示す一次文献を確認できなかった。red flagのため範囲外は設定しない。",
+        "sources": []
+      }
+    },
+    {
+      "id": "tumor",
+      "name": "骨・軟部腫瘍（足部）",
+      "red_flag": true,
+      "subregions": [
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合を示す文献を確認できなかった（★未確認）。",
+      "findings_support": [
+        "night_pain"
+      ],
+      "findings_against": [
+        "pop",
+        "inversion_injury"
+      ],
+      "key_points": "足部はガングリオン・腱鞘巨細胞腫など良性が大半だが、増大する腫瘤・深部・5cm超・夜間痛は悪性（滑膜肉腫・骨肉腫・Ewing肉腫など）を考える。外傷のエピソードで説明しきれない腫脹は画像を。",
+      "tests": [
+        "X線",
+        "エコー",
+        "MRI（造影）→専門施設へ"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "全年齢で考慮すべき疾患のため範囲は設定しない。",
+        "sources": []
+      }
+    },
+    {
+      "id": "lumbar_radiculopathy",
+      "name": "腰椎神経根症（L5・S1）からの足の痛み・しびれ",
+      "red_flag": false,
+      "subregions": [
+        "diffuse",
+        "forefoot",
+        "heel"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "足・足関節症状の受診者中の割合を示す文献を確認できなかった（★未確認）。",
+      "findings_support": [
+        "toe_numbness"
+      ],
+      "findings_against": [
+        "pop",
+        "redness_heat",
+        "inversion_injury"
+      ],
+      "key_points": "足背〜母趾（L5）・足外側〜足底（S1）のしびれ、母趾背屈筋力（L5）・アキレス腱反射（S1）を確認。足根管症候群・Morton病・糖尿病神経障害との鑑別。下垂足は腓骨神経麻痺も考える。",
+      "tests": [
+        "神経学的診察（筋力・反射・感覚）・SLR",
+        "腰椎MRI"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を示す一次文献を確認できなかった。",
+        "sources": []
+      }
+    }
+  ]
+}

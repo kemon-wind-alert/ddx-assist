@@ -1,0 +1,1451 @@
+{
+  "region": "hand",
+  "name": "手・手関節",
+  "updated": "2026-11-12",
+  "star_scale": "★＝その年齢帯で手・手関節の症状（外傷疾患は手・手関節の外傷）で受診した患者のうち、その疾患が占める割合の目安。★5: 30%以上／★4: 15〜29%／★3: 5〜14%／★2: 1〜4.9%／★1: 1%未満（まれだが鑑別に入る）。非外傷は主にオランダ一般診療で手・手関節の症状で受診した成人の医師診断の内訳（Spies-Dorgelo 2007: 267例・平均49.3歳）を用いた。外傷はオランダ救急外来の手・手関節外傷の内訳（van Leerdam 2022: 2016年の全国推計、骨折55%・創傷33%・その他12%、手関節骨折2.7・指骨折1.7・手根骨/中手骨骨折0.8/1000人年）を用いた。受診者中の割合が直接ない場合は、人口あたり発生率を手・手関節症状の受診率（オランダ一般診療: 手指7.8＋手関節4.6＝約12.4/1000人年［Spies-Dorgelo 2007が引用］）または救急外来の手・手関節外傷の発生率（表の小計で約9.4/1000人年）で割って換算した。いずれも年齢別の内訳が乏しく、全年齢・成人全体の値を各年齢帯に当てはめた箇所がある（star_basis に明記）。粗い目安であり、一般整形外来での実数とはずれうる。null＝鑑別には挙がるが頻度を裏付ける文献を確認できなかった（★未確認）。0＝その年齢帯ではまず考えない（非表示）。",
+  "subregions": [
+    {
+      "id": "wrist_radial",
+      "name": "手関節橈側（母指の付け根・snuffbox）"
+    },
+    {
+      "id": "wrist_ulnar",
+      "name": "手関節尺側（小指側）"
+    },
+    {
+      "id": "wrist_central",
+      "name": "手関節中央（背側・掌側）"
+    },
+    {
+      "id": "palm",
+      "name": "手掌・中手部"
+    },
+    {
+      "id": "fingers",
+      "name": "指（関節・腱）"
+    },
+    {
+      "id": "diffuse",
+      "name": "全体・はっきりしない"
+    }
+  ],
+  "findings": [
+    {
+      "id": "night_numb",
+      "label": "夜間・明け方のしびれ"
+    },
+    {
+      "id": "median_numb",
+      "label": "母指〜中指のしびれ"
+    },
+    {
+      "id": "ulnar_numb",
+      "label": "環指・小指のしびれ"
+    },
+    {
+      "id": "triggering",
+      "label": "指の引っかかり・弾発"
+    },
+    {
+      "id": "morning_stiff",
+      "label": "朝のこわばり1時間以上"
+    },
+    {
+      "id": "multi_joint",
+      "label": "複数関節の腫れ"
+    },
+    {
+      "id": "mass",
+      "label": "しこり（腫瘤）"
+    },
+    {
+      "id": "fall_hand",
+      "label": "手をついて転倒"
+    },
+    {
+      "id": "finger_impact",
+      "label": "指先への衝撃（突き指）"
+    },
+    {
+      "id": "fever",
+      "label": "発熱"
+    },
+    {
+      "id": "redness_heat",
+      "label": "発赤・熱感"
+    },
+    {
+      "id": "bite_puncture",
+      "label": "咬傷・刺し傷"
+    },
+    {
+      "id": "pain_disproportion",
+      "label": "見た目に比し強い痛み"
+    },
+    {
+      "id": "neck_radiation",
+      "label": "頸部痛・腕への放散痛"
+    },
+    {
+      "id": "katz_diagram",
+      "label": "手の図で典型/疑い",
+      "group": "exam"
+    },
+    {
+      "id": "hypalgesia",
+      "label": "正中神経域の痛覚低下",
+      "group": "exam"
+    },
+    {
+      "id": "thumb_abd_weak",
+      "label": "母指外転筋力低下",
+      "group": "exam"
+    },
+    {
+      "id": "phalen",
+      "label": "Phalen陽性",
+      "group": "exam"
+    },
+    {
+      "id": "tinel",
+      "label": "Tinel陽性（手根管）",
+      "group": "exam"
+    },
+    {
+      "id": "snuffbox",
+      "label": "snuffbox圧痛",
+      "group": "exam"
+    },
+    {
+      "id": "supination_pain",
+      "label": "抵抗下回外で痛み",
+      "group": "exam"
+    },
+    {
+      "id": "finkelstein",
+      "label": "Finkelstein+",
+      "group": "exam"
+    },
+    {
+      "id": "fovea",
+      "label": "尺骨小窩の圧痛",
+      "group": "exam"
+    },
+    {
+      "id": "cm_grind",
+      "label": "CM grind陽性",
+      "group": "exam"
+    },
+    {
+      "id": "kanavel",
+      "label": "Kanavel徴候",
+      "group": "exam"
+    }
+  ],
+  "diseases": [
+    {
+      "id": "cts",
+      "name": "手根管症候群",
+      "red_flag": false,
+      "subregions": [
+        "wrist_central",
+        "fingers",
+        "palm"
+      ],
+      "trauma": "no",
+      "sex_note": "女性に多い。イタリア・シエナの人口ベース研究で発生率は女性506・男性139/10万人年（約3.6倍）",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 3,
+        "elderly": 3
+      },
+      "star_basis": "Spies-Dorgelo 2007（オランダ一般診療で手・手関節症状の成人267例、平均49.3歳）で絞扼性神経障害（手根管症候群を含む）が12%→★3。人口発生率329/10万人年（Mondelli 2002）を手・手関節症状の受診率約12.4/1000人年で割ると約27%となり、より高い可能性もある。15〜39歳の年齢別データなし。小児はまれ（Mondelli 2002の症例の最年少13歳）。",
+      "findings_support": [
+        "night_numb",
+        "median_numb",
+        "katz_diagram",
+        "hypalgesia",
+        "thumb_abd_weak"
+      ],
+      "findings_against": [
+        "ulnar_numb",
+        "neck_radiation",
+        "fever"
+      ],
+      "key_points": "Phalen・Tinelは尤度比1.3〜1.4程度で診断価値は小さい。手の図（Katz）で典型/疑い、正中神経域の痛覚低下、母指外転筋力低下の方が有用（D'Arcy 2000）。小指にしびれが及ぶ・頸部痛を伴う場合は頸椎由来・肘部管を考える。",
+      "tests": [
+        "神経伝導検査（遠位潜時・感覚神経伝導速度）",
+        "手関節X線（必要時）",
+        "超音波（正中神経断面積）"
+      ],
+      "sources": [
+        {
+          "title": "D'Arcy CA, McGee S. The rational clinical examination. Does this patient have carpal tunnel syndrome? JAMA. 2000;283(23):3110-3117",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10865306/"
+        },
+        {
+          "title": "Spies-Dorgelo MN, van der Windt DA, van der Horst HE, Prins AP, Stalman WA. Hand and wrist problems in general practice--patient characteristics and factors related to symptom severity. Rheumatology (Oxford). 2007;46(11):1723-1728",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17938132/"
+        },
+        {
+          "title": "Mondelli M, Giannini F, Giacchi M. Carpal tunnel syndrome incidence in a general population. Neurology. 2002;58(2):289-294",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11805259/"
+        }
+      ],
+      "age": {
+        "typical": [
+          50,
+          79
+        ],
+        "outside": null,
+        "basis": "シエナの人口ベース研究（1991-1998年、3,142例、平均55歳・13〜97歳）で、女性は50〜59歳がピークでその後低下、男性は50〜59歳と70〜79歳の二峰性。",
+        "sources": [
+          {
+            "title": "Mondelli M, Giannini F, Giacchi M. Carpal tunnel syndrome incidence in a general population. Neurology. 2002;58(2):289-294",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/11805259/"
+          }
+        ]
+      },
+      "lr": {
+        "katz_diagram": {
+          "lr_pos": 2.4,
+          "lr_neg": 0.2,
+          "basis": "JAMA Rational Clinical Examの系統的レビュー（参照基準は神経伝導検査、紹介患者中心）。手の図が典型/疑い（classic/probable）でLR 2.4（95%CI 1.6-3.5）。lr_negの0.2（0-0.7）は「可能性低い（unlikely）」図のLRであり、典型/疑いの陰性LRとは厳密には同一でない。",
+          "source": {
+            "title": "D'Arcy CA, McGee S. Does this patient have carpal tunnel syndrome? JAMA. 2000;283(23):3110-3117",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10865306/"
+          }
+        },
+        "hypalgesia": {
+          "lr_pos": 3.1,
+          "lr_neg": null,
+          "basis": "同レビュー。示指の痛覚低下（同側小指と比較）でLR 3.1（95%CI 2.0-5.1）。陰性LRは抄録に記載なし。",
+          "source": {
+            "title": "D'Arcy CA, McGee S. Does this patient have carpal tunnel syndrome? JAMA. 2000;283(23):3110-3117",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10865306/"
+          }
+        },
+        "thumb_abd_weak": {
+          "lr_pos": 1.8,
+          "lr_neg": 0.5,
+          "basis": "同レビュー。母指外転筋力低下でLR 1.8（95%CI 1.4-2.3）、筋力正常でLR 0.5（0.4-0.7）。",
+          "source": {
+            "title": "D'Arcy CA, McGee S. Does this patient have carpal tunnel syndrome? JAMA. 2000;283(23):3110-3117",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10865306/"
+          }
+        },
+        "phalen": {
+          "lr_pos": 1.3,
+          "lr_neg": 0.7,
+          "basis": "D'Arcy 2000でPhalen徴候はLR+1.3と診断的価値が乏しいと結論（二次資料で確認）。AAFP 2024の要約（D'Arcy 2000とDabbagh 2023 Phys Therを引用）ではLR+1.4・LR−0.7。原著の陰性LRは本文未確認。",
+          "source": {
+            "title": "Carpal Tunnel Syndrome（Point-of-Care Guide）. Am Fam Physician. 2024 Jun",
+            "url": "https://www.aafp.org/pubs/afp/issues/2024/0600/pocg-carpal-tunnel-syndrome.html"
+          }
+        },
+        "tinel": {
+          "lr_pos": 1.3,
+          "lr_neg": 0.8,
+          "basis": "AAFP 2024の要約（D'Arcy 2000とDabbagh 2023 Phys Therを引用）でLR+1.3・LR−0.8。D'Arcy 2000の抄録でも「ほとんど診断的価値なし」とされる。原著の数値は本文未確認。",
+          "source": {
+            "title": "Carpal Tunnel Syndrome（Point-of-Care Guide）. Am Fam Physician. 2024 Jun",
+            "url": "https://www.aafp.org/pubs/afp/issues/2024/0600/pocg-carpal-tunnel-syndrome.html"
+          }
+        }
+      }
+    },
+    {
+      "id": "trigger_finger",
+      "name": "ばね指（狭窄性屈筋腱腱鞘炎）",
+      "red_flag": false,
+      "subregions": [
+        "fingers",
+        "palm"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": 3,
+        "elderly": 3
+      },
+      "star_basis": "Spies-Dorgelo 2007（成人一般診療267例、平均49.3歳）で腱鞘炎（ばね指・de Quervain病などを含む）が16%→その一部として★3。Krastman 2024（オランダ一般診療の成人）でばね指の発生率3.0/1000人年と手の疾患で最多であり、受診率約12.4/1000人年で割ると約24%となるため、★3より多い可能性もある。年齢別内訳はなし。",
+      "findings_support": [
+        "triggering"
+      ],
+      "findings_against": [
+        "fever",
+        "redness_heat",
+        "fall_hand"
+      ],
+      "key_points": "A1腱鞘部（MP関節掌側）の圧痛・結節と弾発・ロッキング。糖尿病・手根管症候群と合併しやすい。小児の母指の屈曲拘縮（いわゆる小児ばね母指）は成人とは別の病態として扱う。",
+      "tests": [
+        "診断は臨床的（A1腱鞘部の触診・弾発の再現）",
+        "超音波（腱鞘肥厚）"
+      ],
+      "sources": [
+        {
+          "title": "Spies-Dorgelo MN, et al. Hand and wrist problems in general practice--patient characteristics and factors related to symptom severity. Rheumatology (Oxford). 2007;46(11):1723-1728",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17938132/"
+        },
+        {
+          "title": "Krastman P, de Schepper EIT, Bindels PJE, Bierma-Zeinstra SMA, Kraan G, Runhaar J. Incidence of hand and wrist disorders in primary care: a retrospective cohort study. BJGP Open. 2024;8(4):BJGPO.2023.0240",
+          "url": "https://bjgpopen.org/content/8/4/BJGPO.2023.0240"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "年齢別発生率を示す一次情報を確認できなかった（Krastman 2024の手の疾患全体の平均診断年齢は53±17.8歳）。",
+        "sources": []
+      }
+    },
+    {
+      "id": "de_quervain",
+      "name": "de Quervain病（狭窄性腱鞘炎）",
+      "red_flag": false,
+      "subregions": [
+        "wrist_radial"
+      ],
+      "trauma": "no",
+      "sex_note": "女性に多い。米軍の大規模集団で女性2.8・男性0.6/1000人年（Wolf 2009）",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 3,
+        "elderly": null
+      },
+      "star_basis": "Spies-Dorgelo 2007（成人一般診療267例、平均49.3歳）で腱鞘炎（ばね指・de Quervain病などを含む）16%の一部として★3。de Quervain単独の受診者中割合は未確認。年齢別データなし。",
+      "findings_support": [
+        "finkelstein"
+      ],
+      "findings_against": [
+        "snuffbox",
+        "fall_hand",
+        "median_numb"
+      ],
+      "key_points": "橈骨茎状突起部の第1背側区画（APL・EPB）の圧痛・腫脹。母指を握り込んで尺屈させる手技で疼痛誘発（Finkelstein/Eichhoff）。感度・特異度の良質な文献は確認できず。外傷後なら舟状骨骨折、母指基部の痛みならCM関節症と区別。",
+      "tests": [
+        "診断は臨床的",
+        "超音波（第1区画の腱鞘肥厚・隔壁の有無）",
+        "手関節X線（CM関節症・舟状骨の除外）"
+      ],
+      "sources": [
+        {
+          "title": "Wolf JM, Sturdivant RX, Owens BD. Incidence of de Quervain's tenosynovitis in a young, active population. J Hand Surg Am. 2009;34(1):112-115",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19081683/"
+        },
+        {
+          "title": "Spies-Dorgelo MN, et al. Hand and wrist problems in general practice--patient characteristics and factors related to symptom severity. Rheumatology (Oxford). 2007;46(11):1723-1728",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17938132/"
+        }
+      ],
+      "age": {
+        "typical": [
+          40,
+          64
+        ],
+        "outside": null,
+        "basis": "米軍人（1998-2006年、11,332例、1,212万人年）で40歳超が2.0/1000人年と最も高く、20歳未満は0.6/1000人年。軍人集団のため65歳以上のデータはなく、上限は集団の年齢構成による。",
+        "sources": [
+          {
+            "title": "Wolf JM, Sturdivant RX, Owens BD. Incidence of de Quervain's tenosynovitis in a young, active population. J Hand Surg Am. 2009;34(1):112-115",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/19081683/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ganglion",
+      "name": "ガングリオン",
+      "red_flag": false,
+      "subregions": [
+        "wrist_central",
+        "fingers",
+        "palm"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": 3,
+        "elderly": null
+      },
+      "star_basis": "Spies-Dorgelo 2006（オランダ一般診療の手・手関節症状の成人78例、平均52.0歳、急性外傷は除外）でガングリオン11.5%→★3。小規模。年齢別データなし。",
+      "findings_support": [
+        "mass"
+      ],
+      "findings_against": [
+        "fever",
+        "redness_heat",
+        "multi_joint"
+      ],
+      "key_points": "手関節背側（舟状月状骨間）・掌側（橈骨動脈近傍）・指の腱鞘（屈筋腱鞘ガングリオン）・DIP背側（粘液嚢腫、Heberden結節に伴う）が好発。透光性・可動性。急速増大・硬い・境界不明瞭なら腫瘍を考え画像で確認。",
+      "tests": [
+        "超音波（嚢胞性か充実性か）",
+        "穿刺（ゼリー状内容）",
+        "非典型ならMRI"
+      ],
+      "sources": [
+        {
+          "title": "Spies-Dorgelo MN, Terwee CB, Stalman WAB, van der Windt DAWM. Reproducibility and responsiveness of the Symptom Severity Scale and the hand and finger function subscale of the Dutch-AIMS2-HFF in primary care patients with wrist or hand problems. Health Qual Life Outcomes. 2006;4:87",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17096845/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "年齢分布の一次情報を確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "cmc_oa",
+      "name": "母指CM関節症",
+      "red_flag": false,
+      "subregions": [
+        "wrist_radial",
+        "palm"
+      ],
+      "trauma": "no",
+      "sex_note": "女性に多い（Rotterdam研究で手のX線OAは女性に多い）",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 3,
+        "elderly": 3
+      },
+      "star_basis": "Spies-Dorgelo 2007（成人一般診療267例、平均49.3歳）で変形性関節症が17%。部位別内訳がないため、Rotterdam研究（55歳以上）のX線OA有病率の部位比（DIP 47.3%・CMC1/STT 35.8%・PIP 18.2%）で按分すると約6%→★3（換算値であり実測ではない）。",
+      "findings_support": [
+        "cm_grind",
+        "mass"
+      ],
+      "findings_against": [
+        "fall_hand",
+        "finkelstein",
+        "fever"
+      ],
+      "key_points": "つまみ動作での母指基部痛、CM関節の圧痛・亜脱臼（shoulder sign）。grind testは小規模研究で感度約30〜53%と低く、陰性でも除外できない（原著未確認のため尤度比は載せていない）。de Quervain病と合併・混同しやすい。",
+      "tests": [
+        "母指CM関節X線（正面・側面、Eaton分類）"
+      ],
+      "sources": [
+        {
+          "title": "Dahaghin S, Bierma-Zeinstra SM, Ginai AZ, et al. Prevalence and pattern of radiographic hand osteoarthritis and association with pain and disability (the Rotterdam study). Ann Rheum Dis. 2005;64(5):682-687",
+          "url": "https://ard.bmj.com/content/64/5/682"
+        },
+        {
+          "title": "Spies-Dorgelo MN, et al. Hand and wrist problems in general practice--patient characteristics and factors related to symptom severity. Rheumatology (Oxford). 2007;46(11):1723-1728",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17938132/"
+        }
+      ],
+      "age": {
+        "typical": [
+          55,
+          120
+        ],
+        "outside": null,
+        "basis": "Rotterdam研究（55歳以上の地域住民3,906人）でCMC1/STT関節のX線OA（KL≥2）は35.8%。55歳以上のみを対象とした研究のため、下限55歳は研究設計による値で、より若年で発症しないことを意味しない。",
+        "sources": [
+          {
+            "title": "Dahaghin S, et al. Prevalence and pattern of radiographic hand osteoarthritis and association with pain and disability (the Rotterdam study). Ann Rheum Dis. 2005;64(5):682-687",
+            "url": "https://ard.bmj.com/content/64/5/682"
+          }
+        ]
+      }
+    },
+    {
+      "id": "heberden",
+      "name": "Heberden結節（DIP関節の変形性関節症）",
+      "red_flag": false,
+      "subregions": [
+        "fingers"
+      ],
+      "trauma": "no",
+      "sex_note": "女性に多い。Rotterdam研究で右手の各DIP関節のX線OAは男性6.8〜17%、女性9.7〜28.6%",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 3,
+        "elderly": 3
+      },
+      "star_basis": "Spies-Dorgelo 2007で変形性関節症17%を、Rotterdam研究のX線OA部位比（DIP 47.3%・CMC1 35.8%・PIP 18.2%）で按分すると約8%→★3（換算値）。",
+      "findings_support": [
+        "mass"
+      ],
+      "findings_against": [
+        "morning_stiff",
+        "fever",
+        "fall_hand"
+      ],
+      "key_points": "DIP背側の骨性隆起。粘液嚢腫を伴うことがある。DIPが侵されMCPが保たれる点でRAと逆（RAはDIPをまず侵さない）。急な発赤・腫脹は erosive OA・痛風・乾癬性関節炎も考える。",
+      "tests": [
+        "手指X線正面・斜位"
+      ],
+      "sources": [
+        {
+          "title": "Dahaghin S, et al. Prevalence and pattern of radiographic hand osteoarthritis and association with pain and disability (the Rotterdam study). Ann Rheum Dis. 2005;64(5):682-687",
+          "url": "https://ard.bmj.com/content/64/5/682"
+        },
+        {
+          "title": "Spies-Dorgelo MN, et al. Hand and wrist problems in general practice--patient characteristics and factors related to symptom severity. Rheumatology (Oxford). 2007;46(11):1723-1728",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17938132/"
+        }
+      ],
+      "age": {
+        "typical": [
+          55,
+          120
+        ],
+        "outside": null,
+        "basis": "Rotterdam研究（55歳以上3,906人）でDIP関節のX線OAは47.3%と手の関節で最多。55歳以上のみを対象とした研究のため、下限は研究設計による値。",
+        "sources": [
+          {
+            "title": "Dahaghin S, et al. Prevalence and pattern of radiographic hand osteoarthritis and association with pain and disability (the Rotterdam study). Ann Rheum Dis. 2005;64(5):682-687",
+            "url": "https://ard.bmj.com/content/64/5/682"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bouchard",
+      "name": "Bouchard結節（PIP関節の変形性関節症）",
+      "red_flag": false,
+      "subregions": [
+        "fingers"
+      ],
+      "trauma": "no",
+      "sex_note": "女性に多い",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 2,
+        "elderly": 2
+      },
+      "star_basis": "Spies-Dorgelo 2007で変形性関節症17%を、Rotterdam研究のX線OA部位比（PIP 18.2%）で按分すると約3%→★2（換算値）。",
+      "findings_support": [
+        "mass"
+      ],
+      "findings_against": [
+        "morning_stiff",
+        "fever"
+      ],
+      "key_points": "PIPの骨性・硬い腫大。RAのPIP紡錘状腫脹（軟らかい滑膜腫脹）、朝のこわばり、MCP・手関節病変との区別が要点。Heberden結節を伴うことが多い。",
+      "tests": [
+        "手指X線正面・斜位",
+        "RAが否定できなければ抗CCP抗体・RF・CRP"
+      ],
+      "sources": [
+        {
+          "title": "Dahaghin S, et al. Prevalence and pattern of radiographic hand osteoarthritis and association with pain and disability (the Rotterdam study). Ann Rheum Dis. 2005;64(5):682-687",
+          "url": "https://ard.bmj.com/content/64/5/682"
+        },
+        {
+          "title": "Spies-Dorgelo MN, et al. Hand and wrist problems in general practice--patient characteristics and factors related to symptom severity. Rheumatology (Oxford). 2007;46(11):1723-1728",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17938132/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "Rotterdam研究（55歳以上）でPIP関節のX線OAは18.2%。年齢別の好発年齢は確認できなかった。",
+        "sources": [
+          {
+            "title": "Dahaghin S, et al. Prevalence and pattern of radiographic hand osteoarthritis and association with pain and disability (the Rotterdam study). Ann Rheum Dis. 2005;64(5):682-687",
+            "url": "https://ard.bmj.com/content/64/5/682"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra",
+      "name": "関節リウマチ（手指・手関節）",
+      "red_flag": false,
+      "subregions": [
+        "fingers",
+        "wrist_central",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "女性に多い",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 3,
+        "elderly": null
+      },
+      "star_basis": "Spies-Dorgelo 2006（成人一般診療78例、平均52.0歳）で関節リウマチ5.1%→★3（境界値・小規模で信頼区間は広い）。小児は若年性特発性関節炎として別に扱うため0。",
+      "findings_support": [
+        "morning_stiff",
+        "multi_joint"
+      ],
+      "findings_against": [
+        "fall_hand",
+        "triggering"
+      ],
+      "key_points": "MCP・PIP・手関節の対称性の滑膜炎、1時間以上の朝のこわばり。DIPは侵されにくい。早期は抗CCP抗体・関節エコーで評価し、リウマチ科連携を早めに。",
+      "tests": [
+        "抗CCP抗体・RF・CRP・ESR",
+        "手・足X線",
+        "関節エコー（滑膜炎・パワードプラ）"
+      ],
+      "sources": [
+        {
+          "title": "Spies-Dorgelo MN, et al. Reproducibility and responsiveness of the Symptom Severity Scale and the Dutch-AIMS2-HFF in primary care patients with wrist or hand problems. Health Qual Life Outcomes. 2006;4:87",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17096845/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "日本人の発症年齢分布の一次情報を今回確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "tfcc",
+      "name": "TFCC損傷",
+      "red_flag": false,
+      "subregions": [
+        "wrist_ulnar"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合・発生率の一次情報を確認できなかった。",
+      "findings_support": [
+        "fovea",
+        "fall_hand"
+      ],
+      "findings_against": [
+        "median_numb",
+        "multi_joint"
+      ],
+      "key_points": "手関節尺側痛、回内外・尺屈での疼痛、DRUJ不安定性（ピアノキー徴候・ballottement）。尺骨小窩の圧痛（fovea sign）は原著で高精度だが、後続研究では特異度が低い報告もある。ulnar plus variance なら尺骨突き上げ症候群も。",
+      "tests": [
+        "手関節X線（尺骨バリアンス・尺骨茎状突起骨折）",
+        "MRI（可能なら高磁場・専用コイル）",
+        "関節鏡（確定）"
+      ],
+      "sources": [
+        {
+          "title": "Tay SC, Tomita K, Berger RA. The \"ulnar fovea sign\" for defining ulnar wrist pain: an analysis of sensitivity and specificity. J Hand Surg Am. 2007;32(4):438-444",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17398352/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢の一次情報を確認できなかった。",
+        "sources": []
+      },
+      "lr": {
+        "fovea": {
+          "lr_pos": 7.1,
+          "lr_neg": 0.06,
+          "basis": "手関節鏡を参照基準とした単一施設研究（小窩部断裂90例・尺骨三角骨靱帯損傷68例を含む尺側部痛患者）で、小窩部断裂および/または尺骨三角骨靱帯損傷の検出に対し感度95.2%・特異度86.5%（抄録記載）から算出。二次資料では、TFCC損傷疑い908例で感度73%・特異度44%、豪州の研究で感度89%・特異度48%との報告もあり（いずれも原著未確認）、文献間で大きく食い違う。",
+          "source": {
+            "title": "Tay SC, Tomita K, Berger RA. The \"ulnar fovea sign\" for defining ulnar wrist pain: an analysis of sensitivity and specificity. J Hand Surg Am. 2007;32(4):438-444",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17398352/"
+          },
+          "low_quality": true
+        }
+      }
+    },
+    {
+      "id": "kienbock",
+      "name": "キーンベック病（月状骨軟化症）",
+      "red_flag": false,
+      "subregions": [
+        "wrist_central"
+      ],
+      "trauma": "no",
+      "sex_note": "フィンランド全国登録で男性10.38・女性8.78/100万人年と男性にやや多い",
+      "stars_by_age": {
+        "child": null,
+        "young": 1,
+        "middle": 1,
+        "elderly": 1
+      },
+      "star_basis": "フィンランド全国登録（1996-2022年）で発生率9.60/100万人年（50〜59歳で最多15.49）。手・手関節症状の受診率約12.4/1000人年で割ると0.1%未満→★1。",
+      "findings_support": [],
+      "findings_against": [
+        "fever",
+        "multi_joint",
+        "median_numb"
+      ],
+      "key_points": "手関節背側中央（月状骨上）の圧痛と握力低下。初期はX線正常のことがありMRIで診断。尺骨マイナスバリアンスと関連。",
+      "tests": [
+        "手関節X線（月状骨の硬化・圧潰、尺骨バリアンス）",
+        "MRI（初期）"
+      ],
+      "sources": [
+        {
+          "title": "Wernér K, Anttila T, Viljakka T, Ryhänen J, Hulkkonen S. Kienböck's disease: incidence and operations in Finland: a nationwide register study. J Hand Surg Eur Vol. 2025;50(8):1083-1090",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39852554/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "フィンランド全国登録で発生率は50〜59歳が最も高かった（15.49/100万人年）が、年齢分布の幅は確認できず、好発年齢は設定しない。",
+        "sources": [
+          {
+            "title": "Wernér K, et al. Kienböck's disease: incidence and operations in Finland: a nationwide register study. J Hand Surg Eur Vol. 2025;50(8):1083-1090",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/39852554/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "drf",
+      "name": "橈骨遠位端骨折",
+      "red_flag": false,
+      "subregions": [
+        "wrist_central",
+        "wrist_radial",
+        "diffuse"
+      ],
+      "trauma": "yes",
+      "sex_note": "50歳以上では女性に多い。境港市（50歳以上）の年齢調整発生率は男性82・女性432/10万人年",
+      "stars_by_age": {
+        "child": 4,
+        "young": null,
+        "middle": 4,
+        "elderly": 4
+      },
+      "star_basis": "van Leerdam 2022（オランダ救急外来の手・手関節外傷、全年齢）で手関節骨折2.7/1000人年は手・手関節外傷（約9.4/1000）の約29%→★4。年齢別の内訳はないが、日本の地域研究で発生率は10〜14歳（男性）と75〜79歳（女性）にピークがあり、50歳以上で年齢とともに上昇するため小児・中高年・高齢に★4を当てた。15〜39歳は発生率が谷にあたり割合は未確認。",
+      "findings_support": [
+        "fall_hand"
+      ],
+      "findings_against": [
+        "fever",
+        "multi_joint",
+        "night_numb"
+      ],
+      "key_points": "手をついて転倒。高齢者は脆弱性骨折として骨粗鬆症評価を（橈骨遠位端骨折診療ガイドライン2017）。正中神経障害（急性手根管症候群）・合併する舟状骨骨折・DRUJ損傷を見落とさない。小児は隆起骨折・骨端線損傷。",
+      "tests": [
+        "手関節X線 正面・側面（必要に応じ斜位）",
+        "関節内骨折・転位評価にCT",
+        "高齢者は骨密度（DXA）"
+      ],
+      "sources": [
+        {
+          "title": "van Leerdam RH, Krijnen P, Panneman MJ, Schipper IB. Incidence and treatment of hand and wrist injuries in Dutch emergency departments. Eur J Trauma Emerg Surg. 2022;48(6):4327-4332",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34196727/"
+        },
+        {
+          "title": "Ando J, Takahashi T, Ae R, et al. Epidemiology of distal radius fracture: a regional population-based study in Japan. BMC Musculoskelet Disord. 2023;24:478",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37312071/"
+        },
+        {
+          "title": "Tsukutani Y, Hagino H, et al. 境港市（鳥取県）における脆弱性骨折の疫学研究. Osteoporos Int. 2015",
+          "url": "https://doi.org/10.1007/s00198-015-3124-z"
+        },
+        {
+          "title": "橈骨遠位端骨折診療ガイドライン2017（改訂第2版）. 日本整形外科学会・日本手外科学会監修, 南江堂, 2017",
+          "url": "https://minds.jcqhc.or.jp/summary/c00393/"
+        }
+      ],
+      "age": {
+        "typical": [
+          [
+            10,
+            19
+          ],
+          [
+            70,
+            120
+          ]
+        ],
+        "outside": null,
+        "basis": "北海道苫前町の地域研究（2011-2020年、258例、平均67.0歳、女性73.6%）で年齢別発生率は二峰性で、男性は10〜14歳、女性は75〜79歳にピーク（第1峰は10代、第2峰は70歳以降）。境港市の研究でも50歳以上で年齢とともに上昇し85歳以上で最高。50〜60代女性も少なくない。",
+        "sources": [
+          {
+            "title": "Ando J, et al. Epidemiology of distal radius fracture: a regional population-based study in Japan. BMC Musculoskelet Disord. 2023;24:478",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37312071/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scaphoid_fx",
+      "name": "舟状骨骨折（見逃し注意）",
+      "red_flag": true,
+      "subregions": [
+        "wrist_radial"
+      ],
+      "trauma": "yes",
+      "sex_note": "男性に多い（エジンバラの1年間151例中105例が男性）。男性の方が若年",
+      "stars_by_age": {
+        "child": null,
+        "young": 2,
+        "middle": 2,
+        "elderly": null
+      },
+      "star_basis": "エジンバラの人口ベース研究で発生率29/10万人年（Duckworth 2012）。救急外来の手・手関節外傷（約9.4/1000人年、van Leerdam 2022）で割ると約3%→★2。年齢別の換算は不可で、若年男性に多いことから15〜64歳に当てた。",
+      "findings_support": [
+        "fall_hand",
+        "snuffbox",
+        "supination_pain"
+      ],
+      "findings_against": [
+        "fever",
+        "multi_joint"
+      ],
+      "key_points": "初回X線で見えない潜在骨折があり（初回X線正常の手関節外傷の約9%）、見逃すと偽関節・SNAC wristへ。snuffbox圧痛がなければ確率は下がる（LR−約0.2）が単独では除外できない。臨床的に疑えば固定してMRI（またはCT・再撮影）。",
+      "tests": [
+        "舟状骨撮影（4方向）",
+        "初回X線陰性で疑いが残ればMRI（またはCT）"
+      ],
+      "sources": [
+        {
+          "title": "Duckworth AD, Jenkins PJ, Aitken SA, et al. Scaphoid fracture epidemiology. J Trauma Acute Care Surg. 2012;72(2):E41-E45",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22439232/"
+        },
+        {
+          "title": "Coventry L, Oldrini I, Dean B, Novak A, Duckworth A, Metcalfe D. Which clinical features best predict occult scaphoid fractures? A systematic review of diagnostic test accuracy studies. Emerg Med J. 2023;40(8):576-582",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37169546/"
+        },
+        {
+          "title": "Carpenter CR, Pines JM, Schuur JD, et al. Adult scaphoid fracture. Acad Emerg Med. 2014;21(2):101-121",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24673666/"
+        },
+        {
+          "title": "van Leerdam RH, et al. Incidence and treatment of hand and wrist injuries in Dutch emergency departments. Eur J Trauma Emerg Surg. 2022;48(6):4327-4332",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34196727/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "Duckworth 2012で若年男性に多いとされるが、年齢分布の数値（中央値など）は抄録で確認できなかった。red flag のため outside は設定しない。",
+        "sources": [
+          {
+            "title": "Duckworth AD, et al. Scaphoid fracture epidemiology. J Trauma Acute Care Surg. 2012;72(2):E41-E45",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22439232/"
+          }
+        ]
+      },
+      "lr": {
+        "snuffbox": {
+          "lr_pos": 1.8,
+          "lr_neg": 0.2,
+          "basis": "初回X線が正常な手関節外傷1,685例（8研究、潜在骨折の有病率9.0%）の系統的レビュー。snuffbox圧痛は感度92.1%・特異度48.4%、圧痛なしでLR−0.2（95%CI 0.0-0.7、論文記載）。LR+は感度・特異度から算出。別の系統的レビュー（Carpenter 2014）でも圧痛なしのLR−は0.15。",
+          "source": {
+            "title": "Coventry L, et al. Which clinical features best predict occult scaphoid fractures? A systematic review of diagnostic test accuracy studies. Emerg Med J. 2023;40(8):576-582",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37169546/"
+          }
+        },
+        "supination_pain": {
+          "lr_pos": 45.0,
+          "lr_neg": null,
+          "basis": "同じ系統的レビュー。回内位から抵抗下に回外させて痛むとLR+45.0（95%CI 6.5-312.5、感度100%・特異度97.9%）。CIが極めて広く、外部検証が必要と著者が明記。",
+          "source": {
+            "title": "Coventry L, et al. Which clinical features best predict occult scaphoid fractures? A systematic review of diagnostic test accuracy studies. Emerg Med J. 2023;40(8):576-582",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37169546/"
+          },
+          "low_quality": true
+        }
+      }
+    },
+    {
+      "id": "perilunate",
+      "name": "月状骨周囲脱臼・手根不安定症（見逃し注意）",
+      "red_flag": true,
+      "subregions": [
+        "wrist_central"
+      ],
+      "trauma": "yes",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合・発生率の一次情報を確認できなかった（まれ）。",
+      "findings_support": [
+        "fall_hand",
+        "median_numb",
+        "pain_disproportion"
+      ],
+      "findings_against": [
+        "fever",
+        "multi_joint"
+      ],
+      "key_points": "高エネルギー外傷での手関節の強い腫脹。正面像の手根骨の弧（Gilula線）の乱れ、側面像の月状骨と有頭骨の配列を必ず確認。急性正中神経障害を約半数に伴う（71例中47%）。",
+      "tests": [
+        "手関節X線 正面・真側面",
+        "CT",
+        "急性正中神経障害の評価"
+      ],
+      "sources": [
+        {
+          "title": "Wickramasinghe NR, Duckworth AD, Clement ND, et al. Acute median neuropathy and carpal tunnel release in perilunate injuries. J Hand Microsurg. 2015;7(2):237-240",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26578823/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "年齢分布の一次情報を確認できなかった。red flag のため outside は設定しない。",
+        "sources": []
+      }
+    },
+    {
+      "id": "finger_fx",
+      "name": "指節骨骨折",
+      "red_flag": false,
+      "subregions": [
+        "fingers"
+      ],
+      "trauma": "yes",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 4,
+        "young": 4,
+        "middle": 4,
+        "elderly": null
+      },
+      "star_basis": "van Leerdam 2022（オランダ救急外来、全年齢）で指骨折1.7/1000人年は手・手関節外傷（約9.4/1000）の約18%→★4。年齢別内訳はなく全年齢の値を当てた。高齢者は手関節骨折の比重が高く割合は未確認。",
+      "findings_support": [
+        "finger_impact"
+      ],
+      "findings_against": [
+        "fever",
+        "multi_joint",
+        "night_numb"
+      ],
+      "key_points": "回旋変形（指を曲げて爪の向き・指の交差を確認）と関節内骨折の有無が治療方針を分ける。小児は骨端線損傷（Salter-Harris）に注意。",
+      "tests": [
+        "指X線 正面・真側面（斜位）"
+      ],
+      "sources": [
+        {
+          "title": "van Leerdam RH, et al. Incidence and treatment of hand and wrist injuries in Dutch emergency departments. Eur J Trauma Emerg Surg. 2022;48(6):4327-4332",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34196727/"
+        },
+        {
+          "title": "Krastman P, et al. Incidence of hand and wrist disorders in primary care: a retrospective cohort study. BJGP Open. 2024;8(4):BJGPO.2023.0240",
+          "url": "https://bjgpopen.org/content/8/4/BJGPO.2023.0240"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "年齢別分布は確認できなかった（van Leerdam 2022では手・手関節外傷全体が10〜14歳でピーク）。",
+        "sources": [
+          {
+            "title": "van Leerdam RH, et al. Incidence and treatment of hand and wrist injuries in Dutch emergency departments. Eur J Trauma Emerg Surg. 2022;48(6):4327-4332",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34196727/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "metacarpal_fx",
+      "name": "中手骨骨折（ボクサー骨折など）",
+      "red_flag": false,
+      "subregions": [
+        "palm"
+      ],
+      "trauma": "yes",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": 3,
+        "middle": 3,
+        "elderly": null
+      },
+      "star_basis": "van Leerdam 2022（オランダ救急外来、全年齢）で手根骨/中手骨骨折0.8/1000人年は手・手関節外傷（約9.4/1000）の約8.5%→★3（手根骨を含む値）。年齢別内訳なし。",
+      "findings_support": [],
+      "findings_against": [
+        "fever",
+        "multi_joint"
+      ],
+      "key_points": "拳で殴った後の第5中手骨頸部骨折が典型。回旋変形の確認。拳の背側に傷があれば歯による咬傷（fight bite）として感染リスクを考える。",
+      "tests": [
+        "手X線 正面・斜位・側面"
+      ],
+      "sources": [
+        {
+          "title": "van Leerdam RH, et al. Incidence and treatment of hand and wrist injuries in Dutch emergency departments. Eur J Trauma Emerg Surg. 2022;48(6):4327-4332",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34196727/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "年齢分布の一次情報を確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "mallet",
+      "name": "槌指（マレット指）",
+      "red_flag": false,
+      "subregions": [
+        "fingers"
+      ],
+      "trauma": "yes",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": 2,
+        "middle": 2,
+        "elderly": 2
+      },
+      "star_basis": "Krastman 2024（オランダ一般診療の成人）で槌指0.6/1000人年。手・手関節症状の受診率約12.4/1000人年で割ると約5%（外傷受診に限ればより高い）→★2〜3の境界で★2。成人全体の値を各年齢帯に当てた。",
+      "findings_support": [
+        "finger_impact"
+      ],
+      "findings_against": [
+        "fever",
+        "multi_joint"
+      ],
+      "key_points": "DIPの自動伸展不能（他動伸展は可能）。腱性か骨性か、骨性ならDIP掌側亜脱臼の有無で方針が変わる。",
+      "tests": [
+        "指X線 真側面"
+      ],
+      "sources": [
+        {
+          "title": "Krastman P, et al. Incidence of hand and wrist disorders in primary care: a retrospective cohort study. BJGP Open. 2024;8(4):BJGPO.2023.0240",
+          "url": "https://bjgpopen.org/content/8/4/BJGPO.2023.0240"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "年齢分布の一次情報を確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "finger_sprain",
+      "name": "突き指（PIP関節の側副靱帯・掌側板損傷、脱臼）",
+      "red_flag": false,
+      "subregions": [
+        "fingers"
+      ],
+      "trauma": "yes",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "van Leerdam 2022では捻挫・打撲等は「その他」（手・手関節外傷の12%、うち指71%）に一括され、単独の割合を確認できなかった。",
+      "findings_support": [
+        "finger_impact"
+      ],
+      "findings_against": [
+        "fever",
+        "multi_joint"
+      ],
+      "key_points": "「突き指」は診断名ではない。骨折（掌側板付着部の剥離骨折、中節骨基部骨折）・槌指・脱臼を除外する。PIPの側方動揺性と自動伸展を確認。",
+      "tests": [
+        "指X線 正面・真側面"
+      ],
+      "sources": [
+        {
+          "title": "van Leerdam RH, et al. Incidence and treatment of hand and wrist injuries in Dutch emergency departments. Eur J Trauma Emerg Surg. 2022;48(6):4327-4332",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34196727/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "年齢分布の一次情報を確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "thumb_ucl",
+      "name": "母指MP関節尺側側副靱帯損傷（スキーヤー母指）",
+      "red_flag": false,
+      "subregions": [
+        "fingers",
+        "wrist_radial"
+      ],
+      "trauma": "yes",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合・発生率の一次情報を確認できなかった。",
+      "findings_support": [
+        "finger_impact"
+      ],
+      "findings_against": [
+        "fever",
+        "multi_joint"
+      ],
+      "key_points": "母指の外転強制で受傷。MP関節尺側の圧痛と外反ストレスでの不安定性（健側と比較）。完全断裂で内転筋腱膜が挟まる（Stener lesion）と保存では治りにくい。",
+      "tests": [
+        "母指X線（剥離骨折の確認）",
+        "超音波またはMRI（Stener lesion）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "年齢分布の一次情報を確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "cubital",
+      "name": "肘部管症候群（尺骨神経障害）",
+      "red_flag": false,
+      "subregions": [
+        "fingers",
+        "palm"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "手・手関節症状の受診者中の割合を確認できなかった。",
+      "findings_support": [
+        "ulnar_numb",
+        "night_numb"
+      ],
+      "findings_against": [
+        "median_numb",
+        "fall_hand"
+      ],
+      "key_points": "環指尺側・小指のしびれ、骨間筋萎縮、Froment徴候。手の症状として来院するが病変は肘。手背尺側の感覚も障害されれば肘部管、保たれればGuyon管を考える。",
+      "tests": [
+        "神経伝導検査（肘部での伝導遅延）",
+        "肘X線（変形性肘関節症）",
+        "超音波"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "今回は一次情報を確認していない。",
+        "sources": []
+      }
+    },
+    {
+      "id": "dupuytren",
+      "name": "Dupuytren拘縮",
+      "red_flag": false,
+      "subregions": [
+        "palm",
+        "fingers"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合を確認できなかった。小児はまず考えない。",
+      "findings_support": [
+        "mass"
+      ],
+      "findings_against": [
+        "fever",
+        "redness_heat",
+        "triggering"
+      ],
+      "key_points": "手掌（環指・小指列）の無痛性の結節・索状物とMP/PIPの屈曲拘縮。テーブルトップテスト陽性（手掌を机に平らに置けない）で治療を検討。",
+      "tests": [
+        "診断は臨床的"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "今回は一次情報を確認していない。",
+        "sources": []
+      }
+    },
+    {
+      "id": "pft",
+      "name": "化膿性屈筋腱腱鞘炎",
+      "red_flag": true,
+      "subregions": [
+        "fingers",
+        "palm"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合・発生率の一次情報を確認できなかった。",
+      "findings_support": [
+        "kanavel",
+        "bite_puncture",
+        "redness_heat",
+        "fever",
+        "pain_disproportion"
+      ],
+      "findings_against": [
+        "triggering",
+        "multi_joint"
+      ],
+      "key_points": "Kanavel 4徴（指の紡錘状腫脹・軽度屈曲位・他動伸展時痛・屈筋腱鞘に沿った圧痛）。各徴候の感度91〜97%・特異度51〜69%と報告され（Kennedy 2017、小規模）、単独では特異度が低い。刺し傷の数日後に多い。疑えば早急に手外科で洗浄を検討（遅れると腱壊死・癒着）。",
+      "tests": [
+        "血液検査 CBC・CRP",
+        "X線（異物・ガス・骨髄炎）",
+        "超音波（腱鞘内液貯留）",
+        "手術時の培養"
+      ],
+      "sources": [
+        {
+          "title": "Kennedy et al. Differentiation Between Pyogenic Flexor Tenosynovitis and Other Finger Infections. Hand (N Y). 2017;12(6):585-590",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5669334/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "年齢分布の一次情報を確認できなかった。red flag のため outside は設定しない。",
+        "sources": []
+      }
+    },
+    {
+      "id": "hand_infection",
+      "name": "手の感染症（咬傷・化膿性関節炎・ひょう疽・深部膿瘍）",
+      "red_flag": true,
+      "subregions": [
+        "fingers",
+        "palm",
+        "wrist_central",
+        "diffuse"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合・発生率の一次情報を確認できなかった。",
+      "findings_support": [
+        "bite_puncture",
+        "fever",
+        "redness_heat",
+        "pain_disproportion"
+      ],
+      "findings_against": [
+        "triggering",
+        "mass"
+      ],
+      "key_points": "犬・猫咬傷（猫は深い刺し傷で腱鞘・関節に達しやすい）、拳の背側の創（fight bite: MP関節内感染）は小さな傷でも要注意。発熱がなくても否定しない。関節の腫脹・熱感では穿刺し結晶と培養を（結晶があっても感染は否定できない）。",
+      "tests": [
+        "X線（異物・骨折・ガス）",
+        "血液検査 CBC・CRP、必要時血液培養",
+        "関節腫脹あれば穿刺（細胞数・グラム染色・培養・結晶）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "今回は一次情報を確認していない。red flag のため outside は設定しない。",
+        "sources": []
+      }
+    },
+    {
+      "id": "compartment",
+      "name": "手・前腕のコンパートメント症候群",
+      "red_flag": true,
+      "subregions": [
+        "palm",
+        "diffuse"
+      ],
+      "trauma": "yes",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合・発生率の一次情報を確認できなかった（まれ）。",
+      "findings_support": [
+        "pain_disproportion"
+      ],
+      "findings_against": [
+        "triggering",
+        "mass",
+        "morning_stiff"
+      ],
+      "key_points": "圧挫・骨折・点滴漏れ・長時間の圧迫後に、見た目に比べ強い痛みと他動伸展時痛。脈が触れても否定できない（下腿と同じ考え方）。疑えば区画内圧測定・減張切開を急ぐ。",
+      "tests": [
+        "区画内圧測定",
+        "CK"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "今回は一次情報を確認していない。red flag のため outside は設定しない。",
+        "sources": []
+      }
+    },
+    {
+      "id": "cervical",
+      "name": "頸椎症性神経根症（頸椎由来の手のしびれ・痛み）",
+      "red_flag": true,
+      "subregions": [
+        "fingers",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "男性に多い。年齢調整発生率は男性107.3・女性63.5/10万人年（Radhakrishnan 1994）",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "手・手関節症状の受診者中の割合を確認できなかった。人口発生率は83.2/10万人年（50〜54歳で202.9）だが、手の症状として受診する割合は不明。小児はまず考えない。",
+      "findings_support": [
+        "neck_radiation",
+        "ulnar_numb",
+        "median_numb"
+      ],
+      "findings_against": [
+        "triggering",
+        "finger_impact",
+        "mass"
+      ],
+      "key_points": "頸部痛・肩甲部痛を伴うしびれ、皮膚分節に沿う分布（C6: 母指、C7: 中指、C8: 小指）、Spurling徴候。手根管症候群との合併（double crush）もある。脊髄症（巧緻運動障害・歩行障害・腱反射亢進）を伴えば早めに脊椎外科へ。",
+      "tests": [
+        "頸椎X線",
+        "頸椎MRI",
+        "神経伝導検査（末梢神経障害との鑑別）"
+      ],
+      "sources": [
+        {
+          "title": "Radhakrishnan K, Litchy WJ, O'Fallon WM, Kurland LT. Epidemiology of cervical radiculopathy. A population-based study from Rochester, Minnesota, 1976 through 1990. Brain. 1994;117(Pt 2):325-335",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8186959/"
+        }
+      ],
+      "age": {
+        "typical": [
+          35,
+          61
+        ],
+        "outside": null,
+        "basis": "米国Rochesterの人口ベース研究（561例、13〜91歳）で平均年齢は男性47.6±13.1歳・女性48.2±13.8歳、年齢別発生率のピークは50〜54歳（202.9/10万人年）。typical は平均±1SDの範囲。red flag のため outside は設定しない。",
+        "sources": [
+          {
+            "title": "Radhakrishnan K, et al. Epidemiology of cervical radiculopathy. Brain. 1994;117(Pt 2):325-335",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/8186959/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tumor",
+      "name": "骨・軟部腫瘍（内軟骨腫・腱鞘巨細胞腫・悪性腫瘍）",
+      "red_flag": true,
+      "subregions": [
+        "fingers",
+        "palm",
+        "wrist_central",
+        "diffuse"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合・発生率の一次情報を確認できなかった。",
+      "findings_support": [
+        "mass",
+        "pain_disproportion"
+      ],
+      "findings_against": [
+        "triggering",
+        "finger_impact"
+      ],
+      "key_points": "軽微な外傷での指節骨骨折は内軟骨腫による病的骨折を疑う。透光性のない硬い腫瘤、増大傾向、5cm超・深在性は悪性を考え、穿刺・切除の前に画像評価と専門施設への相談を。",
+      "tests": [
+        "X線",
+        "超音波",
+        "MRI"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "今回は一次情報を確認していない。red flag のため outside は設定しない。",
+        "sources": []
+      }
+    },
+    {
+      "id": "crystal",
+      "name": "結晶性関節炎（痛風・偽痛風）",
+      "red_flag": true,
+      "subregions": [
+        "wrist_central",
+        "fingers",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "手・手関節症状の受診者中の割合を確認できなかった。小児はまず考えない。",
+      "findings_support": [
+        "redness_heat",
+        "fever"
+      ],
+      "findings_against": [
+        "finger_impact",
+        "triggering",
+        "median_numb"
+      ],
+      "key_points": "急性の発赤・腫脹・熱感は化膿性関節炎・蜂窩織炎と見分けがつかないことがあり、穿刺で結晶と培養を確認する（結晶があっても感染は否定できない）。高齢者の手関節の偽痛風はTFCCの石灰化がヒントになる。",
+      "tests": [
+        "関節穿刺（結晶・細胞数・グラム染色・培養）",
+        "X線（軟骨石灰化・痛風結節の骨びらん）",
+        "血清尿酸値（発作中は正常のこともある）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "今回は一次情報を確認していない。red flag のため outside は設定しない。",
+        "sources": []
+      }
+    }
+  ]
+}

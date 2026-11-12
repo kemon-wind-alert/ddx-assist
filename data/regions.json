@@ -1,10 +1,10 @@
 [
-  {"id": "neck", "name": "頸部", "file": null},
-  {"id": "shoulder", "name": "肩", "file": null},
-  {"id": "elbow", "name": "肘", "file": null},
-  {"id": "hand", "name": "手・手関節", "file": null},
-  {"id": "back", "name": "腰・背部", "file": null},
-  {"id": "hip", "name": "股関節", "file": null},
+  {"id": "neck", "name": "頸部", "file": "data/neck.json"},
+  {"id": "shoulder", "name": "肩", "file": "data/shoulder.json"},
+  {"id": "elbow", "name": "肘", "file": "data/elbow.json"},
+  {"id": "hand", "name": "手・手関節", "file": "data/hand.json"},
+  {"id": "back", "name": "腰・背部", "file": "data/back.json"},
+  {"id": "hip", "name": "股関節", "file": "data/hip.json"},
   {"id": "knee", "name": "膝", "file": "data/knee.json"},
-  {"id": "foot", "name": "足・足関節", "file": null}
+  {"id": "foot", "name": "足・足関節", "file": "data/foot.json"}
 ]

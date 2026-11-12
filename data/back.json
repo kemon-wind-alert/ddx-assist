@@ -1,0 +1,1419 @@
+{
+  "region": "back",
+  "name": "腰・背部",
+  "updated": "2026-11-12",
+  "star_scale": "★＝その年齢帯で腰・背部の症状で受診した患者のうち、その疾患が占める割合の目安。★5: 30%以上／★4: 15〜29%／★3: 5〜14%／★2: 1〜4.9%／★1: 1%未満（まれだが鑑別に入る）。腰痛は受診者中の割合を直接示す文献があるため、発生率からの換算ではなくそれらを用いた：成人プライマリケア腰痛の病因別推定割合（Kinkade 2007 AFPの表。Deyo & Weinstein 2001 NEJMほかに基づく。年齢別ではない）、急性腰痛1,172例の前向きコホート（Henschke 2009）、55歳超のGP受診腰痛669例（Enthoven 2016）、10〜19歳の腰痛2,846例（Miller 2013、米国小児病院）。年齢別データがなく全成人の値を当てたマスは star_basis に明記した。日本の整形外科外来（山口腰痛研究 Suzuki 2016、320例：重篤な脊椎疾患群21%・診断可能群57%・非特異的22%）とは「非特異的」の定義が異なり、施設での実数とはずれうる粗い目安。null＝鑑別には挙がるが頻度を裏付ける文献を確認できなかった（★未確認）。0＝その年齢帯ではまず考えない（非表示）。",
+  "subregions": [
+    {
+      "id": "thoracic",
+      "name": "胸背部"
+    },
+    {
+      "id": "lumbar_mid",
+      "name": "腰部正中（脊柱上）"
+    },
+    {
+      "id": "lumbar_side",
+      "name": "腰部片側・側腹部寄り"
+    },
+    {
+      "id": "buttock_sij",
+      "name": "殿部・仙腸関節部"
+    },
+    {
+      "id": "leg_radiation",
+      "name": "腰から下肢へ放散"
+    },
+    {
+      "id": "diffuse",
+      "name": "全体・はっきりしない"
+    }
+  ],
+  "findings": [
+    {
+      "id": "night_pain",
+      "label": "夜間痛・安静時痛"
+    },
+    {
+      "id": "fever",
+      "label": "発熱"
+    },
+    {
+      "id": "cancer_history",
+      "label": "がんの既往"
+    },
+    {
+      "id": "weight_loss",
+      "label": "原因不明の体重減少"
+    },
+    {
+      "id": "steroid_use",
+      "label": "ステロイド長期使用"
+    },
+    {
+      "id": "leg_pain",
+      "label": "片側下肢への放散痛"
+    },
+    {
+      "id": "bilateral_leg",
+      "label": "両側の殿部・下肢痛"
+    },
+    {
+      "id": "claudication",
+      "label": "神経性間欠跛行"
+    },
+    {
+      "id": "sitting_relief",
+      "label": "座位・前屈で軽快"
+    },
+    {
+      "id": "saddle_bladder",
+      "label": "会陰部しびれ・排尿障害"
+    },
+    {
+      "id": "ibp",
+      "label": "炎症性腰痛(ASAS)"
+    },
+    {
+      "id": "urinary_sx",
+      "label": "血尿・排尿時痛"
+    },
+    {
+      "id": "sudden_severe",
+      "label": "突然の激痛・冷汗"
+    },
+    {
+      "id": "extension_pain",
+      "label": "後屈で痛い"
+    },
+    {
+      "id": "slr",
+      "label": "SLR陽性",
+      "group": "exam"
+    },
+    {
+      "id": "crossed_slr",
+      "label": "交差SLR陽性",
+      "group": "exam"
+    },
+    {
+      "id": "fnst",
+      "label": "FNST陽性",
+      "group": "exam"
+    },
+    {
+      "id": "weakness",
+      "label": "下肢筋力低下",
+      "group": "exam"
+    },
+    {
+      "id": "reflex_loss",
+      "label": "腱反射低下",
+      "group": "exam"
+    },
+    {
+      "id": "wide_gait",
+      "label": "開脚歩行",
+      "group": "exam"
+    },
+    {
+      "id": "romberg",
+      "label": "Romberg陽性",
+      "group": "exam"
+    },
+    {
+      "id": "sij_3of6",
+      "label": "SIJ誘発3/6陽性",
+      "group": "exam"
+    },
+    {
+      "id": "esr50",
+      "label": "赤沈≥50mm/h",
+      "group": "exam"
+    },
+    {
+      "id": "rash_dermatome",
+      "label": "帯状の皮疹・水疱",
+      "group": "exam"
+    }
+  ],
+  "diseases": [
+    {
+      "id": "nonspecific_lbp",
+      "name": "非特異的腰痛（筋・筋膜性、いわゆるぎっくり腰を含む）",
+      "red_flag": false,
+      "subregions": [
+        "lumbar_mid",
+        "lumbar_side",
+        "diffuse"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 5,
+        "young": 5,
+        "middle": 5,
+        "elderly": null
+      },
+      "star_basis": "成人プライマリケア腰痛で腰椎捻挫・挫傷が70%以上（Kinkade 2007の表。全成人の値をyoung・middleに適用）→★5。10〜19歳の腰痛2,846例で原因不明の機械的腰痛が2,159例（76%）（Miller 2013、米国小児病院）→child★5。高齢者の年齢別データは未確認。なお日本の整形外科外来（Suzuki 2016）は椎間関節性・筋膜性などを積極的に診断しており非特異的は22%で、定義により割合が大きく変わる。",
+      "findings_support": [],
+      "findings_against": [
+        "fever",
+        "cancer_history",
+        "weight_loss",
+        "saddle_bladder",
+        "night_pain"
+      ],
+      "key_points": "red flag（腰痛診療ガイドライン2019）と神経症状がなければ、画像なしで保存療法を始めてよい層。小児は原因不明が多数だが、痛みが続く・夜間痛・神経症状があれば分離症・腫瘍・感染を考え直す。",
+      "tests": [
+        "red flag・神経所見の確認（画像は必須ではない）",
+        "改善しなければ腰椎X線 2方向"
+      ],
+      "sources": [
+        {
+          "title": "Kinkade S. Evaluation and Treatment of Acute Low Back Pain. Am Fam Physician. 2007;75(8):1181-1188（Table 1: Differential Diagnosis of Low Back Pain）",
+          "url": "https://www.aafp.org/pubs/afp/issues/2007/0415/p1181.html"
+        },
+        {
+          "title": "Miller R, Beck NA, Sampson NR, et al. Imaging modalities for low back pain in children: a review of spondylolysis and undiagnosed mechanical back pain. J Pediatr Orthop. 2013;33(3):282-288",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23482264/"
+        },
+        {
+          "title": "Suzuki H, Kanchiku T, Imajo Y, et al. Diagnosis and Characters of Non-Specific Low Back Pain in Japan: The Yamaguchi Low Back Pain Study. PLoS One. 2016;11(8):e0160454",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27548658/"
+        },
+        {
+          "title": "腰痛診療ガイドライン2019（改訂第2版）日本整形外科学会・日本腰痛学会監修、南江堂",
+          "url": "https://minds.jcqhc.or.jp/summary/c00498/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "全年齢でみられる。好発年齢を限定する一次文献は確認していない。",
+        "sources": []
+      }
+    },
+    {
+      "id": "ldh",
+      "name": "腰椎椎間板ヘルニア",
+      "red_flag": false,
+      "subregions": [
+        "leg_radiation",
+        "lumbar_side",
+        "buttock_sij"
+      ],
+      "trauma": "any",
+      "sex_note": "フランスの全国入院データ（2022年、手術例）で男性がやや多い",
+      "stars_by_age": {
+        "child": null,
+        "young": 2,
+        "middle": 2,
+        "elderly": null
+      },
+      "star_basis": "成人プライマリケア腰痛の約4%（Kinkade 2007の表。全成人の値をyoung・middleに適用）→★2。小児・高齢者の年齢別データは未確認。",
+      "findings_support": [
+        "leg_pain",
+        "slr",
+        "crossed_slr",
+        "fnst"
+      ],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "SLRは感度0.92・特異度0.28（手術例）で、陰性なら除外寄り（LR−約0.29）。crossed SLRは特異度0.90で陽性なら確定寄り。筋力低下・反射・感覚障害の単独所見はLR+1.0〜1.3程度で診断力に乏しい（Al Nezari 2013）。会陰部しびれ・排尿障害があれば馬尾症候群として緊急対応。",
+      "tests": [
+        "神経学的所見（L4/L5/S1の筋力・反射・感覚）",
+        "MRI（神経症状が続く・進行する、手術を考える場合）"
+      ],
+      "sources": [
+        {
+          "title": "Kinkade S. Evaluation and Treatment of Acute Low Back Pain. Am Fam Physician. 2007;75(8):1181-1188",
+          "url": "https://www.aafp.org/pubs/afp/issues/2007/0415/p1181.html"
+        },
+        {
+          "title": "van der Windt DA, Simons E, Riphagen II, et al. Physical examination for lumbar radiculopathy due to disc herniation in patients with low-back pain. Cochrane Database Syst Rev. 2010",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20166095/"
+        },
+        {
+          "title": "Al Nezari NH, Schneiders AG, Hendrick PA. Neurological examination of the peripheral nervous system to diagnose lumbar spinal disc herniation with suspected radiculopathy: a systematic review and meta-analysis. Spine J. 2013;13(6):657-674",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23499340/"
+        }
+      ],
+      "age": {
+        "typical": [
+          25,
+          54
+        ],
+        "outside": null,
+        "basis": "フランスの全国入院データ（手術例）で発生率は44歳まで急上昇し35〜44歳が最高、その後低下。手術例のデータであり、保存療法例を含む全ヘルニアの年齢分布ではない。",
+        "sources": [
+          {
+            "title": "Santé publique France. Lower back pain and herniated disc（surgically treated herniated disc, 2022 data）",
+            "url": "https://www.santepubliquefrance.fr/en/troubles-musculo-squelettiques/lower-back-pain-and-herniated-disc"
+          }
+        ]
+      },
+      "lr": {
+        "slr": {
+          "lr_pos": 1.3,
+          "lr_neg": 0.29,
+          "basis": "Cochraneレビュー。手術所見を基準とした研究の統合で感度0.92(95%CI 0.87-0.95)・特異度0.28(0.18-0.40)から算出。特異度は研究間で0.10〜1.00とばらつく。プライマリケアでは特異度が高く感度が低い傾向。",
+          "source": {
+            "title": "van der Windt DA, et al. Physical examination for lumbar radiculopathy due to disc herniation in patients with low-back pain. Cochrane Database Syst Rev. 2010",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/20166095/"
+          }
+        },
+        "crossed_slr": {
+          "lr_pos": 2.8,
+          "lr_neg": 0.8,
+          "basis": "同じCochraneレビュー。統合感度0.28(95%CI 0.22-0.35)・特異度0.90(0.85-0.94)から算出。",
+          "source": {
+            "title": "van der Windt DA, et al. Physical examination for lumbar radiculopathy due to disc herniation in patients with low-back pain. Cochrane Database Syst Rev. 2010",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/20166095/"
+          }
+        },
+        "weakness": {
+          "lr_pos": 1.05,
+          "lr_neg": 0.97,
+          "basis": "系統的レビュー・メタ解析。画像を基準とした統合感度0.40・特異度0.62から算出（手術基準では感度0.22・特異度0.79）。著者らは神経学的所見すべての統合LR+を1.02〜1.26と報告。",
+          "source": {
+            "title": "Al Nezari NH, Schneiders AG, Hendrick PA. Spine J. 2013;13(6):657-674",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/23499340/"
+          }
+        },
+        "reflex_loss": {
+          "lr_pos": 1.0,
+          "lr_neg": 1.0,
+          "basis": "同じメタ解析。画像を基準とした統合感度0.25・特異度0.75から算出（手術基準では感度0.29・特異度0.78）。単独では診断にほぼ寄与しない。",
+          "source": {
+            "title": "Al Nezari NH, Schneiders AG, Hendrick PA. Spine J. 2013;13(6):657-674",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/23499340/"
+          }
+        },
+        "fnst": {
+          "lr_pos": 5.7,
+          "lr_neg": null,
+          "basis": "単一施設の診断精度研究。MRIで確認した神経根圧迫のうちL3神経根に対するFNSTのLR 5.7（中位腰椎L2-4全体ではLR≥5、特異度100%のため点推定は∞）。ヘルニア全体（多くはL4/5・L5/S1）に対する値ではない。",
+          "source": {
+            "title": "Suri P, Rainville J, Katz JN, et al. The accuracy of the physical examination for the diagnosis of midlumbar and low lumbar nerve root impingement. Spine. 2011;36(1):63-73",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/20543768/"
+          },
+          "low_quality": true
+        }
+      }
+    },
+    {
+      "id": "lss",
+      "name": "腰部脊柱管狭窄症",
+      "red_flag": false,
+      "subregions": [
+        "leg_radiation",
+        "buttock_sij",
+        "lumbar_mid"
+      ],
+      "trauma": "no",
+      "sex_note": "和歌山の住民コホートで有症状LSSは男性10.1%、女性8.9%。女性は年齢とともに上昇",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 2,
+        "elderly": 2
+      },
+      "star_basis": "成人プライマリケア腰痛の約3%（Kinkade 2007の表。全成人の値をmiddle・elderlyに適用）→★2。高齢者では実際にはより高い可能性があるが、年齢別データは未確認。",
+      "findings_support": [
+        "claudication",
+        "sitting_relief",
+        "bilateral_leg",
+        "wide_gait",
+        "romberg"
+      ],
+      "findings_against": [
+        "fever",
+        "sudden_severe"
+      ],
+      "key_points": "座ると痛くない(LR 7.4)、前屈で軽快(6.4)、両側の殿部・下肢痛(6.3)、開脚歩行(13)が診断寄り。神経性間欠跛行がなければLR 0.23（Suri 2010）。末梢動脈疾患による血管性跛行との鑑別を忘れない。",
+      "tests": [
+        "MRI",
+        "ABI・足背動脈触知（血管性跛行の除外）",
+        "腰椎X線（すべり・側弯の確認）"
+      ],
+      "sources": [
+        {
+          "title": "Kinkade S. Evaluation and Treatment of Acute Low Back Pain. Am Fam Physician. 2007;75(8):1181-1188",
+          "url": "https://www.aafp.org/pubs/afp/issues/2007/0415/p1181.html"
+        },
+        {
+          "title": "Suri P, Rainville J, Kalichman L, Katz JN. Does this older adult with lower extremity pain have the clinical syndrome of lumbar spinal stenosis? JAMA. 2010;304(23):2628-2636",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21156951/"
+        },
+        {
+          "title": "Ishimoto Y, Yoshimura N, Muraki S, et al. Prevalence of symptomatic lumbar spinal stenosis and its association with physical performance in a population-based cohort in Japan: the Wakayama Spine Study. Osteoarthritis Cartilage. 2012;20(10):1103-1108",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22796511/"
+        }
+      ],
+      "age": {
+        "typical": [
+          60,
+          120
+        ],
+        "outside": null,
+        "basis": "和歌山スパインスタディ（住民1,009人、21-97歳、平均66.3歳）で有症状LSSは9.3%。JAMA Rational Clinical Examのメタ解析で年齢>70歳はLR 2.0(1.6-2.5)、<60歳はLR 0.40(0.29-0.57)。",
+        "sources": [
+          {
+            "title": "Ishimoto Y, et al. Osteoarthritis Cartilage. 2012;20(10):1103-1108",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22796511/"
+          },
+          {
+            "title": "Suri P, et al. JAMA. 2010;304(23):2628-2636",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21156951/"
+          }
+        ]
+      },
+      "lr": {
+        "claudication": {
+          "lr_pos": 3.7,
+          "lr_neg": 0.23,
+          "basis": "下肢痛のある高齢者を対象としたJAMA Rational Clinical Examの系統的レビュー。神経性間欠跛行ありLR 3.7(95%CI 2.9-4.8)、なしLR 0.23(0.17-0.31)。",
+          "source": {
+            "title": "Suri P, Rainville J, Kalichman L, Katz JN. JAMA. 2010;304(23):2628-2636",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21156951/"
+          }
+        },
+        "sitting_relief": {
+          "lr_pos": 6.4,
+          "lr_neg": null,
+          "basis": "同じ系統的レビュー。前屈で症状が改善するLR 6.4(95%CI 4.1-9.9)。「座ると痛くない」はLR 7.4(1.9-30)だがCIが広い。陰性時のLRは抄録に記載なし。",
+          "source": {
+            "title": "Suri P, Rainville J, Kalichman L, Katz JN. JAMA. 2010;304(23):2628-2636",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21156951/"
+          }
+        },
+        "bilateral_leg": {
+          "lr_pos": 6.3,
+          "lr_neg": null,
+          "basis": "同じ系統的レビュー。両側の殿部または下肢痛でLR 6.3(95%CI 3.1-13)。",
+          "source": {
+            "title": "Suri P, Rainville J, Kalichman L, Katz JN. JAMA. 2010;304(23):2628-2636",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21156951/"
+          }
+        },
+        "wide_gait": {
+          "lr_pos": 13.0,
+          "lr_neg": null,
+          "basis": "同じ系統的レビュー。開脚歩行でLR 13(95%CI 1.9-95)。CIが非常に広い。",
+          "source": {
+            "title": "Suri P, Rainville J, Kalichman L, Katz JN. JAMA. 2010;304(23):2628-2636",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21156951/"
+          },
+          "low_quality": true
+        },
+        "romberg": {
+          "lr_pos": 4.2,
+          "lr_neg": null,
+          "basis": "同じ系統的レビュー。Romberg異常でLR 4.2(95%CI 1.4-13)。",
+          "source": {
+            "title": "Suri P, Rainville J, Kalichman L, Katz JN. JAMA. 2010;304(23):2628-2636",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21156951/"
+          },
+          "low_quality": true
+        }
+      }
+    },
+    {
+      "id": "ovf",
+      "name": "骨粗鬆症性椎体骨折",
+      "red_flag": false,
+      "subregions": [
+        "lumbar_mid",
+        "thoracic",
+        "diffuse"
+      ],
+      "trauma": "any",
+      "sex_note": "primary careで高齢＋女性の組合せはLR+16.17（Han 2023）",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": 2,
+        "elderly": 3
+      },
+      "star_basis": "55歳超のGP受診腰痛669例で1年以内に椎体骨折33例（5%）（Enthoven 2016）→elderly★3。成人プライマリケア腰痛全体で骨粗鬆症性圧迫骨折約4%（Kinkade 2007の表）、急性腰痛1,172例では骨折8例（0.7%、Henschke 2009）→middle★2（全成人の値で粗い）。",
+      "findings_support": [
+        "steroid_use"
+      ],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "primary careでは年齢>70歳でLR+11.19、外傷（軽微を含む）でLR+6.42、ステロイド使用はOVFに対しLR+2.46（Han 2023 Cochrane）。初診時X線で判別しにくいことがあり、疑えばMRIで確認。",
+      "tests": [
+        "胸腰椎X線 側面（可能なら立位/座位と臥位）",
+        "MRI（STIR・T1）",
+        "骨密度（DXA）"
+      ],
+      "sources": [
+        {
+          "title": "Han CS, Hancock MJ, Downie A, et al. Red flags to screen for vertebral fracture in people presenting with low back pain. Cochrane Database Syst Rev. 2023",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37615643/"
+        },
+        {
+          "title": "Enthoven WT, Geuze J, Scheele J, et al. Prevalence and Red Flags Regarding Specified Causes of Back Pain in Older Adults Presenting in General Practice. Phys Ther. 2016;96(3):305-312",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26183589/"
+        },
+        {
+          "title": "Henschke N, Maher CG, Refshauge KM, et al. Prevalence of and screening for serious spinal pathology in patients presenting to primary care settings with acute low back pain. Arthritis Rheum. 2009;60(10):3072-3080",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19790051/"
+        },
+        {
+          "title": "Kinkade S. Evaluation and Treatment of Acute Low Back Pain. Am Fam Physician. 2007;75(8):1181-1188",
+          "url": "https://www.aafp.org/pubs/afp/issues/2007/0415/p1181.html"
+        }
+      ],
+      "age": {
+        "typical": [
+          70,
+          120
+        ],
+        "outside": null,
+        "basis": "Cochraneレビューでprimary careの年齢>70歳は椎体骨折のLR+11.19(95%CI 5.33-23.51)。55歳超のGP受診者では75歳以上が椎体骨折と関連（Enthoven 2016）。",
+        "sources": [
+          {
+            "title": "Han CS, et al. Cochrane Database Syst Rev. 2023",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37615643/"
+          },
+          {
+            "title": "Enthoven WT, et al. Phys Ther. 2016;96(3):305-312",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26183589/"
+          }
+        ]
+      },
+      "lr": {
+        "steroid_use": {
+          "lr_pos": 2.46,
+          "lr_neg": null,
+          "basis": "Cochraneレビュー。primary careで骨粗鬆症性椎体骨折に対するステロイド使用のLR+ 2.46(95%CI 1.13-5.34)。骨折全体ではLR+ 3.97〜48.50と研究間で大きく異なりCIも広い。陰性LRは抄録に記載なし。",
+          "source": {
+            "title": "Han CS, Hancock MJ, Downie A, et al. Red flags to screen for vertebral fracture in people presenting with low back pain. Cochrane Database Syst Rev. 2023",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37615643/"
+          },
+          "low_quality": true
+        }
+      }
+    },
+    {
+      "id": "spondylolysis",
+      "name": "腰椎分離症・分離すべり症",
+      "red_flag": false,
+      "subregions": [
+        "lumbar_mid",
+        "lumbar_side",
+        "buttock_sij"
+      ],
+      "trauma": "any",
+      "sex_note": "日本人CT 2,000例で分離症は男性7.9%、女性3.9%（約2:1）",
+      "stars_by_age": {
+        "child": 3,
+        "young": 3,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "10〜19歳の腰痛2,846例で分離症194例（約7%）（Miller 2013、米国小児病院）→child・young★3（youngは10代後半のみの根拠）。スポーツ外来の若年アスリートの腰痛では47%（成人5%）（Micheli 1995）と母集団で大きく異なる。成人の年齢別割合は未確認。",
+      "findings_support": [
+        "extension_pain"
+      ],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "片脚立ち後屈テストは感度50〜73%・特異度17〜32%で診断に使えない（Alqarni 2015）。初期分離はX線で見えず、MRIもSPECT比で感度59%との報告（West 2019）。成人では分離・すべりが腰痛と有意に関連しないこともある（Kalichman 2009）。",
+      "tests": [
+        "MRI（STIR、初期の骨髄浮腫）",
+        "CT（病期・骨癒合の判定）",
+        "腰椎X線 2方向"
+      ],
+      "sources": [
+        {
+          "title": "Miller R, et al. J Pediatr Orthop. 2013;33(3):282-288",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23482264/"
+        },
+        {
+          "title": "Micheli LJ, Wood R. Back pain in young athletes: significant differences from adults in causes and patterns. Arch Pediatr Adolesc Med. 1995",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7827653/"
+        },
+        {
+          "title": "Alqarni AM, Schneiders AG, Cook CE, Hendrick PA. Clinical tests to diagnose lumbar spondylolysis and spondylolisthesis: A systematic review. Phys Ther Sport. 2015;16(3):268-275",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25797410/"
+        },
+        {
+          "title": "West AM, d'Hemecourt PA, Bono OJ, et al. Diagnostic Accuracy of Magnetic Resonance Imaging and Computed Tomography Scan in Young Athletes With Spondylolysis. Clin Pediatr. 2019;58(6):671-676",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30813766/"
+        },
+        {
+          "title": "Kalichman L, Kim DH, Li L, et al. Spondylolysis and spondylolisthesis: prevalence and association with low back pain in the adult community-based population. Spine. 2009;34(2):199-205",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19139672/"
+        }
+      ],
+      "age": {
+        "typical": [
+          10,
+          18
+        ],
+        "outside": null,
+        "basis": "10〜19歳の腰痛例を対象としたMiller 2013の平均年齢14.3歳。日本人一般成人（20-92歳、CT 2,000例）の分離症有病率は5.9%で、成人では陳旧性分離・分離すべりとして見つかる（Sakai 2009）。",
+        "sources": [
+          {
+            "title": "Miller R, et al. J Pediatr Orthop. 2013;33(3):282-288",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/23482264/"
+          },
+          {
+            "title": "Sakai T, Sairyo K, Takao S, et al. Incidence of lumbar spondylolysis in the general population in Japan based on multidetector computed tomography scans from two thousand subjects. Spine. 2009;34(21):2346-2350",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/19934813/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "degen_spondylolisthesis",
+      "name": "腰椎変性すべり症",
+      "red_flag": false,
+      "subregions": [
+        "lumbar_mid",
+        "leg_radiation",
+        "buttock_sij"
+      ],
+      "trauma": "no",
+      "sex_note": "Framingham CT研究で男女比は約1:3と女性に多い",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 2,
+        "elderly": 2
+      },
+      "star_basis": "成人プライマリケア腰痛の約2%が脊椎すべり症（分離すべりを含む。Kinkade 2007の表、全成人の値をmiddle・elderlyに適用）→★2。",
+      "findings_support": [
+        "claudication",
+        "sitting_relief",
+        "leg_pain"
+      ],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "CTで見つかる変性すべりは腰痛の有無と有意な関連がなかった（Kalichman 2009）。画像所見と症状を結びつけすぎず、狭窄症状（間欠跛行・下肢症状）の有無で評価する。",
+      "tests": [
+        "腰椎X線 側面（前後屈の機能撮影）",
+        "MRI（狭窄の評価）"
+      ],
+      "sources": [
+        {
+          "title": "Kinkade S. Evaluation and Treatment of Acute Low Back Pain. Am Fam Physician. 2007;75(8):1181-1188",
+          "url": "https://www.aafp.org/pubs/afp/issues/2007/0415/p1181.html"
+        },
+        {
+          "title": "Kalichman L, et al. Spine. 2009;34(2):199-205",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19139672/"
+        }
+      ],
+      "age": {
+        "typical": [
+          50,
+          120
+        ],
+        "outside": null,
+        "basis": "40〜80歳の地域住民188人のCT研究で、変性すべりの有病率は40代から70代にかけて上昇（Kalichman 2009）。",
+        "sources": [
+          {
+            "title": "Kalichman L, et al. Spine. 2009;34(2):199-205",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/19139672/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "facet",
+      "name": "椎間関節性腰痛",
+      "red_flag": false,
+      "subregions": [
+        "lumbar_side",
+        "lumbar_mid",
+        "buttock_sij"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "成人プライマリケア腰痛で「椎間板・椎間関節の変性」が約10%（Kinkade 2007）だが椎間関節単独の割合ではない。ブロックで診断した慢性腰痛（専門施設170例）では31%（DePalma 2011）で、母集団・診断法が特殊なため★は未確認とした。",
+      "findings_support": [
+        "extension_pain"
+      ],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "確定は診断的ブロック。身体所見単独で尤度比を示せる良質な検査は確認できなかった。年齢とともに割合が増える（約70歳まで、DePalma 2011）。",
+      "tests": [
+        "椎間関節ブロック（診断的）",
+        "X線・MRIは他疾患の除外目的"
+      ],
+      "sources": [
+        {
+          "title": "Kinkade S. Evaluation and Treatment of Acute Low Back Pain. Am Fam Physician. 2007;75(8):1181-1188",
+          "url": "https://www.aafp.org/pubs/afp/issues/2007/0415/p1181.html"
+        },
+        {
+          "title": "DePalma MJ, Ketchum JM, Saullo T. What is the source of chronic low back pain and does age play a role? Pain Med. 2011;12(2):224-233",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21266006/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "慢性腰痛の専門施設例で加齢とともに椎間関節由来の確率が上昇（約70歳まで、DePalma 2011）。具体的な年齢範囲は未確認。",
+        "sources": [
+          {
+            "title": "DePalma MJ, et al. Pain Med. 2011;12(2):224-233",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21266006/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sij",
+      "name": "仙腸関節性腰痛（仙腸関節障害）",
+      "red_flag": false,
+      "subregions": [
+        "buttock_sij",
+        "lumbar_side"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "ブロックで診断した慢性腰痛（専門施設170例）で18%（DePalma 2011）。母集団が偏るため★は未確認とした。",
+      "findings_support": [
+        "sij_3of6"
+      ],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "誘発テスト6つ中3つ以上陽性で感度94%・特異度78%（Laslett 2005、ブロック基準、48例）。陰性なら仙腸関節由来は考えにくい（LR−約0.08）。若年で炎症性腰痛を伴えば体軸性脊椎関節炎も考える。",
+      "tests": [
+        "仙腸関節誘発テスト（distraction・thigh thrust・Gaenslen左右・compression・sacral thrust）",
+        "仙腸関節ブロック（診断的）",
+        "仙腸関節X線・MRI（仙腸関節炎の除外）"
+      ],
+      "sources": [
+        {
+          "title": "Laslett M, Aprill CN, McDonald B, Young SB. Diagnosis of sacroiliac joint pain: validity of individual provocation tests and composites of tests. Man Ther. 2005;10(3):207-218",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16038856/"
+        },
+        {
+          "title": "DePalma MJ, et al. Pain Med. 2011;12(2):224-233",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21266006/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "慢性腰痛の専門施設例で加齢とともに仙腸関節由来の確率が上昇（約70歳まで、DePalma 2011）。具体的な年齢範囲は未確認。",
+        "sources": [
+          {
+            "title": "DePalma MJ, et al. Pain Med. 2011;12(2):224-233",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21266006/"
+          }
+        ]
+      },
+      "lr": {
+        "sij_3of6": {
+          "lr_pos": 4.3,
+          "lr_neg": 0.08,
+          "basis": "慢性腰殿部痛48例、盲検下の仙腸関節内ブロックを基準とした診断精度研究。誘発テスト6つ中3つ以上陽性で感度94%・特異度78%から算出。小規模の単一研究。",
+          "source": {
+            "title": "Laslett M, Aprill CN, McDonald B, Young SB. Man Ther. 2005;10(3):207-218",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16038856/"
+          },
+          "low_quality": true
+        }
+      }
+    },
+    {
+      "id": "discogenic",
+      "name": "椎間板性腰痛",
+      "red_flag": false,
+      "subregions": [
+        "lumbar_mid"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "ブロック・椎間板造影で診断した慢性腰痛（専門施設170例）で椎間板内障が42%（DePalma 2011）。スポーツ外来では椎間板性が若年アスリート11%、成人48%（Micheli 1995）。いずれも母集団が偏るため★は未確認とした。",
+      "findings_support": [],
+      "findings_against": [
+        "fever",
+        "extension_pain"
+      ],
+      "key_points": "確定には椎間板造影などが必要で、外来では除外診断的に扱うことが多い。椎間板性は椎間関節性・仙腸関節性より若い（DePalma 2011）。",
+      "tests": [
+        "MRI（椎間板変性などは参考所見）"
+      ],
+      "sources": [
+        {
+          "title": "DePalma MJ, et al. Pain Med. 2011;12(2):224-233",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21266006/"
+        },
+        {
+          "title": "Micheli LJ, Wood R. Arch Pediatr Adolesc Med. 1995",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7827653/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "加齢とともに椎間板内障の確率は低下し、椎間板性の患者は他の由来より有意に若い（DePalma 2011）。具体的な年齢範囲は未確認。",
+        "sources": [
+          {
+            "title": "DePalma MJ, et al. Pain Med. 2011;12(2):224-233",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21266006/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "zoster",
+      "name": "帯状疱疹（皮疹出現前を含む）",
+      "red_flag": false,
+      "subregions": [
+        "thoracic",
+        "lumbar_side",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "宮崎県の10年調査で罹患率は女性4.58、男性3.67/1000人年",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "成人プライマリケア腰痛で脊椎外・内臓の原因（帯状疱疹を含む）は合わせて約2%（Kinkade 2007）。帯状疱疹単独の割合は未確認。",
+      "findings_support": [
+        "rash_dermatome",
+        "night_pain"
+      ],
+      "findings_against": [
+        "extension_pain"
+      ],
+      "key_points": "片側・デルマトームに沿った体動と関係しない痛みでは、皮疹がまだなくても帯状疱疹を念頭に置き、皮疹が出たら早めの再診を指示する。",
+      "tests": [
+        "皮膚の視診（デルマトームに沿った紅斑・小水疱）"
+      ],
+      "sources": [
+        {
+          "title": "Kinkade S. Evaluation and Treatment of Acute Low Back Pain. Am Fam Physician. 2007;75(8):1181-1188",
+          "url": "https://www.aafp.org/pubs/afp/issues/2007/0415/p1181.html"
+        },
+        {
+          "title": "Toyama N, Shiraki K; Society of the Miyazaki Prefecture Dermatologists. Epidemiology of herpes zoster and its relationship to varicella in Japan: A 10-year survey of 48,388 herpes zoster cases in Miyazaki prefecture. J Med Virol. 2009",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19856466/"
+        }
+      ],
+      "age": {
+        "typical": [
+          50,
+          120
+        ],
+        "outside": null,
+        "basis": "宮崎県の帯状疱疹48,388例で罹患率は50歳未満1.96〜2.86、50歳以上5.23〜7.84/1000人年（30代が最低）。",
+        "sources": [
+          {
+            "title": "Toyama N, Shiraki K. J Med Virol. 2009",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/19856466/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "adult_deformity",
+      "name": "成人脊柱変形（変性側弯・後弯）",
+      "red_flag": false,
+      "subregions": [
+        "lumbar_mid",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "60〜90歳の健常ボランティア75人でCobb角>10°の側弯が68%（Schwab 2005）。受診者中の割合は未確認。小児の側弯（特発性）は別の病態のためchildは0。",
+      "findings_support": [
+        "claudication",
+        "leg_pain"
+      ],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "高齢者ではX線上の側弯が無症状者にも多い（Schwab 2005で68%）ため、変形があっても痛みの原因とは限らない。全脊柱立位X線で矢状面バランスも評価する。",
+      "tests": [
+        "全脊柱立位X線（正面・側面）"
+      ],
+      "sources": [
+        {
+          "title": "Schwab F, Dubey A, Gamez L, et al. Adult scoliosis: prevalence, SF-36, and nutritional parameters in an elderly volunteer population. Spine. 2005",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15864163/"
+        }
+      ],
+      "age": {
+        "typical": [
+          60,
+          120
+        ],
+        "outside": null,
+        "basis": "60〜90歳（平均70.5歳）の健常ボランティアで側弯（Cobb角>10°）が68%（Schwab 2005）。",
+        "sources": [
+          {
+            "title": "Schwab F, et al. Spine. 2005",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15864163/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hip_referred",
+      "name": "股関節疾患からの関連痛（変形性股関節症など）",
+      "red_flag": false,
+      "subregions": [
+        "buttock_sij",
+        "leg_radiation"
+      ],
+      "trauma": "no",
+      "sex_note": "ROAD研究でKL≥3の股OAは男性1.34%、女性2.54%、有症状KL≥2は男性0.29%、女性0.99%",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "腰・殿部痛の受診者中の割合を示す文献は未確認。小児の股関節疾患（ペルテス病など）は別疾患のためchildは0。",
+      "findings_support": [],
+      "findings_against": [
+        "slr",
+        "fever"
+      ],
+      "key_points": "殿部〜大腿の痛みでは股関節の可動域（特に内旋）と鼠径部痛を確認する。日本人のX線上の股OA（KL≥2）は男性18.2%・女性14.3%と多いが、痛みと強く関連するのはKL≥3（ROAD研究）。",
+      "tests": [
+        "股関節X線 正面",
+        "股関節可動域（内旋）・鼠径部の圧痛"
+      ],
+      "sources": [
+        {
+          "title": "Iidaka T, Muraki S, Akune T, et al. Prevalence of radiographic hip osteoarthritis and its association with hip pain in Japanese men and women: the ROAD study. Osteoarthritis Cartilage. 2016;24(1):117-123",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26241774/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "ROAD研究（23-94歳、平均70.2歳、2,975人）でX線上の股OA有病率は男女とも年齢に依存しなかった。",
+        "sources": [
+          {
+            "title": "Iidaka T, et al. Osteoarthritis Cartilage. 2016;24(1):117-123",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26241774/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cauda_equina",
+      "name": "馬尾症候群",
+      "red_flag": true,
+      "subregions": [
+        "leg_radiation",
+        "diffuse"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": 1,
+        "middle": 1,
+        "elderly": 1
+      },
+      "star_basis": "シドニーのprimary care急性腰痛1,172例で重篤な疾患は計11例（0.9%）、うち8例は骨折（Henschke 2009）→馬尾症候群は多くても1%未満→成人★1。",
+      "findings_support": [
+        "saddle_bladder",
+        "bilateral_leg",
+        "leg_pain",
+        "weakness"
+      ],
+      "findings_against": [],
+      "key_points": "red flag（肛門括約筋低下・会陰部感覚低下・尿閉・尿失禁・便失禁など）の感度は0.19〜0.43と低く、特異度0.62〜0.88（Dionne 2019、MRI基準）。症状がそろうのを待たず、疑えば緊急MRI。",
+      "tests": [
+        "緊急MRI",
+        "残尿測定（膀胱エコー）",
+        "会陰部感覚・肛門括約筋の診察"
+      ],
+      "sources": [
+        {
+          "title": "Henschke N, et al. Arthritis Rheum. 2009;60(10):3072-3080",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19790051/"
+        },
+        {
+          "title": "Dionne N, Adefolarin A, Kunzelman D, et al. What is the diagnostic accuracy of red flags related to cauda equina syndrome (CES), when compared to Magnetic Resonance Imaging (MRI)? A systematic review. Musculoskelet Sci Pract. 2019;42:125-133",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31132655/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を示す一次文献は確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "pyogenic_spondylitis",
+      "name": "化膿性脊椎炎・椎間板炎（硬膜外膿瘍・結核性を含む）",
+      "red_flag": true,
+      "subregions": [
+        "lumbar_mid",
+        "thoracic",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "日本のDPCデータで男性58.9%",
+      "stars_by_age": {
+        "child": null,
+        "young": 1,
+        "middle": 1,
+        "elderly": 1
+      },
+      "star_basis": "成人プライマリケア腰痛の約0.01%（Kinkade 2007）→成人★1。日本の入院データで発生率は5.3（2007年）→7.4（2010年）/10万人年と増加（Akiyama 2013）。",
+      "findings_support": [
+        "fever",
+        "night_pain",
+        "weight_loss",
+        "esr50"
+      ],
+      "findings_against": [],
+      "key_points": "発熱の有無だけで否定しない。糖尿病・透析・免疫抑制、最近の菌血症・脊椎手術/注射後は要注意。初期はX線所見が乏しく、疑えばMRIと血液培養。日本の入院例で院内死亡6%（Akiyama 2013）。",
+      "tests": [
+        "血液検査 CBC・CRP・赤沈",
+        "血液培養2セット（抗菌薬投与前）",
+        "MRI（可能なら造影）"
+      ],
+      "sources": [
+        {
+          "title": "Kinkade S. Evaluation and Treatment of Acute Low Back Pain. Am Fam Physician. 2007;75(8):1181-1188",
+          "url": "https://www.aafp.org/pubs/afp/issues/2007/0415/p1181.html"
+        },
+        {
+          "title": "Akiyama T, Chikuda H, Yasunaga H, et al. Incidence and risk factors for mortality of vertebral osteomyelitis: a retrospective analysis using the Japanese diagnosis procedure combination database. BMJ Open. 2013;3(3):e002412",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23533214/"
+        }
+      ],
+      "age": {
+        "typical": [
+          60,
+          120
+        ],
+        "outside": null,
+        "basis": "日本のDPCデータ（入院例）で平均69.2歳。院内死亡は年齢とともに上昇。全年齢で考慮すべきため outside は設定しない。",
+        "sources": [
+          {
+            "title": "Akiyama T, et al. BMJ Open. 2013;3(3):e002412",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/23533214/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spinal_malignancy",
+      "name": "転移性脊椎腫瘍・多発性骨髄腫",
+      "red_flag": true,
+      "subregions": [
+        "thoracic",
+        "lumbar_mid",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": 1,
+        "middle": 1,
+        "elderly": 1
+      },
+      "star_basis": "成人プライマリケア腰痛で腫瘍は約0.7%（Kinkade 2007）、歩いて受診した腰痛1,975例でがんは13例（0.66%）（Deyo & Diehl 1988）→成人★1。",
+      "findings_support": [
+        "cancer_history",
+        "weight_loss",
+        "night_pain",
+        "esr50"
+      ],
+      "findings_against": [],
+      "key_points": "がんの既往が最も有用なred flag（primary careでLR+15.8、2研究の統合で23.7）。50歳以上・原因不明の体重減少・1か月で改善しないはLR+2〜3で単独では弱い（Henschke 2007）。赤沈≥50mm/hはLR+18。",
+      "tests": [
+        "血液検査 赤沈・CBC・Ca・総蛋白/アルブミン（骨髄腫疑いなら血清・尿の免疫電気泳動）",
+        "MRI（全脊椎）",
+        "X線"
+      ],
+      "sources": [
+        {
+          "title": "Henschke N, Maher CG, Refshauge KM. Screening for malignancy in low back pain patients: a systematic review. Eur Spine J. 2007;16(10):1673-1679",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17566791/"
+        },
+        {
+          "title": "Deyo RA, Diehl AK. Cancer as a cause of back pain: frequency, clinical presentation, and diagnostic strategies. J Gen Intern Med. 1988;3(3):230-238",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2967893/"
+        },
+        {
+          "title": "Downie A, Williams CM, Henschke N, et al. Red flags to screen for malignancy and fracture in patients with low back pain: systematic review. BMJ. 2013;347:f7095",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3898572/"
+        },
+        {
+          "title": "Kinkade S. Evaluation and Treatment of Acute Low Back Pain. Am Fam Physician. 2007;75(8):1181-1188",
+          "url": "https://www.aafp.org/pubs/afp/issues/2007/0415/p1181.html"
+        }
+      ],
+      "age": {
+        "typical": [
+          50,
+          120
+        ],
+        "outside": null,
+        "basis": "系統的レビューで年齢≥50歳は脊椎悪性腫瘍に対しLR+2.2(95%CI 1.8-2.7)、LR−0.34(0.17-0.68)（4研究の統合）。若年でも否定はできないため outside は設定しない。",
+        "sources": [
+          {
+            "title": "Henschke N, Maher CG, Refshauge KM. Eur Spine J. 2007;16(10):1673-1679",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17566791/"
+          }
+        ]
+      },
+      "lr": {
+        "cancer_history": {
+          "lr_pos": 15.8,
+          "lr_neg": 0.69,
+          "basis": "primary careの腰痛1,975例（がん13例）でのがん既往のLR+15.8(95%CI 6.9-35.8)、LR−0.69(0.48-0.99)（Deyo & Diehl 1988、感度31%・特異度98%）。救急の研究を含む2研究の統合ではLR+23.7(11.3-49.4)。",
+          "source": {
+            "title": "Henschke N, Maher CG, Refshauge KM. Screening for malignancy in low back pain patients: a systematic review. Eur Spine J. 2007;16(10):1673-1679",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17566791/"
+          }
+        },
+        "weight_loss": {
+          "lr_pos": 3.0,
+          "lr_neg": 0.87,
+          "basis": "同じ系統的レビュー（Deyo & Diehl 1988の単一研究）。原因不明の体重減少でLR+3.0(95%CI 1.0-9.3)、LR−0.87(0.68-1.12)。CIが広い。",
+          "source": {
+            "title": "Henschke N, Maher CG, Refshauge KM. Eur Spine J. 2007;16(10):1673-1679",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17566791/"
+          },
+          "low_quality": true
+        },
+        "esr50": {
+          "lr_pos": 18.0,
+          "lr_neg": 0.46,
+          "basis": "同じ系統的レビュー（Deyo & Diehl 1988の単一研究、がん13例）。赤沈≥50mm/hでLR+18.0(95%CI 9.3-34.9)、LR−0.46(0.23-0.92)。参考: ≥20mm/hでLR+2.3、≥100mm/hでLR+55.6。",
+          "source": {
+            "title": "Henschke N, Maher CG, Refshauge KM. Eur Spine J. 2007;16(10):1673-1679",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17566791/"
+          },
+          "low_quality": true
+        }
+      }
+    },
+    {
+      "id": "aortic",
+      "name": "腹部大動脈瘤（切迫破裂）・大動脈解離",
+      "red_flag": true,
+      "subregions": [
+        "lumbar_mid",
+        "lumbar_side",
+        "thoracic",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "AAAは喫煙歴のある男性に多い（喫煙歴のある男性で約6〜7%、非喫煙男性で約2%：USPSTF）",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "成人プライマリケア腰痛で脊椎外・内臓の原因は合わせて約2%（Kinkade 2007）。大動脈疾患単独の割合は未確認。",
+      "findings_support": [
+        "sudden_severe"
+      ],
+      "findings_against": [
+        "extension_pain"
+      ],
+      "key_points": "多くのAAAは破裂まで無症状（USPSTF）。突然の激痛、体動と無関係な痛み、ショック徴候、拍動性腫瘤があれば整形外科的診察より先に血管の評価を。",
+      "tests": [
+        "腹部エコー（大動脈径）",
+        "造影CT",
+        "血圧・脈拍（左右差）"
+      ],
+      "sources": [
+        {
+          "title": "US Preventive Services Task Force. Abdominal Aortic Aneurysm: Screening（Clinical Summary, 2019）",
+          "url": "https://www.uspreventiveservicestaskforce.org/uspstf/document/ClinicalSummaryFinal/abdominal-aortic-aneurysm-screening"
+        },
+        {
+          "title": "Screening for Abdominal Aortic Aneurysm: Recommendation Statement（USPSTF 2014）. Am Fam Physician. 2015",
+          "url": "https://www.aafp.org/pubs/afp/issues/2015/0415/od1.html"
+        },
+        {
+          "title": "Kinkade S. Evaluation and Treatment of Acute Low Back Pain. Am Fam Physician. 2007;75(8):1181-1188",
+          "url": "https://www.aafp.org/pubs/afp/issues/2007/0415/p1181.html"
+        }
+      ],
+      "age": {
+        "typical": [
+          65,
+          120
+        ],
+        "outside": null,
+        "basis": "USPSTF（2019）は65〜75歳の喫煙歴のある男性に1回の超音波スクリーニングを推奨（Grade B）。この集団でAAAは約6〜7%（2014年勧告）。大動脈解離の年齢分布は確認していない。",
+        "sources": [
+          {
+            "title": "USPSTF. Abdominal Aortic Aneurysm: Screening（Clinical Summary, 2019）",
+            "url": "https://www.uspreventiveservicestaskforce.org/uspstf/document/ClinicalSummaryFinal/abdominal-aortic-aneurysm-screening"
+          },
+          {
+            "title": "Screening for Abdominal Aortic Aneurysm: Recommendation Statement. Am Fam Physician. 2015",
+            "url": "https://www.aafp.org/pubs/afp/issues/2015/0415/od1.html"
+          }
+        ]
+      }
+    },
+    {
+      "id": "urolithiasis",
+      "name": "尿路結石",
+      "red_flag": true,
+      "subregions": [
+        "lumbar_side",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "日本の2015年全国調査で初発の上部尿路結石は男性191.9、女性86.9/10万人年（約2.2倍）",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "成人プライマリケア腰痛で脊椎外・内臓の原因（結石・腎盂腎炎を含む）は合わせて約2%（Kinkade 2007）。結石単独の割合は未確認。",
+      "findings_support": [
+        "urinary_sx",
+        "sudden_severe"
+      ],
+      "findings_against": [
+        "extension_pain"
+      ],
+      "key_points": "体動で変わらない片側の側腹部〜背部の疝痛と血尿。腰痛として整形外科に来ることがある。発熱を伴えば閉塞性腎盂腎炎として緊急対応。",
+      "tests": [
+        "尿検査（潜血）",
+        "腹部エコー（水腎症）",
+        "腹部単純CT"
+      ],
+      "sources": [
+        {
+          "title": "Sakamoto S, Miyazawa K, Yasui T, et al. Chronological changes in the epidemiological characteristics of upper urinary tract urolithiasis in Japan. Int J Urol. 2018;25(4):373-378",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29648701/"
+        },
+        {
+          "title": "Kinkade S. Evaluation and Treatment of Acute Low Back Pain. Am Fam Physician. 2007;75(8):1181-1188",
+          "url": "https://www.aafp.org/pubs/afp/issues/2007/0415/p1181.html"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "日本の全国調査（2015年）で50歳未満の発生率は50歳以上より低い。好発年齢の範囲は抄録から特定できなかった。",
+        "sources": [
+          {
+            "title": "Sakamoto S, et al. Int J Urol. 2018;25(4):373-378",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/29648701/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pyelonephritis",
+      "name": "腎盂腎炎（腎周囲膿瘍を含む）",
+      "red_flag": true,
+      "subregions": [
+        "lumbar_side"
+      ],
+      "trauma": "no",
+      "sex_note": "米国の地域住民研究で外来例は女性12〜13、男性2〜3/1万人年",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "成人プライマリケア腰痛で脊椎外・内臓の原因は合わせて約2%（Kinkade 2007）。腎盂腎炎単独の割合は未確認。",
+      "findings_support": [
+        "fever",
+        "urinary_sx"
+      ],
+      "findings_against": [
+        "extension_pain"
+      ],
+      "key_points": "発熱＋片側の腰背部痛では、化膿性脊椎炎と並べて尿検査を行う。",
+      "tests": [
+        "尿検査・尿培養",
+        "血液検査 CBC・CRP、血液培養",
+        "腹部エコー・CT（閉塞・膿瘍の確認）"
+      ],
+      "sources": [
+        {
+          "title": "Czaja CA, Scholes D, Hooton TM, Stamm WE. Population-based epidemiologic analysis of acute pyelonephritis. Clin Infect Dis. 2007;45(3):273-280",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17599303/"
+        },
+        {
+          "title": "Kinkade S. Evaluation and Treatment of Acute Low Back Pain. Am Fam Physician. 2007;75(8):1181-1188",
+          "url": "https://www.aafp.org/pubs/afp/issues/2007/0415/p1181.html"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "米国の地域住民研究で発生率は若年女性が最も高く、次いで乳児・高齢者（Czaja 2007）。具体的な年齢範囲は抄録から特定できなかった。",
+        "sources": [
+          {
+            "title": "Czaja CA, et al. Clin Infect Dis. 2007;45(3):273-280",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17599303/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "axspa",
+      "name": "体軸性脊椎関節炎（強直性脊椎炎を含む）",
+      "red_flag": false,
+      "subregions": [
+        "buttock_sij",
+        "lumbar_mid",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "日本の全国調査（SpA 990例）で男性760例・女性227例",
+      "stars_by_age": {
+        "child": null,
+        "young": 1,
+        "middle": 1,
+        "elderly": null
+      },
+      "star_basis": "成人プライマリケア腰痛で炎症性関節炎は約0.3%（Kinkade 2007）。英国プライマリケアの慢性腰痛でASAS基準のaxSpAは1.3%（Hamilton 2015）だが、日本のSpA有病率は白人の1/200未満と推定（Hukuda 2001）→young・middle★1。",
+      "findings_support": [
+        "ibp",
+        "night_pain"
+      ],
+      "findings_against": [],
+      "key_points": "ASAS炎症性腰痛基準（5項目中4項目）は、脊椎関節炎が疑われた慢性腰痛648例でLR+約2.9・LR−約0.28（Sieper 2009）。日本では稀なので、陽性でもCRP・HLA-B27・仙腸関節MRIで確認し、リウマチ科と連携する。",
+      "tests": [
+        "CRP",
+        "HLA-B27",
+        "仙腸関節X線・MRI（STIR）"
+      ],
+      "sources": [
+        {
+          "title": "Sieper J, van der Heijde D, Landewé R, et al. New criteria for inflammatory back pain in patients with chronic back pain: a real patient exercise by experts from the Assessment of SpondyloArthritis international Society (ASAS). Ann Rheum Dis. 2009;68(6):784-788",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19147614/"
+        },
+        {
+          "title": "Hamilton L, et al. The prevalence of axial spondyloarthritis in the UK: a cross-sectional cohort study. BMC Musculoskelet Disord. 2015",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4687290/"
+        },
+        {
+          "title": "Hukuda S, Minami M, Saito T, et al. Spondyloarthropathies in Japan: nationwide questionnaire survey performed by the Japan Ankylosing Spondylitis Society. J Rheumatol. 2001;28(3):554-559",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11296958/"
+        },
+        {
+          "title": "Kinkade S. Evaluation and Treatment of Acute Low Back Pain. Am Fam Physician. 2007;75(8):1181-1188",
+          "url": "https://www.aafp.org/pubs/afp/issues/2007/0415/p1181.html"
+        }
+      ],
+      "age": {
+        "typical": [
+          15,
+          39
+        ],
+        "outside": null,
+        "basis": "ASAS炎症性腰痛基準の項目の1つが「発症<40歳」（Sieper 2009）。発症年齢分布そのものを示す日本の疫学データは確認していない。",
+        "sources": [
+          {
+            "title": "Sieper J, et al. Ann Rheum Dis. 2009;68(6):784-788",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/19147614/"
+          }
+        ]
+      },
+      "lr": {
+        "ibp": {
+          "lr_pos": 2.9,
+          "lr_neg": 0.28,
+          "basis": "脊椎関節炎が疑われた慢性腰痛の検証コホート648例で、ASAS炎症性腰痛基準（5項目中4項目以上）の感度79.6%・特異度72.4%から算出。作成時の専門家ワークショップ例では感度77.0%・特異度91.7%（LR+約9.3）と高く出ていた。",
+          "source": {
+            "title": "Sieper J, et al. Ann Rheum Dis. 2009;68(6):784-788",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/19147614/"
+          }
+        }
+      }
+    },
+    {
+      "id": "traumatic_fracture",
+      "name": "外傷性脊椎骨折（破裂骨折など）",
+      "red_flag": true,
+      "subregions": [
+        "thoracic",
+        "lumbar_mid",
+        "diffuse"
+      ],
+      "trauma": "yes",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "外傷後の腰背部痛で受診した患者に占める割合の文献は未確認。",
+      "findings_support": [
+        "weakness",
+        "saddle_bladder"
+      ],
+      "findings_against": [],
+      "key_points": "primary careで外傷歴は椎体骨折のLR+6.42、三次医療で打撲痕・擦過傷はLR+31.09（Han 2023 Cochrane）。神経症状があれば後壁損傷・脊柱管内骨片を疑いCT・MRI。",
+      "tests": [
+        "胸腰椎X線 2方向",
+        "CT（後壁・後方要素の評価）",
+        "神経症状があればMRI"
+      ],
+      "sources": [
+        {
+          "title": "Han CS, Hancock MJ, Downie A, et al. Red flags to screen for vertebral fracture in people presenting with low back pain. Cochrane Database Syst Rev. 2023",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37615643/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を示す一次文献は確認していない。",
+        "sources": []
+      }
+    }
+  ]
+}

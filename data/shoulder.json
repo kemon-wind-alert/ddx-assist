@@ -1,0 +1,1400 @@
+{
+  "region": "shoulder",
+  "name": "肩",
+  "updated": "2026-11-12",
+  "star_scale": "★＝その年齢帯で肩の症状（外傷疾患は肩外傷）で受診した患者のうち、その疾患が占める割合の目安。★5: 30%以上／★4: 15〜29%／★3: 5〜14%／★2: 1〜4.9%／★1: 1%未満（まれだが鑑別に入る）。受診者中の割合が直接ない場合は、人口あたり発生率を成人の肩症状の新規受診率（オランダ一般診療、18歳以上で29.3/1000人年、45〜64歳で最多［Greving 2012］）で割って換算した。外傷はオスロの肩外傷前向き登録（1年間2,650例、骨折35%・脱臼17%・軟部組織損傷約半数、肩鎖関節損傷11%［Enger 2018、Skjaker 2020］）を基準にした。英国一般診療の肩痛（Ostör 2005）は複数診断の重複があり、超音波紹介例（Ottenheijm 2014）は選択バイアスがあるため粗い目安であり、施設（一般整形外来）での実数とはずれうる。小児の肩症状受診率は確認できなかったため、小児の★は原則null。null＝鑑別には挙がるが頻度を裏付ける文献を確認できなかった（★未確認）。0＝その年齢帯ではまず考えない（非表示）。",
+  "subregions": [
+    {
+      "id": "anterior",
+      "name": "前面（結節間溝・烏口突起まわり）"
+    },
+    {
+      "id": "superior",
+      "name": "上面（肩鎖関節・鎖骨・肩甲上部）"
+    },
+    {
+      "id": "lateral",
+      "name": "外側（三角筋部・大結節）"
+    },
+    {
+      "id": "posterior",
+      "name": "後面（肩甲骨・後方関節裂隙）"
+    },
+    {
+      "id": "diffuse",
+      "name": "全体・はっきりしない"
+    }
+  ],
+  "findings": [
+    {
+      "id": "night_pain",
+      "label": "夜間痛・安静時痛"
+    },
+    {
+      "id": "fever",
+      "label": "発熱"
+    },
+    {
+      "id": "overhead_pain",
+      "label": "挙上・動作時痛"
+    },
+    {
+      "id": "passive_er_loss",
+      "label": "他動外旋の制限"
+    },
+    {
+      "id": "weakness",
+      "label": "挙上の筋力低下"
+    },
+    {
+      "id": "acute_severe",
+      "label": "急に始まった激痛"
+    },
+    {
+      "id": "throwing",
+      "label": "投球・頭上競技"
+    },
+    {
+      "id": "instability_hx",
+      "label": "脱臼歴・抜ける感じ"
+    },
+    {
+      "id": "deformity_bruise",
+      "label": "変形・皮下出血"
+    },
+    {
+      "id": "neck_arm",
+      "label": "頸部痛・上肢しびれ"
+    },
+    {
+      "id": "chest_exertion",
+      "label": "胸部症状・労作で増悪"
+    },
+    {
+      "id": "smoke_wtloss",
+      "label": "喫煙歴・体重減少"
+    },
+    {
+      "id": "bilateral_am",
+      "label": "両肩痛・朝のこわばり"
+    },
+    {
+      "id": "seizure_shock",
+      "label": "痙攣・感電の後"
+    },
+    {
+      "id": "painful_arc",
+      "label": "painful arc陽性",
+      "group": "exam"
+    },
+    {
+      "id": "drop_arm",
+      "label": "drop arm陽性",
+      "group": "exam"
+    },
+    {
+      "id": "er_lag",
+      "label": "ER lag陽性",
+      "group": "exam"
+    },
+    {
+      "id": "ir_lag",
+      "label": "IR lag陽性",
+      "group": "exam"
+    },
+    {
+      "id": "hawkins",
+      "label": "Hawkins陽性",
+      "group": "exam"
+    },
+    {
+      "id": "neer",
+      "label": "Neer陽性",
+      "group": "exam"
+    },
+    {
+      "id": "apprehension",
+      "label": "apprehension陽性",
+      "group": "exam"
+    },
+    {
+      "id": "relocation",
+      "label": "relocation陽性",
+      "group": "exam"
+    },
+    {
+      "id": "ant_drawer",
+      "label": "前方引き出し陽性",
+      "group": "exam"
+    },
+    {
+      "id": "spurling",
+      "label": "Spurling陽性",
+      "group": "exam"
+    }
+  ],
+  "diseases": [
+    {
+      "id": "rc_tendinopathy",
+      "name": "腱板症・肩峰下インピンジメント（肩峰下滑液包炎を含む）",
+      "red_flag": false,
+      "subregions": [
+        "lateral",
+        "anterior",
+        "superior"
+      ],
+      "trauma": "no",
+      "sex_note": "肩症状の新規受診は女性に多く、45〜64歳で最多（Greving 2012。腱板症に限った性差ではない）",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": 5,
+        "elderly": 5
+      },
+      "star_basis": "Ostör 2005（英国の一般診療2施設で肩痛を訴えた成人）で臨床診断の腱板腱症85%・インピンジメント徴候74%→★5。77%で複数診断が重なる（Mitchell 2005）ため過大評価になりうる。超音波紹介例（Ottenheijm 2014、240例、平均51.5歳）では肩峰下滑液包炎12%・腱症11%・部分断裂11%。年齢別の割合は未確認で、成人全体の値を40歳以上に当てた。15〜39歳・小児は年齢別データなし。",
+      "findings_support": [
+        "overhead_pain",
+        "night_pain",
+        "painful_arc",
+        "hawkins",
+        "neer"
+      ],
+      "findings_against": [
+        "passive_er_loss",
+        "fever",
+        "neck_arm"
+      ],
+      "key_points": "自動挙上で痛むが他動可動域は保たれる（凍結肩との最大の違い）。Hawkins・Neerは感度は高いが特異度が低く、陰性のほうが役に立つ。painful arc陽性が誘発テストの中では最も確定寄り。",
+      "tests": [
+        "肩X線（正面・肩甲骨Y・軸位）",
+        "エコー（腱板・肩峰下滑液包）",
+        "肩峰下滑液包への局所麻酔注射で疼痛の変化をみる"
+      ],
+      "sources": [
+        {
+          "title": "Ostör AJ, Richards CA, Prevost AT, Speed CA, Hazleman BL. Diagnosis and relation to general health of shoulder disorders presenting to primary care. Rheumatology (Oxford). 2005;44(6):800-805",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15769790/"
+        },
+        {
+          "title": "Ottenheijm RP, et al. Ultrasound-diagnosed disorders in shoulder patients in daily general practice: a retrospective observational study. BMC Fam Pract. 2014;15:115",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24916105/"
+        },
+        {
+          "title": "Greving K, et al. Incidence, prevalence, and consultation rates of shoulder complaints in general practice. Scand J Rheumatol. 2012;41:150-155",
+          "url": "https://doi.org/10.3109/03009742.2011.605390"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "腱板症単独の年齢別発生率は確認できなかった。参考: 肩症状全体の新規受診は45〜64歳で最多（Greving 2012）。",
+        "sources": []
+      },
+      "lr": {
+        "painful_arc": {
+          "lr_pos": 3.7,
+          "lr_neg": 0.36,
+          "basis": "JAMA Rational Clinical Examの系統的レビュー（専門医に紹介された肩痛患者、対象は腱板疾患全体）。陽性LR 3.7（95%CI 1.9-7.0）、陰性LR 0.36（0.23-0.54）。誘発テストで陽性LRが2を超えたのはpainful arcのみ。参考: 肩峰下インピンジメントを対象としたメタ解析（Hegedus 2012）では感度53%・特異度76%（LR+約2.2、LR−約0.62と算出）。紹介例のデータで一般外来への一般化は不明。",
+          "source": {
+            "title": "Hermans J, Luime JJ, Meuffels DE, Reijman M, Simel DL, Bierma-Zeinstra SM. Does this patient with shoulder pain have rotator cuff disease?: The Rational Clinical Examination systematic review. JAMA. 2013;310(8):837-847",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/23982370/"
+          }
+        },
+        "hawkins": {
+          "lr_pos": 1.9,
+          "lr_neg": 0.36,
+          "basis": "肩峰下インピンジメントを対象としたメタ解析の統合感度79%・特異度59%から算出（LR+ 1.93、LR− 0.36）。確定にはほぼ役立たず、陰性で可能性をやや下げる程度。",
+          "source": {
+            "title": "Hegedus EJ, Goode AP, Cook CE, et al. Which physical examination tests provide clinicians with the most value when examining the shoulder? Update of a systematic review with meta-analysis of individual tests. Br J Sports Med. 2012;46(14):964-978",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22773322/"
+          }
+        },
+        "neer": {
+          "lr_pos": 1.8,
+          "lr_neg": 0.47,
+          "basis": "同じメタ解析の統合感度72%・特異度60%から算出（LR+ 1.8、LR− 0.47）。2008年版の同レビューでは感度79%・特異度53%。",
+          "source": {
+            "title": "Hegedus EJ, Goode AP, Cook CE, et al. Which physical examination tests provide clinicians with the most value when examining the shoulder? Update of a systematic review with meta-analysis of individual tests. Br J Sports Med. 2012;46(14):964-978",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22773322/"
+          }
+        }
+      }
+    },
+    {
+      "id": "rc_tear",
+      "name": "腱板断裂（全層断裂）",
+      "red_flag": false,
+      "subregions": [
+        "lateral",
+        "superior",
+        "diffuse"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 3,
+        "elderly": 4
+      },
+      "star_basis": "Ottenheijm 2014（一般医から超音波検査に紹介された肩痛240例）で全層断裂は65歳未満6.0%（13/216）→★3、65歳以上29.2%（7/24）→★4（65歳以上は24例と少数）。小児は住民検診で20〜40代の断裂0%（Minagawa 2013）のため0。15〜39歳は年齢別データなし。",
+      "findings_support": [
+        "weakness",
+        "night_pain",
+        "drop_arm",
+        "er_lag",
+        "ir_lag",
+        "painful_arc"
+      ],
+      "findings_against": [
+        "passive_er_loss",
+        "fever"
+      ],
+      "key_points": "自動挙上できなくても他動では上がる（凍結肩・OAとの区別）。住民検診では無症候性断裂が症候性の約2倍あり（Minagawa 2013）、画像上の断裂＝痛みの原因とは限らない。lag徴候（ER lag・IR lag）は全層断裂の確定寄り、IR lag陰性は肩甲下筋を含む全層断裂の除外に強い。",
+      "tests": [
+        "エコー（全層・部分断裂、断裂幅）",
+        "MRI（脂肪変性・引き込み）",
+        "肩X線（肩峰骨頭間距離の狭小化）"
+      ],
+      "sources": [
+        {
+          "title": "Ottenheijm RP, et al. Ultrasound-diagnosed disorders in shoulder patients in daily general practice: a retrospective observational study. BMC Fam Pract. 2014;15:115",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24916105/"
+        },
+        {
+          "title": "Minagawa H, Yamamoto N, Abe H, et al. Prevalence of symptomatic and asymptomatic rotator cuff tears in the general population: From mass-screening in one village. J Orthop. 2013;10(1):8-12",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24403741/"
+        }
+      ],
+      "age": {
+        "typical": [
+          50,
+          120
+        ],
+        "outside": null,
+        "basis": "秋田の一村の住民検診（664人、両肩エコー）で全層断裂の有病率は20〜40代0%、50代10.7%、60代15.2%、70代26.5%、80代36.6%と年齢とともに上昇。断裂の34.7%が症候性。若年の外傷性断裂はありうるため outside は設定しない。",
+        "sources": [
+          {
+            "title": "Minagawa H, Yamamoto N, Abe H, et al. Prevalence of symptomatic and asymptomatic rotator cuff tears in the general population: From mass-screening in one village. J Orthop. 2013;10(1):8-12",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24403741/"
+          }
+        ]
+      },
+      "lr": {
+        "er_lag": {
+          "lr_pos": 7.2,
+          "lr_neg": null,
+          "basis": "JAMA Rational Clinical Examの系統的レビュー（専門医紹介例）。全層断裂に対しER lag陽性でLR 7.2（95%CI 1.7-31）。CIが非常に広い。陰性LRは抄録に記載なし。",
+          "source": {
+            "title": "Hermans J, et al. Does this patient with shoulder pain have rotator cuff disease?: The Rational Clinical Examination systematic review. JAMA. 2013;310(8):837-847",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/23982370/"
+          }
+        },
+        "ir_lag": {
+          "lr_pos": 5.6,
+          "lr_neg": 0.04,
+          "basis": "同じ系統的レビュー。全層断裂に対しIR lag陽性でLR 5.6（95%CI 2.6-12）、陰性でLR 0.04（0.0-0.58）。主に肩甲下筋を含む断裂を反映する検査であり、棘上筋単独断裂の除外には使えない点に注意。",
+          "source": {
+            "title": "Hermans J, et al. Does this patient with shoulder pain have rotator cuff disease?: The Rational Clinical Examination systematic review. JAMA. 2013;310(8):837-847",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/23982370/"
+          }
+        },
+        "drop_arm": {
+          "lr_pos": 3.3,
+          "lr_neg": null,
+          "basis": "同じ系統的レビュー。drop arm陽性でLR 3.3（95%CI 1.0-11）。対象は全層断裂ではなく腱板疾患全体で、CIの下限が1.0と精度が低い。陰性LRは抄録に記載なし。",
+          "source": {
+            "title": "Hermans J, et al. Does this patient with shoulder pain have rotator cuff disease?: The Rational Clinical Examination systematic review. JAMA. 2013;310(8):837-847",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/23982370/"
+          },
+          "low_quality": true
+        }
+      }
+    },
+    {
+      "id": "frozen_shoulder",
+      "name": "肩関節周囲炎（凍結肩・癒着性関節包炎）",
+      "red_flag": false,
+      "subregions": [
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "女性に多い。米国コホート（40〜79歳）で発生率は女性3.38・男性2.36/1000人年（White 2011）",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 3,
+        "elderly": 3
+      },
+      "star_basis": "米国の40〜79歳コホートで発生率2.36〜3.38/1000人年（White 2011）→成人の肩症状新規受診率29.3/1000人年で割ると約8〜12%→★3。Ostör 2005（一般診療の肩痛）では15%（複数診断の重複あり）。40〜64歳と65歳以上の区別はできず同じ★とした。韓国の保険請求データ（Kim 2023）は65歳以上でも高率だが請求病名のため過大の可能性。",
+      "findings_support": [
+        "passive_er_loss",
+        "night_pain"
+      ],
+      "findings_against": [
+        "weakness",
+        "fever",
+        "deformity_bruise",
+        "seizure_shock"
+      ],
+      "key_points": "自動・他動ともに全方向の可動域制限、特に他動外旋の制限が鍵。X線が正常であることが前提で、OA・後方脱臼・石灰沈着・腫瘍・Pancoast腫瘍をX線で除外してから診断する。糖尿病（韓国全国データでリスク上昇、Kim 2023）・甲状腺疾患を確認。",
+      "tests": [
+        "肩X線（正面・肩甲骨Y・腋窩）で他疾患を除外",
+        "血糖・HbA1c",
+        "胸部X線（肺尖部）も視野に"
+      ],
+      "sources": [
+        {
+          "title": "White D, Choi H, Peloquin C, Zhu Y, Zhang Y. Secular trend of adhesive capsulitis. Arthritis Care Res (Hoboken). 2011;63(11):1571-1575",
+          "url": "https://doi.org/10.1002/acr.20590"
+        },
+        {
+          "title": "Ostör AJ, et al. Diagnosis and relation to general health of shoulder disorders presenting to primary care. Rheumatology (Oxford). 2005;44(6):800-805",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15769790/"
+        },
+        {
+          "title": "Kim JH, Kim BS, Han KD, Kwon HS. The Risk of Shoulder Adhesive Capsulitis in Individuals with Prediabetes and Type 2 Diabetes Mellitus: A Longitudinal Nationwide Population-Based Study. Diabetes Metab J. 2023;47(6):869-878",
+          "url": "https://doi.org/10.4093/dmj.2022.0275"
+        }
+      ],
+      "age": {
+        "typical": [
+          40,
+          120
+        ],
+        "outside": null,
+        "basis": "韓国の全国健診コホート（20歳以上）で非糖尿病者の発生率は40歳未満2.2、40〜64歳14.3、65歳以上20.9/1000人年と40歳以降に急増（保険請求病名ベースで絶対値は過大の可能性）。上限を示す一次データは確認できなかった。",
+        "sources": [
+          {
+            "title": "Kim JH, Kim BS, Han KD, Kwon HS. The Risk of Shoulder Adhesive Capsulitis in Individuals with Prediabetes and Type 2 Diabetes Mellitus: A Longitudinal Nationwide Population-Based Study. Diabetes Metab J. 2023;47(6):869-878",
+            "url": "https://doi.org/10.4093/dmj.2022.0275"
+          }
+        ]
+      }
+    },
+    {
+      "id": "calcific_tendinitis",
+      "name": "石灰沈着性腱板炎",
+      "red_flag": false,
+      "subregions": [
+        "lateral",
+        "superior"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 4,
+        "elderly": 3
+      },
+      "star_basis": "Ottenheijm 2014（一般医から超音波検査に紹介された肩痛240例）で石灰沈着は65歳未満30.1%、65歳以上16.7%（4/24）。超音波紹介例は痛みの強い例に偏る選択バイアスがあり、また沈着＝症状の原因とは限らないため、それぞれ1段下げて★4・★3とした。肩峰下痛症候群では42.5%に沈着を認める一方、無症状でも7.8%に沈着がある（Louwerens 2015）。",
+      "findings_support": [
+        "acute_severe",
+        "night_pain",
+        "painful_arc"
+      ],
+      "findings_against": [
+        "fever",
+        "passive_er_loss"
+      ],
+      "key_points": "急性期は激痛で他動運動も困難になり、化膿性関節炎と紛らわしいことがある（発熱・炎症反応で区別）。X線で大結節近傍の石灰を確認。無症候性の沈着もあるので、症状と部位が合うかを確認する。",
+      "tests": [
+        "肩X線（外旋位・内旋位の正面）",
+        "エコー（沈着の確認、穿刺・洗浄）"
+      ],
+      "sources": [
+        {
+          "title": "Ottenheijm RP, et al. Ultrasound-diagnosed disorders in shoulder patients in daily general practice: a retrospective observational study. BMC Fam Pract. 2014;15:115",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24916105/"
+        },
+        {
+          "title": "Louwerens JK, et al. Prevalence of calcific deposits within the rotator cuff tendons in adults with and without subacromial pain syndrome: clinical and radiologic analysis of 1219 patients. J Shoulder Elbow Surg. 2015;24(10):1588-1593",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25870115/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "年齢別の発生率・好発年齢を示す一次データは確認できなかった（Ottenheijm 2014では65歳未満で多い傾向のみ）。",
+        "sources": []
+      }
+    },
+    {
+      "id": "ac_oa",
+      "name": "肩鎖関節症（変性・関節炎）",
+      "red_flag": false,
+      "subregions": [
+        "superior"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "一般診療の肩痛でOstör 2005は臨床診断の肩鎖関節疾患24%、超音波紹介例のOttenheijm 2014は肩鎖関節OA 0.4%と、診断法による乖離が大きく★を決められない（★未確認）。小児は0。",
+      "findings_support": [
+        "overhead_pain"
+      ],
+      "findings_against": [
+        "fever",
+        "passive_er_loss"
+      ],
+      "key_points": "痛みは肩の上面に限局し、肩鎖関節に圧痛。水平内転（cross-body adduction）で痛む。X線上の肩鎖関節の変性は無症候でも多いので、関節内局所麻酔で痛みが消えるかで判断する。",
+      "tests": [
+        "肩X線（Zanca撮影）",
+        "肩鎖関節への局所麻酔注射"
+      ],
+      "sources": [
+        {
+          "title": "Ostör AJ, et al. Diagnosis and relation to general health of shoulder disorders presenting to primary care. Rheumatology (Oxford). 2005;44(6):800-805",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15769790/"
+        },
+        {
+          "title": "Ottenheijm RP, et al. Ultrasound-diagnosed disorders in shoulder patients in daily general practice: a retrospective observational study. BMC Fam Pract. 2014;15:115",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24916105/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を示す一次データは確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "ac_injury",
+      "name": "肩鎖関節脱臼・捻挫",
+      "red_flag": false,
+      "subregions": [
+        "superior"
+      ],
+      "trauma": "yes",
+      "sex_note": "男性が82%（オスロ、Skjaker 2020）、89.5%（イタリア、Chillemi 2013）",
+      "stars_by_age": {
+        "child": null,
+        "young": 3,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "オスロの肩外傷2,650例中、肩鎖関節損傷は11%（Skjaker 2020）→★3。20代男性では肩外傷の約22%を占める（男性に限れば★4相当）。他の年齢帯の割合は未確認。",
+      "findings_support": [
+        "deformity_bruise"
+      ],
+      "findings_against": [
+        "fever",
+        "instability_hx"
+      ],
+      "key_points": "肩の外側から転倒（自転車・コンタクトスポーツ、スポーツ関連が53%）。鎖骨遠位端の段差・圧痛。両側比較のX線で転位の程度（Rockwood分類）を判断する。",
+      "tests": [
+        "両肩X線（正面・Zanca）で健側と比較",
+        "鎖骨骨折・烏口突起骨折の除外"
+      ],
+      "sources": [
+        {
+          "title": "Skjaker SA, Enger M, Engebretsen L, Brox JI, Bøe B. Young men in sports are at highest risk of acromioclavicular joint injuries: a prospective cohort study. Knee Surg Sports Traumatol Arthrosc. 2021;29(7):2039-2045",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8225525/"
+        },
+        {
+          "title": "Chillemi C, et al. Epidemiology of Isolated Acromioclavicular Joint Dislocation. Emerg Med Int. 2013;2013:171609",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3568861/"
+        }
+      ],
+      "age": {
+        "typical": [
+          24,
+          44
+        ],
+        "outside": null,
+        "basis": "オスロの前向き登録（肩鎖関節損傷287例、発生率45/10万人年）で年齢中央値32歳（四分位範囲24〜44）、男性は20代で最多。Chillemi 2013では脱臼の50.5%が20〜39歳。",
+        "sources": [
+          {
+            "title": "Skjaker SA, et al. Young men in sports are at highest risk of acromioclavicular joint injuries: a prospective cohort study. Knee Surg Sports Traumatol Arthrosc. 2021;29(7):2039-2045",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8225525/"
+          },
+          {
+            "title": "Chillemi C, et al. Epidemiology of Isolated Acromioclavicular Joint Dislocation. Emerg Med Int. 2013",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3568861/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "gh_dislocation",
+      "name": "肩関節前方脱臼（初回・急性）",
+      "red_flag": false,
+      "subregions": [
+        "anterior",
+        "diffuse"
+      ],
+      "trauma": "yes",
+      "sex_note": "米国救急受診例の71.8%が男性（Zacchilli 2010）。若年男性と高齢女性に多い",
+      "stars_by_age": {
+        "child": null,
+        "young": 4,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "オスロの肩外傷2,650例で脱臼は17%、発生率は若年男性で最も高い（Enger 2018）→15〜39歳は★4（脱臼には後方脱臼・肩鎖関節脱臼を含みうる）。他の年齢帯の割合は未確認。",
+      "findings_support": [
+        "deformity_bruise",
+        "instability_hx"
+      ],
+      "findings_against": [
+        "fever",
+        "seizure_shock"
+      ],
+      "key_points": "整復の前後で腋窩神経（三角筋部の感覚）と末梢血流を必ず記録する。大結節骨折・関節窩骨折の合併を確認。中高年の初回脱臼では腱板断裂の合併に注意し、整復後も挙上できなければ画像で評価する。",
+      "tests": [
+        "肩X線（正面・肩甲骨Y・腋窩）整復前後",
+        "神経血管所見の記録",
+        "中高年や挙上不能が続く例はエコー・MRI"
+      ],
+      "sources": [
+        {
+          "title": "Zacchilli MA, Owens BD. Epidemiology of shoulder dislocations presenting to emergency departments in the United States. J Bone Joint Surg Am. 2010;92(3):542-549",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20194311/"
+        },
+        {
+          "title": "Enger M, Skjaker SA, Melhuus K, et al. Shoulder injuries from birth to old age: A 1-year prospective study of 3031 shoulder injuries in an urban population. Injury. 2018;49(7):1324-1329",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29861311/"
+        }
+      ],
+      "age": {
+        "typical": [
+          20,
+          29
+        ],
+        "outside": null,
+        "basis": "米国救急受診データ（NEISS 2002-2006年、8,940例）で発生率は全体23.9/10万人年、10歳刻みでは20〜29歳が最多の47.8/10万人年。高齢女性にも別の山がある。",
+        "sources": [
+          {
+            "title": "Zacchilli MA, Owens BD. Epidemiology of shoulder dislocations presenting to emergency departments in the United States. J Bone Joint Surg Am. 2010;92(3):542-549",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/20194311/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "recurrent_instability",
+      "name": "反復性肩関節脱臼・前方不安定症",
+      "red_flag": false,
+      "subregions": [
+        "anterior",
+        "diffuse"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "非外傷時の肩症状受診に占める割合を示すデータは確認できなかった（★未確認）。",
+      "findings_support": [
+        "instability_hx",
+        "throwing",
+        "apprehension",
+        "relocation",
+        "ant_drawer"
+      ],
+      "findings_against": [
+        "night_pain",
+        "fever",
+        "passive_er_loss"
+      ],
+      "key_points": "外転外旋位で抜ける感じ。apprehension・relocationは「痛み」ではなく「不安感（はずれそうな感じ）」を陽性基準にすると精度が高い（Farber 2006）。骨性Bankart・Hill-Sachsの大きさで術式が変わる。",
+      "tests": [
+        "肩X線（正面・肩甲骨Y・腋窩）",
+        "MRI（関節造影MRI）",
+        "CT（関節窩の骨欠損評価）"
+      ],
+      "sources": [
+        {
+          "title": "Farber AJ, Castillo R, Clough M, Bahk M, McFarland EG. Clinical assessment of three common tests for traumatic anterior shoulder instability. J Bone Joint Surg Am. 2006;88(7):1467-1474",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16818971/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "反復性不安定症としての好発年齢を示す一次データは今回確認できなかった（初回脱臼は20代が最多: Zacchilli 2010）。",
+        "sources": []
+      },
+      "lr": {
+        "apprehension": {
+          "lr_pos": 20.2,
+          "lr_neg": 0.29,
+          "basis": "関節鏡を参照基準とした363例の診断研究（外傷性前方不安定症46例）。不安感を陽性基準として感度72%・特異度96%、LR+ 20.2（論文記載）。LR−は感度・特異度から算出。系統的レビューではなく単一研究。痛みを基準にすると精度は下がる。",
+          "source": {
+            "title": "Farber AJ, et al. Clinical assessment of three common tests for traumatic anterior shoulder instability. J Bone Joint Surg Am. 2006;88(7):1467-1474",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16818971/"
+          }
+        },
+        "relocation": {
+          "lr_pos": 10.4,
+          "lr_neg": 0.21,
+          "basis": "同じ研究。不安感の軽減を陽性基準として感度81%・特異度92%、LR+ 10.4（論文記載）。LR−は感度・特異度から算出。単一研究。",
+          "source": {
+            "title": "Farber AJ, et al. Clinical assessment of three common tests for traumatic anterior shoulder instability. J Bone Joint Surg Am. 2006;88(7):1467-1474",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16818971/"
+          }
+        },
+        "ant_drawer": {
+          "lr_pos": 3.6,
+          "lr_neg": 0.55,
+          "basis": "同じ研究。不安定感の再現を陽性基準として感度53%・特異度85%、LR+ 3.6（論文記載）。LR−は算出。外来で実施できたのは87%。",
+          "source": {
+            "title": "Farber AJ, et al. Clinical assessment of three common tests for traumatic anterior shoulder instability. J Bone Joint Surg Am. 2006;88(7):1467-1474",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16818971/"
+          }
+        }
+      }
+    },
+    {
+      "id": "lhb_tendinitis",
+      "name": "上腕二頭筋長頭腱炎",
+      "red_flag": false,
+      "subregions": [
+        "anterior"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合を示すデータは確認できなかった（★未確認）。",
+      "findings_support": [
+        "overhead_pain"
+      ],
+      "findings_against": [
+        "fever",
+        "passive_er_loss"
+      ],
+      "key_points": "結節間溝の圧痛（腕を内外旋すると圧痛点が一緒に動く）。単独より腱板断裂（特に肩甲下筋）に伴うことが多いので腱板も評価する。Speed・Yergasonは単独での診断精度が限られる。",
+      "tests": [
+        "エコー（腱鞘内の液貯留・長頭腱の脱臼/断裂）",
+        "腱鞘内注射への反応"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を示す一次データは確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "slap",
+      "name": "SLAP損傷（上方関節唇損傷）",
+      "red_flag": false,
+      "subregions": [
+        "superior",
+        "posterior",
+        "diffuse"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合を示すデータは確認できなかった（★未確認）。",
+      "findings_support": [
+        "throwing",
+        "overhead_pain"
+      ],
+      "findings_against": [
+        "fever",
+        "passive_er_loss"
+      ],
+      "key_points": "投球・頭上動作や牽引・転倒での受傷。誘発テストはどれも精度が低く、メタ解析で最も良いLR+でも compression-rotation の2.81（Hegedus 2012）。身体所見だけで確定・除外しない。",
+      "tests": [
+        "MRI関節造影",
+        "肩X線"
+      ],
+      "sources": [
+        {
+          "title": "Hegedus EJ, et al. Which physical examination tests provide clinicians with the most value when examining the shoulder? Br J Sports Med. 2012;46(14):964-978",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22773322/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を示す一次データは確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "throwing_shoulder",
+      "name": "投球障害肩（インターナルインピンジメント・後上方関節唇損傷など）",
+      "red_flag": false,
+      "subregions": [
+        "posterior",
+        "superior"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": 0
+      },
+      "star_basis": "受診者中の割合を示すデータは確認できなかった（★未確認）。65歳以上の競技投球は想定しにくいため0。",
+      "findings_support": [
+        "throwing",
+        "overhead_pain"
+      ],
+      "findings_against": [
+        "fever",
+        "night_pain"
+      ],
+      "key_points": "後方〜後上方の痛みがlate cocking〜加速期に出る。肩甲上腕関節の内旋制限（GIRD）、肩甲骨の動き、体幹・下肢の機能まで評価する（肩だけ診ない）。成長期は骨端線障害（リトルリーグショルダー）を必ず除外。",
+      "tests": [
+        "肩X線（成長期は両側比較）",
+        "MRI（関節唇・腱板関節面）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を示す一次データは確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "little_league_shoulder",
+      "name": "リトルリーグショルダー（上腕骨近位骨端線障害）",
+      "red_flag": false,
+      "subregions": [
+        "lateral",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "Heyworth 2016では95例中93例が男性（86%が投手、97%が野球）",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": 0,
+        "elderly": 0
+      },
+      "star_basis": "受診者中の割合を示すデータは確認できなかった（★未確認）。骨端線閉鎖後の40歳以上は0。",
+      "findings_support": [
+        "throwing",
+        "overhead_pain"
+      ],
+      "findings_against": [
+        "fever",
+        "instability_hx"
+      ],
+      "key_points": "投球側の上腕近位外側の痛み・圧痛。X線で骨端線の拡大（健側と比較、Salter-Harris I型相当）。投球中止で症状消失まで平均2.6か月、競技復帰まで平均4.2か月、GIRDを30%に認めた（Heyworth 2016）。",
+      "tests": [
+        "両肩X線（正面、健側と骨端線を比較）"
+      ],
+      "sources": [
+        {
+          "title": "Heyworth BE, Kramer DE, Martin DJ, Micheli LJ, Kocher MS, Bae DS. Trends in the Presentation, Management, and Outcomes of Little League Shoulder. Am J Sports Med. 2016;44(6):1431-1438",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26983458/"
+        },
+        {
+          "title": "Bednar ED, Kay J, Memon M, Simunovic N, Purcell L, Ayeni OR. Diagnosis and Management of Little League Shoulder: A Systematic Review. Orthop J Sports Med. 2021;9(7):23259671211017563",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34377716/"
+        }
+      ],
+      "age": {
+        "typical": [
+          8,
+          16
+        ],
+        "outside": null,
+        "basis": "単施設95例で平均13.1歳（8〜16歳）（Heyworth 2016）。系統的レビュー（23研究266例）で加重平均12.8歳（7.4〜17歳）（Bednar 2021）。",
+        "sources": [
+          {
+            "title": "Heyworth BE, et al. Trends in the Presentation, Management, and Outcomes of Little League Shoulder. Am J Sports Med. 2016;44(6):1431-1438",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26983458/"
+          },
+          {
+            "title": "Bednar ED, et al. Diagnosis and Management of Little League Shoulder: A Systematic Review. Orthop J Sports Med. 2021",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34377716/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "phf",
+      "name": "上腕骨近位端骨折",
+      "red_flag": false,
+      "subregions": [
+        "lateral",
+        "diffuse"
+      ],
+      "trauma": "yes",
+      "sex_note": "女性に多い。フィンランドの一都市で発生率は女性114・男性47/10万人年（Launonen 2015）",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "オスロの肩外傷登録では60歳超で骨折が主体（Enger 2018）だが、骨折の部位別内訳を確認できず★未確認。人口あたり発生率は全年齢82/10万人年で年齢とともに上昇（Launonen 2015）。",
+      "findings_support": [
+        "deformity_bruise",
+        "weakness"
+      ],
+      "findings_against": [
+        "fever",
+        "instability_hx"
+      ],
+      "key_points": "高齢女性の立った高さからの転倒が典型で、脆弱性骨折として骨粗鬆症の評価・治療につなげる。約半数は転位が軽度（Court-Brown 2001）。脱臼骨折と腋窩神経障害を見逃さない。",
+      "tests": [
+        "肩X線（正面・肩甲骨Y・腋窩）",
+        "CT（転位・骨片の評価）",
+        "骨密度測定"
+      ],
+      "sources": [
+        {
+          "title": "Court-Brown CM, Garg A, McQueen MM. The epidemiology of proximal humeral fractures. Acta Orthop Scand. 2001;72(4):365-371",
+          "url": "https://actaorthop.org/actao/article/view/20079"
+        },
+        {
+          "title": "Launonen AP, et al. Epidemiology of proximal humerus fractures. Arch Osteoporos. 2015;10:209",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25675881/"
+        },
+        {
+          "title": "Enger M, et al. Shoulder injuries from birth to old age: A 1-year prospective study of 3031 shoulder injuries in an urban population. Injury. 2018;49(7):1324-1329",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29861311/"
+        }
+      ],
+      "age": {
+        "typical": [
+          65,
+          120
+        ],
+        "outside": null,
+        "basis": "エジンバラの地域全例1,027骨折で年齢別発生率は80〜89歳女性で最高（Court-Brown 2001）。フィンランドでも年齢とともに上昇（Launonen 2015）。オスロの登録では60歳超で骨折が肩外傷の主体（Enger 2018）。小児の骨端線骨折もあるため outside は設定しない。",
+        "sources": [
+          {
+            "title": "Court-Brown CM, Garg A, McQueen MM. The epidemiology of proximal humeral fractures. Acta Orthop Scand. 2001;72(4):365-371",
+            "url": "https://actaorthop.org/actao/article/view/20079"
+          },
+          {
+            "title": "Launonen AP, et al. Epidemiology of proximal humerus fractures. Arch Osteoporos. 2015;10:209",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25675881/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "clavicle_fx",
+      "name": "鎖骨骨折",
+      "red_flag": false,
+      "subregions": [
+        "superior",
+        "anterior"
+      ],
+      "trauma": "yes",
+      "sex_note": "スウェーデン骨折登録（15歳以上2,422例）で男性68%。65歳以上では女性が上回る（Kihlström 2017）",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "肩外傷に占める鎖骨骨折の年齢別割合を確認できず★未確認。成人骨折全体の2.6〜4%を占める（Kihlström 2017の序論）。",
+      "findings_support": [
+        "deformity_bruise"
+      ],
+      "findings_against": [
+        "fever",
+        "instability_hx"
+      ],
+      "key_points": "転倒・肩からの衝突で受傷。皮膚の突出（開放骨折の切迫）と上肢の神経血管所見を確認。遠位端骨折は靱帯損傷の有無で不安定性が変わる。",
+      "tests": [
+        "鎖骨X線（正面＋頭側傾斜像）",
+        "神経血管所見の記録"
+      ],
+      "sources": [
+        {
+          "title": "Kihlström C, Möller M, Lönn K, Wolf O. Clavicle fractures: epidemiology, classification and treatment of 2 422 fractures in the Swedish Fracture Register; an observational study. BMC Musculoskelet Disord. 2017;18:82",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5312264/"
+        },
+        {
+          "title": "Robinson CM. Fractures of the clavicle in the adult. Epidemiology and classification. J Bone Joint Surg Br. 1998;80(3):476-484",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9619941/"
+        }
+      ],
+      "age": {
+        "typical": [
+          [
+            15,
+            24
+          ],
+          [
+            65,
+            120
+          ]
+        ],
+        "outside": null,
+        "basis": "スウェーデン骨折登録（15歳以上）で最大の群は15〜24歳男性、65歳以上では女性が多い（Kihlström 2017）。エジンバラ1,000例でも男性の発生率は20歳未満で最高、女性は10代と高齢で多い（Robinson 1998）。登録が15歳以上のため小児は範囲外（小児にも多い）。",
+        "sources": [
+          {
+            "title": "Kihlström C, et al. Clavicle fractures: epidemiology, classification and treatment of 2 422 fractures in the Swedish Fracture Register. BMC Musculoskelet Disord. 2017;18:82",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5312264/"
+          },
+          {
+            "title": "Robinson CM. Fractures of the clavicle in the adult. Epidemiology and classification. J Bone Joint Surg Br. 1998;80(3):476-484",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/9619941/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "gh_oa",
+      "name": "変形性肩関節症（腱板断裂性関節症を含む）",
+      "red_flag": false,
+      "subregions": [
+        "diffuse",
+        "posterior"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "日本の住民検診でX線上の肩OA有病率は17.4%（65歳以上20.3%、65歳未満11.1%）（Kobayashi 2014）だが、有病率であり受診者中の割合ではないため★未確認。小児は0。",
+      "findings_support": [
+        "passive_er_loss",
+        "night_pain"
+      ],
+      "findings_against": [
+        "fever",
+        "acute_severe"
+      ],
+      "key_points": "他動外旋の制限・轢音。凍結肩と同じく全方向の可動域制限を示すのでX線で区別する（凍結肩はX線正常）。腱板断裂性関節症では骨頭の上方化。",
+      "tests": [
+        "肩X線（正面・腋窩）",
+        "CT（関節窩の形態）"
+      ],
+      "sources": [
+        {
+          "title": "Kobayashi T, Takagishi K, Shitara H, et al. Prevalence of and risk factors for shoulder osteoarthritis in Japanese middle-aged and elderly populations. J Shoulder Elbow Surg. 2014;23(5):613-619",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24561177/"
+        }
+      ],
+      "age": {
+        "typical": [
+          65,
+          120
+        ],
+        "outside": null,
+        "basis": "日本の40歳以上の住民541人（Samilson-Prieto分類）で有病率は65歳以上20.3%、65歳未満11.1%で、年齢のみが危険因子（Kobayashi 2014）。",
+        "sources": [
+          {
+            "title": "Kobayashi T, et al. Prevalence of and risk factors for shoulder osteoarthritis in Japanese middle-aged and elderly populations. J Shoulder Elbow Surg. 2014;23(5):613-619",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24561177/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pmr",
+      "name": "リウマチ性多発筋痛症",
+      "red_flag": false,
+      "subregions": [
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "女性64%（Raheel 2017）",
+      "stars_by_age": {
+        "child": 0,
+        "young": 0,
+        "middle": null,
+        "elderly": 2
+      },
+      "star_basis": "米国Olmsted Countyで50歳以上の発生率63.9/10万人（Raheel 2017）→成人の肩症状新規受診率29.3/1000人年で割ると約2.2%→65歳以上は★2（50歳以上全体の値を当てた）。40〜64歳の年齢別値は未確認。50歳未満は分類基準上まず考えないため0。",
+      "findings_support": [
+        "bilateral_am",
+        "night_pain",
+        "fever"
+      ],
+      "findings_against": [
+        "deformity_bruise",
+        "instability_hx"
+      ],
+      "key_points": "高齢者の両肩（＋骨盤帯）の痛みと朝のこわばり、CRP・赤沈の上昇。頭痛・顎跛行・視力症状があれば巨細胞性動脈炎を疑い至急対応。両肩の腱板症・凍結肩と見誤りやすい。",
+      "tests": [
+        "CRP・赤沈",
+        "エコー（両側の三角筋下滑液包炎・長頭腱腱鞘炎）",
+        "RF・抗CCP抗体（関節リウマチとの区別）"
+      ],
+      "sources": [
+        {
+          "title": "Raheel S, Shbeeb I, Crowson CS, Matteson EL. Epidemiology of polymyalgia rheumatica 2000-2014 and examination of incidence and survival trends over 45 years: a population-based study. Arthritis Care Res (Hoboken). 2017;69(8):1282-1285",
+          "url": "https://doi.org/10.1002/acr.23132"
+        }
+      ],
+      "age": {
+        "typical": [
+          65,
+          84
+        ],
+        "outside": null,
+        "basis": "Olmsted Countyの新規377例で診断時平均74.1歳（SD 9.5）、発生率は年齢とともに上昇し80歳以降は低下（Raheel 2017）。",
+        "sources": [
+          {
+            "title": "Raheel S, et al. Epidemiology of polymyalgia rheumatica 2000-2014. Arthritis Care Res (Hoboken). 2017;69(8):1282-1285",
+            "url": "https://doi.org/10.1002/acr.23132"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cervical_radiculopathy",
+      "name": "頸椎症性神経根症（肩への関連痛）",
+      "red_flag": true,
+      "subregions": [
+        "posterior",
+        "superior",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "男性に多い。発生率は男性107.3・女性63.5/10万人（Radhakrishnan 1994）",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 3,
+        "elderly": null
+      },
+      "star_basis": "Ostör 2005（一般診療の肩痛）で関連痛（頸椎由来が主）7%。Olmsted Countyの発生率は50〜54歳で最高の202.9/10万人（Radhakrishnan 1994）→成人の肩症状新規受診率で割ると約6.9%（全例が肩症状で受診するわけではない）→40〜64歳は★3。他の年齢帯は未確認。",
+      "findings_support": [
+        "neck_arm",
+        "spurling",
+        "night_pain"
+      ],
+      "findings_against": [
+        "passive_er_loss",
+        "painful_arc",
+        "deformity_bruise"
+      ],
+      "key_points": "肩甲上部〜肩甲骨内側の痛み、上肢への放散・しびれ、肩の他動可動域は保たれる。C5神経根障害は肩外側痛と三角筋の筋力低下を示し腱板断裂と紛らわしい。上肢尺側のしびれ・Horner徴候があればPancoast腫瘍を考える。",
+      "tests": [
+        "神経学的所見（筋力・反射・感覚）",
+        "頸椎X線",
+        "頸椎MRI"
+      ],
+      "sources": [
+        {
+          "title": "Radhakrishnan K, Litchy WJ, O'Fallon WM, Kurland LT. Epidemiology of cervical radiculopathy. A population-based study from Rochester, Minnesota, 1976 through 1990. Brain. 1994;117(Pt 2):325-335",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8186959/"
+        },
+        {
+          "title": "Ostör AJ, et al. Diagnosis and relation to general health of shoulder disorders presenting to primary care. Rheumatology (Oxford). 2005;44(6):800-805",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15769790/"
+        }
+      ],
+      "age": {
+        "typical": [
+          40,
+          59
+        ],
+        "outside": null,
+        "basis": "Rochesterの人口ベース研究（561例、13〜91歳）で年齢別発生率は50〜54歳が最高の202.9/10万人。",
+        "sources": [
+          {
+            "title": "Radhakrishnan K, et al. Epidemiology of cervical radiculopathy. Brain. 1994;117(Pt 2):325-335",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/8186959/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "acs",
+      "name": "急性冠症候群（肩・腕への放散痛）",
+      "red_flag": true,
+      "subregions": [
+        "diffuse",
+        "superior"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "肩症状の受診者に占める割合を示すデータは確認できなかった（★未確認）。小児は0。",
+      "findings_support": [
+        "chest_exertion"
+      ],
+      "findings_against": [
+        "painful_arc",
+        "deformity_bruise"
+      ],
+      "key_points": "肩を動かしても痛みが変わらない・労作で増悪・冷汗や息切れを伴う肩痛は心電図を。片側または両側の肩・腕への放散や労作誘発はLR 2.3〜4.7で可能性を上げ、刺すような・体位で変わる・圧痛で再現される痛みはLR 0.2〜0.3で下げる（Swap 2005）。",
+      "tests": [
+        "12誘導心電図",
+        "高感度トロポニン",
+        "疑えば救急搬送"
+      ],
+      "sources": [
+        {
+          "title": "Swap CJ, Nagurney JT. Value and limitations of chest pain history in the evaluation of patients with suspected acute coronary syndromes. JAMA. 2005;294(20):2623-2629",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16304077/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "肩痛で受診するACSの好発年齢を示すデータは確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "subdiaphragmatic",
+      "name": "横隔膜下病変の関連痛（胆嚢炎・肝膿瘍・脾損傷など）",
+      "red_flag": true,
+      "subregions": [
+        "superior",
+        "diffuse"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "肩症状の受診者に占める割合を示すデータは確認できなかった（★未確認）。",
+      "findings_support": [
+        "fever"
+      ],
+      "findings_against": [
+        "painful_arc",
+        "overhead_pain"
+      ],
+      "key_points": "右肩は胆嚢・肝、左肩は脾（外傷後のKehr徴候）や横隔膜刺激。肩の可動域・圧痛に異常がないのに痛む肩は腹部を診察する。",
+      "tests": [
+        "腹部診察",
+        "腹部エコー",
+        "血液検査（CBC・CRP・肝胆道系酵素）",
+        "必要に応じ腹部CT"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "pancoast",
+      "name": "Pancoast腫瘍（肺尖部胸壁浸潤肺癌）",
+      "red_flag": true,
+      "subregions": [
+        "superior",
+        "posterior",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": 0,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "肩症状の受診者に占める割合を示すデータは確認できなかった（★未確認）。40歳未満は0。",
+      "findings_support": [
+        "smoke_wtloss",
+        "neck_arm",
+        "night_pain"
+      ],
+      "findings_against": [
+        "painful_arc",
+        "deformity_bruise"
+      ],
+      "key_points": "初発症状の60%が肩痛（31研究1,328例のスコーピングレビュー）。誤診は頸椎症性神経根症・頸椎や肩のOAが多く、遅延原因の最多は画像の読み落とし（Wilkinson 2026）。肩X線では肺尖部まで必ず見る。上肢尺側のしびれ・手内筋萎縮・Horner徴候。",
+      "tests": [
+        "胸部X線（肺尖部）",
+        "胸部CT",
+        "肩X線で肺尖部・第1〜2肋骨を確認"
+      ],
+      "sources": [
+        {
+          "title": "Wilkinson M, Obst S, Palmer T, Whish-Wilson G. Misdiagnosis of superior sulcus tumours: a scoping review. J Thorac Dis. 2026;18(2):161",
+          "url": "https://jtd.amegroups.org/article/view/112083/html"
+        }
+      ],
+      "age": {
+        "typical": [
+          50,
+          59
+        ],
+        "outside": null,
+        "basis": "上記スコーピングレビューで「典型的には50歳代（sixth decade）で発症」と記載。年齢分布の詳細データは示されていない。",
+        "sources": [
+          {
+            "title": "Wilkinson M, et al. Misdiagnosis of superior sulcus tumours: a scoping review. J Thorac Dis. 2026;18(2):161",
+            "url": "https://jtd.amegroups.org/article/view/112083/html"
+          }
+        ]
+      }
+    },
+    {
+      "id": "septic_shoulder",
+      "name": "化膿性肩関節炎",
+      "red_flag": true,
+      "subregions": [
+        "diffuse"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": 1,
+        "middle": 1,
+        "elderly": 1
+      },
+      "star_basis": "アイスランド全国調査で化膿性関節炎（全関節・全年齢）は7.1/10万人（Geirsson 2008）。仮に全例が肩でも成人の肩症状新規受診率（29.3/1000人年）の約0.24%→成人は★1。小児の肩症状受診率は未確認。",
+      "findings_support": [
+        "fever",
+        "night_pain",
+        "acute_severe"
+      ],
+      "findings_against": [
+        "instability_hx",
+        "throwing"
+      ],
+      "key_points": "発熱がないことも多い（化膿性関節炎全体で発熱の感度57%、Margaretten 2007）。高齢・糖尿病・関節内注射後・免疫抑制で注意。肩は深く腫脹が分かりにくいので、疑ったら穿刺。偽痛風・石灰沈着性腱板炎の急性期と紛らわしい。",
+      "tests": [
+        "関節穿刺（抗菌薬投与前に。細胞数・グラム染色・培養・結晶）",
+        "血液検査 CBC・CRP、血液培養2セット",
+        "エコー（関節液貯留）"
+      ],
+      "sources": [
+        {
+          "title": "Margaretten ME, Kohlwes J, Moore D, Bent S. Does this adult patient have septic arthritis? JAMA. 2007;297(13):1478-1488",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17405973/"
+        },
+        {
+          "title": "Geirsson AJ, et al. Septic arthritis in Iceland 1990-2002: increasing incidence due to iatrogenic infections. Ann Rheum Dis. 2008",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17901088/"
+        }
+      ],
+      "age": {
+        "typical": [
+          60,
+          120
+        ],
+        "outside": null,
+        "basis": "ニュージーランドの人口ベース研究（15歳以上、自己関節248例）で平均60歳、年齢とともに発生率上昇（化膿性関節炎全体の値で肩に限らない）。全年齢で考慮すべき疾患のため outside は設定しない。",
+        "sources": [
+          {
+            "title": "Kennedy N, Chambers ST, Nolan I, et al. Native Joint Septic Arthritis: Epidemiology, Clinical Features, and Microbiological Causes in a New Zealand Population. J Rheumatol, 2015;42(12):2392-2397",
+            "url": "https://www.jrheum.org/content/42/12/2392"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bone_tumor",
+      "name": "骨腫瘍・転移性骨腫瘍（上腕骨近位・肩甲骨）",
+      "red_flag": true,
+      "subregions": [
+        "lateral",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "肩症状の受診者に占める割合を示すデータは確認できなかった（★未確認）。",
+      "findings_support": [
+        "night_pain",
+        "smoke_wtloss"
+      ],
+      "findings_against": [
+        "painful_arc",
+        "instability_hx"
+      ],
+      "key_points": "安静時痛・夜間痛が続く、軽い外力での骨折（病的骨折）。若年は原発性骨腫瘍、中高年は転移・骨髄腫を考え、癌の既往を必ず聞く。「凍結肩」と思ってもX線は必ず撮る。",
+      "tests": [
+        "肩X線（上腕骨近位・肩甲骨・肺尖部まで）",
+        "MRI",
+        "血液検査（ALP・Ca・蛋白分画）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "posterior_dislocation",
+      "name": "肩関節後方脱臼（見逃し注意）",
+      "red_flag": true,
+      "subregions": [
+        "posterior",
+        "diffuse"
+      ],
+      "trauma": "yes",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "肩外傷に占める割合を示す一次データは今回確認できなかった（★未確認）。",
+      "findings_support": [
+        "seizure_shock",
+        "passive_er_loss",
+        "deformity_bruise"
+      ],
+      "findings_against": [
+        "fever",
+        "instability_hx"
+      ],
+      "key_points": "痙攣発作・感電・転倒の後、腕を内旋位に固定し外旋できない。正面像だけでは見逃しやすく、肩甲骨Y像・腋窩像が必須。「凍結肩」と誤診されやすい。40歳未満・痙攣発作による脱臼・大きな逆Hill-Sachs損傷は再脱臼の予測因子（Robinson 2011）。",
+      "tests": [
+        "肩X線（正面に加え肩甲骨Y・腋窩像が必須）",
+        "CT（逆Hill-Sachs・骨折の評価）"
+      ],
+      "sources": [
+        {
+          "title": "Robinson CM, et al. The epidemiology, risk of recurrence, and functional outcome after an acute traumatic posterior dislocation of the shoulder. J Bone Joint Surg Am. 2011",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21915575/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を示す一次データは確認できなかった。",
+        "sources": []
+      }
+    }
+  ]
+}

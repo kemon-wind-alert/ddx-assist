@@ -1,0 +1,1270 @@
+{
+  "region": "hip",
+  "name": "股関節",
+  "updated": "2026-11-12",
+  "star_scale": "★＝その年齢帯で股関節・鼠径部・大転子部の症状（外傷疾患は股関節外傷）で受診した患者のうち、その疾患が占める割合の目安。★5: 30%以上／★4: 15〜29%／★3: 5〜14%／★2: 1〜4.9%／★1: 1%未満（まれだが鑑別に入る）。受診者中の割合が直接ない場合は、人口あたり発生率を同年齢の股関節症状の年間受診率（英国一般診療 CiPCA 2006年、Jordan 2010: 0〜14歳 2.3〜3.3/1000人、15〜44歳 3.8〜7.5/1000人、45〜64歳 11.1〜18.4/1000人、65歳以上 23.2〜40.0/1000人。範囲は男〜女）で割って換算した。発生率の国（日本・オランダ・北欧・米国）と受診率の国（英国）が異なり、紹介外来・スポーツ外来など母集団が偏ったデータも含むため粗い目安であり、施設（一般整形外来）での実数とはずれうる。null＝鑑別には挙がるが頻度を裏付ける文献を確認できなかった（★未確認）。0＝その年齢帯ではまず考えない（非表示）。出典: Jordan KP, et al. Annual consultation prevalence of regional musculoskeletal problems in primary care: an observational study. BMC Musculoskelet Disord. 2010;11:144 https://pmc.ncbi.nlm.nih.gov/articles/PMC2903510/",
+  "subregions": [
+    {
+      "id": "groin",
+      "name": "前面（鼠径部・股関節前方）"
+    },
+    {
+      "id": "lateral",
+      "name": "外側（大転子部）"
+    },
+    {
+      "id": "posterior",
+      "name": "後面（殿部・坐骨結節）"
+    },
+    {
+      "id": "pubic",
+      "name": "内側（恥骨・内転筋付着部）"
+    },
+    {
+      "id": "diffuse",
+      "name": "全体・はっきりしない"
+    }
+  ],
+  "findings": [
+    {
+      "id": "night_pain",
+      "label": "夜間痛・安静時痛"
+    },
+    {
+      "id": "fever",
+      "label": "発熱（既往含む）"
+    },
+    {
+      "id": "cannot_bear",
+      "label": "荷重・歩行不能"
+    },
+    {
+      "id": "groin_pain",
+      "label": "鼠径部の痛み"
+    },
+    {
+      "id": "limp",
+      "label": "跛行"
+    },
+    {
+      "id": "start_pain",
+      "label": "動作開始時痛"
+    },
+    {
+      "id": "sports",
+      "label": "スポーツ・走行で増悪"
+    },
+    {
+      "id": "fall",
+      "label": "転倒後"
+    },
+    {
+      "id": "steroid_alcohol",
+      "label": "ステロイド・多量飲酒"
+    },
+    {
+      "id": "back_leg_sx",
+      "label": "腰痛・下肢放散痛"
+    },
+    {
+      "id": "thigh_numb",
+      "label": "大腿外側のしびれ"
+    },
+    {
+      "id": "cancer_hx",
+      "label": "がん既往・体重減少"
+    },
+    {
+      "id": "groin_bulge",
+      "label": "鼠径部の膨隆"
+    },
+    {
+      "id": "knee_pain",
+      "label": "膝の痛みとして訴える"
+    },
+    {
+      "id": "dec_ir",
+      "label": "内旋制限",
+      "group": "exam"
+    },
+    {
+      "id": "dec_add",
+      "label": "内転制限",
+      "group": "exam"
+    },
+    {
+      "id": "fadir",
+      "label": "FADIR陽性",
+      "group": "exam"
+    },
+    {
+      "id": "faber",
+      "label": "FABER陽性",
+      "group": "exam"
+    },
+    {
+      "id": "gt_tender",
+      "label": "大転子部の圧痛",
+      "group": "exam"
+    },
+    {
+      "id": "sls30",
+      "label": "片脚立位30秒で外側痛",
+      "group": "exam"
+    },
+    {
+      "id": "trendelenburg",
+      "label": "Trendelenburg陽性",
+      "group": "exam"
+    },
+    {
+      "id": "esr40",
+      "label": "ESR≥40mm/h",
+      "group": "exam"
+    },
+    {
+      "id": "wbc12k",
+      "label": "WBC>12000",
+      "group": "exam"
+    },
+    {
+      "id": "crp2",
+      "label": "CRP>2.0mg/dL",
+      "group": "exam"
+    }
+  ],
+  "diseases": [
+    {
+      "id": "hip_oa",
+      "name": "変形性股関節症",
+      "red_flag": false,
+      "subregions": [
+        "groin",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "日本のROAD研究ではX線上の股関節症（KL≥2）は男性18.4%・女性14.4%（2005年）と男性でむしろ高いが、日本の症候性股関節症は臼蓋形成不全由来の二次性が大半で女性に多いとされる（変形性股関節症診療ガイドライン2024の本文の数値は未確認）",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 4,
+        "elderly": 4
+      },
+      "star_basis": "オランダ一般診療で症候性股関節症の新規診断は1.6〜1.7/1000人年（全年齢、診断時平均66.8歳、Paans 2011）。全年齢の股関節受診率11.5/1000人（Jordan 2010、年齢性別標準化）で割ると約15%→★4。新規診断のみの換算で既診断例の継続受診を含まないため過小評価側。年齢帯別の割合を直接示す文献は確認できず、中年・高齢とも同じ★とした。15〜39歳は年齢別データなし。",
+      "findings_support": [
+        "start_pain",
+        "groin_pain",
+        "limp",
+        "dec_ir",
+        "dec_add",
+        "knee_pain"
+      ],
+      "findings_against": [
+        "fever",
+        "thigh_numb"
+      ],
+      "key_points": "受動的内転制限（LR+4.2）と内旋制限（LR+3.2）が拾いやすい。内転が正常なら否定寄り（LR−0.25）。日本では臼蓋形成不全由来が多いのでCE角・Sharp角を確認。急速な増悪では大腿骨頭軟骨下脆弱性骨折・急速破壊型・感染を考える。",
+      "tests": [
+        "股関節X線 正面（両股）・側面（Lauenstein）",
+        "臼蓋形成不全の評価（CE角・Sharp角・AHI）"
+      ],
+      "sources": [
+        {
+          "title": "Metcalfe D, Perry DC, Claireaux HA, Simel DL, Zogg CK, Costa ML. Does This Patient Have Hip Osteoarthritis? The Rational Clinical Examination Systematic Review. JAMA. 2019;322(23):2323-2333",
+          "url": "https://jamanetwork.com/journals/jama/fullarticle/2757584"
+        },
+        {
+          "title": "Paans N, et al. Time spent in primary care for hip osteoarthritis patients once the diagnosis is set: a prospective observational study. BMC Fam Pract. 2011",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3123196"
+        },
+        {
+          "title": "Trends in prevalence of hip osteoarthritis over a 10-year period in Japan: The ROAD study 2005-2015. Osteoarthritis and Cartilage Open. 2022",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9718137/"
+        },
+        {
+          "title": "変形性股関節症診療ガイドライン2024（改訂第3版）日本整形外科学会・日本股関節学会監修、南江堂（Minds掲載ページ。本文は未確認）",
+          "url": "https://minds.jcqhc.or.jp/summary/c00914/"
+        }
+      ],
+      "age": {
+        "typical": [
+          50,
+          120
+        ],
+        "outside": null,
+        "basis": "オランダ一般診療の股関節症患者の診断時年齢は平均66.8歳（SD 14.0）（Paans 2011）。日本のROAD研究10年追跡で新規発症の危険因子は年齢・肥満・臼蓋形成不全。臼蓋形成不全由来では40〜50代の発症も珍しくないため下限は目安。",
+        "sources": [
+          {
+            "title": "Paans N, et al. BMC Fam Pract. 2011",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3123196"
+          },
+          {
+            "title": "Trends in prevalence of hip osteoarthritis over a 10-year period in Japan: The ROAD study 2005-2015. Osteoarthritis and Cartilage Open. 2022",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9718137/"
+          }
+        ]
+      },
+      "lr": {
+        "dec_add": {
+          "lr_pos": 4.2,
+          "lr_neg": 0.25,
+          "basis": "股関節・鼠径部痛でプライマリケア等を受診した患者を対象としたJAMA Rational Clinical Examの系統的レビュー（6研究、1,110例、参照基準X線）。受動的内転制限 LR+ 4.2（95%CI 3.0-6.0）、内転正常で LR− 0.25（0.11-0.54）。X線と症状の相関が低い点が限界。",
+          "source": {
+            "title": "Metcalfe D, et al. Does This Patient Have Hip Osteoarthritis? JAMA. 2019;322(23):2323-2333",
+            "url": "https://jamanetwork.com/journals/jama/fullarticle/2757584"
+          }
+        },
+        "dec_ir": {
+          "lr_pos": 3.2,
+          "lr_neg": 0.43,
+          "basis": "同じ系統的レビュー。受動的内旋制限 LR+ 3.2（95%CI 1.7-6.0）、LR− 0.43（0.31-0.60）。他に後方痛を伴うスクワット LR+ 6.1（1.3-29）、外転筋力低下 LR+ 4.5（2.4-8.4）。",
+          "source": {
+            "title": "Metcalfe D, et al. Does This Patient Have Hip Osteoarthritis? JAMA. 2019;322(23):2323-2333",
+            "url": "https://jamanetwork.com/journals/jama/fullarticle/2757584"
+          }
+        }
+      }
+    },
+    {
+      "id": "dysplasia",
+      "name": "臼蓋形成不全（発育性股関節形成不全 DDH・前股関節症）",
+      "red_flag": false,
+      "subregions": [
+        "groin",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "ROAD研究のベースライン（CE角<20°）で有病率13.9%、女性で有意に多い（二次資料経由で原著本文は未確認）",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": 0
+      },
+      "star_basis": "受診者に占める割合を示す文献は確認できなかった。65歳以上では多くが変形性股関節症として扱われるため0（非表示）とした。",
+      "findings_support": [
+        "groin_pain",
+        "start_pain",
+        "limp",
+        "fadir"
+      ],
+      "findings_against": [
+        "fever",
+        "fall"
+      ],
+      "key_points": "若年〜中年女性の鼠径部痛でX線を撮ったらCE角・Sharp角を必ず測る。乳児期はスクリーニング（開排制限・大腿皮膚溝の非対称・家族歴・骨盤位）で拾う疾患で、痛みでは受診しない。関節唇損傷を合併しやすい。",
+      "tests": [
+        "股関節X線 正面（両股、CE角・Sharp角・AHI）",
+        "乳児は超音波（Graf法）"
+      ],
+      "sources": [
+        {
+          "title": "変形性股関節症診療ガイドライン2024（改訂第3版）（Minds掲載ページ。本文は未確認）",
+          "url": "https://minds.jcqhc.or.jp/summary/c00914/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "症状が出る年齢を示す一次情報は確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "fai",
+      "name": "大腿骨寛骨臼インピンジメント（FAI）・関節唇損傷",
+      "red_flag": false,
+      "subregions": [
+        "groin"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": 0
+      },
+      "star_basis": "受診者に占める割合を示す文献は確認できなかった。65歳以上では変形性股関節症が前面に出るため0（非表示）とした。",
+      "findings_support": [
+        "groin_pain",
+        "sports",
+        "fadir",
+        "faber"
+      ],
+      "findings_against": [
+        "fever",
+        "thigh_numb"
+      ],
+      "key_points": "屈曲・内旋で鼠径部痛（C sign）。FADIRは感度が高い（プール感度0.94〜0.99）が特異度が低く、陰性なら否定寄りに使うスクリーニング検査（Reiman 2015）。確定はX線（cam/pincer、α角）＋MRI/MR関節造影。臼蓋形成不全の合併を必ず確認。",
+      "tests": [
+        "股関節X線 正面・Dunn view または側面（α角・crossover sign）",
+        "MRI（放射状撮像）またはMR関節造影"
+      ],
+      "sources": [
+        {
+          "title": "Reiman MP, Goode AP, Cook CE, Hölmich P, Thorborg K. Diagnostic accuracy of clinical tests for the diagnosis of hip femoroacetabular impingement/labral tear: a systematic review with meta-analysis. Br J Sports Med. 2015;49(12):811",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25515771/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を数値で示す一次情報は確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "gtps",
+      "name": "大転子部痛症候群（中殿筋・小殿筋腱症／滑液包炎）",
+      "red_flag": false,
+      "subregions": [
+        "lateral"
+      ],
+      "trauma": "no",
+      "sex_note": "女性に多い。地域住民50〜79歳（MOST研究）で片側例は女性15.0%・男性6.6%、両側例は女性8.5%・男性1.9%（女性のOR 3.37）",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": 3,
+        "elderly": 3
+      },
+      "star_basis": "オランダ一般診療で大転子部痛の発生率1.8/1000人年（全年齢、平均55歳・女性80%、Lievense 2005）。45〜64歳の股関節受診率（11.1〜18.4/1000）で割ると10〜16%、65歳以上（23.2〜40.0）で4.5〜7.8%→いずれも★3とした。一般診療の股関節症状では変形性股関節症に次ぐ2番目の診断とされる。",
+      "findings_support": [
+        "night_pain",
+        "gt_tender",
+        "sls30",
+        "trendelenburg"
+      ],
+      "findings_against": [
+        "groin_pain",
+        "dec_ir",
+        "fever"
+      ],
+      "key_points": "患側を下にして寝られない外側痛。大転子の圧痛がなければ否定寄り（感度80%）、片脚立位30秒で外側痛が出れば確定寄り（Grimaldi 2017）。下肢OA合併例は1年後も症状が残りやすい（4.8倍）。腰椎由来の放散痛と鑑別。",
+      "tests": [
+        "股関節X線 正面（OA・石灰化の除外）",
+        "超音波またはMRI（腱症・断裂・滑液包液貯留）"
+      ],
+      "sources": [
+        {
+          "title": "Lievense A, Bierma-Zeinstra S, Schouten B, et al. Prognosis of trochanteric pain in primary care. Br J Gen Pract. 2005;55(512):199-204",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15808035/"
+        },
+        {
+          "title": "Segal NA, Felson DT, Torner JC, et al. Greater trochanteric pain syndrome: epidemiology and associated factors. Arch Phys Med Rehabil. 2007;88(8):988-992",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17678660/"
+        },
+        {
+          "title": "Grimaldi A, Mellor R, Nicolson P, et al. Utility of clinical tests to diagnose MRI-confirmed gluteal tendinopathy in patients presenting with lateral hip pain. Br J Sports Med. 2017;51(6):519-524",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27633027/"
+        }
+      ],
+      "age": {
+        "typical": [
+          40,
+          79
+        ],
+        "outside": null,
+        "basis": "オランダ一般診療の大転子部痛164例の平均年齢55歳（Lievense 2005）。50〜79歳の地域住民では年齢との有意な関連なし（Segal 2007）。下限40歳は平均年齢からの目安。",
+        "sources": [
+          {
+            "title": "Lievense A, et al. Br J Gen Pract. 2005",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15808035/"
+          },
+          {
+            "title": "Segal NA, et al. Arch Phys Med Rehabil. 2007",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17678660/"
+          }
+        ]
+      },
+      "lr": {
+        "sls30": {
+          "lr_pos": 12.0,
+          "lr_neg": null,
+          "basis": "外側股関節痛65例（参照基準MRI）の単一研究。片脚立位30秒以内の外側痛は特異度100%、論文記載のLR+約12（事前確率50%→事後98%）。LR−は抄録に記載なし。Lequesne 2008（難治例17例）では感度100%・特異度97.3%と報告。いずれも小規模。",
+          "source": {
+            "title": "Grimaldi A, et al. Utility of clinical tests to diagnose MRI-confirmed gluteal tendinopathy in patients presenting with lateral hip pain. Br J Sports Med. 2017;51(6):519-524",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/27633027/"
+          },
+          "low_quality": true
+        }
+      }
+    },
+    {
+      "id": "onfh",
+      "name": "大腿骨頭壊死症（特発性）",
+      "red_flag": false,
+      "subregions": [
+        "groin",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": 1,
+        "middle": 1,
+        "elderly": 1
+      },
+      "star_basis": "日本の年間発生率は1.91/10万人（愛知県登録からの推計）。股関節受診率（15〜44歳3.8〜7.5/1000、それ以上の年齢はさらに高い）の1%未満→成人全年齢★1。",
+      "findings_support": [
+        "steroid_alcohol",
+        "groin_pain",
+        "night_pain",
+        "limp"
+      ],
+      "findings_against": [
+        "fever",
+        "thigh_numb"
+      ],
+      "key_points": "ステロイド（51%）・アルコール（31%）が主要因。40歳未満ではステロイド関連が60%で、SLEが最多の基礎疾患。初期はX線正常なのでステロイド・飲酒歴があればMRIまで。対側も確認。",
+      "tests": [
+        "股関節X線 正面・側面（初期は正常）",
+        "MRI（T1低信号帯、両側）"
+      ],
+      "sources": [
+        {
+          "title": "Fukushima W, Fujioka M, Kubo T, et al. Nationwide epidemiologic survey of idiopathic osteonecrosis of the femoral head. Clin Orthop Relat Res. 2010;468(10):2715-2724",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20224959/"
+        },
+        {
+          "title": "Epidemiology of nontraumatic osteonecrosis of the femoral head in Japan（愛知県の登録研究、2015年頃）",
+          "url": "https://read.qxmd.com/read/25036228/epidemiology-of-nontraumatic-osteonecrosis-of-the-femoral-head-in-japan"
+        }
+      ],
+      "age": {
+        "typical": [
+          30,
+          59
+        ],
+        "outside": null,
+        "basis": "日本の全国疫学調査（2004年受療患者、推計11,400人）で年齢分布のピークは40代（Fukushima 2010）。愛知県登録では平均約50歳、男女比2.1:1。上下限はピークからの目安で、65歳以上の例も存在する。",
+        "sources": [
+          {
+            "title": "Fukushima W, et al. Clin Orthop Relat Res. 2010",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/20224959/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sif_rdc",
+      "name": "大腿骨頭軟骨下脆弱性骨折・急速破壊型股関節症",
+      "red_flag": false,
+      "subregions": [
+        "groin",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "頻度を裏付ける文献は確認できなかった。",
+      "findings_support": [
+        "night_pain",
+        "cannot_bear",
+        "groin_pain"
+      ],
+      "findings_against": [
+        "fever",
+        "steroid_alcohol"
+      ],
+      "key_points": "高齢女性で明らかな外傷なく急に強い股関節痛、初診時X線はほぼ正常で数週〜数か月で骨頭が急速に圧潰することがある。骨頭壊死・感染・不顕性骨折と並べてMRIで評価。",
+      "tests": [
+        "股関節X線（短期間で再撮影）",
+        "MRI"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を数値で示す一次情報は確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "athletic_groin",
+      "name": "鼠径部痛症候群（グロインペイン：内転筋・腸腰筋・鼠径部・恥骨関連）",
+      "red_flag": false,
+      "subregions": [
+        "groin",
+        "pubic"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": 0
+      },
+      "star_basis": "一般外来の受診者に占める割合は確認できなかった。スポーツ専門施設のグロインペイン100例（98%男性、60%サッカー）では内転筋関連が61%と最多、恥骨関連4%、複数原因の併存44%（Taylor 2018）。",
+      "findings_support": [
+        "sports",
+        "groin_pain"
+      ],
+      "findings_against": [
+        "fever",
+        "night_pain",
+        "cancer_hx"
+      ],
+      "key_points": "Doha分類（2015）で内転筋・腸腰筋・鼠径部・恥骨関連の4病態＋股関節関連＋その他に整理する。キック・切り返し競技に多く、複数原因の併存が多い。股関節内病変（FAI）や疲労骨折・ヘルニアを除外。",
+      "tests": [
+        "骨盤X線（恥骨結合・股関節）",
+        "MRI（恥骨骨髄浮腫・内転筋付着部・疲労骨折）"
+      ],
+      "sources": [
+        {
+          "title": "Weir A, et al. Doha agreement meeting on terminology and definitions in groin pain in athletes. Br J Sports Med. 2015;49(12):768",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26031643/"
+        },
+        {
+          "title": "Taylor R, et al. Multidisciplinary Assessment of 100 Athletes With Groin Pain Using the Doha Agreement. Clin J Sport Med. 2018;28(4):364-369",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28654441/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を数値で示す一次情報は確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "avulsion",
+      "name": "骨盤裂離骨折（坐骨結節・下前腸骨棘・上前腸骨棘）",
+      "red_flag": false,
+      "subregions": [
+        "posterior",
+        "groin"
+      ],
+      "trauma": "yes",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": 0,
+        "elderly": 0
+      },
+      "star_basis": "受診者に占める割合は確認できなかった。スポーツ選手（11〜35歳）の骨盤X線1,238件中、思春期選手198人に203件の裂離骨折（16.4%）、部位は坐骨結節109・下前腸骨棘45・上前腸骨棘39（Rossi 2001。スポーツ外傷の撮影例に限った偏った母集団）。骨端線閉鎖後の中高年では0（非表示）とした。",
+      "findings_support": [
+        "sports",
+        "fall",
+        "cannot_bear"
+      ],
+      "findings_against": [
+        "fever",
+        "night_pain"
+      ],
+      "key_points": "成長期のダッシュ・キックで「ブチッ」と受傷。坐骨結節（ハムストリング）、下前腸骨棘（大腿直筋）、上前腸骨棘（縫工筋）。X線で診断がつく。転位が大きい坐骨結節例は手術適応を検討。",
+      "tests": [
+        "骨盤X線 正面（＋斜位）"
+      ],
+      "sources": [
+        {
+          "title": "Rossi F, Dragoni S. Acute avulsion fractures of the pelvis in adolescent competitive athletes: prevalence, location and sports distribution of 203 cases collected. Skeletal Radiol. 2001",
+          "url": "https://link.springer.com/doi/10.1007/s002560000319"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "思春期のスポーツ選手に多い（Rossi 2001）が、年齢分布の数値は抄録で確認できなかった。",
+        "sources": [
+          {
+            "title": "Rossi F, Dragoni S. Skeletal Radiol. 2001",
+            "url": "https://link.springer.com/doi/10.1007/s002560000319"
+          }
+        ]
+      }
+    },
+    {
+      "id": "femoral_neck_stress",
+      "name": "大腿骨頸部疲労骨折",
+      "red_flag": true,
+      "subregions": [
+        "groin"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "頻度を裏付ける一次文献は確認できなかった。",
+      "findings_support": [
+        "sports",
+        "groin_pain",
+        "limp",
+        "night_pain"
+      ],
+      "findings_against": [
+        "fever",
+        "fall"
+      ],
+      "key_points": "ランナー・新兵・女性アスリートの運動時鼠径部痛。初期X線は正常のことが多くMRIが必要。外側（引っ張り側）は転位して骨頭壊死に至りうるため、疑ったら免荷してMRI。相対的エネルギー不足（無月経・低体重）も確認。",
+      "tests": [
+        "股関節X線（初期は陰性が多い）",
+        "MRI（STIR）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を数値で示す一次情報は確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "pubic_stress",
+      "name": "恥骨疲労骨折・恥骨結合炎",
+      "red_flag": false,
+      "subregions": [
+        "pubic"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": 0
+      },
+      "star_basis": "頻度を裏付ける文献は確認できなかった。スポーツ施設のグロインペイン100例では恥骨関連は4%と最少（Taylor 2018）。高齢者の恥骨骨折は骨盤脆弱性骨折の項を参照。",
+      "findings_support": [
+        "sports",
+        "groin_pain"
+      ],
+      "findings_against": [
+        "fever",
+        "fall"
+      ],
+      "key_points": "長距離走者の恥骨下枝、キック競技の恥骨結合周囲。MRIで骨髄浮腫を確認。発熱・炎症反応上昇があれば恥骨骨髄炎を考える。",
+      "tests": [
+        "骨盤X線",
+        "MRI"
+      ],
+      "sources": [
+        {
+          "title": "Taylor R, et al. Multidisciplinary Assessment of 100 Athletes With Groin Pain Using the Doha Agreement. Clin J Sport Med. 2018;28(4):364-369",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28654441/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢を数値で示す一次情報は確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "pelvic_insuff",
+      "name": "骨盤脆弱性骨折（恥骨・坐骨・仙骨）",
+      "red_flag": false,
+      "subregions": [
+        "pubic",
+        "groin",
+        "posterior"
+      ],
+      "trauma": "any",
+      "sex_note": "フィンランド全国データで骨盤骨折の66%が女性、52%が65歳以上の女性",
+      "stars_by_age": {
+        "child": 0,
+        "young": 0,
+        "middle": null,
+        "elderly": 2
+      },
+      "star_basis": "フィンランド全国の入院データで65歳以上の骨盤骨折は169/10万人年（2014年、高エネルギー外傷を含む）。65歳以上の股関節受診率（23.2〜40.0/1000）で割ると4.2〜7.3%で★2〜3の境界。入院例のみで外来治療例を含まない点は過小評価側。",
+      "findings_support": [
+        "fall",
+        "cannot_bear",
+        "groin_pain"
+      ],
+      "findings_against": [
+        "fever",
+        "sports"
+      ],
+      "key_points": "高齢女性の軽微な転倒後の鼠径部・殿部痛で、大腿骨近位部骨折がX線で否定されたら次に考える。仙骨骨折はX線で見えにくくMRI/CTで。恥骨骨折があれば後方（仙骨）の合併を探す。",
+      "tests": [
+        "骨盤X線 正面（inlet/outlet）",
+        "CT または MRI（仙骨の不顕性骨折）"
+      ],
+      "sources": [
+        {
+          "title": "The incidence of pelvic fractures and related surgery in the Finnish adult population: a nationwide study of 33,469 patients between 1997 and 2014",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8023963/"
+        }
+      ],
+      "age": {
+        "typical": [
+          65,
+          120
+        ],
+        "outside": null,
+        "basis": "フィンランド全国データで骨盤骨折の52%が65歳以上の女性で、増加は高齢女性の低エネルギー骨折で最も顕著。",
+        "sources": [
+          {
+            "title": "The incidence of pelvic fractures and related surgery in the Finnish adult population: a nationwide study of 33,469 patients between 1997 and 2014",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8023963/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lumbar_referred",
+      "name": "腰椎疾患からの関連痛（上位腰椎神経根症・脊柱管狭窄症）",
+      "red_flag": false,
+      "subregions": [
+        "posterior",
+        "groin",
+        "lateral",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "股関節症状の受診者に占める割合を示す文献は確認できなかった。",
+      "findings_support": [
+        "back_leg_sx",
+        "night_pain"
+      ],
+      "findings_against": [
+        "dec_ir",
+        "dec_add",
+        "groin_pain"
+      ],
+      "key_points": "殿部〜大腿後面の痛み・膝下までのしびれは腰椎由来を、鼠径部痛・内旋制限・跛行は股関節由来を示唆。股関節と腰椎の両方が悪いhip-spine syndromeでは関節内注射の除痛効果が鑑別に役立つ。",
+      "tests": [
+        "腰椎X線",
+        "神経学的所見（L2-4: 大腿前面の知覚・大腿四頭筋・膝蓋腱反射、FNS）",
+        "腰椎MRI"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "股関節部痛を主訴とする場合の年齢分布を示す一次情報は確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "meralgia",
+      "name": "外側大腿皮神経障害（meralgia paresthetica）",
+      "red_flag": false,
+      "subregions": [
+        "lateral",
+        "groin"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": 2,
+        "middle": 2,
+        "elderly": 2
+      },
+      "star_basis": "オランダ一般診療の発生率4.3/1万人年（全年齢、van Slobbe 2004）。全年齢の股関節受診率11.5/1000で割ると約3.7%→★2。年齢別の発生率は確認できず、成人の各年齢帯に同じ★を当てた（股関節の症状として受診しない例も多く、粗い目安）。",
+      "findings_support": [
+        "thigh_numb"
+      ],
+      "findings_against": [
+        "dec_ir",
+        "fever",
+        "cannot_bear"
+      ],
+      "key_points": "大腿外側のしびれ・灼熱感で運動麻痺はない。上前腸骨棘内側の圧痛・Tinel。手根管症候群（OR 7.7）・妊娠（OR 12.0）が関連。きついベルト・肥満も誘因。L2-3神経根症（筋力低下・反射低下あり）と鑑別。",
+      "tests": [
+        "知覚障害域の確認（運動・反射は正常）",
+        "必要に応じ神経ブロックで診断"
+      ],
+      "sources": [
+        {
+          "title": "van Slobbe AM, et al. Incidence rates and determinants in meralgia paresthetica in general practice. J Neurol. 2004;251(3):294-297",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15015008/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "好発年齢は一次文献の抄録で確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "pmr",
+      "name": "リウマチ性多発筋痛症（PMR）",
+      "red_flag": false,
+      "subregions": [
+        "diffuse",
+        "lateral"
+      ],
+      "trauma": "no",
+      "sex_note": "米国Olmsted Countyでは年齢別発生率は女性が男性より高い",
+      "stars_by_age": {
+        "child": 0,
+        "young": 0,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "米国Olmsted Countyの発生率は50歳以上で63.9/10万人年（2000-2014年）で、65歳以上の股関節受診率で割ると約2〜3%（★2相当）。一方、韓国の報告は2.1/10万人年と大きく低く、日本の発生率を確認できなかったため★は未確認とした。",
+      "findings_support": [
+        "night_pain",
+        "start_pain"
+      ],
+      "findings_against": [
+        "dec_ir",
+        "thigh_numb"
+      ],
+      "key_points": "50歳以上で両側の肩・骨盤帯の痛みと朝のこわばり、ESR/CRP上昇。股関節単独の痛みとして来ることもある。頭痛・視力障害があれば巨細胞性動脈炎を疑い至急対応。",
+      "tests": [
+        "血液検査 ESR・CRP",
+        "肩・股関節の超音波（滑液包炎）"
+      ],
+      "sources": [
+        {
+          "title": "Olmsted CountyにおけるPMRの疫学研究（2000-2014年）. Arthritis Care Res. 2017. doi:10.1002/acr.23132",
+          "url": "https://doi.org/10.1002/acr.23132"
+        }
+      ],
+      "age": {
+        "typical": [
+          50,
+          120
+        ],
+        "outside": null,
+        "basis": "発生率は50歳以上で算出され、年齢とともに上昇して70〜79歳でピーク（Olmsted County 2000-2014年）。",
+        "sources": [
+          {
+            "title": "Olmsted CountyにおけるPMRの疫学研究（2000-2014年）. Arthritis Care Res. 2017. doi:10.1002/acr.23132",
+            "url": "https://doi.org/10.1002/acr.23132"
+          }
+        ]
+      }
+    },
+    {
+      "id": "transient_synovitis",
+      "name": "単純性股関節炎",
+      "red_flag": false,
+      "subregions": [
+        "groin",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 4,
+        "young": 0,
+        "middle": 0,
+        "elderly": 0
+      },
+      "star_basis": "オランダ一般診療（0〜14歳）で単純性股関節炎は76.2/10万人年、非外傷性の急性股関節疾患（148.1/10万人年）の約51%で最多（Krul 2010）。0〜14歳の股関節受診率（2.3〜3.3/1000）で割ると23〜33%→★4。",
+      "findings_support": [
+        "limp",
+        "groin_pain",
+        "knee_pain"
+      ],
+      "findings_against": [
+        "fever",
+        "esr40",
+        "wbc12k",
+        "crp2",
+        "cannot_bear"
+      ],
+      "key_points": "除外診断。発熱・荷重不能・ESR/WBC/CRP高値があれば化膿性股関節炎を先に除外（Kocher基準）。年間発生率0.2%、生涯に1回以上なる確率3%。経過中に3.4%がペルテス病と判明しており、症状が続けば再評価。",
+      "tests": [
+        "股関節超音波（関節液）",
+        "血液検査 CBC・CRP・ESR",
+        "股関節X線（ペルテス・すべり症の除外）"
+      ],
+      "sources": [
+        {
+          "title": "Krul M, van der Wouden JC, Schellevis FG, et al. Acute non-traumatic hip pathology in children: incidence and presentation in family practice. Fam Pract. 2010;27(2):166-170",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20026553/"
+        },
+        {
+          "title": "Landin LA, Danielsson LG, Wattsgård C. Transient synovitis of the hip. Its incidence, epidemiology and relation to Perthes' disease. J Bone Joint Surg Br. 1987;69(2):238-242",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3818754/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "小児（0〜14歳）の疾患（Krul 2010、Landin 1987）だが、年齢分布の数値は一次文献の抄録で確認できなかった。",
+        "sources": [
+          {
+            "title": "Krul M, et al. Fam Pract. 2010",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/20026553/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "perthes",
+      "name": "ペルテス病",
+      "red_flag": false,
+      "subregions": [
+        "groin",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "日本の多施設調査で男女比6.3:1",
+      "stars_by_age": {
+        "child": 1,
+        "young": 0,
+        "middle": 0,
+        "elderly": 0
+      },
+      "star_basis": "日本の多施設調査で年間発生率0.9/10万人（Kim 2006）。0〜14歳の股関節受診率（2.3〜3.3/1000）で割ると0.3〜0.4%→★1。",
+      "findings_support": [
+        "limp",
+        "knee_pain",
+        "dec_ir"
+      ],
+      "findings_against": [
+        "fever",
+        "esr40",
+        "crp2"
+      ],
+      "key_points": "跛行と大腿・膝の痛みで来る男児。外転・内旋制限。初期X線は正常のことがありMRIが有用。両側例7.7%。単純性股関節炎の診断後も跛行が続く場合に疑う。",
+      "tests": [
+        "股関節X線 正面・Lauenstein（両側）",
+        "MRI（初期）"
+      ],
+      "sources": [
+        {
+          "title": "Kim WC, Hiroshima K, Imaeda T. Multicenter study for Legg-Calvé-Perthes disease in Japan. J Orthop Sci. 2006;11(4):333-341",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16897195/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "日本の多施設調査（711例）で診断時平均7歳1か月（Kim 2006）。年齢範囲の数値は抄録で確認できなかったため typical は空欄。",
+        "sources": [
+          {
+            "title": "Kim WC, et al. J Orthop Sci. 2006",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16897195/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scfe",
+      "name": "大腿骨頭すべり症",
+      "red_flag": true,
+      "subregions": [
+        "groin",
+        "diffuse"
+      ],
+      "trauma": "any",
+      "sex_note": "日本の多施設調査で男児237例・女児77例（約3:1）。10〜14歳の年間発生率は男児2.22・女児0.76/10万人以上",
+      "stars_by_age": {
+        "child": 1,
+        "young": null,
+        "middle": 0,
+        "elderly": 0
+      },
+      "star_basis": "日本の10〜14歳の年間発生率は男児2.22・女児0.76/10万人以上（Noguchi 2002、1997-1999年）。0〜14歳の股関節受診率（2.3〜3.3/1000）で割ると1%未満→★1。",
+      "findings_support": [
+        "knee_pain",
+        "limp",
+        "dec_ir",
+        "cannot_bear"
+      ],
+      "findings_against": [
+        "fever",
+        "esr40",
+        "wbc12k"
+      ],
+      "key_points": "肥満の思春期男児の膝・大腿痛では股関節を診る（Drehmann徴候：屈曲で外旋）。荷重不能の不安定型は骨頭壊死のリスクが高く緊急。X線は必ず側面（Lauenstein）を含め両側で。",
+      "tests": [
+        "股関節X線 正面・Lauenstein（両側）",
+        "疑えば免荷のうえ当日専門医へ"
+      ],
+      "sources": [
+        {
+          "title": "Noguchi Y, Sakamaki T. Epidemiology and demographics of slipped capital femoral epiphysis in Japan: a multicenter study by the Japanese Paediatric Orthopaedic Association. J Orthop Sci. 2002;7(6):610-617",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12486462/"
+        }
+      ],
+      "age": {
+        "typical": [
+          10,
+          14
+        ],
+        "outside": null,
+        "basis": "日本の多施設調査（314例）で発症時平均年齢は男児11歳10か月・女児11歳5か月、発生率は10〜14歳で算出（Noguchi 2002）。red flagのため outside は設定しない。",
+        "sources": [
+          {
+            "title": "Noguchi Y, Sakamaki T. J Orthop Sci. 2002",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/12486462/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hip_fracture",
+      "name": "大腿骨近位部骨折（頸部・転子部、不顕性骨折を含む）",
+      "red_flag": true,
+      "subregions": [
+        "groin",
+        "lateral",
+        "diffuse"
+      ],
+      "trauma": "yes",
+      "sex_note": "日本の2017年推計で男性44,100件・女性149,300件（女性が約3.4倍）",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": 4
+      },
+      "star_basis": "日本の2017年の大腿骨近位部骨折は推計193,400件（Takusari 2021）。全例を65歳以上（2017年10月の65歳以上人口 約3,515万人、総務省人口推計）とすると約5.5/1000人年。65歳以上の股関節受診率（23.2〜40.0/1000）で割ると14〜24%→★4（実際は65歳未満例も含むので上限寄りの概算）。多くは救急・病院を直接受診する点に注意。",
+      "findings_support": [
+        "fall",
+        "cannot_bear",
+        "groin_pain",
+        "knee_pain"
+      ],
+      "findings_against": [
+        "sports",
+        "thigh_numb"
+      ],
+      "key_points": "高齢者の転倒後の股関節痛はX線陰性でも終わりにしない。X線で明らかな骨折がない疑い例の39%（80歳以上で44%）、大転子単独骨折に見える例の92%でMRIにより手術適応の骨折が見つかった（Haj-Mirzaian 2020）。歩けても否定できない。",
+      "tests": [
+        "股関節X線 正面（両股）・側面",
+        "X線陰性で疑いが残ればMRI（不可ならCT）"
+      ],
+      "sources": [
+        {
+          "title": "Haj-Mirzaian A, Eng J, Khorasani R, et al. Use of Advanced Imaging for Radiographically Occult Hip Fracture in Elderly Patients: A Systematic Review and Meta-Analysis. Radiology. 2020;296(3):521-531",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32633673/"
+        },
+        {
+          "title": "Takusari E, et al. Trends in Hip Fracture Incidence in Japan: Estimates Based on Nationwide Hip Fracture Surveys From 1992 to 2017. JBMR Plus. 2021;5(2)",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7872333/"
+        },
+        {
+          "title": "総務省統計局 人口推計（2017年10月1日現在）",
+          "url": "https://www.stat.go.jp/data/jinsui/2017np/index.html"
+        }
+      ],
+      "age": {
+        "typical": [
+          70,
+          120
+        ],
+        "outside": null,
+        "basis": "不顕性骨折の系統的レビュー（35研究、2,992例）で平均76.8歳（SD 6.0）、66%が女性（Haj-Mirzaian 2020）。日本では70〜79歳の発生率は低下傾向（Takusari 2021）。red flagのため outside は設定しない。",
+        "sources": [
+          {
+            "title": "Haj-Mirzaian A, et al. Radiology. 2020",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32633673/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "septic_hip",
+      "name": "化膿性股関節炎",
+      "red_flag": true,
+      "subregions": [
+        "groin",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": 1,
+        "middle": 1,
+        "elderly": 1
+      },
+      "star_basis": "アイスランド全国調査で化膿性関節炎（全関節・全年齢）は7.1/10万人。仮に全例が股関節でも15〜44歳の股関節受診率（3.8〜7.5/1000）の約1〜2%、45歳以上では1%未満。実際は股関節は一部で、成人の発生率は年齢とともに上昇する（Kennedy 2015）ため成人全年齢★1。小児の頻度は確認できず★未確認。",
+      "findings_support": [
+        "fever",
+        "cannot_bear",
+        "night_pain",
+        "esr40",
+        "wbc12k",
+        "crp2"
+      ],
+      "findings_against": [
+        "sports"
+      ],
+      "key_points": "小児はKocher基準（発熱歴・荷重不能・ESR≥40・WBC>12,000）で予測確率が0項目<0.2%、1項目3.0%、2項目40.0%、3項目93.1%、4項目99.6%（Kocher 1999）。ただし別施設の検証では4項目で59%（Luhmann 2004）と低く、CRP>2.0mg/dLを加えた5項目で98%（Caird 2006）。中間の点数は穿刺で決める。成人は関節内注射後・人工関節・糖尿病に注意。",
+      "tests": [
+        "股関節超音波（関節液）",
+        "エコーガイド下穿刺（抗菌薬投与前に：細胞数・グラム染色・培養）",
+        "血液検査 CBC・CRP・ESR、血液培養2セット",
+        "MRI（骨髄炎・腸腰筋膿瘍の合併）"
+      ],
+      "sources": [
+        {
+          "title": "Kocher MS, Zurakowski D, Kasser JR. Differentiating between septic arthritis and transient synovitis of the hip in children: an evidence-based clinical prediction algorithm. J Bone Joint Surg Am. 1999;81(12):1662-1670",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10608376/"
+        },
+        {
+          "title": "Luhmann SJ, Jones A, Schootman M, et al. Differentiation between septic arthritis and transient synovitis of the hip in children with clinical prediction algorithms. J Bone Joint Surg Am. 2004;86(5):956-962",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15118038/"
+        },
+        {
+          "title": "Caird MS, et al. Factors distinguishing septic arthritis from transient synovitis of the hip in children. A prospective study. J Bone Joint Surg Am. 2006;88(6):1251-1257",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16757758/"
+        },
+        {
+          "title": "Geirsson AJ, et al. Septic arthritis in Iceland 1990-2002: increasing incidence due to iatrogenic infections. Ann Rheum Dis. 2008",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17901088/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "成人の化膿性関節炎は年齢とともに増加する（ニュージーランドの人口ベース研究、平均60歳、Kennedy 2015）が、小児にも別の山がある。股関節に限った年齢分布は確認できず、全年齢で考慮すべきため typical・outside は設定しない。",
+        "sources": [
+          {
+            "title": "Kennedy N, Chambers ST, Nolan I, et al. Native Joint Septic Arthritis: Epidemiology, Clinical Features, and Microbiological Causes in a New Zealand Population. J Rheumatol, 2015;42(12):2392-2397",
+            "url": "https://www.jrheum.org/content/42/12/2392"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tumor_meta",
+      "name": "骨転移・骨腫瘍（大腿骨近位・骨盤）",
+      "red_flag": true,
+      "subregions": [
+        "diffuse",
+        "groin",
+        "lateral",
+        "posterior"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "頻度を裏付ける文献は確認できなかった。",
+      "findings_support": [
+        "night_pain",
+        "cancer_hx",
+        "cannot_bear"
+      ],
+      "findings_against": [
+        "sports",
+        "start_pain"
+      ],
+      "key_points": "夜間痛・安静時痛、がん既往（乳・肺・前立腺・腎・甲状腺）、体重減少。大腿骨転子下〜近位の溶骨性病変は病的骨折のリスクを評価。若年では骨肉腫・Ewing肉腫・類骨骨腫も念頭に。",
+      "tests": [
+        "股関節・骨盤X線",
+        "MRI・CT",
+        "血液検査（ALP・Ca・腫瘍マーカー、高齢者は蛋白分画）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "部位を股関節に限った年齢分布は確認できなかった。red flagのため outside は設定しない。",
+        "sources": []
+      }
+    },
+    {
+      "id": "iliopsoas_abscess",
+      "name": "腸腰筋膿瘍",
+      "red_flag": true,
+      "subregions": [
+        "groin",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "発生率についての知見は乏しいとされ、頻度を裏付ける文献は確認できなかった。",
+      "findings_support": [
+        "fever",
+        "groin_pain",
+        "limp",
+        "back_leg_sx"
+      ],
+      "findings_against": [
+        "sports",
+        "dec_add"
+      ],
+      "key_points": "発熱＋股関節屈曲位拘縮（伸展で痛む）。原発性（血行性、黄色ブドウ球菌が多い）と、椎体炎・腸管疾患（クローン病・虫垂炎・憩室炎）からの続発性がある。症状が非特異的で診断が遅れやすい。化膿性脊椎炎・化膿性股関節炎の合併を探す。",
+      "tests": [
+        "血液検査 CBC・CRP、血液培養",
+        "造影CT または MRI（腰椎〜骨盤）"
+      ],
+      "sources": [
+        {
+          "title": "Iliopsoas abscess: a review and update on the literature",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22960467/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "年齢分布の数値は確認できなかった。red flagのため outside は設定しない。",
+        "sources": []
+      }
+    },
+    {
+      "id": "hernia",
+      "name": "鼠径ヘルニア・大腿ヘルニア（嵌頓含む）",
+      "red_flag": true,
+      "subregions": [
+        "groin"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "股関節症状の受診者に占める割合を示す文献は確認できなかった。",
+      "findings_support": [
+        "groin_bulge",
+        "groin_pain"
+      ],
+      "findings_against": [
+        "dec_ir",
+        "dec_add",
+        "gt_tender"
+      ],
+      "key_points": "立位・腹圧で膨隆する鼠径部痛は股関節より先にヘルニアを。大腿ヘルニアは高齢女性に多く、膨隆が小さく嵌頓しやすい。硬く戻らない膨隆＋腹痛・嘔吐は嵌頓として外科へ即日。",
+      "tests": [
+        "立位・咳嗽時の視診・触診",
+        "超音波またはCT"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "股関節部痛として受診する場合の年齢分布は確認できなかった。red flagのため outside は設定しない。",
+        "sources": []
+      }
+    }
+  ]
+}

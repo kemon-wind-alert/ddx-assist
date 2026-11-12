@@ -1,0 +1,1593 @@
+{
+  "region": "neck",
+  "name": "頸部",
+  "updated": "2026-11-12",
+  "star_scale": "★＝その年齢帯で頸部の症状（外傷疾患は頸部外傷）で受診した患者のうち、その疾患が占める割合の目安。★5: 30%以上／★4: 15〜29%／★3: 5〜14%／★2: 1〜4.9%／★1: 1%未満（まれだが鑑別に入る）。受診者中の割合が直接ない場合は、人口あたり発生率を頸部症状の受診率（オランダ一般診療195人のGPで新規の頸部症状 23.1/1000人年［Bot 2005, Ann Rheum Dis, https://pubmed.ncbi.nlm.nih.gov/15608309/］。年齢別値は本文図のみで未確認のため全年齢共通で使用）で割って換算した。小児は頸部症状の受診率を確認できなかったため、小児の★は『斜頸で小児救急を受診した352例』（Shemer 2026）の内訳でのみ付けた。外傷疾患は『意識清明・バイタル安定の頸部外傷成人8,924例』（Stiell 2001）を母集団とした。救急・紹介外来など母集団が偏ったデータを含むため粗い目安であり、一般整形外来での実数とはずれうる。null＝鑑別には挙がるが頻度を裏付ける文献を確認できなかった（★未確認）。0＝その年齢帯ではまず考えない（非表示）。",
+  "subregions": [
+    {
+      "id": "posterior",
+      "name": "後頸部・項部（正中〜傍脊柱）"
+    },
+    {
+      "id": "lateral",
+      "name": "側頸部・僧帽筋まわり"
+    },
+    {
+      "id": "occipital",
+      "name": "後頭部〜上位頸椎"
+    },
+    {
+      "id": "anterior",
+      "name": "前頸部・のど"
+    },
+    {
+      "id": "shoulder_arm",
+      "name": "肩甲部〜上肢へ広がる"
+    },
+    {
+      "id": "diffuse",
+      "name": "全体・はっきりしない"
+    }
+  ],
+  "findings": [
+    {
+      "id": "night_pain",
+      "label": "夜間痛・安静時痛"
+    },
+    {
+      "id": "fever",
+      "label": "発熱"
+    },
+    {
+      "id": "arm_radiation",
+      "label": "上肢への放散痛"
+    },
+    {
+      "id": "arm_numbness",
+      "label": "上肢・手のしびれ"
+    },
+    {
+      "id": "clumsy_hand",
+      "label": "手の巧緻運動障害"
+    },
+    {
+      "id": "gait_disturb",
+      "label": "歩行障害・ふらつき"
+    },
+    {
+      "id": "bladder",
+      "label": "膀胱直腸障害"
+    },
+    {
+      "id": "cancer_history",
+      "label": "がんの既往"
+    },
+    {
+      "id": "sudden_headache",
+      "label": "突然の頭痛・神経症状"
+    },
+    {
+      "id": "chest_symptoms",
+      "label": "胸部症状・冷汗"
+    },
+    {
+      "id": "girdle_stiffness",
+      "label": "両肩・腰帯のこわばり"
+    },
+    {
+      "id": "torticollis",
+      "label": "斜頸位・首が回らない"
+    },
+    {
+      "id": "sore_throat",
+      "label": "咽頭痛・嚥下痛"
+    },
+    {
+      "id": "band_rash",
+      "label": "帯状の皮疹"
+    },
+    {
+      "id": "spurling",
+      "label": "Spurling陽性",
+      "group": "exam"
+    },
+    {
+      "id": "distraction",
+      "label": "頸椎牽引で症状軽減",
+      "group": "exam"
+    },
+    {
+      "id": "ultt",
+      "label": "ULTT(上肢緊張)陽性",
+      "group": "exam"
+    },
+    {
+      "id": "shoulder_abd",
+      "label": "肩外転で症状軽減",
+      "group": "exam"
+    },
+    {
+      "id": "wainner4",
+      "label": "Wainner4項目陽性",
+      "group": "exam"
+    },
+    {
+      "id": "hoffmann",
+      "label": "Hoffmann陽性",
+      "group": "exam"
+    },
+    {
+      "id": "hyperreflexia",
+      "label": "膝蓋腱反射亢進",
+      "group": "exam"
+    },
+    {
+      "id": "myelo_cluster",
+      "label": "頸髄症所見3/5以上",
+      "group": "exam"
+    },
+    {
+      "id": "ccr_imaging",
+      "label": "CCRで撮影適応",
+      "group": "exam"
+    },
+    {
+      "id": "jolt",
+      "label": "Jolt徴候陽性",
+      "group": "exam"
+    },
+    {
+      "id": "nuchal_rigidity",
+      "label": "項部硬直",
+      "group": "exam"
+    }
+  ],
+  "diseases": [
+    {
+      "id": "nonspecific_neck_pain",
+      "name": "非特異的頸部痛（筋筋膜性・いわゆる肩こり型）",
+      "red_flag": false,
+      "subregions": [
+        "posterior",
+        "lateral",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "オランダ一般診療の頸部・上肢症状は多くで女性の発生率が高い（Bot 2005）",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合を直接示す文献は未確認。神経根症（全年齢83.2/10万人年→頸部症状受診23.1/1000人年の約3.6%、50〜54歳のピークでも約9%: Radhakrishnan 1994）や重篤疾患（いずれも1%未満）を差し引くと残りの大半を占めると換算して★5とした（差し引きによる推定）。頸椎症（変性所見あり）とのラベルの境界はあいまい。小児は分母がなく未確認。（※差し引きによる推定で直接の文献がないため、アプリでは★未確認とした）",
+      "findings_support": [
+        "torticollis"
+      ],
+      "findings_against": [
+        "fever",
+        "night_pain",
+        "arm_numbness",
+        "clumsy_hand",
+        "gait_disturb",
+        "bladder",
+        "cancer_history",
+        "sudden_headache"
+      ],
+      "key_points": "神経症状・red flagがないことを確認したうえでの除外診断。腹部でいう『非特異的腹痛』と同じ位置づけで、red flag（夜間痛・発熱・がん既往・神経症状）が出たら診断を見直す。",
+      "tests": [
+        "red flagがなければ初診時の画像は必須ではない（症状遷延・神経症状で頸椎X線）"
+      ],
+      "sources": [
+        {
+          "title": "Bot SD, van der Waal JM, Terwee CB, et al. Incidence and prevalence of complaints of the neck and upper extremity in general practice. Ann Rheum Dis. 2005;64(1):118-123",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15608309/"
+        },
+        {
+          "title": "Radhakrishnan K, Litchy WJ, O'Fallon WM, Kurland LT. Epidemiology of cervical radiculopathy. A population-based study from Rochester, Minnesota, 1976 through 1990. Brain. 1994;117:325-335",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8186959/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "年齢分布の一次データを確認できなかった（Bot 2005の年齢別値は本文の図のみ）。",
+        "sources": []
+      }
+    },
+    {
+      "id": "wry_neck",
+      "name": "寝違え・急性斜頸（良性）",
+      "red_flag": false,
+      "subregions": [
+        "lateral",
+        "posterior"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 5,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "小児: 斜頸で小児救急を受診した352例（中央値4.8歳）のうち、重大な原因（感染・手術等を要したAARF・腫瘍）は59例（17%）で、残り293例（83%）は重大な原因なし→★5（Shemer 2026）。この83%には筋性・良性の斜頸のほか分類されていない病態も含む。成人の頻度データは未確認。",
+      "findings_support": [
+        "torticollis"
+      ],
+      "findings_against": [
+        "fever",
+        "sore_throat",
+        "night_pain",
+        "arm_numbness",
+        "gait_disturb"
+      ],
+      "key_points": "起床時発症・外傷なし・神経症状なし・発熱なしが前提。小児の斜頸では、発熱・CRP高値なら感染（咽後膿瘍・リンパ節炎）、症状が長引き正中圧痛・可動域制限が強ければAARF、頭痛・嘔吐があれば腫瘍を疑う（Shemer 2026）。",
+      "tests": [
+        "典型例は画像不要",
+        "長引く・正中圧痛・神経症状があれば頸椎X線（開口位含む）"
+      ],
+      "sources": [
+        {
+          "title": "Shemer M, Noyman S, Rimon A, Cohen N. Predictors of clinically significant underlying etiologies in children presenting with torticollis. Paediatr Child Health. 2026;31(2):111-119",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41821840/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "成人を含む年齢分布の一次データを確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "cervical_spondylosis",
+      "name": "頸椎症（変形性頸椎症による頸部痛）",
+      "red_flag": false,
+      "subregions": [
+        "posterior",
+        "lateral",
+        "occipital"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "受診者中の割合を示す文献は未確認。X線上の変性は無症状者にも多く、非特異的頸部痛との線引きが文献ごとに異なるため★は付けない。",
+      "findings_support": [],
+      "findings_against": [
+        "fever",
+        "cancer_history"
+      ],
+      "key_points": "画像上の変性＝痛みの原因とは限らない（胆石があっても腹痛の原因とは限らないのと同じ）。神経根症・脊髄症の合併の有無を神経学的所見で必ず確認する。",
+      "tests": [
+        "頸椎X線 正面・側面（必要に応じ斜位・前後屈）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "年齢分布の一次データを確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "radiculopathy",
+      "name": "頸椎症性神経根症",
+      "red_flag": false,
+      "subregions": [
+        "shoulder_arm",
+        "lateral",
+        "posterior"
+      ],
+      "trauma": "no",
+      "sex_note": "男性に多い。年齢調整発生率は男性107.3、女性63.5/10万人年（Radhakrishnan 1994）",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": 3,
+        "elderly": null
+      },
+      "star_basis": "Radhakrishnan 1994（米国Rochester人口ベース561例）で発生率ピークは50〜54歳の202.9/10万人年→頸部症状受診率23.1/1000人年で換算すると約9%→★3（40〜64歳）。全年齢の年齢調整値83.2/10万人年では約3.6%。若年・高齢の年齢別値は抄録になく未確認。原因は椎間板突出確定21.9%、頸椎症・椎間板またはその両方68.4%。",
+      "findings_support": [
+        "arm_radiation",
+        "arm_numbness",
+        "spurling",
+        "distraction",
+        "ultt",
+        "shoulder_abd",
+        "wainner4"
+      ],
+      "findings_against": [
+        "fever",
+        "gait_disturb",
+        "bladder"
+      ],
+      "key_points": "肩甲骨周囲〜上肢の放散痛としびれ。ULTT陰性なら否定寄り（LR−0.14）、Spurling・牽引テスト陽性は確定寄り（LR+3.5〜4.4）。4項目（ULTT・患側回旋<60°・牽引・Spurling）すべて陽性ならLR+30.3（Wainner 2003）。約9割は保存的に軽快（Radhakrishnan 1994）。",
+      "tests": [
+        "頸椎X線 正面・側面・斜位",
+        "神経学的所見（筋力・反射・感覚の髄節）",
+        "MRI（筋力低下・保存療法抵抗例）"
+      ],
+      "sources": [
+        {
+          "title": "Radhakrishnan K, Litchy WJ, O'Fallon WM, Kurland LT. Epidemiology of cervical radiculopathy. Brain. 1994;117:325-335",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8186959/"
+        },
+        {
+          "title": "Wainner RS, Fritz JM, Irrgang JJ, et al. Reliability and diagnostic accuracy of the clinical examination and patient self-report measures for cervical radiculopathy. Spine. 2003;28(1):52-62",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12544957/"
+        },
+        {
+          "title": "Thoomes EJ, van Geest S, van der Windt DA, et al. Value of physical tests in diagnosing cervical radiculopathy: a systematic review. Spine J. 2018;18(1):179-189",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28838857/"
+        }
+      ],
+      "age": {
+        "typical": [
+          35,
+          60
+        ],
+        "outside": null,
+        "basis": "Radhakrishnan 1994で平均年齢は男性47.6±13.1歳、女性48.2±13.8歳、年齢範囲13〜91歳。発生率のピークは50〜54歳。",
+        "sources": [
+          {
+            "title": "Radhakrishnan K, et al. Epidemiology of cervical radiculopathy. Brain. 1994;117:325-335",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/8186959/"
+          }
+        ]
+      },
+      "lr": {
+        "spurling": {
+          "lr_pos": 3.5,
+          "lr_neg": 0.58,
+          "basis": "頸部・上肢症状で電気診断に紹介された82例、参照基準は針筋電図・神経伝導検査。Spurling A（回旋なし）感度0.50(95%CI 0.27-0.73)・特異度0.86(0.77-0.94)から算出（Rubinstein 2007の表より）。系統的レビュー（Thoomes 2018）では特異度0.89-1.00、感度0.38-0.97と研究間で幅がある。",
+          "source": {
+            "title": "Rubinstein SM, Pool JJ, van Tulder MW, et al. A systematic review of the diagnostic accuracy of provocative tests of the neck for diagnosing cervical radiculopathy. Eur Spine J. 2007;16(3):307-319（Wainner 2003のデータ）",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17013656/"
+          }
+        },
+        "distraction": {
+          "lr_pos": 4.4,
+          "lr_neg": 0.62,
+          "basis": "同上（Wainner 2003、82例・EMG/NCS基準）。頸椎牽引テスト 感度0.44(0.21-0.67)・特異度0.90(0.82-0.98)から算出。Viikari-Juntura（感度0.44・特異度0.97）とも概ね一致。",
+          "source": {
+            "title": "Rubinstein SM, et al. Eur Spine J. 2007;16(3):307-319（Wainner 2003のデータ）",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17013656/"
+          }
+        },
+        "ultt": {
+          "lr_pos": 1.24,
+          "lr_neg": 0.14,
+          "basis": "同上（Wainner 2003）。ULTT A（正中神経バイアス）感度0.97(0.90-1.0)・特異度0.22(0.12-0.33)から算出。除外向きの検査。Quintnerの研究では感度0.83・特異度0.11。",
+          "source": {
+            "title": "Rubinstein SM, et al. Eur Spine J. 2007;16(3):307-319（Wainner 2003のデータ）",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17013656/"
+          }
+        },
+        "shoulder_abd": {
+          "lr_pos": 2.1,
+          "lr_neg": 0.9,
+          "basis": "同上（Wainner 2003）。肩外転テスト 感度0.17(0.0-0.34)・特異度0.92(0.85-0.99)から算出。Davidsonの研究では感度0.78・特異度0.75と大きく食い違う。",
+          "source": {
+            "title": "Rubinstein SM, et al. Eur Spine J. 2007;16(3):307-319（Wainner 2003のデータ）",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17013656/"
+          },
+          "low_quality": true
+        },
+        "wainner4": {
+          "lr_pos": 30.3,
+          "lr_neg": null,
+          "basis": "ULTT A陽性・患側回旋<60°・牽引テスト陽性・Spurling A陽性の4項目すべて陽性でLR+30.3（論文抄録記載）。82例の単一研究でCIは非常に広い（二次資料では1.7-538.2）。3項目陽性ではLR+6.1とする二次資料があるが原著で未確認。",
+          "source": {
+            "title": "Wainner RS, Fritz JM, Irrgang JJ, et al. Spine. 2003;28(1):52-62",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/12544957/"
+          },
+          "low_quality": true
+        }
+      }
+    },
+    {
+      "id": "myelopathy",
+      "name": "頸椎症性脊髄症（進行性の頸髄症）",
+      "red_flag": true,
+      "subregions": [
+        "diffuse",
+        "shoulder_arm",
+        "posterior"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "北米の発生率は最低41/100万人年（Nouri 2015）→頸部症状受診率で換算すると0.2%程度だが、これは手術・入院ベースの下限推計で、手のしびれ・歩行障害で受診し頸部痛を訴えない例も多いため★は付けない（未確認）。",
+      "findings_support": [
+        "clumsy_hand",
+        "gait_disturb",
+        "bladder",
+        "arm_numbness",
+        "hoffmann",
+        "hyperreflexia",
+        "myelo_cluster"
+      ],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "頸部痛が軽くても『箸・ボタンが使いにくい』『階段でふらつく』を必ず聞く。歩行障害＋Hoffmann＋逆橈骨反射＋Babinski＋45歳超の5項目中3つ以上でLR+30.9、1つもなければLR0.18（Cook 2010）。軽微外傷で急性悪化（中心性頸髄損傷）しうるので、転倒予防も説明する。",
+      "tests": [
+        "神経学的所見（腱反射・病的反射・10秒テスト・つぎ足歩行）",
+        "頸椎X線 側面（脊柱管前後径・すべり）",
+        "MRI"
+      ],
+      "sources": [
+        {
+          "title": "Nouri A, Tetreault L, Singh A, Karadimas SK, Fehlings MG. Degenerative Cervical Myelopathy: Epidemiology, Genetics, and Pathogenesis. Spine. 2015;40(12):E675-E693",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25839387/"
+        },
+        {
+          "title": "Cook C, Brown C, Isaacs R, et al. Clustered clinical findings for diagnosis of cervical spine myelopathy. J Man Manip Ther. 2010;18(4):175-180",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22131790/"
+        },
+        {
+          "title": "Jiang Z, Davies B, Zipser C, et al. The value of Clinical signs in the diagnosis of Degenerative Cervical Myelopathy - A Systematic review and Meta-analysis. Global Spine J. 2024;14(4):1369-1394",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37903098/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "年齢分布の一次データを確認できなかった（Cook 2010では45歳超が診断クラスターの1項目：感度0.86・特異度0.26）。red flagのためoutsideは設定しない。",
+        "sources": []
+      },
+      "lr": {
+        "hoffmann": {
+          "lr_pos": 1.87,
+          "lr_neg": 0.61,
+          "basis": "9研究のメタ解析で統合感度0.58(95%CI 0.38-0.75)・特異度0.69から算出（LRは論文記載ではなく算出値）。異質性が大きく(I²=86.4%)、著者らは単独で診断に使うべきでないと結論。Cook 2010（249例）では感度0.31と低い。",
+          "source": {
+            "title": "Shivaleela C, Srinivasa Sagar B, Ramya CS, et al. Hoffmann's Sign as a Diagnostic Marker for Cervical Myelopathy: Systematic Review and Meta-analysis. doi:10.4103/njsoma.njsoma_6_26",
+            "url": "https://doi.org/10.4103/njsoma.njsoma_6_26"
+          },
+          "low_quality": true
+        },
+        "hyperreflexia": {
+          "lr_pos": 6.9,
+          "lr_neg": 0.81,
+          "basis": "脊椎外科センターを頸部痛・機能障害で受診した連続249例（頸髄症88例、参照基準は臨床診断＋MRI）。膝蓋腱反射亢進 感度0.22(0.17-0.25)・特異度0.97(0.94-0.99)、LR+6.9(2.8-17.5)、LR−0.81（論文記載）。上腕二頭筋反射亢進はLR+4.8。同論文の表には数値の不整合（Hoffmannの感度・特異度とLRが合わない等）があり、スペクトラムバイアスの可能性も著者が指摘。",
+          "source": {
+            "title": "Cook C, Brown C, Isaacs R, et al. Clustered clinical findings for diagnosis of cervical spine myelopathy. J Man Manip Ther. 2010;18(4):175-180",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22131790/"
+          },
+          "low_quality": true
+        },
+        "myelo_cluster": {
+          "lr_pos": 30.9,
+          "lr_neg": null,
+          "basis": "同じ249例。歩行異常・Hoffmann陽性・逆橈骨反射・Babinski陽性・45歳超の5項目中3つ以上でLR+30.9(95%CI 5.5-181.8)（抄録記載）。除外には『5項目中1つも該当しない』でLR−0.18(0.12-0.42)。単一施設研究でCIが広い。",
+          "source": {
+            "title": "Cook C, Brown C, Isaacs R, et al. J Man Manip Ther. 2010;18(4):175-180",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22131790/"
+          },
+          "low_quality": true
+        }
+      }
+    },
+    {
+      "id": "disc_herniation",
+      "name": "頸椎椎間板ヘルニア",
+      "red_flag": false,
+      "subregions": [
+        "shoulder_arm",
+        "lateral",
+        "posterior"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": 2,
+        "elderly": null
+      },
+      "star_basis": "Radhakrishnan 1994で神経根症の原因のうち椎間板突出が確定したのは21.9%。神経根症の50〜54歳ピーク（頸部症状受診の約9%）に掛けると約2%→★2（40〜64歳）。脊髄症型のヘルニアは含まない。他の年齢帯は未確認。",
+      "findings_support": [
+        "arm_radiation",
+        "arm_numbness",
+        "spurling",
+        "distraction"
+      ],
+      "findings_against": [
+        "fever",
+        "night_pain"
+      ],
+      "key_points": "神経根症型は上の神経根症と同じ診察テストを使う（Wainner 2003は原因を問わない神経根症が対象）。脊髄症型（巧緻運動障害・歩行障害・膀胱直腸障害）は進行すれば手術適応を検討する。",
+      "tests": [
+        "頸椎X線",
+        "MRI"
+      ],
+      "sources": [
+        {
+          "title": "Radhakrishnan K, et al. Epidemiology of cervical radiculopathy. Brain. 1994;117:325-335",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8186959/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "韓国の保険請求データ（20〜69歳）では症候性頸椎椎間板ヘルニアの診断数は年齢とともに増え60代まで上昇し女性に多いが（Kim 2018）、頸椎症との区別が請求コードではあいまいなため好発年齢は設定しない。",
+        "sources": [
+          {
+            "title": "Kim YK, Kang D, Lee I, Kim SY. Differences in the Incidence of Symptomatic Cervical and Lumbar Disc Herniation According to Age, Sex and National Health Insurance Eligibility. Int J Environ Res Public Health. 2018;15(10):2094",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30257414/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "opll",
+      "name": "頸椎後縦靱帯骨化症（OPLL）",
+      "red_flag": false,
+      "subregions": [
+        "posterior",
+        "shoulder_arm",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "男性に多い（男女比2:1: 難病情報センター）。全脊椎CTで頸椎OPLLは男性8.3%、女性3.4%（Fujimori 2016）",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "骨化の存在率（外来X線で1.5〜5.1%、平均3%: 難病情報センター／全脊椎CTで6.3%: Fujimori 2016）はわかるが、症状のある受診者に占める割合は未確認。",
+      "findings_support": [
+        "arm_numbness",
+        "clumsy_hand",
+        "gait_disturb"
+      ],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "最初の症状は首筋・肩甲骨周辺・指先の痛みやしびれ（難病情報センター）。骨化があっても無症状のことも多い。脊柱管が狭い例は転倒などの軽微外傷で頸髄損傷を起こしうる。胸腰椎の靱帯骨化の合併も確認する。",
+      "tests": [
+        "頸椎X線 側面",
+        "CT（骨化の形態・占拠率）",
+        "MRI（脊髄圧迫）"
+      ],
+      "sources": [
+        {
+          "title": "難病情報センター. 後縦靱帯骨化症(OPLL)（指定難病69）",
+          "url": "https://www.nanbyou.or.jp/entry/98"
+        },
+        {
+          "title": "Fujimori T, Watabe T, Iwamoto Y, et al. Prevalence, Concomitance, and Distribution of Ossification of the Spinal Ligaments: Results of Whole Spine CT Scans in 1500 Japanese Patients. Spine. 2016",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27120057/"
+        }
+      ],
+      "age": {
+        "typical": [
+          40,
+          60
+        ],
+        "outside": null,
+        "basis": "難病情報センターの解説で『中年以降、特に50歳前後で発症することが多い』。年齢別の発症率データは未確認のため幅は目安。",
+        "sources": [
+          {
+            "title": "難病情報センター. 後縦靱帯骨化症(OPLL)（指定難病69）",
+            "url": "https://www.nanbyou.or.jp/entry/98"
+          }
+        ]
+      }
+    },
+    {
+      "id": "whiplash",
+      "name": "外傷性頸部症候群（むち打ち・頸椎捻挫）",
+      "red_flag": false,
+      "subregions": [
+        "posterior",
+        "lateral",
+        "occipital"
+      ],
+      "trauma": "yes",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "Stiell 2001（意識清明・安定した頸部外傷の成人8,924例、平均37歳）で臨床的に重要な頸椎損傷は1.7%のみ→残り約98%の多くが捻挫・むち打ち型と推定して★5（差し引きによる推定）。高齢者は骨折の割合が高く未確認。むち打ちの年間発生率は国によって大きく異なる（Holm 2008）。（※差し引きによる推定で直接の文献がないため、アプリでは★未確認とした）",
+      "findings_support": [
+        "torticollis"
+      ],
+      "findings_against": [
+        "fever",
+        "gait_disturb",
+        "bladder",
+        "ccr_imaging"
+      ],
+      "key_points": "まずCanadian C-spine ruleで画像の要否を判断し、骨折・靱帯損傷・頸髄損傷を除外してから診断する。上肢しびれがあれば神経根損傷も評価。",
+      "tests": [
+        "CCRで適応があれば頸椎X線またはCT",
+        "神経学的所見"
+      ],
+      "sources": [
+        {
+          "title": "Stiell IG, Wells GA, Vandemheen KL, et al. The Canadian C-spine rule for radiography in alert and stable trauma patients. JAMA. 2001;286(15):1841-1848",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11597285/"
+        },
+        {
+          "title": "Holm LW, Carroll LJ, Cassidy JD, et al. The burden and determinants of neck pain in whiplash-associated disorders after traffic collisions. Spine. 2008;33(4 Suppl):S52-S59",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18204401/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "年齢分布の一次データを確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "cspine_fracture",
+      "name": "頸椎骨折・靱帯損傷・頸髄損傷（中心性頸髄損傷を含む）",
+      "red_flag": true,
+      "subregions": [
+        "posterior",
+        "occipital",
+        "diffuse"
+      ],
+      "trauma": "yes",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": 2,
+        "middle": 2,
+        "elderly": 2
+      },
+      "star_basis": "Stiell 2001（意識清明・安定した頸部外傷の成人8,924例、平均37歳）で臨床的に重要な頸椎損傷は151例（1.7%）→★2。65歳以上はCCRの高リスク因子で、実際の割合はより高い可能性がある。小児は未確認。",
+      "findings_support": [
+        "ccr_imaging",
+        "arm_numbness",
+        "gait_disturb",
+        "night_pain"
+      ],
+      "findings_against": [],
+      "key_points": "高齢者は立った高さからの転倒など低エネルギーでも起こる（ノルウェーでは転倒が57%）。頸椎骨折の11.6%に頸髄損傷を合併。OPLL・脊柱管狭窄の高齢者は骨傷がなくても中心性頸髄損傷（上肢優位の麻痺）を起こしうる。",
+      "tests": [
+        "CCRに従い画像（高齢者・高エネルギーはCT）",
+        "神経症状があればMRI"
+      ],
+      "sources": [
+        {
+          "title": "Stiell IG, Wells GA, Vandemheen KL, et al. The Canadian C-spine rule for radiography in alert and stable trauma patients. JAMA. 2001;286(15):1841-1848",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11597285/"
+        },
+        {
+          "title": "Stiell IG, Clement CM, McKnight RD, et al. The Canadian C-spine rule versus the NEXUS low-risk criteria in patients with trauma. N Engl J Med. 2003;349(26):2510-2518",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/14695411/"
+        },
+        {
+          "title": "Utheim NC, et al. Epidemiology of traumatic cervical spinal fractures in a general Norwegian population. Inj Epidemiol. 2022;9:10",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8943974/"
+        }
+      ],
+      "age": {
+        "typical": [
+          50,
+          120
+        ],
+        "outside": null,
+        "basis": "ノルウェー南東部の人口ベース研究（2015-2019年、頸椎骨折2,153例）で年齢中央値62歳（2〜100歳）、65歳以上46.3%・50〜64歳22.3%で50歳以上が約7割。発生率は年齢とともに有意に上昇。red flagのためoutsideは設定しない。",
+        "sources": [
+          {
+            "title": "Utheim NC, et al. Inj Epidemiol. 2022;9:10",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8943974/"
+          }
+        ]
+      },
+      "lr": {
+        "ccr_imaging": {
+          "lr_pos": 1.81,
+          "lr_neg": 0.013,
+          "basis": "意識清明・安定した頸部外傷8,283例の前向き検証（判定可能7,438例）。CCRは臨床的に重要な損傷162例中161例を検出、感度99.4%・特異度45.1%から算出。可動域を評価しなかった約10%は解析外。除外向きのルール（陰性なら撮影不要）。",
+          "source": {
+            "title": "Stiell IG, Clement CM, McKnight RD, et al. The Canadian C-spine rule versus the NEXUS low-risk criteria in patients with trauma. N Engl J Med. 2003;349(26):2510-2518",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/14695411/"
+          }
+        }
+      }
+    },
+    {
+      "id": "aarf",
+      "name": "環軸椎回旋位固定（AARF）",
+      "red_flag": false,
+      "subregions": [
+        "occipital",
+        "lateral"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 3,
+        "young": null,
+        "middle": 0,
+        "elderly": 0
+      },
+      "star_basis": "斜頸で小児救急を受診した352例中、介入を要したAARFは18例（5.1%）→★3（Shemer 2026）。保存的に治った軽症例は含まないため実際はより多い可能性。成人の頻度は未確認。",
+      "findings_support": [
+        "torticollis"
+      ],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "コックロビン肢位。斜頸の小児で、症状が長引く・年齢が高め・正中の圧痛・可動域制限が強いとAARFを疑う（Shemer 2026）。上気道感染や軽微外傷が誘因になる。放置すると整復困難になるので長引く斜頸は早めに画像を。",
+      "tests": [
+        "頸椎X線（開口位正面）",
+        "CT（3D・回旋位での評価）"
+      ],
+      "sources": [
+        {
+          "title": "Shemer M, Noyman S, Rimon A, Cohen N. Paediatr Child Health. 2026;31(2):111-119",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41821840/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "AARFの年齢分布の一次データを確認できなかった（Shemer 2026では他の原因より年齢が高いとのみ記載）。",
+        "sources": []
+      }
+    },
+    {
+      "id": "cmt",
+      "name": "先天性筋性斜頸",
+      "red_flag": false,
+      "subregions": [
+        "lateral"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": 0,
+        "middle": 0,
+        "elderly": 0
+      },
+      "star_basis": "新生児1,021例の超音波スクリーニングで3.92%（Chen 2005。報告により0.3〜2%程度と幅がある）。小児の頸部受診者に占める割合は未確認。",
+      "findings_support": [
+        "torticollis"
+      ],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "乳児の胸鎖乳突筋の腫瘤と斜頸。頭蓋変形（斜頭）・顔面の非対称を伴うことがある。骨盤位・初産などが関連因子（Chen 2005）。股関節の診察も忘れない。",
+      "tests": [
+        "超音波（胸鎖乳突筋）",
+        "頸椎X線（骨性斜頸の除外）"
+      ],
+      "sources": [
+        {
+          "title": "Chen MM, Chang HC, Hsieh CF, et al. Predictive model for congenital muscular torticollis: analysis of 1021 infants with sonography. Arch Phys Med Rehabil. 2005;86(11):2199-2203",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16271571/"
+        }
+      ],
+      "age": {
+        "typical": [
+          0,
+          1
+        ],
+        "outside": null,
+        "basis": "新生児の超音波スクリーニング（Chen 2005）で診断される乳児期の疾患。outsideは文献で確認できず設定しない。",
+        "sources": [
+          {
+            "title": "Chen MM, et al. Arch Phys Med Rehabil. 2005;86(11):2199-2203",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16271571/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pmr",
+      "name": "リウマチ性多発筋痛症（PMR）",
+      "red_flag": false,
+      "subregions": [
+        "shoulder_arm",
+        "posterior",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "女性に多い（Olmsted County 2000-2014年の377例中64%が女性: Raheel 2017）",
+      "stars_by_age": {
+        "child": 0,
+        "young": 0,
+        "middle": null,
+        "elderly": 2
+      },
+      "star_basis": "50歳以上の発生率63.9/10万人年（Raheel 2017）→頸部症状受診率23.1/1000人年で換算すると約2.8%→★2（65歳以上）。発生率は年齢とともに上昇し80歳以降でやや低下。50〜64歳の年齢別値は未確認。",
+      "findings_support": [
+        "girdle_stiffness",
+        "night_pain"
+      ],
+      "findings_against": [
+        "arm_numbness",
+        "arm_radiation"
+      ],
+      "key_points": "両肩・頸部・腰帯の痛みと朝のこわばり、CRP・赤沈上昇。頭痛・顎跛行・視力症状があれば巨細胞性動脈炎の合併を疑い当日対応。高齢者の『両側の頸肩痛＋炎症反応』で必ず挙げる。",
+      "tests": [
+        "血液検査 CRP・赤沈・RF・抗CCP抗体",
+        "肩・股関節エコー（滑液包炎）"
+      ],
+      "sources": [
+        {
+          "title": "Raheel S, Shbeeb I, Crowson CS, Matteson EL. Epidemiology of Polymyalgia Rheumatica 2000-2014 and Examination of Incidence and Survival Trends Over 45 Years: A Population-Based Study. Arthritis Care Res. 2017;69(8):1282-1285",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27768840/"
+        },
+        {
+          "title": "Doran MF, Crowson CS, O'Fallon WM, et al. Trends in the incidence of polymyalgia rheumatica over a 30 year period in Olmsted County, Minnesota, USA. J Rheumatol. 2002;29(8):1694-1697",
+          "url": "https://www.jrheum.org/content/29/8/1694"
+        }
+      ],
+      "age": {
+        "typical": [
+          65,
+          120
+        ],
+        "outside": [
+          0,
+          49
+        ],
+        "basis": "Raheel 2017で発症時の平均年齢74.1歳。疫学研究・分類基準とも50歳以上を対象としており、50歳未満はまず考えない。",
+        "sources": [
+          {
+            "title": "Raheel S, et al. Arthritis Care Res. 2017",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/27768840/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crowned_dens",
+      "name": "crowned dens症候群（環軸関節の偽痛風）",
+      "red_flag": false,
+      "subregions": [
+        "occipital",
+        "posterior"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": 0,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "急性頸部痛の2%とする記載は症例報告の文献レビュー（二次資料）のみで一次データを確認できず★未確認。",
+      "findings_support": [
+        "fever",
+        "torticollis",
+        "night_pain"
+      ],
+      "findings_against": [
+        "arm_numbness",
+        "gait_disturb"
+      ],
+      "key_points": "高齢者の急性頸部痛＋発熱＋回旋制限で髄膜炎・化膿性脊椎炎と紛らわしい（髄膜炎の除外が必要なので見逃し注意の鑑別）。CTで歯突起周囲の石灰化（冠状）を確認。日本の8病院72例の多くは総合内科・救急で診断されている。",
+      "tests": [
+        "頸椎CT（歯突起周囲の石灰化）",
+        "血液検査 CRP・白血球",
+        "髄膜刺激症状があれば髄液検査"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "高齢者に多いとされるが年齢分布の一次データを確認できなかった。",
+        "sources": []
+      }
+    },
+    {
+      "id": "longus_colli",
+      "name": "石灰沈着性頸長筋腱炎",
+      "red_flag": false,
+      "subregions": [
+        "anterior",
+        "posterior",
+        "occipital"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": 1,
+        "middle": 1,
+        "elderly": null
+      },
+      "star_basis": "イスラエルの単一地域の観察研究で粗発生率0.50/10万人年（Horowitz 2013）→頸部症状受診の0.1%未満→★1。著者は『まれではない（見逃されている）』と結論。年齢帯は二次資料で30〜40歳代中心とされるため成人の若年・中年に付けた（年齢分布は原著未確認）。",
+      "findings_support": [
+        "sore_throat",
+        "torticollis",
+        "fever"
+      ],
+      "findings_against": [
+        "arm_numbness",
+        "gait_disturb"
+      ],
+      "key_points": "急性の後頸部痛＋嚥下痛＋回旋・伸展制限。咽後膿瘍と紛らわしいが、CTでC1-2前方の石灰化と椎前軟部の浮腫（被膜を持つ膿瘍腔なし）が鑑別点。NSAIDsで1〜2週で軽快し、不要な切開を避けられる。",
+      "tests": [
+        "頸椎X線 側面（椎前軟部陰影・石灰化）",
+        "頸部CT"
+      ],
+      "sources": [
+        {
+          "title": "Horowitz G, Ben-Ari O, Brenner A, et al. Incidence of retropharyngeal calcific tendinitis (longus colli tendinitis) in the general population. Otolaryngol Head Neck Surg. 2013;148(6):955-958",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23525848/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "原著抄録に年齢分布の記載がなく未確認。",
+        "sources": []
+      }
+    },
+    {
+      "id": "ra_cervical",
+      "name": "関節リウマチの頸椎病変（環軸椎亜脱臼など）",
+      "red_flag": false,
+      "subregions": [
+        "occipital",
+        "posterior"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "頸部症状受診者に占める割合の文献を確認できなかった。",
+      "findings_support": [
+        "clumsy_hand",
+        "gait_disturb",
+        "arm_numbness"
+      ],
+      "findings_against": [
+        "fever"
+      ],
+      "key_points": "RA患者の後頭部痛・頸部痛では環軸椎亜脱臼を考え、前後屈X線で環椎歯突起間距離を測る。挿管・全身麻酔の前にも評価が必要。",
+      "tests": [
+        "頸椎X線 側面前後屈（ADI）",
+        "MRI（脊髄圧迫）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "未確認。",
+        "sources": []
+      }
+    },
+    {
+      "id": "shoulder_disorder",
+      "name": "肩関節疾患（腱板断裂・凍結肩など）からの関連痛",
+      "red_flag": false,
+      "subregions": [
+        "shoulder_arm",
+        "lateral"
+      ],
+      "trauma": "any",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "頸部症状受診者に占める割合の文献を確認できなかった。",
+      "findings_support": [
+        "night_pain"
+      ],
+      "findings_against": [
+        "arm_numbness",
+        "spurling",
+        "distraction"
+      ],
+      "key_points": "肩の自動・他動可動域と肩の誘発テストで痛みが再現されるか、頸椎の誘発テストで再現されるかを比べる。頸椎症と肩疾患の併存も多い。",
+      "tests": [
+        "肩X線",
+        "肩エコー"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "未確認。",
+        "sources": []
+      }
+    },
+    {
+      "id": "neuralgic_amyotrophy",
+      "name": "神経痛性筋萎縮症（Parsonage-Turner症候群）",
+      "red_flag": false,
+      "subregions": [
+        "shoulder_arm",
+        "lateral"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": 2,
+        "middle": 2,
+        "elderly": 2
+      },
+      "star_basis": "オランダの一般診療2施設（人口14,118人）で新規の頸・肩・腕の症状492例を前向きに登録し、14例（2.8%）が神経痛性筋萎縮症と確定、年間発生率1/1000→★2（van Alfen 2015）。年齢別の値は未確認のため成人の各年齢帯に同じ★を付けた。",
+      "findings_support": [
+        "night_pain",
+        "arm_radiation"
+      ],
+      "findings_against": [
+        "spurling",
+        "fever"
+      ],
+      "key_points": "激烈な肩〜上肢の痛みが数日〜数週で引いた後に、筋力低下・筋萎縮（前鋸筋・棘上下筋など）が出る。頸椎症性神経根症と誤診されやすい。",
+      "tests": [
+        "筋力の分布の診察（翼状肩甲など）",
+        "神経伝導検査・筋電図",
+        "頸椎MRI（鑑別）"
+      ],
+      "sources": [
+        {
+          "title": "van Alfen N, van Eijk JJ, Ennik T, et al. Incidence of neuralgic amyotrophy (Parsonage Turner syndrome) in a primary care setting--a prospective cohort study. PLoS One. 2015;10(5):e0128361",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4445915/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "未確認。",
+        "sources": []
+      }
+    },
+    {
+      "id": "cts",
+      "name": "手根管症候群（手のしびれの鑑別）",
+      "red_flag": false,
+      "subregions": [
+        "shoulder_arm"
+      ],
+      "trauma": "no",
+      "sex_note": "女性に多い。発生率は女性491、男性258/10万人年（Gelfman 2009）",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "頸部症状受診者に占める割合の文献は確認できなかった（人口あたり発生率は376/10万人年: Gelfman 2009）。",
+      "findings_support": [
+        "arm_numbness",
+        "night_pain"
+      ],
+      "findings_against": [
+        "arm_radiation",
+        "spurling",
+        "gait_disturb"
+      ],
+      "key_points": "母指〜環指橈側のしびれ、夜間・明け方の増悪。頸椎神経根症（C6・C7）との鑑別や併存（double crush）に注意。",
+      "tests": [
+        "Tinel・Phalenなどの誘発テスト",
+        "神経伝導検査"
+      ],
+      "sources": [
+        {
+          "title": "Gelfman R, Melton LJ 3rd, Yawn BP, et al. Long-term trends in carpal tunnel syndrome. Neurology. 2009;72(1):33-41",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19122028/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "抄録に年齢別の値がなく未確認（若年就労世代と高齢者の双方で増加と記載）。",
+        "sources": []
+      }
+    },
+    {
+      "id": "tos",
+      "name": "胸郭出口症候群",
+      "red_flag": false,
+      "subregions": [
+        "shoulder_arm",
+        "lateral"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "頸部症状受診者に占める割合の文献を確認できなかった。",
+      "findings_support": [
+        "arm_numbness",
+        "arm_radiation"
+      ],
+      "findings_against": [
+        "fever",
+        "gait_disturb"
+      ],
+      "key_points": "なで肩の若年女性に多いとされる。上肢挙上で症状増悪。誘発テストは偽陽性が多いため、頸椎神経根症・手根管症候群を先に否定する。",
+      "tests": [
+        "頸椎X線（頸肋）",
+        "胸部X線（Pancoast腫瘍の除外）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "未確認。",
+        "sources": []
+      }
+    },
+    {
+      "id": "cervical_dystonia",
+      "name": "痙性斜頸（頸部ジストニア）",
+      "red_flag": false,
+      "subregions": [
+        "lateral",
+        "posterior"
+      ],
+      "trauma": "no",
+      "sex_note": "女性に多い（発生率 女性1.81、男性0.52/10万人年: LaHue 2020）",
+      "stars_by_age": {
+        "child": null,
+        "young": 1,
+        "middle": 1,
+        "elderly": 1
+      },
+      "star_basis": "米国Kaiser Permanente北カリフォルニアで発生率1.18/10万人年（LaHue 2020）→頸部症状受診の0.1%未満→★1。発生率は年齢とともに上昇。",
+      "findings_support": [
+        "torticollis"
+      ],
+      "findings_against": [
+        "fever",
+        "arm_numbness"
+      ],
+      "key_points": "不随意の頭位の偏り・振戦。触ると軽くなる（感覚トリック）。診断前に頸椎椎間板疾患（OR 3.83）・頸部捻挫（OR 2.77）と診断されていることが多く、半数で診断の遅れ（LaHue 2020）。神経内科へ紹介。",
+      "tests": [
+        "神経内科紹介（ボツリヌス治療の適応評価）"
+      ],
+      "sources": [
+        {
+          "title": "LaHue SC, Albers K, Goldman S, et al. Cervical dystonia incidence and diagnostic delay in a multiethnic population. Mov Disord. 2020;35(3):450-456",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31774238/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "抄録に年齢別の値がなく未確認（年齢とともに発生率上昇との記載のみ）。",
+        "sources": []
+      }
+    },
+    {
+      "id": "herpes_zoster",
+      "name": "帯状疱疹（頸部・上肢の皮膚分節）",
+      "red_flag": false,
+      "subregions": [
+        "shoulder_arm",
+        "lateral",
+        "occipital"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "頸部症状受診者に占める割合の文献を確認できなかった。",
+      "findings_support": [
+        "band_rash",
+        "night_pain",
+        "arm_radiation"
+      ],
+      "findings_against": [
+        "spurling",
+        "distraction"
+      ],
+      "key_points": "皮疹が出る前の数日は神経根症と区別がつかない。片側の皮膚分節に沿ったピリピリ感・触れると痛む場合は皮膚を見て、数日後の再診を指示する。運動麻痺（分節性帯状疱疹性麻痺）を伴うこともある。",
+      "tests": [
+        "皮膚の視診（再診で確認）"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "未確認。",
+        "sources": []
+      }
+    },
+    {
+      "id": "subacute_thyroiditis",
+      "name": "亜急性甲状腺炎",
+      "red_flag": false,
+      "subregions": [
+        "anterior"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": 1,
+        "middle": 1,
+        "elderly": 1
+      },
+      "star_basis": "米国Olmsted Countyの年齢・性調整発生率4.9/10万人年（Fatourechi 2003）→頸部症状受診の1%未満→★1。年齢別の値は抄録になく各年齢帯に同じ★を付けた。",
+      "findings_support": [
+        "fever",
+        "sore_throat"
+      ],
+      "findings_against": [
+        "arm_numbness",
+        "torticollis"
+      ],
+      "key_points": "前頸部（甲状腺部）の圧痛と顎・耳への放散、発熱、動悸。前頸部痛は整形外科の守備範囲外のサインで、内科へ。",
+      "tests": [
+        "甲状腺の触診",
+        "血液検査 甲状腺機能・CRP・赤沈",
+        "甲状腺エコー"
+      ],
+      "sources": [
+        {
+          "title": "Fatourechi V, Aniszewski JP, Fatourechi GZ, et al. Clinical features and outcome of subacute thyroiditis in an incidence cohort: Olmsted County, Minnesota, study. J Clin Endocrinol Metab. 2003;88(5):2100-2105",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12727961/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "抄録に年齢別の値がなく未確認。",
+        "sources": []
+      }
+    },
+    {
+      "id": "spondylodiscitis",
+      "name": "化膿性脊椎炎・硬膜外膿瘍",
+      "red_flag": true,
+      "subregions": [
+        "posterior",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "日本のDPCデータでは男性58.9%（Akiyama 2013）",
+      "stars_by_age": {
+        "child": null,
+        "young": 1,
+        "middle": 1,
+        "elderly": 1
+      },
+      "star_basis": "日本のDPCデータで化膿性脊椎炎（全脊椎）の推定発生率は5.3→7.4/10万人年（2007→2010年、Akiyama 2013）。全例が頸椎でも頸部症状受診の1%未満→★1。頸椎の占める割合は未確認。",
+      "findings_support": [
+        "fever",
+        "night_pain",
+        "arm_numbness",
+        "gait_disturb",
+        "bladder"
+      ],
+      "findings_against": [
+        "torticollis"
+      ],
+      "key_points": "発熱がないこともある。透析・糖尿病・感染性心内膜炎・悪性腫瘍・肝硬変は院内死亡の危険因子（Akiyama 2013）。夜間痛・炎症反応上昇・神経症状の出現（硬膜外膿瘍）は緊急。血液培養を抗菌薬の前に。",
+      "tests": [
+        "血液検査 CBC・CRP・赤沈、血液培養2セット",
+        "MRI（造影）",
+        "必要に応じ生検・心エコー"
+      ],
+      "sources": [
+        {
+          "title": "Akiyama T, Chikuda H, Yasunaga H, et al. Incidence and risk factors for mortality of vertebral osteomyelitis: a retrospective analysis using the Japanese diagnosis procedure combination database. BMJ Open. 2013;3(3):e002412",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23533214/"
+        }
+      ],
+      "age": {
+        "typical": [
+          60,
+          120
+        ],
+        "outside": null,
+        "basis": "日本のDPCデータ7,118例で平均年齢69.2歳。年齢が高いほど院内死亡率が上昇。red flagのためoutsideは設定しない。",
+        "sources": [
+          {
+            "title": "Akiyama T, et al. BMJ Open. 2013;3(3):e002412",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/23533214/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "retropharyngeal_abscess",
+      "name": "咽後膿瘍",
+      "red_flag": true,
+      "subregions": [
+        "anterior",
+        "posterior"
+      ],
+      "trauma": "no",
+      "sex_note": "男児に多い（Woods 2016）",
+      "stars_by_age": {
+        "child": null,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "斜頸で小児救急を受診した352例のうち感染性の原因は35例（9.9%）で、咽後膿瘍・リンパ節炎・頸椎骨髄炎を合わせた数（Shemer 2026）。咽後膿瘍単独の割合は未確認のため★は付けない（上限の目安として10%）。成人は未確認。",
+      "findings_support": [
+        "fever",
+        "sore_throat",
+        "torticollis"
+      ],
+      "findings_against": [
+        "arm_numbness"
+      ],
+      "key_points": "幼児の発熱＋斜頸（首を動かさない、特に伸展を嫌がる）＋嚥下困難。斜頸の小児で発熱・CRP高値があれば感染を疑う（Shemer 2026）。気道閉塞・縦隔炎に進展しうるので即日耳鼻科・小児科へ。",
+      "tests": [
+        "頸部側面X線（椎前軟部の肥厚）",
+        "造影CT",
+        "血液検査 CBC・CRP"
+      ],
+      "sources": [
+        {
+          "title": "Woods CR, Cash ED, Smith AM, et al. Retropharyngeal and Parapharyngeal Abscesses Among Children and Adolescents in the United States: Epidemiology and Management Trends, 2003-2012. J Pediatric Infect Dis Soc. 2016;5(3):259-268",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26407249/"
+        },
+        {
+          "title": "Shemer M, Noyman S, Rimon A, Cohen N. Paediatr Child Health. 2026;31(2):111-119",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41821840/"
+        }
+      ],
+      "age": {
+        "typical": [
+          0,
+          5
+        ],
+        "outside": null,
+        "basis": "米国Kids' Inpatient Database（2003-2012年、咽後膿瘍6,233退院）で発生率は5歳未満で最も高い（20歳未満全体で2.98→4.10/10万人）。red flagのためoutsideは設定しない。",
+        "sources": [
+          {
+            "title": "Woods CR, et al. J Pediatric Infect Dis Soc. 2016",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26407249/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spinal_tumor",
+      "name": "転移性脊椎腫瘍・頸部の腫瘍（Pancoast腫瘍を含む）",
+      "red_flag": true,
+      "subregions": [
+        "posterior",
+        "shoulder_arm",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 2,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "小児: 斜頸で小児救急を受診した352例中、頭頸部・頸椎の腫瘍は6例（1.7%）→★2（Shemer 2026）。成人の頸部症状受診者に占める割合は未確認。",
+      "findings_support": [
+        "night_pain",
+        "cancer_history",
+        "arm_numbness",
+        "gait_disturb"
+      ],
+      "findings_against": [],
+      "key_points": "がんの既往・夜間痛・安静時痛・体重減少は画像を急ぐ。肩〜上肢尺側の痛み＋Horner徴候は肺尖部腫瘍（Pancoast）を疑い胸部X線を。小児の斜頸で頭痛・嘔吐を伴えば腫瘍を考える（Shemer 2026）。",
+      "tests": [
+        "頸椎X線（椎弓根の消失など）",
+        "MRI",
+        "胸部X線（肺尖部）",
+        "血液検査（ALP・Ca・炎症反応）"
+      ],
+      "sources": [
+        {
+          "title": "Shemer M, Noyman S, Rimon A, Cohen N. Paediatr Child Health. 2026;31(2):111-119",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41821840/"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "頸椎に限った年齢分布の一次データを確認できなかった。red flagのためoutsideは設定しない。",
+        "sources": []
+      }
+    },
+    {
+      "id": "artery_dissection",
+      "name": "椎骨動脈・頸動脈解離",
+      "red_flag": true,
+      "subregions": [
+        "occipital",
+        "lateral",
+        "posterior"
+      ],
+      "trauma": "any",
+      "sex_note": "男女ほぼ同数（123例中女性51.2%: Griffin 2024）",
+      "stars_by_age": {
+        "child": null,
+        "young": 1,
+        "middle": 1,
+        "elderly": 1
+      },
+      "star_basis": "米国Olmsted Countyの特発性頸部動脈解離の発生率4.69/10万人年（2002-2020年、Griffin 2024。画像検査の普及で近年は8.93に上昇）→頸部症状受診の1%未満→★1。",
+      "findings_support": [
+        "sudden_headache",
+        "torticollis"
+      ],
+      "findings_against": [
+        "fever",
+        "arm_radiation"
+      ],
+      "key_points": "頭痛・頸部痛（80%）、脳虚血（TIA・梗塞 56%）、Horner症候群（25%）（Lee 2006）。片側の後頭部〜後頸部の『これまでにない痛み』、めまい・構音障害・視野障害などの神経症状を伴えば即日脳神経外科・神経内科へ。頸部の徒手矯正は避ける。",
+      "tests": [
+        "神経学的所見（脳神経・小脳症状）",
+        "MRI/MRA・CTA"
+      ],
+      "sources": [
+        {
+          "title": "Lee VH, Brown RD Jr, Mandrekar JN, Mokri B. Incidence and outcome of cervical artery dissection: a population-based study. Neurology. 2006;67(10):1809-1812",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17130413/"
+        },
+        {
+          "title": "Griffin KJ, Harmsen WS, Mandrekar J, et al. Epidemiology of Spontaneous Cervical Artery Dissection: Population-Based Study. Stroke. 2024",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38288608/"
+        }
+      ],
+      "age": {
+        "typical": [
+          35,
+          65
+        ],
+        "outside": null,
+        "basis": "Griffin 2024（123例）で診断時の平均年齢50.2±15.1歳（平均±1SDを目安の幅とした）。red flagのためoutsideは設定しない。",
+        "sources": [
+          {
+            "title": "Griffin KJ, et al. Stroke. 2024",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/38288608/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "acs",
+      "name": "急性冠症候群（頸部・顎への放散痛）",
+      "red_flag": true,
+      "subregions": [
+        "anterior",
+        "lateral",
+        "shoulder_arm"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": 0,
+        "young": null,
+        "middle": null,
+        "elderly": null
+      },
+      "star_basis": "頸部症状受診者に占める割合の文献を確認できなかった。",
+      "findings_support": [
+        "chest_symptoms"
+      ],
+      "findings_against": [
+        "torticollis",
+        "spurling",
+        "arm_numbness"
+      ],
+      "key_points": "頸部の動きで変化しない・労作で出る頸部〜顎・左肩の痛み、冷汗、息切れは心原性を考える。糖尿病・高齢者・女性は非典型的な症状で来ることがある。疑えば外来で心電図をとって循環器へ。",
+      "tests": [
+        "12誘導心電図",
+        "トロポニン"
+      ],
+      "sources": [],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "頸部症状で受診した集団での年齢分布は未確認。red flagのためoutsideは設定しない。",
+        "sources": []
+      }
+    },
+    {
+      "id": "meningitis",
+      "name": "髄膜炎（くも膜下出血も念頭に）",
+      "red_flag": true,
+      "subregions": [
+        "occipital",
+        "posterior",
+        "diffuse"
+      ],
+      "trauma": "no",
+      "sex_note": "",
+      "stars_by_age": {
+        "child": null,
+        "young": 1,
+        "middle": 1,
+        "elderly": 1
+      },
+      "star_basis": "日本の髄膜炎（全原因・全年齢）の推計発生率8.8/10万人（2021年、Meningitis Research Foundationのモデル推計）→頸部症状受診の1%未満→★1。サーベイランス実測値ではない。",
+      "findings_support": [
+        "fever",
+        "sudden_headache",
+        "jolt",
+        "nuchal_rigidity"
+      ],
+      "findings_against": [
+        "arm_radiation",
+        "spurling"
+      ],
+      "key_points": "項部硬直・Kernig・Brudzinskiは感度が低く（それぞれ30%・5%・5%）、陰性でも否定できない（Thomas 2002）。Jolt徴候も感度約65%で除外には不十分（Iguchi 2020）。発熱＋頭痛＋意識変化があれば頸部の診察所見にかかわらず即日紹介。突然の激しい頭痛はくも膜下出血を考える。",
+      "tests": [
+        "髄液検査（救急・内科へ）",
+        "血液培養",
+        "頭部CT（くも膜下出血の除外）"
+      ],
+      "sources": [
+        {
+          "title": "Thomas KE, Hasbun R, Jekel J, Quagliarello VJ. The diagnostic accuracy of Kernig's sign, Brudzinski's sign, and nuchal rigidity in adults with suspected meningitis. Clin Infect Dis. 2002;35(1):46-52",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12060874/"
+        },
+        {
+          "title": "Iguchi M, Noguchi Y, Yamamoto S, et al. Diagnostic test accuracy of jolt accentuation for headache in acute meningitis in the emergency setting. Cochrane Database Syst Rev. 2020;CD012824",
+          "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD012824.pub2"
+        },
+        {
+          "title": "Meningitis Research Foundation. Meningitis Progress Tracker: Japan (2024)",
+          "url": "https://tracker.meningitis.org/wp-content/uploads/2024/11/meningitis-JPN.pdf"
+        }
+      ],
+      "age": {
+        "typical": null,
+        "outside": null,
+        "basis": "全原因の年齢別データを確認できなかった。red flagのためoutsideは設定しない。",
+        "sources": []
+      },
+      "lr": {
+        "jolt": {
+          "lr_pos": 2.2,
+          "lr_neg": 0.49,
+          "basis": "救急での急性髄膜炎疑いを対象としたCochrane系統的レビュー（2変量ランダム効果モデル）で統合感度65.3%(95%CI 37.3-85.6)・特異度70.4%(47.7-86.1)から算出。感度分析で頑健でなく、除外には使えないと結論。初期の報告（感度ほぼ100%）は再現されていない。",
+          "source": {
+            "title": "Iguchi M, et al. Diagnostic test accuracy of jolt accentuation for headache in acute meningitis in the emergency setting. Cochrane Database Syst Rev. 2020",
+            "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD012824.pub2"
+          }
+        },
+        "nuchal_rigidity": {
+          "lr_pos": 0.94,
+          "lr_neg": 1.03,
+          "basis": "髄膜炎疑いで腰椎穿刺を受けた成人297例の前向き研究（髄液WBC≥6/µLを基準）。項部硬直 感度30%・特異度68%、LR+0.94（論文記載）、LR−は感度・特異度から算出。髄膜炎の有無をほとんど区別できない。重症例（髄液WBC≥1000、4例）でのみ感度100%。",
+          "source": {
+            "title": "Thomas KE, Hasbun R, Jekel J, Quagliarello VJ. Clin Infect Dis. 2002;35(1):46-52",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/12060874/"
+          }
+        }
+      }
+    }
+  ]
+}
